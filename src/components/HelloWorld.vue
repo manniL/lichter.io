@@ -1,14 +1,19 @@
 <template>
-
+    <timeline></timeline>
 </template>
 
 <script>
-export default {
-  name: 'HelloWorld',
-  data () {
-    return {
-      msg: 'Welcome to Your Vue.js App'
+  import Timeline from './Timeline.vue'
+
+  export default {
+    name: 'HelloWorld',
+    components: {
+      Timeline
+    },
+    data () {
+      return {
+        msg: 'Welcome to Your Vue.js App'
+      }
     }
   }
-}
 </script>
