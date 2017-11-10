@@ -111,7 +111,7 @@
                         <h3 class="timeline-title">Founded Developmint</h3>
                         <p>
                             Not even a month after finishing my Abitur, I founded my own company together with two friends.
-                            <a href="https://developmint.de" class="developmint no-underline">Developmint</a>
+                            <a href="https://developmint.de" class="developmint no-underline" target="_blank">Developmint</a>
                             <small class="text-xs text-grey">(fancy, eh?)</small>
                             fulfills contract work for mid-sized businesses as well as single persons. Our core competencies are
                             web apps, websites and MacOS/iOS apps. We did a range of work by now, ranging from simple but good-looking portfolio pages to complex
@@ -158,7 +158,8 @@
                     <div class="timeline-content">
                         <h3 class="timeline-title">Contribution to Laravel</h3>
                         <p>
-                            Yeah, I <a href="https://github.com/laravel/framework/pull/21745" rel="nofollow">did it</a>!
+                            Yeah, I <a href="https://github.com/laravel/framework/pull/21745" rel="nofollow"
+                                       target="_blank">did it</a>!
                             After using Laravel for quite a while in almost all my company and side projects,
                             I finally contributed to the well-known PHP framework.
                         </p>
