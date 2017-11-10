@@ -111,8 +111,8 @@
                         <h3 class="timeline-title">Founded Developmint</h3>
                         <p>
                             Not even a month after finishing my Abitur, I founded my own company together with two friends.
-                            Developmint
-                            <small class="text-sm">(fancy, eh?)</small>
+                            <a href="https://developmint.de" class="developmint no-underline">Developmint</a>
+                            <small class="text-xs text-grey">(fancy, eh?)</small>
                             fulfills contract work for mid-sized businesses as well as single persons. Our core competencies are
                             web apps, websites and MacOS/iOS apps. We did a range of work by now, ranging from simple but good-looking portfolio pages to complex
                             business tools.<br><br>
