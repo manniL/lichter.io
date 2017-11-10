@@ -1,7 +1,3 @@
-$primary-color: #FF6B6B;
-$timeline-color: #CCD5DB;
-$primary-color-hover: scale-color($primary-color, $lightness: 32%);
-
 .timeline {
   @apply .list-reset .w-full;
 
@@ -50,7 +46,7 @@ $primary-color-hover: scale-color($primary-color, $lightness: 32%);
 }
 
 .timeline-item:not(.period):hover .timeline-marker:before {
-  background: $primary-color;
+  background: $timeline-square-color;
 }
 
 .timeline-content {
