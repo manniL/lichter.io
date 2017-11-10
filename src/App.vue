@@ -1,14 +1,16 @@
 <template>
-  <div id="app">
-    <img src="./assets/logo.png">
-    <router-view/>
-  </div>
+    <div id="app">
+        <img src="./assets/logo.png">
+        <router-view/>
+    </div>
 </template>
 
 <script>
-export default {
-  name: 'app'
-}
+  export default {
+    name: 'app'
+  }
 </script>
 
-<style src="./styles/app.scss" lang="scss"></style>
+<style lang="scss">
+    @import "./styles/app";
+</style>
