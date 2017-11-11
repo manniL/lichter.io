@@ -5,11 +5,12 @@
             <span class="font-semibold text-xl tracking-tight">Lichter.io</span>
         </a>
         <div class="block lg:hidden">
-            <button class="flex items-center px-3 py-2 border rounded text-red-lighter border-red-light hover:text-white hover:border-white">
+            <button class="flex items-center px-3 py-2 border rounded text-red-lighter border-red-light hover:text-white hover:border-white"
+                    @click="toggleVisibility">
                 <i class="fa fa-bars" title="Menu"></i>
             </button>
         </div>
-        <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
+        <div class="w-full lg:block flex-grow lg:flex lg:items-center lg:w-auto" :class="{'hidden': !isVisible}">
             <div class="text-sm lg:flex-grow">
                 <a href="#"
                    class="block mt-4 lg:inline-block lg:mt-0 text-red-lighter hover:text-white mr-4 no-underline">
@@ -24,14 +25,34 @@
                 </a>
             </div>
             <div>
-                <a href="#"
+                <a href="#" @click="oops"
                    class="block mt-4 lg:inline-block lg:mt-0 text-red-lighter hover:text-white mr-4 no-underline">
-                    I have a Blog too!
+                    {{oopsText}}
                 </a>
             </div>
         </div>
     </nav>
 </template>
 <script>
-  export default {}
+  export default {
+    data () {
+      return {
+        isVisible: false,
+        showOopsText: false
+      }
+    },
+    computed: {
+      oopsText () {
+        return this.showOopsText ? 'Nah, I don\'t have one yet!' : 'I have a Blog too!'
+      }
+    },
+    methods: {
+      toggleVisibility () {
+        this.isVisible = !this.isVisible
+      },
+      oops () {
+        this.showOopsText = !this.showOopsText
+      }
+    }
+  }
 </script>
