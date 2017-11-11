@@ -73,7 +73,6 @@
 
     .timeline-info,
     .timeline-marker,
-    .timeline-content,
     .period .timeline-info {
       @apply .table-cell .align-top;
     }
@@ -83,6 +82,7 @@
     }
 
     .timeline-content {
+      @apply .block .m-0 .p-0 .mt-4 .mb-4;
       padding-left: 30px;
     }
 
@@ -99,7 +99,7 @@
 
 .timeline-centered {
   @extend .timeline-split;
-  @screen lg {
+  @screen md {
     &,
     .timeline-item,
     .timeline-info,
