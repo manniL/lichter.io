@@ -75,6 +75,13 @@
                     After using Laravel for quite a while in almost all my company and side projects,
                     I finally contributed to the well-known PHP framework.
                 </timeline-item>
+                <timeline-item when="November 2017" title="Release of Lichter.io">
+                    Before applying to companies all over the world of my upcoming semester abroad in 2018, I wanted to
+                    have a unique way of displaying my CV. So why not creating an adapted version online?
+                    <br><br>
+                    <b>Used technologies</b><br>
+                    Vue.js, Tailwind, SCSS, Webpack
+                </timeline-item>
 
                 <timeline-item when="More? Coming soon!"></timeline-item>
             </ul>
