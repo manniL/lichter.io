@@ -56,7 +56,7 @@
                     fulfills contract work for mid-sized businesses as well as single persons. Our core competencies are
                     web apps, websites and MacOS/iOS apps. We did a range of work by now, ranging from simple but good-looking portfolio pages to complex
                     business tools.<br><br>
-                    <strong>Interested?</strong> Hit me up! 😉
+                    <strong>Interested?</strong> Drop me a line! 😉
                     <!-- TODO: Add link/cta here -->
                 </timeline-item>
                 <timeline-item when="October 2015" title="Started studying CS at the TU Dresden">
