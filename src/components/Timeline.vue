@@ -42,7 +42,7 @@
                     so the follow-up tasks were more complex and deep, like creating configs and setting up
                     the database.
                     <br><br>
-                    <b>Used technologies</b><br>
+                    <b>Used Technologies</b><br>
                     Redmine, MySQL, YAML, PHP (Symfony)
                 </timeline-item>
                 <timeline-item when="July 2015" title="Graduate school - Abitur (1,9)">
@@ -67,8 +67,8 @@
                     As part of the study, a group of four students (including me) had the chance to work on a project contracted by ITC AG.
                     The task was to create a converter for measured data of various formats as a full-stack web app.
                     <br><br>
-                    <b>Used technologies</b><br>
-                    Java (Spring), SQL, jQuery, Git, HTML/CSS
+                    <b>Used Technologies</b><br>
+                    Java (Spring), SQL, jQuery, Git
                 </timeline-item>
                 <timeline-item when="October 2017" title="Contribution to Laravel">
                     Yeah, I <a href="https://github.com/laravel/framework/pull/21745" rel="nofollow" target="_blank">did it</a>!
@@ -79,7 +79,7 @@
                     Before applying to companies all over the world of my upcoming semester abroad in 2018, I wanted to
                     have a unique way of displaying my CV. So why not creating an adapted version online?
                     <br><br>
-                    <b>Used technologies</b><br>
+                    <b>Used Technologies</b><br>
                     Vue.js, Tailwind, SCSS, Webpack
                 </timeline-item>
 
