@@ -7,7 +7,7 @@
                     I'm <span class="text-grey-darkest">Alex</span>, a 20-year-old guy living in
                     <span class="text-grey-darkest">Dresden, Germany</span>. Already at young age, I was impressed of
                     computers and wanted to know more about them. Now, I'm a self-taught developer running his 
-                    <span class="text-grey-darkest">own company</span> and studying CS meanwhile.
+                    <span class="text-grey-darkest">own company</span> and studying CS in the meantime.
                     <br><br>
                     When developing web apps, I rely on the <span class="text-grey-darkest">Laravel</span>
                     framework for the backend most of time.
