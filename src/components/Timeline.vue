@@ -5,7 +5,7 @@
             <ul class="timeline timeline-centered">
                 <timeline-item when="1996" title="I was born 🤰🏼👶🏼"></timeline-item>
                 <timeline-item when="1999" title="Used a computer the first time">
-                    Used a computer the first time
+                    Yeah, that's no joke! I played a Mario clone on my grandpa's PC.
                 </timeline-item>
                 <timeline-item when="2010" title="First basic website">
                     I started looking into HTML and CSS because I wanted to create a website for a project
