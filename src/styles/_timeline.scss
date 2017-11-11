@@ -22,20 +22,16 @@
   @apply .absolute .pin-y .pin-l .w-24;
 
   &:before {
-    @apply .absolute .pin-l .block .h-4 .w-4;
-
-    background: $timeline-color;
+    @apply .absolute .pin-l .block .h-4 .w-4 .bg-grey;
     content: "";
     top: 4px;
     transition: background 0.2s ease-in-out;
   }
   &:after {
-    @apply .absolute .pin-b .block;
+    @apply .absolute .pin-b .block .bg-grey;
     content: "";
 
     width: 3px;
-
-    background: $timeline-color;
 
     top: 24px;
     left: 6px;
@@ -46,7 +42,7 @@
 }
 
 .timeline-item:not(.period):hover .timeline-marker:before {
-  background: $timeline-square-color;
+  @apply .bg-red-light;
 }
 
 .timeline-content {
