@@ -56,6 +56,11 @@
   }
 }
 
+.timeline-item:not(.period):hover .timeline-info,
+.timeline-item:not(.period):hover .timeline-content {
+  @apply .text-grey-darkest;
+}
+
 .timeline-split {
   @screen sm {
     .timeline {
