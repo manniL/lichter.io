@@ -1,5 +1,5 @@
 <template>
-    <nav class="flex items-center justify-between flex-wrap bg-red p-4 mb-8 sticky pin-t z-10">
+    <nav class="flex items-center justify-between flex-wrap bg-red p-4 sticky pin-t z-10">
         <a href="/" class="flex items-center flex-no-shrink text-white mr-6 no-underline">
             <i class="fa fa-2x fa-lightbulb-o mr-2"></i>
             <span class="font-semibold text-xl tracking-tight">Lichter.io</span>
