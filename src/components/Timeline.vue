@@ -1,5 +1,5 @@
 <template>
-    <div class="container mx-auto bg-white p-0">
+    <section class="container mx-auto bg-white pt-8">
         <div class="w-5/6 sm:w-2/3 mx-auto">
             <h2 class="text-center mb-8 underline">My Timeline</h2>
             <ul class="timeline timeline-centered">
@@ -79,7 +79,7 @@
                 <timeline-item when="More? Coming soon!"></timeline-item>
             </ul>
         </div>
-    </div>
+    </section>
 </template>
 <style lang="scss">
     body {
