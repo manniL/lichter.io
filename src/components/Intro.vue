@@ -4,7 +4,7 @@
             <img src="../assets/me.jpg" class="rounded-full w-64 border-4 border-grey-light shadow-lg mb-4">
             <div class="">
                 <h1 class="mb-2 font-light">Alexander Lichter</h1>
-                <h2 class="font-hairline text-grey-dark">Developer, Founder, Gamer</h2>
+                <h2 class="font-hairline text-grey-dark">Developer &bull; Founder &bull; Gamer</h2>
             </div>
         </div>
     </section>
