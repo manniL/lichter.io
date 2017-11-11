@@ -1,9 +1,9 @@
 <template>
     <section class="flex flex-wrap bg-grey-light py-8">
-        <div class="flex flex-col justify-around items-center w-1/2 mx-auto">
+        <div class="flex flex-col justify-around items-center w-5/6 md:w-1/2 mx-auto">
             <div>
-                <p class="text-2xl text-black mb-2">Hey you!</p>
-                <p class="text-lg text-grey-darker leading-normal">
+                <p class="text-xl md:text-2xl text-black mb-2">Hey you!</p>
+                <p class="text-base md:text-lg text-grey-darker leading-normal">
                     I'm <span class="text-grey-darkest">Alex</span>, a 20-year-old guy living in
                     <span class="text-grey-darkest">Dresden, Germany</span>. Already at young age, I was impressed of
                     computers and wanted to know more about them. Now, I'm a self-taught developer running his 
