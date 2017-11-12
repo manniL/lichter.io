@@ -25,8 +25,8 @@
                 </a>
             </div>
             <div>
-                <a href="#" @click="oops"
-                   class="block mt-4 lg:inline-block lg:mt-0 text-red-lighter hover:text-white mr-4 no-underline">
+                <a @click="oops"
+                   class="block mt-4 lg:inline-block lg:mt-0 text-red-lighter hover:text-white mr-4 no-underline cursor-pointer">
                     {{oopsText}}
                 </a>
             </div>
