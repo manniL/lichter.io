@@ -1,6 +1,6 @@
 <template>
-    <section class="flex flex-wrap bg-grey-light py-8">
-        <div class="justify-around items-center w-5/6 md:w-1/2 mx-auto animated fadeIn aboutMe">
+    <section class="flex flex-col flex-wrap items-center bg-grey-light pt-8 animated fadeIn aboutMe">
+        <div class="justify-around items-center w-5/6 md:w-1/2 mx-auto">
             <p class="text-xl md:text-2xl text-black mb-2">
                 Hey you!
             </p>
@@ -19,5 +19,6 @@
                 But of course I used a bunch of other technologies, depending on the projects aim and requirements!
             </p>
         </div>
+        <i class="fa fa-5x fa-caret-down mt-4 animated infinite bounceNice animation-duration-5 text-red-darkest"></i>
     </section>
 </template>

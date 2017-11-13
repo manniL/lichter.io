@@ -1,0 +1,14 @@
+.bounceNice {
+  animation-name: bounceNice;
+  animation-timing-function: ease-in-out;
+
+  @keyframes bounceNice {
+    from, to {
+      transform: translateY(0px);
+    }
+
+    50% {
+      transform: translateY(-30px);
+    }
+  }
+}

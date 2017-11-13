@@ -11,6 +11,14 @@
   position: sticky;
 }
 
-.aboutMe {
-  animation-duration: 2s;
+$durations: (.5, 1, 2, 5, 10);
+
+@mixin generate-animation-durations() {
+  @each $duration in $durations {
+    .animation-duration-#{$duration} {
+      animation-duration: #{$duration}s;
+    }
+  }
 }
+
+@include generate-animation-durations();
