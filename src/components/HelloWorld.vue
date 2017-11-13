@@ -6,6 +6,7 @@
         <about-me></about-me>
         <skills></skills>
         <timeline></timeline>
+        <app-footer></app-footer>
     </div>
 </template>
 
@@ -15,6 +16,7 @@
   import AboutMe from './AboutMe.vue'
   import Skills from './Skills.vue'
   import Timeline from './Timeline.vue'
+  import AppFooter from './Footer.vue'
 
   export default {
     name: 'HelloWorld',
@@ -23,7 +25,8 @@
       Intro,
       AboutMe,
       Skills,
-      Timeline
+      Timeline,
+      AppFooter
     },
     data () {
       return {
