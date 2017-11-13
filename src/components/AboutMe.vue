@@ -19,6 +19,6 @@
                 But of course I used a bunch of other technologies, depending on the projects aim and requirements!
             </p>
         </div>
-        <i class="fa fa-5x fa-caret-down mt-4 animated infinite bounceNice animation-duration-5 text-red-darkest"></i>
+        <i class="fa fa-5x fa-caret-down mt-4 animated infinite bounceNice animation-duration-5 text-grey"></i>
     </section>
 </template>
