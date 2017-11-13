@@ -1,9 +1,13 @@
 <template>
     <div>
         <navbar></navbar>
+        <a id="top"></a>
         <intro></intro>
+        <a id="about-me"></a>
         <about-me></about-me>
+        <a id="skills"></a>
         <skills></skills>
+        <a id="timeline"></a>
         <timeline></timeline>
         <app-footer></app-footer>
     </div>
