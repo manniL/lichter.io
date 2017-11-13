@@ -22,7 +22,7 @@
           {name: 'Git', url: './git.png'},
           {name: 'Travis CI', url: './travisci.png'},
           {name: 'Tailwind', url: './tailwind.png'},
-          {name: 'Node', url: './node.png'},
+          {name: 'Node.js', url: './node.png'},
           {name: 'Webpack', url: './webpack.png'}
         ]
       },
