@@ -1,6 +1,7 @@
 'use strict'
 const path = require('path')
 const utils = require('./utils')
+const webpack = require('webpack')
 const config = require('../config')
 const vueLoaderConfig = require('./vue-loader.conf')
 
@@ -72,5 +73,10 @@ module.exports = {
         }
       }
     ]
-  }
+  },
+  plugins: [
+    new webpack.DefinePlugin({
+      VERSION: JSON.stringify(require('../package.json').version)
+    })
+  ]
 }
