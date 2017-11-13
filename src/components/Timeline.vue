@@ -54,8 +54,9 @@
                     fulfills contract work for mid-sized businesses as well as single persons. Our core competencies are
                     web apps, websites and MacOS/iOS apps. We have done a range of work by now, ranging from simple but good-looking portfolio pages to complex
                     business tools.<br><br>
-                    <strong>Interested?</strong> Drop me a line! 😉
-                    <!-- TODO: Add link/cta here -->
+                    <strong>Interested?</strong> <a class="text-grey hover:text-grey-dark"
+                                                    href="mailto:alichter@developmint.de?subject=Inquiry&body=Hey%20Alex!%0D%0AI've%20seen%20your%20website%20and%20would%20like%20to%20talk%20to%20you%20about%20......."
+                >Drop me a line!</a><span class="no-underline"> 😉</span>
                 </timeline-item>
                 <timeline-item when="October 2015" title="Started studying CS at the TU Dresden">
                     Without a big break, I applied for the Diploma Computer Science course at the TU Dresden,
