@@ -1,11 +1,16 @@
 .developmint {
   color: $devleopmint-green;
 
-  &:hover{
+  &:hover {
     color: darken($devleopmint-green, 5%);
     text-decoration: underline;
   }
 }
+
 .sticky {
   position: sticky;
+}
+
+.aboutMe {
+  animation-duration: 2s;
 }
