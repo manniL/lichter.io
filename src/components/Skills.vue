@@ -30,7 +30,7 @@
                 <p class="text-small ml-1"><strong>Git</strong>, Travis CI</p>
             </div>
             <div class="hidden md:visible flex justify-center w-1/5">
-                <!-- TODO: Add images here -->
+                <technology-images></technology-images>
             </div>
             <div class="flex flex-col w-5/6 md:w-1/5 items-center md:items-stretch">
                 <div class="flex flex-col md:flex-row items-center justify-end my-3">
@@ -63,8 +63,9 @@
 
 <script>
   import Rating from './Rating.vue'
+  import TechnologyImages from './TechnologyImages.vue'
 
   export default {
-    components: {Rating}
+    components: {Rating, TechnologyImages}
   }
 </script>
