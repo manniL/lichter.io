@@ -2,9 +2,9 @@
     <nav class="flex items-center justify-between flex-wrap bg-indigo p-2 pin-b z-10">
         <div class="flex-grow flex items-center w-auto">
             <div class="text-sm flex-grow">
-                <a href="#" class="inline-block mt-0 text-indigo-lighter hover:text-white no-underline">
+                <router-link to="/imprint" class="inline-block mt-0 text-indigo-lighter hover:text-white no-underline">
                     Imprint
-                </a>
+                </router-link>
             </div>
             <div class="flex items-center flex-no-shrink text-white">
                 <span class="font-hairline text-sm mr-2 text-grey-light">v{{version}}</span>
@@ -14,7 +14,6 @@
         </div>
     </nav>
 </template>
-
 <script>
   export default {
     computed: {

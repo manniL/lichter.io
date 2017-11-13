@@ -1,9 +1,9 @@
 <template>
     <nav class="flex items-center justify-between flex-wrap bg-red p-4 sticky pin-t z-10">
-        <a href="/" class="flex items-center flex-no-shrink text-white mr-6 no-underline">
+        <router-link to="/" class="flex items-center flex-no-shrink text-white mr-6 no-underline">
             <i class="fa fa-2x fa-lightbulb-o mr-2"></i>
             <span class="font-semibold text-xl tracking-tight">Lichter.io</span>
-        </a>
+        </router-link>
         <div class="block lg:hidden">
             <button class="flex items-center px-3 py-2 border rounded text-red-lighter border-red-light hover:text-white hover:border-white"
                     @click="toggleVisibility">
