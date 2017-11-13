@@ -4,13 +4,14 @@
             <i class="fa fa-2x fa-lightbulb-o mr-2"></i>
             <span class="font-semibold text-xl tracking-tight">Lichter.io</span>
         </router-link>
-        <div class="block lg:hidden">
+        <div class="block lg:hidden" v-show="showNavLinks">
             <button class="flex items-center px-3 py-2 border rounded text-red-lighter border-red-light hover:text-white hover:border-white"
                     @click="toggleVisibility">
                 <i class="fa fa-bars" title="Menu"></i>
             </button>
         </div>
-        <div class="w-full lg:block flex-grow lg:flex lg:items-center lg:w-auto" :class="{'hidden': !isVisible}">
+        <div class="w-full lg:block flex-grow lg:flex lg:items-center lg:w-auto" :class="{'hidden': !isVisible}"
+             v-show="showNavLinks">
             <div class="text-sm lg:flex-grow">
                 <a href="#"
                    class="block mt-4 lg:inline-block lg:mt-0 text-red-lighter hover:text-white mr-4 no-underline">
@@ -44,6 +45,9 @@
     computed: {
       oopsText () {
         return this.showOopsText ? 'Nah, I don\'t have one yet!' : 'I have a Blog too!'
+      },
+      showNavLinks () {
+        return this.$route.path === '/'
       }
     },
     methods: {
