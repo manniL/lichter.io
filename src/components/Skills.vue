@@ -5,7 +5,7 @@
         </div>
         <div class="flex flex-col md:flex-row justify-center items-center md:my-4">
             <div class="flex flex-col w-5/6 md:w-1/5 items-center md:items-stretch">
-                <div class="flex flex-col-reverse md:flex-row items-center justify-start my-3">
+                <div class="flex flex-col-reverse md:flex-row items-center justify-start my-6">
                     <rating :rating="4"></rating>
                     <h2 class="text-center md:ml-3 mb-2 md:mb-0">PHP</h2>
                 </div>
@@ -14,7 +14,7 @@
             <div class="hidden md:visible flex w-1/5">
             </div>
             <div class="flex flex-col w-5/6 md:w-1/5 items-center md:items-stretch">
-                <div class="flex flex-col md:flex-row items-center justify-end my-3">
+                <div class="flex flex-col md:flex-row items-center justify-end my-6">
                     <h2 class="text-center md:mr-3 mb-2 md:mb-0">Javascript</h2>
                     <rating :rating="4"></rating>
                 </div>
@@ -23,17 +23,17 @@
         </div>
         <div class="flex flex-col md:flex-row justify-center items-center md:my-4">
             <div class="flex flex-col w-5/6 md:w-1/5 items-center md:items-stretch">
-                <div class="flex flex-col-reverse md:flex-row items-center justify-start my-3">
+                <div class="flex flex-col-reverse md:flex-row items-center justify-start my-6">
                     <rating :rating="4"></rating>
                     <h2 class="text-center md:ml-3 mb-2 md:mb-0">VC & CI</h2>
                 </div>
                 <p class="text-small ml-1"><strong>Git</strong>, Travis CI</p>
             </div>
-            <div class="hidden md:visible flex justify-center w-1/5">
+            <div class="hidden md:visible flex justify-center w-1/5 h-auto">
                 <technology-images></technology-images>
             </div>
             <div class="flex flex-col w-5/6 md:w-1/5 items-center md:items-stretch">
-                <div class="flex flex-col md:flex-row items-center justify-end my-3">
+                <div class="flex flex-col md:flex-row items-center justify-end my-6">
                     <h2 class="text-center md:mr-3 mb-2 md:mb-0">Misc</h2>
                     <rating :rating="4"></rating>
                 </div>
@@ -42,7 +42,7 @@
         </div>
         <div class="flex flex-col md:flex-row justify-center items-center md:my-4">
             <div class="flex flex-col w-5/6 md:w-1/5 items-center md:items-stretch">
-                <div class="flex flex-col-reverse md:flex-row items-center justify-start my-3">
+                <div class="flex flex-col-reverse md:flex-row items-center justify-start my-6">
                     <rating :rating="3"></rating>
                     <h2 class="text-center md:ml-3 mb-2 md:mb-0">Java</h2>
                 </div>
@@ -51,7 +51,7 @@
             <div class="hidden md:visible flex justify-center w-1/5">
             </div>
             <div class="flex flex-col w-5/6 md:w-1/5 items-center md:items-stretch">
-                <div class="flex flex-col md:flex-row items-center justify-end my-3">
+                <div class="flex flex-col md:flex-row items-center justify-end my-6">
                     <h2 class="text-center md:mr-3 mb-2 md:mb-0">Python</h2>
                     <rating :rating="2"></rating>
                 </div>

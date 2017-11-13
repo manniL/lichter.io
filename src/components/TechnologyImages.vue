@@ -1,7 +1,13 @@
 <template>
-    <div class="flex flex-col items-center">
-        <img :src="imagePath" class="rounded-full">
-        <p class="text-sm">{{urls[currentUrlIndex].name}}</p>
+    <div>
+        <transition name="custom" enter-active-class="animated fadein"
+                    enter-to-class="animated pulse" leave-active-class="animated fadeOut"
+                    mode="out-in">
+            <div class="flex flex-col items-center" :key="currentUrlIndex">
+                <img :src="imagePath" class="rounded-full">
+                <p class="text-lg text-grey-darker">{{urls[currentUrlIndex].name}}</p>
+            </div>
+        </transition>
     </div>
 </template>
 <script>
