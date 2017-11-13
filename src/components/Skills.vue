@@ -1,5 +1,5 @@
 <template>
-    <div class="flex flex-wrap flex-col bg-grey-lighter py-8">
+    <div class="flex flex-wrap flex-col bg-grey-lighter py-8" v-scroll-reveal>
         <div class="flex justify-around w-5/6 md:w-1/2 mx-auto">
             <h2 class="text-center mb-8 underline">Skills</h2>
         </div>

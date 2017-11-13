@@ -3,13 +3,16 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import VueScrollReveal from 'vue-scroll-reveal'
 
 Vue.config.productionTip = false
+
+Vue.use(VueScrollReveal)
 
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
   router,
   template: '<App/>',
-  components: { App }
+  components: {App}
 })

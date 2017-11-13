@@ -1,5 +1,5 @@
 <template>
-    <li class="timeline-item" :class="{'period': period}">
+    <li class="timeline-item" :class="{'period': period}" v-scroll-reveal>
         <div class="timeline-info" v-if="!period">
             <span>{{when}}</span>
         </div>
