@@ -70,7 +70,10 @@
                     Java (Spring), SQL, jQuery, Git
                 </timeline-item>
                 <timeline-item when="October 2017" title="Contribution to Laravel">
-                    Yeah, I <a href="https://github.com/laravel/framework/pull/21745" rel="nofollow" target="_blank">did it</a>!
+                    Yeah, I <a href="https://github.com/laravel/framework/pull/21745"
+                               class="text-grey-darker hover:text-grey"
+                               rel="noreferrer noopener nofollow"
+                               target="_blank">did it</a>!
                     After using Laravel for quite a while in almost all my company and side projects,
                     I finally contributed to the well-known PHP framework.
                 </timeline-item>
