@@ -17,6 +17,7 @@
         type: Array,
         default: () => [
           {name: 'Laravel', url: './laravel.png'},
+          {name: 'Vue.js', url: './vuejs.png'},
           {name: 'Bootstrap', url: './bootstrap.png'},
           {name: 'Git', url: './git.png'},
           {name: 'Travis CI', url: './travisci.png'},
