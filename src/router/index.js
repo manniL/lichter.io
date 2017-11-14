@@ -11,12 +11,18 @@ export default new Router({
     {
       path: '/',
       name: 'Lichter.io',
-      component: MainPage
+      component: MainPage,
+      meta: {
+        title: 'Lichter.io'
+      }
     },
     {
       path: '/imprint',
       name: 'Imprint - Lichter.io',
-      component: ImprintPage
+      component: ImprintPage,
+      meta: {
+        title: 'Imprint - Lichter.io'
+      }
     }
   ],
   scrollBehavior (to, from, savedPosition) {
