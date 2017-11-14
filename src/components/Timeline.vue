@@ -43,7 +43,11 @@
                     <b>Used Technologies</b><br>
                     Redmine, MySQL, YAML, PHP (Symfony)
                 </timeline-item>
-                <timeline-item when="July 2015" title="Graduate school - Abitur (1,9)">
+                <timeline-item when="December 2014" title="Received Cambridge certificate">
+                    After spending time abroad in Dublin and Kent (UK), I took my <em>Cambridge: Advanced English</em>
+                    certificate, which is targeted at CEFR Level C1, in December 2014.
+                </timeline-item>
+                <timeline-item when="July 2015" title="Graduated school - Abitur (1,9)">
                     In 2015 I finished school and did my Abitur (the German A-Levels) at the
                     <em>Europäisches Gymnasium Waldenburg</em> with a final grade of <strong>1.9</strong>
                 </timeline-item>
