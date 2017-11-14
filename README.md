@@ -1,6 +1,8 @@
-# lichter.io
+# Lichter.io
 
-> My own website and CV https://lichter.io
+[![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.md)
+
+My personal website and online CV: [Lichter.io](https://lichter.io)
 
 ## Build Setup
 
@@ -16,7 +18,13 @@ npm run build
 
 # build for production and view the bundle analyzer report
 npm run build --report
+```
 
+## Testing
+
+There are currently **no tests** available. Anyway:
+
+``` bash
 # run unit tests
 npm run unit
 
@@ -26,3 +34,17 @@ npm run e2e
 # run all tests
 npm test
 ```
+
+## Security
+
+If you discover any security related issues, please email hello@lichter.io instead of using the issue tracker.
+
+## Credits
+
+- [Alexander Lichter](https://github.com/manniL)
+- [All Contributors](../../contributors)
+
+
+## License
+
+The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
