@@ -7,7 +7,10 @@
                 </router-link>
             </div>
             <div class="flex items-center flex-no-shrink text-white">
-                <span class="font-hairline text-sm mr-2 text-grey-light">v{{version}}</span>
+                <a class="font-hairline text-sm mr-2 text-grey-light no-underline hover:text-grey"
+                   href="https://github.com/manniL/lichter.io" target="_blank" rel="noreferrer noopener">
+                    v{{version}}
+                </a>
                 <span class="font-semibold text-xl tracking-tight mr-2">That's it!</span>
                 <i class="fa fa-2x fa-check mr-2 my-auto"></i>
             </div>
