@@ -63,6 +63,7 @@
       },
       oops () {
         this.showOopsText = !this.showOopsText
+        this.$ga.event('user-interactions', 'easter-eggs', 'blog', this.showOopsText)
       }
     }
   }
