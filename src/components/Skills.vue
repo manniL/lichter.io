@@ -29,7 +29,7 @@
                 </div>
                 <p class="text-small ml-1"><strong>Git</strong>, Travis CI</p>
             </div>
-            <div class="hidden md:visible flex justify-center w-1/5 h-auto">
+            <div class="invisible md:visible hidden md:flex justify-center w-1/5 h-auto">
                 <technology-images></technology-images>
             </div>
             <div class="flex flex-col w-5/6 md:w-1/5 items-center md:items-stretch">
