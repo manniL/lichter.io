@@ -57,7 +57,7 @@ const webpackConfig = merge(baseWebpackConfig, {
       // This will result in *all* of your app's CSS being loaded upfront.
       allChunks: false,
     }),
-    /*new PurgeCSSPlugin({
+    new PurgeCSSPlugin({
       paths: glob.sync([
         path.join(__dirname, '../src/components/*.vue'),
         path.join(__dirname, '../*.html')
@@ -69,7 +69,7 @@ const webpackConfig = merge(baseWebpackConfig, {
           extensions: ['html', 'vue']
         }
       ]
-    }),*/
+    }),
     // Compress extracted CSS. We are using this plugin so that possible
     // duplicated CSS from different components can be deduped.
     new OptimizeCSSPlugin({
