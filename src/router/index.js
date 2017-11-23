@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import MainPage from '@/components/MainPage.vue'
-import ImprintPage from '@/components/ImprintPage.vue'
+import LegalNoticePage from '@/components/LegalNoticePage.vue'
 import NotFoundPage from '@/components/NotFoundPage.vue'
 
 Vue.use(Router)
@@ -18,11 +18,11 @@ export default new Router({
       }
     },
     {
-      path: '/imprint',
-      name: 'Imprint - Lichter.io',
-      component: ImprintPage,
+      path: '/legal',
+      name: 'Legal notice - Lichter.io',
+      component: LegalNoticePage,
       meta: {
-        title: 'Imprint - Lichter.io'
+        title: 'Legal notice - Lichter.io'
       }
     },
     {

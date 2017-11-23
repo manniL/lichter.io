@@ -2,8 +2,8 @@
     <nav class="flex items-center justify-between flex-wrap bg-indigo p-2 pin-b z-10">
         <div class="flex-grow flex items-center w-auto">
             <div class="text-sm flex-grow">
-                <router-link to="/imprint" class="inline-block mt-0 text-indigo-lighter hover:text-white no-underline">
-                    Imprint
+                <router-link to="/legal" class="inline-block mt-0 text-indigo-lighter hover:text-white no-underline">
+                    Legal notice
                 </router-link>
             </div>
             <div class="flex items-center flex-no-shrink text-white">
