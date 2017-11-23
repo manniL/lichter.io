@@ -12,7 +12,6 @@
                     v{{version}}
                 </a>
                 <span class="font-semibold text-xl tracking-tight mr-2">That's it!</span>
-                <i class="fa fa-2x fa-check mr-2 my-auto"></i>
             </div>
         </div>
     </nav>
