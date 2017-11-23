@@ -16,6 +16,15 @@
 /*
  * Adapted from animate.css (https://github.com/daneden/animate.css/)
  */
+
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  &.infinite {
+    animation-iteration-count: infinite;
+  }
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;
