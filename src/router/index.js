@@ -1,8 +1,8 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import MainPage from '@/components/MainPage.vue'
-import LegalNoticePage from '@/components/LegalNoticePage.vue'
-import NotFoundPage from '@/components/NotFoundPage.vue'
+import MainPage from '../pages/MainPage.vue'
+import LegalNoticePage from '../pages/LegalNoticePage.vue'
+import NotFoundPage from '../pages/NotFoundPage.vue'
 
 Vue.use(Router)
 

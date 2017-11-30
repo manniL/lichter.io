@@ -14,12 +14,12 @@
 </template>
 
 <script>
-  import Navbar from './Navbar.vue'
-  import Intro from './Intro.vue'
-  import AboutMe from './AboutMe.vue'
-  import Skills from './Skills.vue'
-  import Timeline from './Timeline.vue'
-  import AppFooter from './Footer.vue'
+  import Navbar from '../components/Navbar.vue'
+  import Intro from '../components/Intro.vue'
+  import AboutMe from '../components/AboutMe.vue'
+  import Skills from '../components/Skills.vue'
+  import Timeline from '../components/Timeline.vue'
+  import AppFooter from '../components/Footer.vue'
 
   export default {
     name: 'MainPage',

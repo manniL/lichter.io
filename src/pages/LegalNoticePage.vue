@@ -128,8 +128,8 @@
 </template>
 
 <script>
-  import Navbar from './Navbar.vue'
-  import AppFooter from './Footer.vue'
+  import Navbar from '../components/Navbar.vue'
+  import AppFooter from '../components/Footer.vue'
 
   export default {
     name: 'LegalNoticePage',
