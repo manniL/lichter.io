@@ -88,6 +88,25 @@
                     <b>Used Technologies</b><br>
                     Vue.js, Tailwind, SCSS, Webpack
                 </timeline-item>
+                <timeline-item when="November 2017" title="Release of Lichter.io">
+                    Before applying to companies all over the world of my upcoming semester abroad in 2018, I wanted to
+                    have a unique way of displaying my CV. So why not creating an adapted version online?
+                    <br><br>
+                    <b>Used Technologies</b><br>
+                    Vue.js, Tailwind, SCSS, Webpack
+                </timeline-item>
+                <timeline-item when="December 2017" title="Held my first talk">
+                    After talking with a lot of people about my choice of programming languages, I decided to work on a
+                    talk about PHP, it's flaws and advantages, as well as the upcoming future of the language.<br>
+                    I named it "<span class="font-semibold text-indigo-dark">PHP is dead - Long live PHP!</span>".
+                    If you want to take a look, here are the
+                    <a href="https://mannil.github.io/php-is-dead-long-live-php/"
+                       class="text-grey-darker hover:text-grey"
+                       rel="noreferrer noopener nofollow"
+                       target="_blank">slides</a>!<br><br>
+                    <b>Used Technologies</b><br>
+                    Tailwind, Webpack, Reveal.JS
+                </timeline-item>
 
                 <timeline-item when="More? Coming soon!"></timeline-item>
             </ul>
