@@ -19,7 +19,7 @@
 }
 
 .timeline-marker {
-  @apply .absolute .pin-y .pin-l .w-24;
+  @apply .absolute .pin-y .pin-l .w-8;
 
   &:before {
     @apply .absolute .pin-l .block .h-4 .w-4 .bg-grey;
