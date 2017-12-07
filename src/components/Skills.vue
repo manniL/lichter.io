@@ -36,10 +36,10 @@
             </div>
             <div class="flex flex-col w-5/6 md:w-1/3 items-center lg:items-stretch">
                 <div class="flex flex-col lg:flex-row items-center justify-end my-6">
-                    <h2 class="text-center lg:mr-3 mb-2 lg:mb-0">Misc</h2>
+                    <h2 class="text-center lg:mr-3 mb-2 lg:mb-0">Methodologies</h2>
                     <rating :rating="4"></rating>
                 </div>
-                <p class="text-small text-right mr-1"><strong>TDD</strong>, Agile, Scrum</p>
+                <p class="text-small text-right mr-1"><strong>TDD</strong>, Clean Code, Agile, Scrum</p>
             </div>
         </div>
         <div class="flex flex-col md:flex-row w-3/4 justify-around items-center md:my-4">
