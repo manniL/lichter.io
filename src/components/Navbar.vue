@@ -17,7 +17,8 @@
         <div class="block lg:hidden" v-show="showNavLinks">
             <button class="flex items-center px-3 py-2 border rounded text-red-lighter border-red-light hover:text-white hover:border-white"
                     @click="toggleVisibility">
-                <svg class="h-3 w-3 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title>
+                <svg class="h-3 w-3 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>
+                    Menu</title>
                     <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/>
                 </svg>
             </button>
@@ -25,17 +26,11 @@
         <div class="w-full lg:block flex-grow lg:flex lg:items-center lg:w-auto" :class="{'hidden': !isVisible}"
              v-show="showNavLinks">
             <div class="text-sm lg:flex-grow">
-                <a href="#about-me" v-smooth-scroll="{ duration: 1000, offset: -50 }"
+                <a v-for="item in navItems" :href="`#${item.anchor}`"
+                   v-smooth-scroll="{ duration: 1000, offset: -150 }"
+                   @click="toggleVisibility"
                    class="block mt-4 lg:inline-block lg:mt-0 text-red-lighter hover:text-white mr-4 no-underline">
-                    About me
-                </a>
-                <a href="#skills" v-smooth-scroll="{ duration: 1000, offset: -50 }"
-                   class="block mt-4 lg:inline-block lg:mt-0 text-red-lighter hover:text-white mr-4 no-underline">
-                    Skills
-                </a>
-                <a href="#timeline" v-smooth-scroll="{ duration: 1000, offset: -50 }"
-                   class="block mt-4 lg:inline-block lg:mt-0 text-red-lighter hover:text-white no-underline">
-                    Timeline
+                    {{item.name}}
                 </a>
             </div>
             <div>
@@ -52,7 +47,21 @@
     data () {
       return {
         isVisible: false,
-        showOopsText: false
+        showOopsText: false,
+        navItems: [
+          {
+            name: 'About me',
+            anchor: 'about-me'
+          },
+          {
+            name: 'Skills',
+            anchor: 'skills'
+          },
+          {
+            name: 'Timeline',
+            anchor: 'timeline'
+          }
+        ]
       }
     },
     computed: {
