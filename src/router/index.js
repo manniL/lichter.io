@@ -11,27 +11,31 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'Lichter.io',
+      name: 'root',
       component: MainPage,
       meta: {
-        title: 'Lichter.io'
+        title: 'Lichter.io - Alexander Lichter'
       }
     },
     {
       path: '/legal',
-      name: 'Legal notice - Lichter.io',
+      name: 'legal',
       component: LegalNoticePage,
       meta: {
         title: 'Legal notice - Lichter.io'
       }
     },
     {
-      path: '*',
-      name: '404 - No Lichter found!',
+      path: '/404',
+      name: '404',
       component: NotFoundPage,
       meta: {
         title: '404 - No Lichter found!'
       }
+    },
+    {
+      path: '*',
+      redirect: '/404'
     }
   ],
   scrollBehavior (to, from, savedPosition) {
