@@ -1,5 +1,5 @@
+/* eslint-disable */
 /*
-
 Tailwind - The Utility-First CSS Framework
 
 A project by Adam Wathan (@adamwathan), Jonathan Reinink (@reinink),
