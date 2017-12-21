@@ -1,5 +1,7 @@
 const webpack = require('webpack')
-
+const path = require('path')
+const glob = require('glob-all')
+const PurgeCssPlugin = require('purgecss-webpack-plugin')
 module.exports = {
   /*
   ** Headers of the page
@@ -114,6 +116,9 @@ module.exports = {
   */
   build: {
     vendor: ['vue-smooth-scroll', 'vue-scroll-reveal'],
+    extractCSS: {
+      allChunks: true
+    },
     plugins: [
       new webpack.DefinePlugin({
         VERSION: JSON.stringify(require('./package.json').version)
@@ -128,13 +133,36 @@ module.exports = {
     ** Run ESLint on save
     */
     extend (config, ctx) {
-      if (ctx.dev && ctx.isClient) {
-        config.module.rules.push({
-          enforce: 'pre',
-          test: /\.(js|vue)$/,
-          loader: 'eslint-loader',
-          exclude: /(node_modules)/
-        })
+      if (ctx.isClient) {
+        if (ctx.dev) {
+          config.module.rules.push({
+            enforce: 'pre',
+            test: /\.(js|vue)$/,
+            loader: 'eslint-loader',
+            exclude: /(node_modules)/
+          })
+        } else {
+          config.plugins.push(new PurgeCssPlugin({
+            paths: glob.sync([
+              path.join(__dirname, 'components/**/*.vue'),
+              path.join(__dirname, 'default/**/*.vue'),
+              path.join(__dirname, 'pages/**/*.vue'),
+              path.join(__dirname, 'plugins/**/*.vue')
+            ]),
+            styleExtensions: ['.css'],
+            extractors: [
+              {
+                extractor: class {
+                  static extract (content) {
+                    return content.match(/[A-z0-9-:\\/]+/g)
+                  }
+                },
+                whitelist: ['body'],
+                extensions: ['vue']
+              }
+            ]
+          }))
+        }
       }
     }
   }
