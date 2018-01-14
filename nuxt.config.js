@@ -1,4 +1,5 @@
 const webpack = require('webpack')
+const tailwindConfig = require('./tailwind.js')
 const path = require('path')
 const glob = require('glob-all')
 const PurgeCssPlugin = require('purgecss-webpack-plugin')
@@ -10,10 +11,11 @@ module.exports = {
     title: 'Lichter.io - Alexander Lichter',
     meta: [
       {
-        charset: 'utf-8'
+        'http-equiv': 'x-ua-compatible', content: 'ie=edge'
       },
       {
-        'http-equiv': 'x-ua-compatible', content: 'ie=edge'
+        name: 'apple-mobile-web-app-capable',
+        content: true
       },
       {
         name: 'viewport',
@@ -24,28 +26,9 @@ module.exports = {
         content: 'Alexander Lichter'
       },
       {
-        hid: 'description',
-        name: 'description',
-        content: 'The personal website and online CV of Alexander Lichter, an impassioned developer'
-      },
-      {
-        hid: 'description',
-        name: 'description',
-        content: 'The personal website and online CV of Alexander Lichter, an impassioned developer'
-      },
-      {
         hid: 'og:title',
         property: 'og:title',
         content: 'Lichter.io - Alexander Lichter'
-      },
-      {
-        hid: 'og:description',
-        property: 'og:description',
-        content: 'The personal website and online CV of Alexander Lichter, an impassioned developer'
-      },
-      {
-        property: 'og:type',
-        content: 'website'
       },
       {
         hid: 'og:url',
@@ -55,33 +38,16 @@ module.exports = {
       {
         hid: 'og:image',
         property: 'og:image',
-        content: 'https://lichter.io/favicon-128.png'
+        content: 'https://lichter.io/icon.png'
       },
-      {name: 'application-name', content: 'Lichter.io'},
-      {name: 'msapplication-TileColor', content: '#FFFFFF'},
-      {name: 'msapplication-TileImage', content: '/mstile-144x144.png'},
-      {name: 'msapplication-square70x70logo', content: '/mstile-70x70.png'},
-      {name: 'msapplication-square150x150logo', content: '/mstile-150x150.png'},
-      {name: 'msapplication-wide310x150logo', content: '/mstile-310x150.png'},
-      {name: 'msapplication-square310x310logo', content: '/mstile-310x310.png'}
-
-    ],
-    link: [
-      {rel: 'icon', type: 'image/x-icon', href: '/favicon.ico'},
-      {rel: 'apple-touch-icon-precomposed', href: '/apple-touch-icon-57x57.png', sizes: '57x57'},
-      {rel: 'apple-touch-icon-precomposed', href: '/apple-touch-icon-114x114.png', sizes: '114x114'},
-      {rel: 'apple-touch-icon-precomposed', href: '/apple-touch-icon-72x72.png', sizes: '72x72'},
-      {rel: 'apple-touch-icon-precomposed', href: '/apple-touch-icon-144x144.png', sizes: '144x144'},
-      {rel: 'apple-touch-icon-precomposed', href: '/apple-touch-icon-60x60.png', sizes: '60x60'},
-      {rel: 'apple-touch-icon-precomposed', href: '/apple-touch-icon-120x120.png', sizes: '120x120'},
-      {rel: 'apple-touch-icon-precomposed', href: '/apple-touch-icon-76x76.png', sizes: '76x76'},
-      {rel: 'apple-touch-icon-precomposed', href: '/apple-touch-icon-152x152.png', sizes: '152x152'},
-      {rel: 'icon', type: 'image/png', href: '/favicon-196x196.png', sizes: '196x196'},
-      {rel: 'icon', type: 'image/png', href: '/favicon-96x96.png', sizes: '96x96'},
-      {rel: 'icon', type: 'image/png', href: '/favicon-32x32.png', sizes: '32x32'},
-      {rel: 'icon', type: 'image/png', href: '/favicon-16x16.png', sizes: '16x16'},
-      {rel: 'icon', type: 'image/png', href: '/favicon-128.png', sizes: '128x128'}
-
+      {
+        name: 'twitter:card',
+        content: 'summary'
+      },
+      {
+        name: 'twitter:creator',
+        content: '@TheAlexLichter'
+      }
     ]
   },
   /*
@@ -105,12 +71,30 @@ module.exports = {
     // Simple usage
     ['@nuxtjs/google-analytics', {
       id: 'UA-62902757-11'
-    }]
+    }],
+    '@nuxtjs/pwa'
   ],
   /*
   ** Customize the progress bar color
   */
-  loading: {color: '#3B8070'},
+  loading: {color: tailwindConfig.colors.red},
+  loadingIndicator: {
+    name: 'rectangle-bounce',
+    color: 'white',
+    background: tailwindConfig.colors.red
+  },
+  /*
+  ** Manifest
+   */
+  manifest: {
+    name: 'Lichter.io',
+    lang: 'en',
+    short_name: 'Lichter.io',
+    start_url: '/',
+    display: 'standalone',
+    background_color: tailwindConfig.colors['grey-lighter'],
+    theme_color: tailwindConfig.colors.red,
+  },
   /*
   ** Build configuration
   */
@@ -125,16 +109,16 @@ module.exports = {
       })
     ],
     postcss: [
-      // to edit target browsers: use "browserslist" field in package.json
       require('tailwindcss')('./tailwind.js'),
       require('autoprefixer')
     ],
     /*
     ** Run ESLint on save
+    ** Add PurgeCSS
     */
     extend (config, ctx) {
       if (ctx.isClient) {
-        if (ctx.dev) {
+        if (ctx.isDev) {
           config.module.rules.push({
             enforce: 'pre',
             test: /\.(js|vue)$/,
@@ -145,11 +129,12 @@ module.exports = {
           config.plugins.push(new PurgeCssPlugin({
             paths: glob.sync([
               path.join(__dirname, 'components/**/*.vue'),
-              path.join(__dirname, 'default/**/*.vue'),
+              path.join(__dirname, 'layouts/**/*.vue'),
               path.join(__dirname, 'pages/**/*.vue'),
               path.join(__dirname, 'plugins/**/*.vue')
             ]),
             styleExtensions: ['.css'],
+            whitelist: ['body', 'html'],
             extractors: [
               {
                 extractor: class {
@@ -157,7 +142,6 @@ module.exports = {
                     return content.match(/[A-z0-9-:\\/]+/g)
                   }
                 },
-                whitelist: ['body'],
                 extensions: ['vue']
               }
             ]

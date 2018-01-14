@@ -1,14 +1,12 @@
 <template>
-    <div>
-        <transition name="custom" enter-active-class="animated fadeIn"
-                    enter-to-class="animated pulse" leave-active-class="animated fadeOut"
-                    mode="out-in">
-            <div class="flex flex-col items-center" :key="currentUrlIndex">
-                <img :src="imagePath" width="124" height="124">
-                <p class="text-lg text-grey-darker">{{urls[currentUrlIndex].name}}</p>
-            </div>
-        </transition>
-    </div>
+    <transition name="custom" enter-active-class="animated fade-in"
+                enter-to-class="animated pulse" leave-active-class="animated fade-out"
+                mode="out-in">
+        <div class="flex flex-col items-center" :key="currentUrlIndex">
+            <img :src="imagePath" width="124" height="124">
+            <p class="text-lg text-grey-darker">{{urls[currentUrlIndex].name}}</p>
+        </div>
+    </transition>
 </template>
 <script>
   export default {

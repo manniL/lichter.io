@@ -8,7 +8,7 @@
             <h3 class="timeline-header" v-if="!period">{{title}}</h3>
             <h2 class="timeline-header mb-2" v-else>{{title}}</h2>
             <p>
-                <slot></slot>
+                <slot/>
             </p>
         </div>
     </li>

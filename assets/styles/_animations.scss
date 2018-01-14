@@ -1,8 +1,8 @@
-.bounceNice {
-  animation-name: bounceNice;
+.bounce-nice {
+  animation-name: bounce-nice;
   animation-timing-function: ease-in-out;
 
-  @keyframes bounceNice {
+  @keyframes bounce-nice {
     from, to {
       transform: translateY(0px);
     }
@@ -25,7 +25,7 @@
   }
 }
 
-@keyframes fadeIn {
+@keyframes fade-in {
   from {
     opacity: 0;
   }
@@ -35,11 +35,11 @@
   }
 }
 
-.fadeIn {
-  animation-name: fadeIn;
+.fade-in {
+  animation-name: fade-in;
 }
 
-@keyframes fadeOut {
+@keyframes fade-out {
   from {
     opacity: 1;
   }
@@ -49,11 +49,11 @@
   }
 }
 
-.fadeOut {
-  animation-name: fadeOut;
+.fade-out {
+  animation-name: fade-out;
 }
 
-@keyframes zoomIn {
+@keyframes zoom-in {
   from {
     opacity: 0;
     transform: scale3d(.3, .3, .3);
@@ -64,8 +64,8 @@
   }
 }
 
-.zoomIn {
-  animation-name: zoomIn;
+.zoom-in {
+  animation-name: zoom-in;
 }
 
 @keyframes pulse {

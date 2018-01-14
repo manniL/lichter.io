@@ -1,6 +1,6 @@
 <template>
     <div class="flex">
-        <rating-square v-for="i in (1,5)" :key="i" :hidden="i > rating"></rating-square>
+        <rating-square v-for="i in (1,5)" :key="i" :hidden="i > rating"/>
     </div>
 </template>
 <script>
@@ -16,9 +16,6 @@
           return value >= 0 && value <= 5
         }
       }
-    },
-    data () {
-      return {}
     }
   }
 </script>

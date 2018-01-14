@@ -10,7 +10,7 @@
                     If you want to take a look, here are the
                     <a href="https://mannil.github.io/php-is-dead-long-live-php/"
                        class="text-grey-darker hover:text-grey"
-                       rel="noreferrer noopener nofollow"
+                       rel="noreferrer noopener"
                        target="_blank">slides</a>!<br><br>
                     <b>Used Technologies</b><br>
                     Tailwind, Webpack, Reveal.js
@@ -24,7 +24,7 @@
                 </timeline-item>
                 <timeline-item when="October 2017" title="Contribution to Laravel">
                     Yeah, I <a href="https://github.com/laravel/framework/pull/21745"
-                               class="text-grey-darker hover:text-grey" rel="noreferrer noopener nofollow"
+                               class="text-grey-darker hover:text-grey" rel="noreferrer noopener"
                                target="_blank">did it</a>!
                     After using Laravel for quite a while in almost all my company and side projects, I finally
                     contributed to the well-known PHP framework.
@@ -43,13 +43,14 @@
                 </timeline-item>
                 <timeline-item when="August 2015" title="Founded Developmint">
                     Not even a month after finishing my Abitur, I founded my own company together with two friends.
-                    <a href="https://developmint.de" class="developmint no-underline" target="_blank">Developmint</a>
-                    <small class="text-xs text-grey">(fancy, eh?)</small>
+                    <a href="https://developmint.de" class="developmint no-underline" target="_blank"
+                       rel="noreferrer noopener">Developmint</a>
+                    <small class="text-xs text-grey"> (fancy, eh?)</small>
                     fulfills contract work for mid-sized businesses as well as single persons. Our core competencies are
                     web apps, websites and MacOS/iOS apps. We have done a range of work by now, ranging from simple but
                     good-looking portfolio pages to complex
                     business tools.<br><br>
-                    <strong>Interested?</strong> <a class="text-grey hover:text-grey-dark"
+                    <strong>Interested? </strong><a class="text-grey hover:text-grey-dark"
                                                     href="mailto:inquiry@lichter.io?subject=Inquiry&body=Hey%20Alex!%0D%0AI've%20seen%20your%20website%20and%20would%20like%20to%20talk%20to%20you%20about%20......."
                 >Drop me a line!</a><span class="no-underline"> 😉</span>
                 </timeline-item>
@@ -78,7 +79,7 @@
                 <timeline-item when="1999" title="Used a computer the first time">
                     Yeah, that's no joke! I played a Mario clone on my grandpa's PC.
                 </timeline-item>
-                <timeline-item when="1996" title="I was born 🤰🏼👶🏼"></timeline-item>
+                <timeline-item when="1996" title="I was born 🤰🏼👶🏼"/>
             </ul>
         </div>
     </section>

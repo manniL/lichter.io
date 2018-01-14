@@ -1,22 +1,15 @@
 <template>
-    <div>
-        <navbar></navbar>
-        <section class="flex flex-col items-center mt-6">
-            <h1 class="my-2">Nothing to see here!</h1>
-            <p class="leading-loose mt-4">Looks like you took a wrong path!</p>
-            <nuxt-link to="/" class="text-grey-darkest my-4">Back</nuxt-link>
-            <img src="https://thecatapi.com/api/images/get?format=src&type=gif">
-        </section>
-    </div>
+    <section class="flex flex-col items-center mt-6">
+        <h1 class="my-2">Nothing to see here!</h1>
+        <p class="leading-loose mt-4">Looks like you took a wrong path!</p>
+        <nuxt-link to="/" class="text-grey-darkest my-4">Get back</nuxt-link>
+        <img class="mb-8" src="https://thecatapi.com/api/images/get?format=src&type=gif">
+        <div class="block h-screen"></div>
+    </section>
 </template>
 
 <script>
-  import Navbar from '~/components/Navbar.vue'
-
   export default {
-    components: {
-      Navbar
-    },
     head () {
       return {
         title: '404 - No Lichter found!'
