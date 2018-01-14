@@ -14,15 +14,13 @@
 <script>
   import Intro from '~/components/Intro.vue'
   import AboutMe from '~/components/AboutMe.vue'
-  import Skills from '~/components/Skills.vue'
-  import Timeline from '~/components/Timeline.vue'
 
   export default {
     components: {
       Intro,
       AboutMe,
-      Skills,
-      Timeline
+      Skills: () => import(/* webpackChunkName: "below-fold" */ '~/components/Skills.vue'),
+      Timeline: () => import(/* webpackChunkName: "below-fold" */ '~/components/Timeline.vue')
     }
   }
 </script>
