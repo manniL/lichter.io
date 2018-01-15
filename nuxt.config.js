@@ -93,7 +93,7 @@ module.exports = {
     start_url: '/',
     display: 'standalone',
     background_color: tailwindConfig.colors['grey-lighter'],
-    theme_color: tailwindConfig.colors.red,
+    theme_color: tailwindConfig.colors.red
   },
   /*
   ** Build configuration
