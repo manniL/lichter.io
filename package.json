@@ -30,6 +30,7 @@
     "eslint-plugin-node": "^5.1.1",
     "eslint-plugin-promise": "^3.5.0",
     "eslint-plugin-standard": "^3.0.1",
+    "eslint-plugin-vue": "^4.2.2",
     "node-sass": "^4.7.2",
     "purgecss": "^0.20.0",
     "purgecss-webpack-plugin": "^0.20.0",
