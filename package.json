@@ -15,27 +15,26 @@
   "dependencies": {
     "cross-env": "^5.1.3",
     "glob-all": "^3.1.0",
-    "nuxt": "^1.1.1",
-    "style-ext-html-webpack-plugin": "^3.4.6"
+    "nuxt": "^1.3.0",
+    "style-ext-html-webpack-plugin": "^3.4.7"
   },
   "devDependencies": {
     "@nuxtjs/google-analytics": "^2.0.2",
     "@nuxtjs/pwa": "^2.0.5",
     "autoprefixer": "^7.2.5",
     "babel-eslint": "^8.2.1",
-    "eslint": "^4.15.0",
+    "eslint": "^4.16.0",
     "eslint-config-standard": "^10.2.1",
     "eslint-loader": "^1.9.0",
-    "eslint-plugin-html": "^4.0.1",
     "eslint-plugin-import": "^2.7.0",
     "eslint-plugin-node": "^5.1.1",
     "eslint-plugin-promise": "^3.5.0",
     "eslint-plugin-standard": "^3.0.1",
     "node-sass": "^4.7.2",
-    "purgecss": "^0.19.0",
-    "purgecss-webpack-plugin": "^0.19.0",
+    "purgecss": "^0.20.0",
+    "purgecss-webpack-plugin": "^0.20.0",
     "sass-loader": "^6.0.6",
-    "tailwindcss": "^0.4.0",
+    "tailwindcss": "^0.4.1",
     "vue-scroll-reveal": "^1.0.5",
     "vue-smooth-scroll": "^1.0.13"
   }
