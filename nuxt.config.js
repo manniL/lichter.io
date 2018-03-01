@@ -1,4 +1,3 @@
-const webpack = require('webpack')
 const tailwindConfig = require('./tailwind.js')
 const path = require('path')
 const glob = require('glob-all')
@@ -103,11 +102,6 @@ module.exports = {
     extractCSS: {
       allChunks: true
     },
-    plugins: [
-      new webpack.DefinePlugin({
-        VERSION: JSON.stringify(require('./package.json').version)
-      })
-    ],
     postcss: [
       require('tailwindcss')('./tailwind.js'),
       require('autoprefixer')

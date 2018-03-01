@@ -14,7 +14,7 @@
           href="https://github.com/manniL/lichter.io"
           target="_blank"
           rel="noopener"
-        ><span class="mr-1">v{{ version }}</span>
+        ><span class="mr-1">v{{ $options.version }}</span>
           <svg
             class="block w-4 h-4 fill-current"
             viewBox="0 100 1792 1792"
@@ -27,12 +27,9 @@
   </nav>
 </template>
 <script>
+import { version } from '~/package.json'
+
 export default {
-  data () {
-    return {
-      /* eslint-disable no-undef */
-      version: VERSION
-    }
-  }
+  version
 }
 </script>
