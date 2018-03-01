@@ -9,10 +9,10 @@
       :key="currentUrlIndex"
       class="flex flex-col items-center">
       <img
-        :src="imagePath"
+        :src="currentImage.url"
         width="124"
         height="124">
-      <p class="text-lg text-grey-darker">{{ urls[currentUrlIndex].name }}</p>
+      <p class="text-lg text-grey-darker">{{ currentImage.name }}</p>
     </div>
   </transition>
 </template>
@@ -43,8 +43,8 @@ export default {
     }
   },
   computed: {
-    imagePath () {
-      return this.urls[this.currentUrlIndex].url
+    currentImage () {
+      return this.urls[this.currentUrlIndex]
     }
   },
   created () {
