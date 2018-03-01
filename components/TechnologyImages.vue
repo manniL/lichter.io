@@ -6,8 +6,8 @@
     leave-active-class="animated fade-out"
     mode="out-in">
     <div
-      class="flex flex-col items-center"
-      :key="currentUrlIndex">
+      :key="currentUrlIndex"
+      class="flex flex-col items-center">
       <img
         :src="imagePath"
         width="124"

@@ -1,23 +1,23 @@
 <template>
   <li
-    class="timeline-item"
+    v-scroll-reveal
     :class="{'period': period}"
-    v-scroll-reveal>
+    class="timeline-item">
     <div
-      class="timeline-info"
-      v-if="!period">
+      v-if="!period"
+      class="timeline-info">
       <span>{{ when }}</span>
     </div>
     <div
-      class="timeline-marker"
-      v-if="!period"/>
+      v-if="!period"
+      class="timeline-marker"/>
     <div class="timeline-content">
       <h3
-        class="timeline-header"
-        v-if="!period">{{ title }}</h3>
+        v-if="!period"
+        class="timeline-header">{{ title }}</h3>
       <h2
-        class="timeline-header mb-2"
-        v-else>{{ title }}</h2>
+        v-else
+        class="timeline-header mb-2">{{ title }}</h2>
       <p>
         <slot/>
       </p>

@@ -1,9 +1,9 @@
 <template>
   <nav class="flex items-center justify-between flex-wrap bg-red p-4 sticky pin-t z-10">
     <nuxt-link
+      v-show="!showNavLinks"
       to="/"
-      class="flex items-center flex-no-shrink text-white mr-6 no-underline"
-      v-show="!showNavLinks">
+      class="flex items-center flex-no-shrink text-white mr-6 no-underline">
       <svg
         class="inline-block w-8 h-8 fill-current"
         viewBox="0 0 1792 1792"
@@ -13,10 +13,10 @@
       <span class="font-semibold text-xl tracking-tight">Lichter.io</span>
     </nuxt-link>
     <a
-      href="#top"
-      class="flex items-center flex-no-shrink text-white mr-6 no-underline"
       v-smooth-scroll="{ duration: 1000, offset: -50}"
-      v-show="showNavLinks">
+      v-show="showNavLinks"
+      href="#top"
+      class="flex items-center flex-no-shrink text-white mr-6 no-underline">
       <svg
         class="inline-block w-8 h-8 fill-current"
         viewBox="0 0 1792 1792"
@@ -26,8 +26,8 @@
       <span class="font-semibold text-xl tracking-tight">Lichter.io</span>
     </a>
     <div
-      class="block lg:hidden"
-      v-show="showNavLinks">
+      v-show="showNavLinks"
+      class="block lg:hidden">
       <button
         class="flex items-center px-3 py-2 border rounded text-red-lighter border-red-light hover:text-white hover:border-white"
         @click="toggleVisibility">
@@ -41,16 +41,16 @@
       </button>
     </div>
     <div
-      class="w-full lg:block flex-grow lg:flex lg:items-center lg:w-auto"
+      v-show="showNavLinks"
       :class="{'hidden': !isVisible}"
-      v-show="showNavLinks">
+      class="w-full lg:block flex-grow lg:flex lg:items-center lg:w-auto">
       <div class="text-sm lg:flex-grow">
         <a
-          class="block mt-4 lg:inline-block lg:mt-0 text-red-lighter hover:text-white mr-4 no-underline"
+          v-smooth-scroll="{ duration: 1000, offset: -150 }"
           v-for="item in navItems"
           :key="item"
           :href="`#${item.anchor}`"
-          v-smooth-scroll="{ duration: 1000, offset: -150 }"
+          class="block mt-4 lg:inline-block lg:mt-0 text-red-lighter hover:text-white mr-4 no-underline"
           @click="toggleVisibility">
           {{ item.name }}
         </a>
