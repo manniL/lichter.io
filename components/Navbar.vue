@@ -48,7 +48,7 @@
         <a
           v-smooth-scroll="{ duration: 1000, offset: -150 }"
           v-for="item in navItems"
-          :key="item"
+          :key="item.name"
           :href="`#${item.anchor}`"
           class="block mt-4 lg:inline-block lg:mt-0 text-red-lighter hover:text-white mr-4 no-underline"
           @click="toggleVisibility">
