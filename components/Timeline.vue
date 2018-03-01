@@ -1,7 +1,7 @@
 <template>
   <section class="container mx-auto bg-white pt-8">
     <div class="w-5/6 sm:w-2/3 mx-auto">
-      <h2 class="text-center mb-8 underline">My Timeline</h2>
+      <h2 class="text-center mb-8 mt-0 underline">My Timeline</h2>
       <ul class="timeline timeline-centered">
         <timeline-item
           when="December 2017"
@@ -121,12 +121,9 @@
   body {
     color: #768390;
   }
-
   h1, h2, h3, h4, h5, h6 {
     color: #3D4351;
-    margin-top: 0;
   }
-
 </style>
 <script>
 import TimelineItem from '~/components/TimelineItem.vue'

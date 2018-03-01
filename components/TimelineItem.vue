@@ -14,10 +14,10 @@
     <div class="timeline-content">
       <h3
         v-if="!period"
-        class="timeline-header">{{ title }}</h3>
+        class="timeline-header mt-0">{{ title }}</h3>
       <h2
         v-else
-        class="timeline-header mb-2">{{ title }}</h2>
+        class="timeline-header mt-0 mb-2">{{ title }}</h2>
       <p>
         <slot/>
       </p>
