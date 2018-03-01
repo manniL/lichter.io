@@ -128,7 +128,7 @@ module.exports = {
               path.join(__dirname, 'plugins/**/*.vue')
             ]),
             styleExtensions: ['.css'],
-            whitelist: ['body', 'html'],
+            whitelist: ['body', 'html', 'nuxt-progress'],
             extractors: [
               {
                 extractor: class {
