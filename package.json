@@ -20,7 +20,7 @@
   },
   "devDependencies": {
     "@nuxtjs/google-analytics": "^2.0.2",
-    "@nuxtjs/pwa": "^2.0.6",
+    "@nuxtjs/pwa": "^2.0.8",
     "autoprefixer": "^8.1.0",
     "babel-eslint": "^8.2.2",
     "eslint": "^4.18.2",

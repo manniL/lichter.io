@@ -10,23 +10,6 @@ module.exports = {
     meta: [
       {
         'http-equiv': 'x-ua-compatible', content: 'ie=edge'
-      },
-      {
-        name: 'author',
-        content: 'Alexander Lichter'
-      },
-      {
-        hid: 'og:url',
-        property: 'og:url',
-        content: 'https://lichter.io'
-      },
-      {
-        name: 'twitter:card',
-        content: 'summary'
-      },
-      {
-        name: 'twitter:creator',
-        content: '@TheAlexLichter'
       }
     ],
     __dangerouslyDisableSanitizers: ['script'],
@@ -63,9 +46,11 @@ module.exports = {
   meta: {
     name: 'Lichter.io - Alexander Lichter',
     author: 'Alexander Lichter',
-    ogHost: 'https://lichter.io',
     viewport: 'width=device-width, initial-scale=1, shrink-to-fit=no',
-    mobileAppIOs: true
+    mobileAppIOs: true,
+    ogHost: 'https://lichter.io',
+    twitterCard: 'summary',
+    twitterCreator: '@TheAlexLichter'
   },
   /*
   ** CSS Load
