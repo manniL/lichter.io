@@ -7,37 +7,18 @@ module.exports = {
   ** Headers of the page
   */
   head: {
-    title: 'Lichter.io - Alexander Lichter',
     meta: [
       {
         'http-equiv': 'x-ua-compatible', content: 'ie=edge'
-      },
-      {
-        name: 'apple-mobile-web-app-capable',
-        content: true
-      },
-      {
-        name: 'viewport',
-        content: 'width=device-width, initial-scale=1, shrink-to-fit=no'
       },
       {
         name: 'author',
         content: 'Alexander Lichter'
       },
       {
-        hid: 'og:title',
-        property: 'og:title',
-        content: 'Lichter.io - Alexander Lichter'
-      },
-      {
         hid: 'og:url',
         property: 'og:url',
         content: 'https://lichter.io'
-      },
-      {
-        hid: 'og:image',
-        property: 'og:image',
-        content: 'https://lichter.io/icon.png'
       },
       {
         name: 'twitter:card',
@@ -78,6 +59,13 @@ module.exports = {
           })
       }
     ]
+  },
+  meta: {
+    name: 'Lichter.io - Alexander Lichter',
+    author: 'Alexander Lichter',
+    ogHost: 'https://lichter.io',
+    viewport: 'width=device-width, initial-scale=1, shrink-to-fit=no',
+    mobileAppIOs: true
   },
   /*
   ** CSS Load
