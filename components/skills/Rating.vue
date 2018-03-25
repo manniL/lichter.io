@@ -7,10 +7,10 @@
   </div>
 </template>
 <script>
-import RatingSquare from '~/components//RatingSquare.vue'
+import RatingSquare from '~/components/skills/RatingSquare.vue'
 
 export default {
-  components: {RatingSquare},
+  components: { RatingSquare },
   props: {
     rating: {
       type: Number,
