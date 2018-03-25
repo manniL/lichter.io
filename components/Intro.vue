@@ -13,7 +13,7 @@
           Alexander Lichter
         </h1>
         <h2 class="font-hairline text-grey-dark text-base md:text-xl">
-          Developer &bull; Founder &bull; Gamer
+          Developer &bull; Founder &bull; Speaker
         </h2>
       </div>
       <div class="flex">
