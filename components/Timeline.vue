@@ -121,6 +121,7 @@
   body {
     color: #768390;
   }
+
   h1, h2, h3, h4, h5, h6 {
     color: #3D4351;
   }
@@ -130,6 +131,6 @@ import TimelineItem from '~/components/TimelineItem.vue'
 
 export default {
   name: 'Timeline',
-  components: {TimelineItem}
+  components: { TimelineItem }
 }
 </script>
