@@ -10,7 +10,7 @@
         v-text="title"/>
     </div>
     <p
-      :class="{'ml-1': !right, 'ml-auto mr-1':right}"
+      :class="{'ml-1': !right, 'ml-auto mr-1': right}"
       class="text-small"
       v-html="itemString"/>
   </div>

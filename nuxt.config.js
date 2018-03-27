@@ -63,8 +63,8 @@ module.exports = {
   ** Nuxt plugins
    */
   plugins: [
-    {src: '~/plugins/vue-smooth-scroll', ssr: false},
-    {src: '~/plugins/vue-scroll-reveal', ssr: false}
+    { src: '~/plugins/vue-smooth-scroll', ssr: false },
+    { src: '~/plugins/vue-scroll-reveal', ssr: false }
   ],
   /*
   ** Modules
@@ -79,7 +79,7 @@ module.exports = {
   /*
   ** Customize the progress bar color
   */
-  loading: {color: tailwindConfig.colors.red},
+  loading: { color: tailwindConfig.colors.red },
   loadingIndicator: {
     name: 'rectangle-bounce',
     color: 'white',
