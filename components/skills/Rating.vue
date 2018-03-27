@@ -1,7 +1,7 @@
 <template>
   <div class="flex">
     <rating-square
-      v-for="i in (1,5)"
+      v-for="i in 5"
       :key="i"
       :hidden="i > rating"/>
   </div>
