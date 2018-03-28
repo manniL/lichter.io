@@ -117,7 +117,6 @@ module.exports = {
   ** Build configuration
   */
   build: {
-    vendor: ['vue-smooth-scroll', 'vue-scroll-reveal'],
     extractCSS: {
       allChunks: true
     },
