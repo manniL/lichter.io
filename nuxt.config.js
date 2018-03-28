@@ -123,6 +123,18 @@ export default {
     extractCSS: {
       allChunks: true
     },
+    optimization: {
+      splitChunks: {
+        cacheGroups: {
+          styles: {
+            name: 'styles',
+            test: /\.css$/,
+            chunks: 'all',
+            enforce: true
+          }
+        }
+      }
+    },
     postcss: [
       tailwindcss('./tailwind.js'),
       autoprefixer
@@ -141,7 +153,6 @@ export default {
             exclude: /(node_modules)/
           })
         } else {
-          console.log('PROD')
           config.plugins.push(new PurgecssPlugin({
             paths: glob.sync([
               path.join(__dirname, 'components/**/*.vue'),
