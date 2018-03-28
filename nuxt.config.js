@@ -132,7 +132,7 @@ export default {
     ** Add PurgeCSS
     */
     extend (config, ctx) {
-      if (ctx.client) {
+      if (ctx.isClient) {
         if (ctx.isDev) {
           config.module.rules.push({
             enforce: 'pre',
@@ -141,6 +141,7 @@ export default {
             exclude: /(node_modules)/
           })
         } else {
+          console.log('PROD')
           config.plugins.push(new PurgecssPlugin({
             paths: glob.sync([
               path.join(__dirname, 'components/**/*.vue'),
