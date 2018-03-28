@@ -1,8 +1,11 @@
-const tailwindConfig = require('./tailwind.js')
-const path = require('path')
-const glob = require('glob-all')
-const PurgeCssPlugin = require('purgecss-webpack-plugin')
-module.exports = {
+import path from 'path'
+import glob from 'glob-all'
+import tailwindcss from 'tailwindcss'
+import autoprefixer from 'autoprefixer'
+import PurgecssPlugin from 'purgecss-webpack-plugin/lib/purgecss-webpack-plugin.es'
+import { colors } from './tailwind.js'
+
+export default {
   /*
   ** Headers of the page
   */
@@ -79,11 +82,11 @@ module.exports = {
   /*
   ** Customize the progress bar color
   */
-  loading: { color: tailwindConfig.colors.red },
+  loading: { color: colors.red },
   loadingIndicator: {
     name: 'rectangle-bounce',
     color: 'white',
-    background: tailwindConfig.colors.red
+    background: colors.red
   },
   /*
   ** Manifest
@@ -94,8 +97,8 @@ module.exports = {
     short_name: 'Lichter.io',
     start_url: '/',
     display: 'standalone',
-    background_color: tailwindConfig.colors['grey-lighter'],
-    theme_color: tailwindConfig.colors.red
+    background_color: colors['grey-lighter'],
+    theme_color: colors.red
   },
   /*
    * Render (preload & prefetch)
@@ -121,15 +124,15 @@ module.exports = {
       allChunks: true
     },
     postcss: [
-      require('tailwindcss')('./tailwind.js'),
-      require('autoprefixer')
+      tailwindcss('./tailwind.js'),
+      autoprefixer
     ],
     /*
     ** Run ESLint on save
     ** Add PurgeCSS
     */
     extend (config, ctx) {
-      if (ctx.isClient) {
+      if (ctx.client) {
         if (ctx.isDev) {
           config.module.rules.push({
             enforce: 'pre',
@@ -138,7 +141,7 @@ module.exports = {
             exclude: /(node_modules)/
           })
         } else {
-          config.plugins.push(new PurgeCssPlugin({
+          config.plugins.push(new PurgecssPlugin({
             paths: glob.sync([
               path.join(__dirname, 'components/**/*.vue'),
               path.join(__dirname, 'layouts/**/*.vue'),
