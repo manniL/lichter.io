@@ -98,6 +98,22 @@ module.exports = {
     theme_color: tailwindConfig.colors.red
   },
   /*
+   * Render (preload & prefetch)
+   */
+  render: {
+    bundleRenderer: {
+      shouldPrefetch: (file, type) => {
+        if (type === 'script') {
+          const ignoredRoutes = ['legal']
+          if (ignoredRoutes.some(r => file.includes(r))) {
+            return false
+          }
+        }
+        return ['script', 'style', 'font'].includes(type)
+      }
+    }
+  },
+  /*
   ** Build configuration
   */
   build: {
