@@ -19,8 +19,8 @@ export default {
   components: {
     Intro,
     AboutMe,
-    Skills: () => import(/* webpackChunkName: "below-fold" */ '~/components/Skills.vue'),
-    Timeline: () => import(/* webpackChunkName: "below-fold" */ '~/components/Timeline.vue')
+    Skills: () => import('~/components/Skills.vue'),
+    Timeline: () => import('~/components/Timeline.vue')
   }
 }
 </script>
