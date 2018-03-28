@@ -2,8 +2,8 @@
   <section class="flex flex-wrap bg-grey-lighter py-6">
     <div class="flex flex-col justify-around items-center w-5/6 md:w-1/2 mx-auto text-center animated zoom-in">
       <img
-        src="/img/me.png"
-        srcset="/img/me@2x.png 2x"
+        src="/img/me.jpg"
+        srcset="/img/me@2x.jpg 2x"
         width="256"
         height="256"
         alt="Alexander Lichter"
