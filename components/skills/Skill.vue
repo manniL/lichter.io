@@ -1,8 +1,8 @@
 <template>
   <div class="flex flex-col w-5/6 md:w-1/3 items-center lg:items-stretch">
     <div
-      :class="{'flex-col-reverse lg:flex-row': !right, 'flex-col lg:flex-row-reverse': right}"
-      class="flex items-center justify-start my-6">
+      :class="{'lg:flex-row': !right, 'lg:flex-row-reverse': right}"
+      class="flex flex-col-reverse items-center justify-start my-6">
       <rating :rating="rating"/>
       <h2
         :class="{'lg:ml-3': !right, 'lg:mr-3': right}"
@@ -10,8 +10,8 @@
         v-text="title"/>
     </div>
     <p
-      :class="{'ml-1': !right, 'ml-auto mr-1': right}"
-      class="text-small"
+      :class="{'lg:mr-auto ml-1': !right, 'lg:ml-auto mr-1': right}"
+      class="text-small text-center lg:text-left"
       v-html="itemString"/>
   </div>
 </template>
