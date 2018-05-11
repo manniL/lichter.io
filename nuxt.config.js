@@ -45,7 +45,8 @@ export default {
               'https://linkedin.com/in/alexanderlichter'
             ]
           })
-      }
+      },
+      { src: 'https://unpkg.com/smoothscroll-polyfill@0.4.3/dist/smoothscroll.min.js' }
     ]
   },
   meta: {
@@ -69,7 +70,6 @@ export default {
   ** Nuxt plugins
    */
   plugins: [
-    { src: '~/plugins/vue-smooth-scroll', ssr: false },
     { src: '~/plugins/vue-scroll-reveal', ssr: false }
   ],
   /*
@@ -123,19 +123,10 @@ export default {
   ** Build configuration
   */
   build: {
-    extractCSS: {
-      allChunks: true
-    },
+    extractCSS: true,
     optimization: {
       splitChunks: {
-        cacheGroups: {
-          styles: {
-            name: 'styles',
-            test: /\.css$/,
-            chunks: 'all',
-            enforce: true
-          }
-        }
+        name: true
       }
     },
     postcss: [
