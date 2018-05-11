@@ -13,30 +13,30 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
-    "cross-env": "^5.1.4",
+    "cross-env": "^5.1.5",
     "glob-all": "^3.1.0",
-    "nuxt-edge": "^2.0.0-25371252.948d566"
+    "nuxt-edge": "latest"
   },
   "devDependencies": {
     "@nuxtjs/google-analytics": "^2.0.2",
     "@nuxtjs/pwa": "^2.0.8",
-    "autoprefixer": "^8.2.0",
-    "babel-eslint": "^8.2.2",
+    "autoprefixer": "^8.4.1",
+    "babel-eslint": "^8.2.3",
     "eslint": "^4.19.1",
     "eslint-config-standard": "^11.0.0",
     "eslint-loader": "^2.0.0",
-    "eslint-plugin-import": "^2.9.0",
+    "eslint-plugin-import": "^2.11.0",
     "eslint-plugin-node": "^6.0.1",
     "eslint-plugin-promise": "^3.7.0",
-    "eslint-plugin-standard": "^3.0.1",
-    "eslint-plugin-vue": "^4.4.0",
-    "husky": "^0.15.0-rc.13",
-    "node-sass": "^4.8.3",
+    "eslint-plugin-standard": "^3.1.0",
+    "eslint-plugin-vue": "^4.5.0",
+    "husky": "^1.0.0-rc.4",
+    "node-sass": "^4.9.0",
     "purgecss": "^0.21.0",
-    "purgecss-webpack-plugin": "^0.22.0",
-    "sass-loader": "^6.0.7",
-    "tailwindcss": "^0.5.1",
-    "vue-scroll-reveal": "^1.0.7",
+    "purgecss-webpack-plugin": "^1.0.2",
+    "sass-loader": "^7.0.1",
+    "tailwindcss": "^0.5.3",
+    "vue-scroll-reveal": "^1.0.8",
     "vue-smooth-scroll": "^1.0.13"
   },
   "husky": {
