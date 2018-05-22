@@ -1,6 +1,6 @@
 {
   "name": "lichter.io",
-  "version": "2.0.10",
+  "version": "2.0.11",
   "description": "The personal website and online CV of Alexander Lichter, a passionate developer",
   "author": "Alexander Lichter <hello@lichter.io>",
   "private": true,
@@ -34,7 +34,7 @@
     "husky": "^1.0.0-rc.4",
     "node-sass": "^4.9.0",
     "purgecss": "^0.21.0",
-    "purgecss-webpack-plugin": "^0.22.1",
+    "purgecss-webpack-plugin": "^1.0.3",
     "sass-loader": "^7.0.1",
     "tailwindcss": "^0.5.3",
     "vue-scroll-reveal": "^1.0.8"
