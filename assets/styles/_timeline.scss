@@ -1,8 +1,10 @@
 .timeline {
   @apply .list-reset .w-full;
+  color: #768390;
 
   line-height: 1.4em;
   h1, h2, h3, h4, h5, h6 {
+    color: #3D4351;
     line-height: inherit;
   }
 }
