@@ -17,6 +17,7 @@
     "glob-all": "^3.1.0",
     "nuxt-edge": "latest",
     "vue-cookieconsent-component": "^1.1.0",
+    "vue-if-bot": "^1.0.0",
     "vue-next-level-scroll": "^1.1.0"
   },
   "devDependencies": {
