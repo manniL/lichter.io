@@ -15,8 +15,8 @@
   "dependencies": {
     "cross-env": "^5.1.5",
     "glob-all": "^3.1.0",
-    "nuxt": "^1.4.0",
-    "style-ext-html-webpack-plugin": "^3.4.7"
+    "nuxt-edge": "latest",
+    "vue-next-level-scroll": "^1.1.0"
   },
   "devDependencies": {
     "@nuxtjs/google-analytics": "^2.0.2",
@@ -37,8 +37,7 @@
     "purgecss-webpack-plugin": "^0.22.1",
     "sass-loader": "^7.0.1",
     "tailwindcss": "^0.5.3",
-    "vue-scroll-reveal": "^1.0.8",
-    "vue-smooth-scroll": "^1.0.13"
+    "vue-scroll-reveal": "^1.0.8"
   },
   "husky": {
     "hooks": {

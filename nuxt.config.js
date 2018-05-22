@@ -1,8 +1,11 @@
-const tailwindConfig = require('./tailwind.js')
-const path = require('path')
-const glob = require('glob-all')
-const PurgeCssPlugin = require('purgecss-webpack-plugin')
-module.exports = {
+import path from 'path'
+import glob from 'glob-all'
+import tailwindcss from 'tailwindcss'
+import autoprefixer from 'autoprefixer'
+import PurgecssPlugin from 'purgecss-webpack-plugin/lib/purgecss-webpack-plugin.es'
+import { colors } from './tailwind.js'
+
+export default {
   /*
   ** Headers of the page
   */
@@ -37,10 +40,13 @@ module.exports = {
             'sameAs': [
               'https://twitter.com/TheAlexLichter',
               'https://github.com/manniL',
+              'https://developmint.de/',
+              'https://stackoverflow.com/users/3975480/mannil',
               'https://linkedin.com/in/alexanderlichter'
             ]
           })
-      }
+      },
+      { src: 'https://unpkg.com/smoothscroll-polyfill@0.4.3/dist/smoothscroll.min.js' }
     ]
   },
   meta: {
@@ -50,7 +56,8 @@ module.exports = {
     mobileAppIOs: true,
     ogHost: 'https://lichter.io',
     twitterCard: 'summary',
-    twitterCreator: '@TheAlexLichter'
+    twitterCreator: '@TheAlexLichter',
+    twitterSite: '@TheAlexLichter'
   },
   /*
   ** CSS Load
@@ -63,7 +70,6 @@ module.exports = {
   ** Nuxt plugins
    */
   plugins: [
-    { src: '~/plugins/vue-smooth-scroll', ssr: false },
     { src: '~/plugins/vue-scroll-reveal', ssr: false }
   ],
   /*
@@ -85,11 +91,11 @@ module.exports = {
   /*
   ** Customize the progress bar color
   */
-  loading: { color: tailwindConfig.colors.red },
+  loading: { color: colors.red },
   loadingIndicator: {
     name: 'rectangle-bounce',
     color: 'white',
-    background: tailwindConfig.colors.red
+    background: colors.red
   },
   /*
   ** Manifest
@@ -100,8 +106,8 @@ module.exports = {
     short_name: 'Lichter.io',
     start_url: '/',
     display: 'standalone',
-    background_color: tailwindConfig.colors['grey-lighter'],
-    theme_color: tailwindConfig.colors.red
+    background_color: colors['grey-lighter'],
+    theme_color: colors.red
   },
   /*
    * Render (preload & prefetch)
@@ -123,13 +129,15 @@ module.exports = {
   ** Build configuration
   */
   build: {
-    vendor: ['vue-smooth-scroll', 'vue-scroll-reveal'],
-    extractCSS: {
-      allChunks: true
+    extractCSS: true,
+    optimization: {
+      splitChunks: {
+        name: true
+      }
     },
     postcss: [
-      require('tailwindcss')('./tailwind.js'),
-      require('autoprefixer')
+      tailwindcss('./tailwind.js'),
+      autoprefixer
     ],
     /*
     ** Run ESLint on save
@@ -145,7 +153,7 @@ module.exports = {
             exclude: /(node_modules)/
           })
         } else {
-          config.plugins.push(new PurgeCssPlugin({
+          config.plugins.push(new PurgecssPlugin({
             paths: glob.sync([
               path.join(__dirname, 'components/**/*.vue'),
               path.join(__dirname, 'layouts/**/*.vue'),
