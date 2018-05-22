@@ -22,3 +22,9 @@ $durations: (.5, 1, 2, 5, 10);
 }
 
 @include generate-animation-durations();
+
+//Height fix for anchors
+
+a[id] {
+  @apply .-mt-8 .pt-8;
+}
