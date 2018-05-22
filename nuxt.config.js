@@ -72,7 +72,13 @@ module.exports = {
   modules: [
     // Simple usage
     ['@nuxtjs/google-analytics', {
-      id: 'UA-62902757-11'
+      id: 'UA-62902757-11',
+      debug: {
+        sendHitTask: process.env.NODE_ENV === 'production'
+      },
+      set: [
+        { field: 'anonymizeIp', value: true }
+      ]
     }],
     '@nuxtjs/pwa'
   ],
