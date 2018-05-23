@@ -1,5 +1,10 @@
 .cookie-consent {
-  @apply .w-full .py-4 .z-10 .flex .items-center .justify-center .text-center .bg-red-darker .text-red-lightest;
+  @apply .w-full .py-2 .z-10 .flex .items-center .justify-center .bg-red-darker .text-red-lightest .text-xs;
+
+  @screen md {
+    @apply .text-sm .text-center;
+  }
+
   position: sticky;
 
   &-link {
@@ -11,11 +16,16 @@
 
   &-message,
   &-compliance {
-    @apply .mx-2 .my-1 .px-4;
+    @apply .mx-2 .my-1 .px-2;
+
+    @screen md {
+      @apply .px-4;
+    }
   }
 
   &-compliance {
-    @apply .cursor-pointer .text-white .px-4 .py-2 .rounded .border-white .border;
+    @apply .cursor-pointer .text-white .py-2 .rounded .border-white .border;
+
     &:hover {
       @apply bg-white .text-black;
     }
