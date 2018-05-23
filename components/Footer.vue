@@ -4,8 +4,15 @@
       <div class="text-sm flex-grow">
         <nuxt-link
           to="/legal"
+          rel="nofollow"
           class="inline-block mt-0 text-indigo-lighter hover:text-white no-underline">
           Legal notice
+        </nuxt-link>
+        <nuxt-link
+          to="/privacy"
+          rel="nofollow"
+          class="inline-block mt-0 text-indigo-lighter hover:text-white no-underline">
+          Privacy policy
         </nuxt-link>
       </div>
       <div class="flex items-center flex-no-shrink text-white">
