@@ -45,7 +45,7 @@
       <a href="https://travis-ci.org/" rel="noreferrer noopener nofollow" target="_blank">Travis CI</a><br>
       <a href="http://fontawesome.io/icons/" rel="noreferrer noopener nofollow" target="_blank">FontAwesome</a><br>
       <br><br>
-      <h2> Disclaimer</h2>
+      <h2>Disclaimer</h2>
       <br>
       <b>Accountability for content</b>
       <br>
@@ -83,6 +83,27 @@
       either directly or indirectly for earnings.
       Unauthorized utilization of copyrighted works is punishable (&sect; 106 of
       the copyright law).
+      <br>
+      <br>
+      <b>Licensing</b>
+      <br>
+      <ul>
+        <li>
+          Source code of this page (can be found on
+          <a href="https://github.com/manniL/lichter.io" rel="noreferrer noopener nofollow" target="_blank">GitHub</a>
+          -
+          <a href="https://raw.githubusercontent.com/manniL/lichter.io/master/LICENSE"
+             rel="noreferrer noopener nofollow"
+             target="_blank">MIT</a>
+        </li>
+        <li>
+          Text, journalistic and other written content: Alexander Lichter -
+          <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"
+             rel="noreferrer noopener nofollow"
+             target="_blank">CC-BY-NC-SA 4.0</a>
+        </li>
+        <li>Text on the legal notice and privacy page: Alexander Lichter - All rights reserved</li>
+      </ul>
     </div>
   </section>
 </template>
