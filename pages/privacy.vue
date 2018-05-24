@@ -20,7 +20,10 @@
 
     <h3 class="font-normal text-xl py-4">How do we collect your data?</h3>
     <p>
-      We only collect data anonymized through Google Analytics (see 3.). We do not collect any personal data.<br>
+      We collect data you provide us when you contact us (eg. through the contact form, e-mail, telephone or social
+      media).<br>
+      Furthermore we collect data anonymized through Google Analytics (see 3.). We do not collect any personal
+      data.<br>
       Technical data (like the OS, screen size, language preference, browser) is collected automatically to improve your
       website experience.
     </p>
@@ -34,15 +37,16 @@
     <h3 class="font-normal text-xl py-4">What are your rights?</h3>
     <p>
       You have the right to request information about purpose, origin and recipients of your data at any given time and
-      free of charge.
-      You can demand correction, locking or deletion of your data. To file a request, simply send us a mail to
-      privacy@developmint.de.
+      free of charge.<br>
+      You can demand correction, locking or deletion of your data.<br>
+      Also you can revoke given consents for processing data. <br>
+      To file a request, simply send a mail to privacy@developmint.de.<br>
       But as we don't save any personal data through Lichter.io, we will likely tell you that we don't have any data
-      about you.
-
-      In case we don’t comply with your request, you have the right to complain at the responsible regulating authority.
-      Of course, it’s in our interest to guarantee your personal data privacy.
-      If you have any questions please feel free to contact us via privacy@developmint.de.
+      about you.<br>
+      <br>
+      In case we don’t comply with your request, you have the right to complain at the responsible regulating authority.<br>
+      Of course, it’s in our interest to guarantee your personal data privacy.<br>
+      If you have any questions please feel free to contact us via privacy@developmint.de.<br>
     </p>
 
     <h3 class="font-normal text-xl py-4">Legal basis</h3>
@@ -59,20 +63,33 @@
       Cookies are small pieces of information which are stored as file and placed on your device by a Website.<br>
       They do not harm your device and do not contain viruses or malware.<br>
       Cookies can be read by the Website on your subsequent visits.<br>
-      Cookies will be deleted after a defined time.<br>
+      Cookies will be deleted after a defined time. You can do this also manually in your browser<br>
       <br>
       We use Cookies to save your preferences (f.ex. which consents you gave) and to create statistics and evaluations
       concerning our Website usage so we can further optimize Lichter.io (see 3.).<br>
-      This is allowed through the DSGVO because we can prove legitimate interests.<br>
+      This is allowed through the GDPR because we can prove legitimate interests.<br>
       The Cookies allow us to detect if you have visited the page before. This does not mean that we know your identity
       because of these Cookies.
     </p>
 
-    <h2 class="font-normal text-2xl py-4">3. Analytics Tools, Advertising & Affiliate Programs</h2>
+    <h3 class="font-normal text-xl py-4">Contacting us</h3>
+    <p>
+      When you contact us (f.ex. through a contact form, via e-mail, telephone or social media), we will use the data
+      you provide us only to process that contact request. The data could be saved in a Customer-Relationship-Management
+      system ("CRM") or similar organization system.<br>
+      We delete the data as soon as they are not necessary anymore. We verify the necessity every year - furthermore,
+      the legal archiving obligations apply.
+      No data is transferred to third parties.<br>
+      Nor is any of this information matched to any information that may be collected by other components of our
+      website.
+    </p>
+
+    <h2 class="font-normal text-2xl py-4">3. Analytics Tools</h2>
 
     <h3 class="font-normal text-xl py-4">Google Analytics</h3>
     <p>
       Our Website is using Google Analytics, an analytics tool from Google Inc. (“Google”).<br>
+      In this context, pseudonymized user profiles are created and cookies (see 2.) are used.<br>
       The information gathered by the cookie is sent to Google’s servers located in the USA and stored there.<br>
       <br>
       The following data will be gathered and submitted to Google:<br>
@@ -82,12 +99,13 @@
       <li>Browser type and version</li>
       <li>Operating system</li>
       <li>Referrer-URL (previously visited site)</li>
-      <li>anonymized IP address</li>
-      <li>time of request</li>
+      <li>Current page</li>
+      <li>Anonymized IP address</li>
+      <li>Time of request</li>
     </ul>
     <br>
     <p>
-      The imformation will be used to analyze the usage of our Lichter.io, to create reports about the user’s activity
+      The information will be used to analyze the usage of Lichter.io, to create reports about the user’s activity
       and to offer other services that are related to our user’s activity and the usage of the web.<br>
       Your IP address will not be consolidated with other data stored on Google’s servers.<br>
       <br>
@@ -127,7 +145,6 @@
 
       last edited: 24.05.2018
     </p>
-
   </div>
 </template>
 
