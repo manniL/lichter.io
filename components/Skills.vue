@@ -54,9 +54,9 @@ export default {
       rating: 4,
       items: [
         { text: 'Vue.js', strong: true },
-        { text: 'ES6' },
+        { text: 'Nuxt.js' },
         { text: 'Node.js' },
-        { text: 'jQuery' }
+        { text: 'ES6' }
       ]
     },
     {
