@@ -46,9 +46,10 @@ export default {
             ]
           })
       },
-      { src: 'https://unpkg.com/smoothscroll-polyfill@0.4.3/dist/smoothscroll.min.js' }
+      { src: 'https://unpkg.com/smoothscroll-polyfill@0.4.3/dist/smoothscroll.min.js', defer: true }
     ]
   },
+
   meta: {
     name: 'Lichter.io - Alexander Lichter',
     author: 'Alexander Lichter',
@@ -59,24 +60,28 @@ export default {
     twitterCreator: '@TheAlexLichter',
     twitterSite: '@TheAlexLichter'
   },
+
   /*
-  ** CSS Load
+   * CSS Load
    */
+
   css: [
-    // SCSS file in the project
     '@/assets/styles/app.scss'
   ],
+
   /*
-  ** Nuxt plugins
+   * Nuxt plugins
    */
+
   plugins: [
     { src: '~/plugins/vue-scroll-reveal', ssr: false }
   ],
+
   /*
-  ** Modules
+   * Modules
    */
+
   modules: [
-    // Simple usage
     ['@nuxtjs/google-analytics', {
       id: 'UA-62902757-11',
       disabled: () => document.cookie.indexOf('ga_optout=true') !== -1,
@@ -89,9 +94,10 @@ export default {
     }],
     '@nuxtjs/pwa'
   ],
+
   /*
-  ** Customize the progress bar color
-  */
+   * Customize the progress bar color
+   */
   loading: { color: colors.red },
   loadingIndicator: {
     name: 'rectangle-bounce',
