@@ -11,17 +11,15 @@
   position: sticky;
 }
 
-$durations: (.5, 1, 2, 5, 10);
-
-@mixin generate-animation-durations() {
-  @each $duration in $durations {
-    .animation-duration-#{$duration} {
-      animation-duration: #{$duration}s;
-    }
+@variants hover, group-hover {
+  .rotate-45 {
+    transform: rotate(45deg);
   }
 }
 
-@include generate-animation-durations();
+.transition-all-300 {
+  transition: all .3s;
+}
 
 //Height fix for anchors
 

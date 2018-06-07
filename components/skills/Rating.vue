@@ -1,15 +1,8 @@
-<template>
-  <div class="flex">
-    <rating-square
-      v-for="i in 5"
-      :key="i"
-      :hidden="i > rating"/>
-  </div>
-</template>
 <script>
 import RatingSquare from '~/components/skills/RatingSquare.vue'
 
 export default {
+  functional: true,
   components: { RatingSquare },
   props: {
     rating: {
@@ -17,6 +10,15 @@ export default {
       required: true,
       validator: (value) => value >= 0 && value <= 5
     }
+  },
+  render (h, { props }) {
+    const squares = Array
+      .from({ length: 5 }, (v, i) => i + 1)
+      .map(i => h(RatingSquare, { props: { hidden: i > props.rating } }))
+
+    return h('div', {
+      class: 'flex group'
+    }, squares)
   }
 }
 </script>

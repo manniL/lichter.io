@@ -1,17 +1,10 @@
-<template>
-  <div class="w-8 h-8 border-4 border-red-darkest shadow-lg mx-1 bg-transparent">
-    <div
-      :class="{'hidden': hidden}"
-      class="absolute w-4 h-4 m-1 bg-red-darker shadow-lg"/>
-  </div>
-</template>
 <script>
 export default {
-  props: {
-    hidden: {
-      type: Boolean,
-      default: false
-    }
+  functional: true,
+  render (h, { props }) {
+    const outerClasses = 'w-8 h-8 border-4 border-red-darkest shadow-lg mx-1 bg-transparent group-hover:rotate-45 transition-all-300'
+    const innerClasses = ['absolute w-4 h-4 m-1 bg-red-darker shadow-lg', { 'hidden': props.hidden }]
+    return h('div', { class: outerClasses }, [h('div', { class: innerClasses }, '')])
   }
 }
 </script>
