@@ -12,7 +12,7 @@
         <br><br>
         When developing web apps, I mostly rely on the <span class="text-grey-darkest">Laravel</span>
         framework for the backend.
-        In terms of frontend, <span class="text-grey-darkest">Vue.js</span> is my favorite choice,
+        In terms of frontend, <span class="text-grey-darkest">Nuxt.js</span> is my favorite choice,
         often together with two great CSS frameworks: The well-known
         <span class="text-grey-darkest">Bootstrap</span> or the newly released
         <span class="text-grey-darkest">TailwindCSS</span>
