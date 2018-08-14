@@ -52,23 +52,26 @@
       <div>
         <a
           class="block mt-4 lg:inline-block lg:mt-0 text-red-lighter hover:text-white mr-4 no-underline cursor-pointer"
-          @click="oops">
-          {{ oopsText }}
+          href="https://blog.lichter.io?ref=lichter.io"
+          target="_blank">
+          Finally I have a blog too!
         </a>
       </div>
     </div>
   </nav>
 </template>
 <script>
+import VueNextLevelScroll from 'vue-next-level-scroll'
+import Icon from '~/components/Icon.js'
+
 export default {
   components: {
-    Icon: () => import('~/components/Icon'),
-    VueNextLevelScroll: () => import('~/node_modules/vue-next-level-scroll')
+    Icon,
+    VueNextLevelScroll
   },
   data () {
     return {
       isVisible: false,
-      showOopsText: false,
       navItems: [
         {
           name: 'About me',
@@ -86,9 +89,6 @@ export default {
     }
   },
   computed: {
-    oopsText () {
-      return this.showOopsText ? 'Nah, I don\'t have one yet!' : 'I have a Blog too!'
-    },
     showNavLinks () {
       return this.$route.path === '/'
     }
@@ -96,10 +96,6 @@ export default {
   methods: {
     toggleVisibility () {
       this.isVisible = !this.isVisible
-    },
-    oops () {
-      this.showOopsText = !this.showOopsText
-      this.$ga.event('user-interactions', 'easter-eggs', 'blog', this.showOopsText)
     }
   }
 }

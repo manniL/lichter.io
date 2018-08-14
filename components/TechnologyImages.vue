@@ -47,7 +47,7 @@ export default {
       return this.urls[this.currentUrlIndex]
     }
   },
-  created () {
+  mounted () {
     setInterval(this.incrementUrlIndex, this.interval * 1000)
   },
   methods: {

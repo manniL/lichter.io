@@ -13,7 +13,6 @@
 
 <script>
 import Navbar from '~/components/Navbar'
-import AppFooter from '~/components/Footer'
 import Consent from '~/node_modules/vue-cookieconsent-component/src/components/CookieConsent'
 import IfBot from 'vue-if-bot/dist/vue-if-bot.es'
 
@@ -22,7 +21,7 @@ export default {
     IfBot,
     Consent,
     Navbar,
-    AppFooter
+    AppFooter: () => import('~/components/Footer')
   }
 }
 </script>
