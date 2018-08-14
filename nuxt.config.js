@@ -142,6 +142,7 @@ export default {
         name: true
       }
     },
+    transpile: [/vue-if-bot/],
     postcss: [
       tailwindcss('./tailwind.js'),
       autoprefixer
