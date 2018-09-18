@@ -4,6 +4,21 @@
       <h2 class="text-center mb-8 mt-0 underline">My Timeline</h2>
       <ul class="timeline timeline-centered">
         <timeline-item
+          when="August 2018"
+          title="Created my own blog">
+          That was a long term goal I had. Building my own blog system with the tools I use in daily work
+          and finally write about interesting technical stuff (and maybe other topics as well)!
+          After working towards this goal (when I had time) for half a year, I eventually launched the
+          blog. On <a
+            href="https://blog.lichter.io/?ref=lichter.io-tl"
+            class="text-grey-darker hover:text-grey"
+            rel="noopener"
+            target="_blank">blog.Lichter.io</a> you can find posts about Javascript, PHP, Nuxt.js, Vue.js, Laravel,
+            meta-topics (related to programming) and many other subjects! I highly recommend to check it out.<br><br>
+          <b>Used Technologies</b><br>
+          Nuxt.js, Tailwind, Laravel
+        </timeline-item>
+        <timeline-item
           when="December 2017"
           title="Held my first talk">
           After talking with a lot of people about my choice of programming languages, I decided to work on a
