@@ -90,7 +90,7 @@
       <ul>
         <li>
           Source code of this page (can be found on
-          <a href="https://github.com/manniL/lichter.io" rel="noreferrer noopener nofollow" target="_blank">GitHub</a>
+          <a href="https://github.com/manniL/lichter.io" rel="noreferrer noopener nofollow" target="_blank">GitHub</a>)
           -
           <a href="https://raw.githubusercontent.com/manniL/lichter.io/master/LICENSE"
              rel="noreferrer noopener nofollow"
