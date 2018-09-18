@@ -5,6 +5,7 @@ import autoprefixer from 'autoprefixer'
 import PurgecssPlugin from 'purgecss-webpack-plugin/lib/purgecss-webpack-plugin.es'
 import shrinkRay from 'shrink-ray-current'
 import { colors } from './tailwind.js'
+import helmet from 'helmet'
 
 export default {
   /*
@@ -134,6 +135,13 @@ export default {
     },
     compressor: shrinkRay()
   },
+
+  serverMiddleware: [
+    helmet({
+      referrerPolicy: { policy: 'strict-origin-when-cross-origin' }
+    })
+  ],
+
   /*
   ** Build configuration
   */
