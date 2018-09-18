@@ -54,7 +54,7 @@ export default {
       rating: 4,
       items: [
         { text: 'Vue.js', strong: true },
-        { text: 'Nuxt.js' },
+        { text: 'Nuxt.js', strong: true },
         { text: 'Node.js' },
         { text: 'ES6' }
       ]
@@ -89,6 +89,8 @@ export default {
       title: 'Python',
       rating: 3,
       items: [
+        { text: 'dash', strong: true },
+        { text: 'plotly' },
         { text: 'scikit-learn' },
         { text: 'pandas' }
       ]
