@@ -121,7 +121,7 @@ export default {
    */
   render: {
     bundleRenderer: {
-      shouldPrefetch: (file, type) => {
+      shouldPreload: (file, type) => {
         if (type === 'script') {
           const ignoredRoutes = ['legal']
           if (ignoredRoutes.some(r => file.includes(r))) {
