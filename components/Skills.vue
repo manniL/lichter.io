@@ -79,7 +79,7 @@ export default {
     },
     {
       title: 'Java',
-      rating: 3,
+      rating: 2,
       items: [
         { text: 'Spring' },
         { text: 'JPA' }
@@ -87,7 +87,7 @@ export default {
     },
     {
       title: 'Python',
-      rating: 2,
+      rating: 3,
       items: [
         { text: 'scikit-learn' },
         { text: 'pandas' }
