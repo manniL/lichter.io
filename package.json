@@ -2,7 +2,7 @@
   "name": "lichter.io",
   "version": "2.1.5",
   "description": "The personal website and online CV of Alexander Lichter, a passionate developer",
-  "author": "Alexander Lichter <hello@lichter.io>",
+  "author": "Alexander Lichter <npm@lichter.io>",
   "private": true,
   "scripts": {
     "dev": "cross-env HOST=0.0.0.0 nuxt",
