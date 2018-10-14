@@ -23,7 +23,7 @@ export default {
       type: Array,
       default: () => [
         { name: 'Vue.js', url: '/img/vuejs.png' },
-        { name: 'Nuxt.js', url: '/img/nuxtjs.png' },
+        { name: 'Nuxt.js', url: '/img/nuxt.png' },
         { name: 'Laravel', url: '/img/laravel.png' },
         { name: 'Tailwind', url: '/img/tailwind.png' },
         { name: 'Git', url: '/img/git.png' },
