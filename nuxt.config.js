@@ -1,7 +1,6 @@
 import path from 'path'
 import glob from 'glob-all'
 import tailwindcss from 'tailwindcss'
-import autoprefixer from 'autoprefixer'
 import PurgecssPlugin from 'purgecss-webpack-plugin/lib/purgecss-webpack-plugin.es'
 import shrinkRay from 'shrink-ray-current'
 import { colors } from './tailwind.js'
@@ -154,8 +153,7 @@ export default {
     },
     transpile: [/vue-if-bot/],
     postcss: [
-      tailwindcss('./tailwind.js'),
-      autoprefixer
+      tailwindcss('./tailwind.js')
     ],
     /*
     ** Run ESLint on save
