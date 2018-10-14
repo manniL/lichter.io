@@ -13,7 +13,7 @@
 
 <script>
 import Navbar from '~/components/Navbar'
-import Consent from '~/node_modules/vue-cookieconsent-component/src/components/CookieConsent'
+import Consent from 'vue-cookieconsent-component/src/components/CookieConsent.vue'
 import IfBot from 'vue-if-bot/dist/vue-if-bot.es'
 
 export default {

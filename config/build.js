@@ -13,7 +13,8 @@ export default {
       name: true
     }
   },
-  transpile: [/vue-if-bot/],
+  transpile: [/^vue-if-bot($|\/)/, /^vue-cookieconsent-component($|\/)/],
+
   postcss: [
     tailwindcss('./tailwind.js')
   ],
