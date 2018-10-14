@@ -22,12 +22,12 @@ export default {
     urls: {
       type: Array,
       default: () => [
-        { name: 'Laravel', url: '/img/laravel.png' },
         { name: 'Vue.js', url: '/img/vuejs.png' },
-        { name: 'Bootstrap', url: '/img/bootstrap.png' },
+        { name: 'Nuxt.js', url: '/img/nuxtjs.png' },
+        { name: 'Laravel', url: '/img/laravel.png' },
+        { name: 'Tailwind', url: '/img/tailwind.png' },
         { name: 'Git', url: '/img/git.png' },
         { name: 'Travis CI', url: '/img/travisci.png' },
-        { name: 'Tailwind', url: '/img/tailwind.png' },
         { name: 'Node.js', url: '/img/node.png' },
         { name: 'Webpack', url: '/img/webpack.png' }
       ]
