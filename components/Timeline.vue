@@ -4,17 +4,28 @@
       <h2 class="text-center mb-8 mt-0 underline">My Timeline</h2>
       <ul class="timeline timeline-centered">
         <timeline-item
+          when="September 2018"
+          title="Joined the Nuxt.js Core Team">
+          Since the beginning of 2018, Nuxt.js was my framework of choice to fulfill a variety of tasks. After getting
+          in touch with the community, I couldn't let it go! Contributing meaningful parts to such an awesome and large
+          project felt great. Over time I dug into the internals of Nuxt and got used to the code base, also thanks to
+          the other core maintainers. At VueJs London, where I met the Chopin brothers, who are the originators of Nuxt,
+          the first time, they surprisingly announced two new core team members. I was one of them.
+        </timeline-item>
+        <timeline-item
           when="August 2018"
           title="Created my own blog">
           That was a long term goal I had. Building my own blog system with the tools I use in daily work
           and finally write about interesting technical stuff (and maybe other topics as well)!
           After working towards this goal (when I had time) for half a year, I eventually launched the
-          blog. On <a
+          blog. On
+          <a
             href="https://blog.lichter.io/?ref=lichter.io-tl"
             class="text-grey-darker hover:text-grey"
             rel="noopener"
-            target="_blank">blog.Lichter.io</a> you can find posts about Javascript, PHP, Nuxt.js, Vue.js, Laravel,
-            meta-topics (related to programming) and many other subjects! I highly recommend to check it out.<br><br>
+            target="_blank">blog.Lichter.io</a>
+          you can find posts about Javascript, PHP, Nuxt.js, Vue.js, Laravel, meta-topics (related to programming) and
+          many other subjects! I highly recommend to check it out.<br><br>
           <b>Used Technologies</b><br>
           Nuxt.js, Tailwind, Laravel
         </timeline-item>
