@@ -1,6 +1,5 @@
 <template>
   <div>
-    <a id="top"/>
     <intro/>
     <a id="about-me"/>
     <about-me/>

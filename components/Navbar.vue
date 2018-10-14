@@ -11,7 +11,8 @@
     </nuxt-link>
     <vue-next-level-scroll
       v-show="showNavLinks"
-      target="#top">
+      :should-navigate="true"
+      navigation-type="replace">
       <a
         class="flex items-center flex-no-shrink text-white mr-6 no-underline cursor-pointer"
         @click.prevent="toggleVisibility">
@@ -43,6 +44,8 @@
           v-for="item in navItems"
           :key="item.name"
           :target="`#${item.anchor}`"
+          :should-navigate="true"
+          navigation-type="replace"
           class="block mt-4 lg:inline-block lg:mt-0 text-red-lighter hover:text-white mr-4 no-underline cursor-pointer">
           <a @click.prevent="toggleVisibility">
             {{ item.name }}
