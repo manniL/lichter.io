@@ -48,7 +48,10 @@ export default {
     }
   },
   mounted() {
-    setInterval(this.incrementUrlIndex, this.interval * 1000)
+    const intervalListener = setInterval(this.incrementUrlIndex, this.interval * 1000)
+    this.$once('hook:beforeDestroy', () => {
+      clearInterval(intervalListener)
+    })
   },
   methods: {
     incrementUrlIndex() {
