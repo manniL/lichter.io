@@ -5,9 +5,9 @@
   "author": "Alexander Lichter <npm@lichter.io>",
   "private": true,
   "scripts": {
-    "dev": "cross-env HOST=0.0.0.0 nuxt",
-    "build": "NODE_ENV=production nuxt build",
-    "start": "NODE_ENV=production nuxt start",
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
     "generate": "nuxt generate",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "precommit": "npm run lint"
