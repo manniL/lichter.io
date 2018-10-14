@@ -8,10 +8,10 @@ export default {
     rating: {
       type: Number,
       required: true,
-      validator: (value) => value >= 0 && value <= 5
+      validator: value => value >= 0 && value <= 5
     }
   },
-  render (h, { props }) {
+  render(h, { props }) {
     const squares = Array
       .from({ length: 5 }, (v, i) => i + 1)
       .map(i => h(RatingSquare, { props: { hidden: i > props.rating } }))

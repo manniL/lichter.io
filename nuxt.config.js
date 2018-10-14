@@ -1,5 +1,5 @@
-import { colors } from './tailwind.js'
 import helmet from 'helmet'
+import { colors } from './tailwind.js'
 import { build, head, manifest, meta, render } from './config'
 
 export default {

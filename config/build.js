@@ -17,7 +17,7 @@ export default {
   postcss: [
     tailwindcss('./tailwind.js')
   ],
-  extend (config, ctx) {
+  extend(config, ctx) {
     if (ctx.isClient) {
       if (ctx.isDev) {
         config.module.rules.push({
@@ -40,7 +40,7 @@ export default {
           extractors: [
             {
               extractor: class {
-                static extract (content) {
+                static extract(content) {
                   return content.match(/[A-z0-9-:\\/]+/g)
                 }
               },

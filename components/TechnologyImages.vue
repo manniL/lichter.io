@@ -37,21 +37,21 @@ export default {
       default: 5
     }
   },
-  data () {
+  data() {
     return {
       currentUrlIndex: 0
     }
   },
   computed: {
-    currentImage () {
+    currentImage() {
       return this.urls[this.currentUrlIndex]
     }
   },
-  mounted () {
+  mounted() {
     setInterval(this.incrementUrlIndex, this.interval * 1000)
   },
   methods: {
-    incrementUrlIndex () {
+    incrementUrlIndex() {
       this.currentUrlIndex = (this.currentUrlIndex + 1) % this.urls.length
     }
   }

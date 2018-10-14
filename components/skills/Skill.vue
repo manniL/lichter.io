@@ -42,7 +42,7 @@ export default {
     }
   },
   computed: {
-    itemString () {
+    itemString() {
       return this.items.map(i => i.strong ? `<strong>${i.text}</strong>` : i.text).join(', ')
     }
   }
