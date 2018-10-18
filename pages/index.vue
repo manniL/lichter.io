@@ -4,9 +4,9 @@
     <a id="about-me"/>
     <about-me/>
     <a id="skills"/>
-    <skills :class="hiddenOnSSR"/>
+    <skills/>
     <a id="timeline"/>
-    <timeline :class="hiddenOnSSR"/>
+    <timeline/>
   </div>
 </template>
 
@@ -20,14 +20,6 @@ export default {
     AboutMe,
     Skills: () => import('~/components/Skills.vue'),
     Timeline: () => import('~/components/Timeline.vue')
-  },
-  computed: {
-    hiddenOnSSR() {
-      if (process.client) {
-        return ''
-      }
-      return 'opacity-0'
-    }
   }
 }
 </script>
