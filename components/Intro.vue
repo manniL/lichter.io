@@ -7,7 +7,7 @@
         width="256"
         height="256"
         alt="Alexander Lichter"
-        class="rounded-full border-solid border-4 border-grey-light shadow-lg mb-4">
+        class="rounded-full border-solid border-4 border-grey-light shadow-lg mb-4 w-64 h-64">
       <div>
         <h1 class="mb-2 font-light text-2xl md:text-3xl">
           Alexander Lichter
