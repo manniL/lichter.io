@@ -17,6 +17,7 @@
     "glob-all": "^3.1.0",
     "helmet": "^3.14.0",
     "nuxt-edge": "^2.2.0-25657632.95428c2",
+    "nuxt-purgecss": "^0.0.1",
     "shrink-ray-current": "^2.1.2",
     "vue-analytics": "^5.16.0",
     "vue-cookieconsent-component": "^1.2.0",
