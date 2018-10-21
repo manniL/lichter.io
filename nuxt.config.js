@@ -22,19 +22,21 @@ export default {
    */
 
   modules: [
-    ['@nuxtjs/google-analytics', {
-      id: 'UA-62902757-11',
-      disabled: () => document.cookie.indexOf('ga_optout=true') !== -1,
-      debug: {
-        sendHitTask: process.env.NODE_ENV === 'production'
-      },
-      set: [
-        { field: 'anonymizeIp', value: true }
-      ]
-    }],
+    '@nuxtjs/google-analytics',
     '@nuxtjs/pwa',
     'nuxt-purgecss'
   ],
+
+  'google-analytics': {
+    id: 'UA-62902757-11',
+    disabled: () => document.cookie.indexOf('ga_optout=true') !== -1,
+    debug: {
+      sendHitTask: process.env.NODE_ENV === 'production'
+    },
+    set: [
+      { field: 'anonymizeIp', value: true }
+    ]
+  },
 
   purgeCSS: {
     whitelistPatterns: [/cookie-consent/]
