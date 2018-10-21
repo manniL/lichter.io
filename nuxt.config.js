@@ -32,9 +32,13 @@ export default {
         { field: 'anonymizeIp', value: true }
       ]
     }],
-    '@nuxtjs/pwa'
+    '@nuxtjs/pwa',
+    'nuxt-purgecss'
   ],
 
+  purgeCSS: {
+    whitelistPatterns: [/cookie-consent/]
+  },
   /*
    * Customize the progress bar color
    */
