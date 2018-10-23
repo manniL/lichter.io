@@ -5,6 +5,7 @@ export default {
   extractCSS: true,
   parallel: isDev,
   cache: isDev,
+  publicPath: '/assets/',
   optimization: {
     splitChunks: {
       name: true

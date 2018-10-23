@@ -1,4 +1,3 @@
-import helmet from 'helmet'
 import { colors } from './tailwind.js'
 import { build, head, manifest, meta, render } from './config'
 
@@ -53,11 +52,5 @@ export default {
 
   manifest,
   render,
-  serverMiddleware: [
-    helmet({
-      referrerPolicy: { policy: 'strict-origin-when-cross-origin' }
-    })
-  ],
-
   build
 }

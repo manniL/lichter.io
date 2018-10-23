@@ -1,5 +1,3 @@
-import shrinkRay from 'shrink-ray-current'
-
 export default {
   bundleRenderer: {
     shouldPreload: (file, type) => {
@@ -21,6 +19,5 @@ export default {
         }
       }
     }
-  },
-  compressor: shrinkRay()
+  }
 }
