@@ -1,6 +1,7 @@
 # Lichter.io
 
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.md)
+[![thanks](https://img.shields.io/badge/thanks-%E2%99%A5-ff69b4.svg)](https://thanks.lichter.io/)
 
 My personal website and online CV: [Lichter.io](https://lichter.io)
 
