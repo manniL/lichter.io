@@ -1,8 +1,6 @@
-import tailwindcss from 'tailwindcss'
 import { isDev } from './utils'
 
 export default {
-  extractCSS: true,
   parallel: isDev,
   cache: isDev,
   publicPath: '/assets/',
@@ -13,9 +11,11 @@ export default {
   },
   transpile: [/^vue-if-bot($|\/)/, /^vue-cookieconsent-component($|\/)/],
 
-  postcss: [
-    tailwindcss('./tailwind.js')
-  ],
+  postcss: {
+    plugins: {
+      'tailwindcss': './tailwind.js'
+    }
+  },
   extend(config, ctx) {
     if (ctx.isClient) {
       if (ctx.isDev) {

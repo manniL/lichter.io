@@ -38,6 +38,7 @@ export default {
   },
 
   purgeCSS: {
+    mode: 'postcss',
     whitelistPatterns: [/cookie-consent/]
   },
   /*
