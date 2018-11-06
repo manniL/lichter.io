@@ -55,6 +55,7 @@
         <a
           class="block mt-4 lg:inline-block lg:mt-0 text-red-lighter hover:text-white mr-4 no-underline cursor-pointer"
           href="https://blog.lichter.io?ref=lichter.io"
+          rel="noopener"
           target="_blank">
           Finally I have a blog too!
         </a>
