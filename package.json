@@ -4,6 +4,7 @@
   "description": "The personal website and online CV of Alexander Lichter, a passionate developer",
   "author": "Alexander Lichter <npm@lichter.io>",
   "private": true,
+  "license": "MIT",
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",
