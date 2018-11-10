@@ -2,7 +2,7 @@ import { colors } from './tailwind.js'
 import { build, head, manifest, meta, render } from './config'
 
 export default {
-
+  modern: true,
   // Watch config subfiles
   watch: ['~/config/*'],
   head,
