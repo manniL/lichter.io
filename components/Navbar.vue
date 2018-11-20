@@ -103,3 +103,9 @@ export default {
   }
 }
 </script>
+
+<style>
+  .sticky {
+    position: sticky;
+  }
+</style>

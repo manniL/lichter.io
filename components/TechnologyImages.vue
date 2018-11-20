@@ -60,3 +60,37 @@ export default {
   }
 }
 </script>
+
+<style>
+  @keyframes pulse {
+    from {
+      transform: scale3d(1, 1, 1);
+    }
+
+    50% {
+      transform: scale3d(1.05, 1.05, 1.05);
+    }
+
+    to {
+      transform: scale3d(1, 1, 1);
+    }
+  }
+
+  .pulse {
+    animation-name: pulse;
+  }
+
+  @keyframes fade-out {
+    from {
+      opacity: 1;
+    }
+
+    to {
+      opacity: 0;
+    }
+  }
+
+  .fade-out {
+    animation-name: fade-out;
+  }
+</style>

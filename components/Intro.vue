@@ -75,3 +75,20 @@ export default {
   }
 }
 </script>
+
+<style>
+  @keyframes zoom-in {
+    from {
+      opacity: 0;
+      transform: scale3d(.3, .3, .3);
+    }
+
+    50% {
+      opacity: 1;
+    }
+  }
+
+  .zoom-in {
+    animation-name: zoom-in;
+  }
+</style>

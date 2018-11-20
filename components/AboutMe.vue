@@ -24,3 +24,20 @@
     <i class="fa fa-5x fa-caret-down mt-4 animated infinite bounce-nice animation-duration-5 text-grey"/>
   </section>
 </template>
+
+<style>
+  .bounce-nice {
+    animation-name: bounce-nice;
+    animation-timing-function: ease-in-out;
+
+    @keyframes bounce-nice {
+      from, to {
+        transform: translateY(0px);
+      }
+
+      50% {
+        transform: translateY(-30px);
+      }
+    }
+  }
+</style>
