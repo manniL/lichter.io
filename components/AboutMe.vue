@@ -21,13 +21,24 @@
         Depending on the projects aim and requirements, I use way more technologies than listed above.
       </p>
     </div>
-    <icon
-      class="mt-8 animated infinite bounce-nice animation-duration-4000 fill-current text-grey-darker"
-      view-box="0 0 1024 1024"
-      path="M840.4 300H183.6c-19.7 0-30.7 20.8-18.5 35l328.4 380.8c9.4 10.9 27.5 10.9 37 0L858.9 335c12.2-14.2 1.2-35-18.5-35z"
-    />
+    <vue-next-level-scroll class="cursor-pointer" target="#skills">
+      <icon
+        class="mt-8 animated infinite bounce-nice animation-duration-4000 fill-current text-grey-darker"
+        view-box="0 0 1024 1024"
+        path="M840.4 300H183.6c-19.7 0-30.7 20.8-18.5 35l328.4 380.8c9.4 10.9 27.5 10.9 37 0L858.9 335c12.2-14.2 1.2-35-18.5-35z"
+      />
+    </vue-next-level-scroll>
   </section>
 </template>
+
+<script>
+export default {
+  components: {
+    Icon: () => import('~/components/Icon'),
+    VueNextLevelScroll: () => import('vue-next-level-scroll')
+  }
+}
+</script>
 
 <style lang="scss">
   .animation-duration-4000 {
@@ -49,9 +60,3 @@
     }
   }
 </style>
-
-<script>
-export default {
-  components: { Icon: () => import('~/components/Icon') }
-}
-</script>
