@@ -41,22 +41,31 @@ export default {
   components: { Skill, TechnologyImages },
   skills: [
     {
-      title: 'PHP',
-      rating: 4,
+      title: 'Vue.js and Nuxt.js',
+      rating: 5,
       items: [
-        { text: 'Laravel', strong: true },
-        { text: 'Wordpress' },
-        { text: 'Drupal' }
+        { text: 'Nuxt.js team member ♥️️', strong: true },
+        { text: 'Vue.js enthusiast' }
       ]
     },
     {
       title: 'Javascript',
       rating: 4,
       items: [
-        { text: 'Vue.js', strong: true },
-        { text: 'Nuxt.js', strong: true },
-        { text: 'Node.js' },
-        { text: 'ES6' }
+        { text: 'Express.js', strong: true },
+        { text: 'ES6', strong: true },
+        { text: 'Writing packages' },
+        { text: 'Babel' },
+        { text: 'Webpack' }
+      ]
+    },
+    {
+      title: 'PHP',
+      rating: 4,
+      items: [
+        { text: 'Laravel', strong: true },
+        { text: 'Wordpress' },
+        { text: 'Drupal' }
       ]
     },
     {
@@ -75,14 +84,6 @@ export default {
         { text: 'Clean Code' },
         { text: 'Agile' },
         { text: 'Scrum' }
-      ]
-    },
-    {
-      title: 'Java',
-      rating: 2,
-      items: [
-        { text: 'Spring' },
-        { text: 'JPA' }
       ]
     },
     {
