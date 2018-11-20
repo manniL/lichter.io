@@ -1,5 +1,5 @@
 <template>
-  <section class="flex flex-col flex-wrap items-center bg-grey-light pt-8 pb-6 animated fade-in">
+  <section class="flex flex-col flex-wrap items-center bg-grey-light pt-8 animated fade-in">
     <div class="justify-around items-center w-5/6 md:w-1/2 mx-auto">
       <p class="text-xl md:text-2xl text-black mb-2">
         Hey you!
@@ -21,11 +21,18 @@
         Depending on the projects aim and requirements, I use way more technologies than listed above.
       </p>
     </div>
-    <i class="fa fa-5x fa-caret-down mt-4 animated infinite bounce-nice animation-duration-5 text-grey"/>
+    <icon
+      class="w-16 h-16 mt-8 animated infinite bounce-nice animation-duration-4000 fill-current text-grey-darker"
+      path="M840.4 300H183.6c-19.7 0-30.7 20.8-18.5 35l328.4 380.8c9.4 10.9 27.5 10.9 37 0L858.9 335c12.2-14.2 1.2-35-18.5-35z"
+    />
   </section>
 </template>
 
-<style>
+<style lang="scss">
+  .animation-duration-4000 {
+    animation-duration: 4000ms;
+  }
+
   .bounce-nice {
     animation-name: bounce-nice;
     animation-timing-function: ease-in-out;
@@ -41,3 +48,9 @@
     }
   }
 </style>
+
+<script>
+export default {
+  components: { Icon: () => import('~/components/Icon') }
+}
+</script>
