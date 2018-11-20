@@ -4,6 +4,7 @@
       <h2 class="text-center mb-8 mt-0 underline">My Timeline</h2>
       <ul class="timeline timeline-centered">
         <timeline-item
+          :period="true"
           when="September 2018"
           title="Joined the Nuxt.js Core Team">
           Since the beginning of 2018, Nuxt.js was my framework of choice to fulfill a variety of tasks. After getting
@@ -84,6 +85,7 @@
           there and started to study.
         </timeline-item>
         <timeline-item
+          :period="true"
           when="August 2015"
           title="Founded Developmint">
           Not even a month after finishing my Abitur, I founded my own company together with two friends.
@@ -137,6 +139,7 @@
           Yeah, that's no joke! I played a Mario clone on my grandpa's PC.
         </timeline-item>
         <timeline-item
+          :period="true"
           when="1996"
           title="I was born 🤰🏼👶🏼"/>
       </ul>
