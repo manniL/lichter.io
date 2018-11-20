@@ -99,9 +99,9 @@
           web apps, websites and MacOS/iOS apps. We have done a range of work by now, ranging from simple but
           good-looking portfolio pages to complex
           business tools.<br><br>
-          <strong>Interested? </strong>
+          <strong>Interested?</strong>
           <a
-            class="text-grey hover:text-grey-dark"
+            class="text-grey-darkest hover:text-black"
             href="mailto:inquiry@lichter.io?subject=Inquiry&body=Hey%20Alex!%0D%0AI've%20seen%20your%20website%20and%20would%20like%20to%20talk%20to%20you%20about%20......."
           >Drop me a line!</a><span class="no-underline"> 😉</span>
         </timeline-item>
