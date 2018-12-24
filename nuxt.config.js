@@ -16,9 +16,9 @@ export default {
     { src: '~/plugins/vue-scroll-reveal', ssr: false }
   ],
 
-  /*
-   * Modules
-   */
+  generate: {
+    fallback: true
+  },
 
   modules: [
     '@nuxtjs/google-analytics',
