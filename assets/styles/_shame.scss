@@ -2,10 +2,10 @@
 $developmint-green: #199922;
 
 .developmint {
-  color: $developmint-green;
+  color: darken($developmint-green, 5%);
+  text-decoration: none;
 
   &:hover {
-    color: darken($developmint-green, 5%);
     text-decoration: underline;
   }
 }

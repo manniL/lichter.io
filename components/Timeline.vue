@@ -1,5 +1,5 @@
 <template>
-  <section class="container mx-auto bg-white pt-8">
+  <section class="container mx-auto pt-8">
     <div class="w-5/6 sm:w-2/3 mx-auto">
       <h2 class="text-center mb-8 mt-0 underline">My Timeline</h2>
       <ul class="timeline timeline-centered">
@@ -91,10 +91,10 @@
           Not even a month after finishing my Abitur, I founded my own company together with two friends.
           <a
             href="https://developmint.de"
-            class="developmint no-underline"
+            class="developmint"
             target="_blank"
             rel="noreferrer noopener">Developmint</a>
-          <small class="text-xs text-grey"> (fancy, eh?)</small>
+          <small class="text-xs text-grey-darkest"> (fancy, eh?)</small>
           fulfills contract work for mid-sized businesses as well as single persons. Our core competencies are
           web apps, websites and MacOS/iOS apps. We have done a range of work by now, ranging from simple but
           good-looking portfolio pages to complex
@@ -158,12 +158,11 @@ export default {
 
 <style lang="scss">
   .timeline {
-    @apply .list-reset .w-full;
-    color: #768390;
+    @apply .list-reset .w-full .text-grey-dark;
 
     line-height: 1.4em;
     h1, h2, h3, h4, h5, h6 {
-      color: #3D4351;
+      @apply .text-black;
       line-height: inherit;
     }
   }

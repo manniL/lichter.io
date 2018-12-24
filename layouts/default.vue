@@ -37,9 +37,9 @@ export default {
     position: sticky;
 
     &-link {
-      @apply .no-underline .text-red-light;
+      @apply .text-red-lightest;
       &:hover {
-        @apply text-red-lighter;
+        @apply .no-underline;
       }
     }
 
