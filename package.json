@@ -19,8 +19,8 @@
     "@nuxtjs/pwa": "^2.6.0",
     "babel-eslint": "^10.0.1",
     "node-sass": "^4.9.3",
-    "nuxt-edge": "^2.3.0-25696812.f9b1998",
-    "nuxt-purgecss": "^0.0.2",
+    "nuxt-edge": "^2.4.0-25759244.498c4f11",
+    "nuxt-purgecss": "^0.2.0",
     "sass-loader": "^7.1.0",
     "tailwindcss": "^0.7.2",
     "vue-analytics": "^5.16.0",
@@ -30,7 +30,7 @@
     "vue-scroll-reveal": "^1.0.11"
   },
   "devDependencies": {
-    "eslint": "^5.7.0",
+    "eslint": "^5.11.0",
     "eslint-config-standard": "^12.0.0",
     "eslint-loader": "^2.1.1",
     "eslint-plugin-import": "^2.14.0",
@@ -38,7 +38,7 @@
     "eslint-plugin-node": "^8.0.0",
     "eslint-plugin-promise": "^4.0.1",
     "eslint-plugin-standard": "^4.0.0",
-    "eslint-plugin-vue": "^4.7.1",
+    "eslint-plugin-vue": "^5.0.0",
     "husky": "^1.1.2"
   },
   "husky": {
