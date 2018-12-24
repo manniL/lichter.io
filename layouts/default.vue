@@ -25,3 +25,40 @@ export default {
   }
 }
 </script>
+
+<style lang="scss">
+  .cookie-consent {
+    @apply .w-full .py-2 .z-10 .flex .items-center .justify-center .bg-red-darker .text-red-lightest .text-xs;
+
+    @screen md {
+      @apply .text-sm .text-center;
+    }
+
+    position: sticky;
+
+    &-link {
+      @apply .no-underline .text-red-light;
+      &:hover {
+        @apply text-red-lighter;
+      }
+    }
+
+    &-message,
+    &-compliance {
+      @apply .mx-2 .my-1 .px-2;
+
+      @screen md {
+        @apply .px-4;
+      }
+    }
+
+    &-compliance {
+      @apply .cursor-pointer .text-white .py-2 .rounded .border-white .border;
+
+      &:hover {
+        @apply bg-white .text-black;
+      }
+    }
+  }
+
+</style>
