@@ -2,17 +2,20 @@
   <div class="flex flex-col w-5/6 md:w-1/3 items-center lg:items-stretch">
     <div
       :class="{'lg:flex-row': !right, 'lg:flex-row-reverse': right}"
-      class="flex flex-col-reverse items-center justify-start my-6">
-      <rating :rating="rating"/>
+      class="flex flex-col-reverse items-center justify-start my-6"
+    >
+      <Rating :rating="rating" />
       <h2
         :class="{'lg:ml-3': !right, 'lg:mr-3': right}"
         class="text-center mb-2 lg:mb-0"
-        v-text="title"/>
+        v-text="title"
+      />
     </div>
     <p
       :class="{'lg:mr-auto ml-1': !right, 'lg:ml-auto mr-1': right}"
       class="text-small text-center lg:text-left"
-      v-html="itemString"/>
+      v-html="itemString"
+    />
   </div>
 </template>
 

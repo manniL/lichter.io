@@ -5,29 +5,45 @@
         Hey you!
       </p>
       <p class="text-base md:text-lg text-grey-darker leading-normal">
-        I'm <span class="text-grey-darkest">Alex</span>, a guy in his twenties living in
-        <span class="text-grey-darkest">Dresden, Germany</span>. Already at young age, computers impressed me
+        I'm <span class="text-grey-darkest">
+          Alex
+        </span>, a guy in his twenties living in
+        <span class="text-grey-darkest">
+          Dresden, Germany
+        </span>. Already at young age, computers impressed me
         so much that I wanted to know more about them. Now, I'm a self-taught developer who runs his
-        <span class="text-grey-darkest">own company</span> and studies CS in the meantime.
+        <span class="text-grey-darkest">
+          own company
+        </span> and studies CS in the meantime.
         <br><br>
-        When developing web apps, I mostly rely on the <span class="text-grey-darkest">Laravel</span>
+        When developing web apps, I mostly rely on the <span class="text-grey-darkest">
+          Laravel
+        </span>
         framework for the backend.
-        In terms of frontend, <span class="text-grey-darkest">Nuxt.js</span> is my favorite choice,
+        In terms of frontend, <span class="text-grey-darkest">
+          Nuxt.js
+        </span> is my favorite choice,
         often together with two great CSS frameworks: The well-known
-        <span class="text-grey-darkest">Bootstrap</span> or the newly released
-        <span class="text-grey-darkest">TailwindCSS</span>
+        <span class="text-grey-darkest">
+          Bootstrap
+        </span> or the newly released
+        <span class="text-grey-darkest">
+          TailwindCSS
+        </span>
         <br><br>
-        Can't see parts of your tech-stack on that list? <span class="text-grey-darkest">Don't worry!</span>
+        Can't see parts of your tech-stack on that list? <span class="text-grey-darkest">
+          Don't worry!
+        </span>
         Depending on the projects aim and requirements, I use way more technologies than listed above.
       </p>
     </div>
-    <vue-next-level-scroll class="cursor-pointer" target="#skills">
-      <icon
+    <VueNextLevelScroll class="cursor-pointer" target="#skills">
+      <Icon
         class="mt-8 animated infinite bounce-nice animation-duration-4000 fill-current text-grey-darker"
         view-box="0 0 1024 1024"
         path="M840.4 300H183.6c-19.7 0-30.7 20.8-18.5 35l328.4 380.8c9.4 10.9 27.5 10.9 37 0L858.9 335c12.2-14.2 1.2-35-18.5-35z"
       />
-    </vue-next-level-scroll>
+    </VueNextLevelScroll>
   </section>
 </template>
 

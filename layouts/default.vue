@@ -1,13 +1,14 @@
 <template>
   <div>
-    <if-bot>
-      <consent
+    <IfBot>
+      <Consent
         message="I use Cookies for user analysis and on-page improvements!"
-        link-label="Learn about cookies"/>
-    </if-bot>
-    <navbar/>
-    <nuxt/>
-    <app-footer/>
+        link-label="Learn about cookies"
+      />
+    </IfBot>
+    <Navbar />
+    <Nuxt />
+    <AppFooter />
   </div>
 </template>
 

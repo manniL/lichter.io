@@ -1,12 +1,12 @@
 <template>
   <div>
-    <intro/>
-    <a id="about-me"/>
-    <about-me/>
-    <a id="skills"/>
-    <skills/>
-    <a id="timeline"/>
-    <timeline/>
+    <Intro />
+    <a id="about-me" />
+    <AboutMe />
+    <a id="skills" />
+    <Skills />
+    <a id="timeline" />
+    <Timeline />
   </div>
 </template>
 

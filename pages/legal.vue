@@ -21,10 +21,16 @@
       Max Langer
       <br>
       <h2>Contact</h2>
-      E-Mail: <a href="mailto:hello@lichter.io">hello@lichter.io</a>
+      E-Mail: <a href="mailto:hello@lichter.io">
+        hello@lichter.io
+      </a>
       <br>
-      Website: <a href="https://www.lichter.io/" target="_blank" rel="noopener">www.lichter.io</a><br>
-      Website: <a href="https://www.developmint.de/" target="_blank" rel="noopener">www.developmint.de</a>
+      Website: <a href="https://www.lichter.io/" target="_blank" rel="noopener">
+        www.lichter.io
+      </a><br>
+      Website: <a href="https://www.developmint.de/" target="_blank" rel="noopener">
+        www.developmint.de
+      </a>
       <br>
       <h2>VAT number</h2>
       VAT identification number in accordance with section 27 a of the German VAT
@@ -35,15 +41,33 @@
       <h2>Person responsible for content in accordance with 55 Abs. 2 RStV</h2>
       Alexander Lichter<br>
       <h2>Indication of source for images and graphics</h2>
-      <a href="http://vuejs.org/" rel="noreferrer noopener nofollow" target="_blank">Vue.js</a><br>
-      <a href="http://laravel.com/" rel="noreferrer noopener nofollow" target="_blank">Laravel</a><br>
-      <a href="https://nodejs.org/" rel="noreferrer noopener nofollow" target="_blank">Node.js</a><br>
-      <a href="https://getbootstrap.com/" rel="noreferrer noopener nofollow" target="_blank">Bootstrap</a><br>
-      <a href="http://tailwindcss.com/" rel="noreferrer noopener nofollow" target="_blank">Tailwind</a><br>
-      <a href="https://git-scm.com/" rel="noreferrer noopener nofollow" target="_blank">Git-scm</a><br>
-      <a href="https://webpack.js.org/" rel="noreferrer noopener nofollow" target="_blank">Webpack</a><br>
-      <a href="https://travis-ci.org/" rel="noreferrer noopener nofollow" target="_blank">Travis CI</a><br>
-      <a href="http://fontawesome.io/icons/" rel="noreferrer noopener nofollow" target="_blank">FontAwesome</a><br>
+      <a href="http://vuejs.org/" rel="noreferrer noopener nofollow" target="_blank">
+        Vue.js
+      </a><br>
+      <a href="http://laravel.com/" rel="noreferrer noopener nofollow" target="_blank">
+        Laravel
+      </a><br>
+      <a href="https://nodejs.org/" rel="noreferrer noopener nofollow" target="_blank">
+        Node.js
+      </a><br>
+      <a href="https://getbootstrap.com/" rel="noreferrer noopener nofollow" target="_blank">
+        Bootstrap
+      </a><br>
+      <a href="http://tailwindcss.com/" rel="noreferrer noopener nofollow" target="_blank">
+        Tailwind
+      </a><br>
+      <a href="https://git-scm.com/" rel="noreferrer noopener nofollow" target="_blank">
+        Git-scm
+      </a><br>
+      <a href="https://webpack.js.org/" rel="noreferrer noopener nofollow" target="_blank">
+        Webpack
+      </a><br>
+      <a href="https://travis-ci.org/" rel="noreferrer noopener nofollow" target="_blank">
+        Travis CI
+      </a><br>
+      <a href="http://fontawesome.io/icons/" rel="noreferrer noopener nofollow" target="_blank">
+        FontAwesome
+      </a><br>
       <br><br>
       <h2>Disclaimer</h2>
       <br>
@@ -90,17 +114,25 @@
       <ul>
         <li>
           Source code of this page (can be found on
-          <a href="https://github.com/manniL/lichter.io" rel="noreferrer noopener nofollow" target="_blank">GitHub</a>)
+          <a href="https://github.com/manniL/lichter.io" rel="noreferrer noopener nofollow" target="_blank">
+            GitHub
+          </a>)
           -
           <a href="https://raw.githubusercontent.com/manniL/lichter.io/master/LICENSE"
              rel="noreferrer noopener nofollow"
-             target="_blank">MIT</a>
+             target="_blank"
+          >
+            MIT
+          </a>
         </li>
         <li>
           Text, journalistic and other written content: Alexander Lichter -
           <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"
              rel="noreferrer noopener nofollow"
-             target="_blank">CC-BY-NC-SA 4.0</a>
+             target="_blank"
+          >
+            CC-BY-NC-SA 4.0
+          </a>
         </li>
         <li>Text on the legal notice and privacy page: Alexander Lichter - All rights reserved</li>
       </ul>

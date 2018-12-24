@@ -1,19 +1,24 @@
 <template>
-  <transition
+  <Transition
     name="custom"
     enter-active-class="animated fade-in"
     leave-active-class="animated fade-out"
-    mode="out-in">
+    mode="out-in"
+  >
     <div
       :key="currentUrlIndex"
-      class="flex flex-col items-center">
+      class="flex flex-col items-center"
+    >
       <img
         :src="currentImage.url"
         width="124"
-        height="124">
-      <p class="text-lg text-grey-darker">{{ currentImage.name }}</p>
+        height="124"
+      >
+      <p class="text-lg text-grey-darker">
+        {{ currentImage.name }}
+      </p>
     </div>
-  </transition>
+  </Transition>
 </template>
 <script>
 export default {
