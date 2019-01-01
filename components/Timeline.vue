@@ -14,10 +14,9 @@
         </TimelineItem>
 
         <TimelineItem title="Created my own blog" when="August 2018">
-          That was a long term goal I had. Building my own blog system with the tools I use in daily work
+          That was a long term goal I wanted to achieve. Building my own blog system with the tools I use in daily work
           and finally write about interesting technical stuff (and maybe other topics as well)!
-          After working towards this goal (when I had time) for half a year, I eventually launched the
-          blog. On
+          After working towards this goal (when I had time) for half a year, I eventually launched the blog. On
           <a
             class="text-grey-darker hover:text-grey"
             href="https://blog.lichter.io/?ref=lichter.io-tl"
