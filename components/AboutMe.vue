@@ -13,8 +13,8 @@
         When developing web apps, I mostly rely on the <span class="text-grey-darkest" v-text="'Laravel'" />
         framework for the backend.
         In terms of frontend, <span class="text-grey-darkest" v-text="'Nuxt.js'" /> is my favorite choice,
-        most of the time in combination with a great CSS frameworks:
-        <span class="text-grey-darkest" v-text="'TailwindCSS'" />
+        most of the time in combination with a great CSS framework called
+        <span class="text-grey-darkest" v-text="'TailwindCSS'" />.
         <br><br>
         Can't see parts of your tech-stack on that list? <span class="text-grey-darkest" v-text="'Don\'t worry!'" />
         Depending on the projects aim and requirements, I use way more technologies than listed above.
