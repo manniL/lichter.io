@@ -33,16 +33,15 @@
         <TimelineItem title="Held my first talk" when="December 2017">
           After talking with a lot of people about my choice of programming languages, I decided to work on a
           talk about PHP, it's flaws and advantages, as well as the upcoming future of the language.<br>
-          I named it<span class="font-semibold text-indigo-dark">
-            "PHP is dead - Long live PHP!"
-          </span>.
+          I named it "<span class="font-semibold text-indigo-dark" v-text="'PHP is dead - Long live PHP!'" />".
           If you want to take a look, here are the
           <a
             class="text-grey-darker hover:text-grey"
             href="https://mannil.github.io/php-is-dead-long-live-php/"
             rel="noreferrer noopener"
             target="_blank"
-          >slides</a>!<br><br>
+            v-text="'slides'"
+          />!<br><br>
           <b>Used Technologies</b><br>
           Tailwind, Webpack, Reveal.js
         </TimelineItem>
@@ -62,7 +61,8 @@
             href="https://github.com/laravel/framework/pull/21745"
             rel="noreferrer noopener"
             target="_blank"
-          >did it</a>!
+            v-text="'did it'"
+          />!
           After using Laravel for quite a while in almost all my company and
           side projects, I finally
           contributed to the well-known PHP framework.
@@ -89,10 +89,9 @@
             href="https://developmint.de"
             rel="noreferrer noopener"
             target="_blank"
-          >Developmint</a>
-          <small class="text-xs text-grey-darkest">
-            (fancy, eh?)
-          </small>
+            v-text="'Developmint'"
+          />
+          <small class="text-xs text-grey-darkest" v-text="'(fancy, eh?)'" />
           fulfills contract work for mid-sized businesses as well as single persons. Our core competencies are
           web apps, websites and MacOS/iOS apps. We have done a range of work by now, ranging from simple but
           good-looking portfolio pages to complex
@@ -101,9 +100,7 @@
           <a
             class="text-grey-darkest hover:text-black"
             href="mailto:inquiry@lichter.io?subject=Inquiry&body=Hey%20Alex!%0D%0AI've%20seen%20your%20website%20and%20would%20like%20to%20talk%20to%20you%20about%20......."
-          >Drop me a line!</a><span class="no-underline">
-            😉
-          </span>
+          >Drop me a line!</a><span class="no-underline" v-text="'😉'" />
         </TimelineItem>
 
         <TimelineItem title="Graduated school - Abitur (1,9)" when="July 2015">

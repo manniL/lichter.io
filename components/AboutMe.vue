@@ -5,35 +5,18 @@
         Hey you!
       </p>
       <p class="text-base md:text-lg text-grey-darker leading-normal">
-        I'm <span class="text-grey-darkest">
-          Alex
-        </span>, a guy in his twenties living in
-        <span class="text-grey-darkest">
-          Dresden, Germany
-        </span>. Already at young age, computers impressed me
+        I'm <span class="text-grey-darkest" v-text="'Alex'" />, a guy in his twenties living in
+        <span class="text-grey-darkest" v-text="'Dresden, Germany'" />. Already at young age, computers impressed me
         so much that I wanted to know more about them. Now, I'm a self-taught developer who runs his
-        <span class="text-grey-darkest">
-          own company
-        </span> and studies CS in the meantime.
+        <span class="text-grey-darkest" v-text="'own company'" /> and studies CS in the meantime.
         <br><br>
-        When developing web apps, I mostly rely on the <span class="text-grey-darkest">
-          Laravel
-        </span>
+        When developing web apps, I mostly rely on the <span class="text-grey-darkest" v-text="'Laravel'" />
         framework for the backend.
-        In terms of frontend, <span class="text-grey-darkest">
-          Nuxt.js
-        </span> is my favorite choice,
-        often together with two great CSS frameworks: The well-known
-        <span class="text-grey-darkest">
-          Bootstrap
-        </span> or the newly released
-        <span class="text-grey-darkest">
-          TailwindCSS
-        </span>
+        In terms of frontend, <span class="text-grey-darkest" v-text="'Nuxt.js'" /> is my favorite choice,
+        most of the time in combination with a great CSS frameworks:
+        <span class="text-grey-darkest" v-text="'TailwindCSS'" />
         <br><br>
-        Can't see parts of your tech-stack on that list? <span class="text-grey-darkest">
-          Don't worry!
-        </span>
+        Can't see parts of your tech-stack on that list? <span class="text-grey-darkest" v-text="'Don\'t worry!'" />
         Depending on the projects aim and requirements, I use way more technologies than listed above.
       </p>
     </div>

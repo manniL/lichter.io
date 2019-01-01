@@ -11,11 +11,13 @@
         v-text="title"
       />
     </div>
+    <!-- eslint-disable vue/no-v-html -->
     <p
       :class="{'lg:mr-auto ml-1': !right, 'lg:ml-auto mr-1': right}"
       class="text-small text-center lg:text-left"
       v-html="itemString"
     />
+    <!-- eslint-enable vue/no-v-html -->
   </div>
 </template>
 

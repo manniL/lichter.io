@@ -6,16 +6,14 @@
           to="/legal"
           rel="nofollow"
           class="inline-block mt-0 mr-2 text-white hover:text-indigo-lightest no-underline"
-        >
-          Legal notice
-        </NuxtLink>
+          v-text="'Legal notice'"
+        />
         <NuxtLink
           to="/privacy"
           rel="nofollow"
           class="inline-block mt-0 text-white hover:text-indigo-lightest no-underline"
-        >
-          Privacy policy
-        </NuxtLink>
+          v-text="'Privacy Policy'"
+        />
       </div>
       <div class="flex items-center flex-no-shrink text-white">
         <a
