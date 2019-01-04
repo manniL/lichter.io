@@ -1,9 +1,4 @@
 export default {
-  meta: [
-    {
-      'http-equiv': 'x-ua-compatible', content: 'ie=edge'
-    }
-  ],
   __dangerouslyDisableSanitizers: ['script'],
   script: [
     {
