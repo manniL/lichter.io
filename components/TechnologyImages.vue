@@ -5,10 +5,7 @@
     leave-active-class="animated fade-out"
     mode="out-in"
   >
-    <div
-      :key="currentUrlIndex"
-      class="flex flex-col items-center"
-    >
+    <div :key="currentUrlIndex" class="flex flex-col items-center">
       <img
         :src="currentImage.url"
         width="124"

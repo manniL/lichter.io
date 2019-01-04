@@ -39,7 +39,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="postcss">
   .animation-duration-4000 {
     animation-duration: 4000ms;
   }

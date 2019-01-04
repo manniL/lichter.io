@@ -9,7 +9,7 @@ export default {
   meta,
 
   css: [
-    '@/assets/styles/app.scss'
+    'assets/styles/app'
   ],
 
   plugins: [
