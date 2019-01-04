@@ -13,7 +13,7 @@ export default {
   },
   render(h, { props }) {
     const squares = Array
-      .from({ length: 5 }, (v, i) => i + 1)
+      .from({ length: 5 }, (_, i) => i + 1)
       .map(i => h(RatingSquare, { props: { hidden: i > props.rating } }))
 
     return h('div', {

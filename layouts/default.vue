@@ -27,7 +27,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="postcss">
   .cookie-consent {
     @apply .w-full .py-2 .z-10 .flex .items-center .justify-center .bg-red-darker .text-red-lightest .text-xs;
 

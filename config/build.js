@@ -8,7 +8,8 @@ export default {
 
   postcss: {
     plugins: {
-      'tailwindcss': './tailwind.js'
+      'tailwindcss': './tailwind.js',
+      'postcss-nested': {}
     }
   },
   extend(config, ctx) {

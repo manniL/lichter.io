@@ -146,7 +146,16 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="postcss">
+  .developmint {
+    color: #15831d;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
   .timeline {
     @apply .list-reset .w-full .text-grey-dark;
 
