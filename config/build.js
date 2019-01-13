@@ -1,3 +1,4 @@
+import path from 'path'
 import { isDev } from './utils'
 
 export default {
@@ -8,7 +9,7 @@ export default {
 
   postcss: {
     plugins: {
-      'tailwindcss': './tailwind.js',
+      'tailwindcss': path.resolve(__dirname, '../', 'tailwind.js'),
       'postcss-nested': {}
     }
   },
