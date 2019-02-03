@@ -27,7 +27,7 @@
           class="text-center text-grey-dark no-underline bg-grey-light px-3 py-2 m-2 rounded hover:text-black"
           href="https://github.com/manniL"
           rel="noreferrer noopener"
-          target="blank"
+          target="_blank"
           title="My GitHub account"
           @click="trackIconClick('github')"
         >
@@ -37,7 +37,6 @@
           class="text-center text-grey-dark no-underline bg-grey-light px-3 py-2 m-2 rounded hover:text-teal-darker"
           href="mailto:hello@lichter.io"
           rel="noreferrer noopener"
-          target="blank"
           title="Send me an e-mail!"
           @click="trackIconClick('mail')"
         >
@@ -50,7 +49,6 @@
           class="text-center text-grey-dark no-underline bg-grey-light px-3 py-2 m-2 rounded hover:text-green-dark"
           href="tel:+4917670625208"
           rel="noreferrer noopener"
-          target="blank"
           title="Hotline Bling?"
           @click="trackIconClick('phone')"
         >
@@ -60,7 +58,7 @@
           class="text-center text-grey-dark no-underline bg-grey-light px-3 py-2 m-2 rounded hover:text-blue"
           href="https://twitter.com/TheAlexLichter"
           rel="noreferrer noopener"
-          target="blank"
+          target="_blank"
           title="I'm on Twitter as well"
           @click="trackIconClick('twitter')"
         >
