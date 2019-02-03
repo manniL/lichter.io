@@ -4,6 +4,7 @@ import { isDev } from './utils'
 export default {
   parallel: isDev,
   cache: isDev,
+  hardSource: isDev,
   filenames: {
     img: ({ isDev }) => isDev ? '[path][name].[ext]' : 'img/[name]-[hash:7].[ext]',
     font: ({ isDev }) => isDev ? '[path][name].[ext]' : 'fonts/[name]-[hash:7].[ext]'
