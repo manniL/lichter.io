@@ -1,15 +1,15 @@
 <template>
   <Transition
-    name="custom"
     enter-active-class="animated fade-in"
     leave-active-class="animated fade-out"
     mode="out-in"
+    name="custom"
   >
     <div :key="currentUrlIndex" class="flex flex-col items-center">
       <img
-        :src="currentImage.url"
-        width="124"
+        :src="currentImage.img"
         height="124"
+        width="124"
       >
       <p class="text-lg text-grey-darker">
         {{ currentImage.name }}
@@ -20,19 +20,6 @@
 <script>
 export default {
   props: {
-    urls: {
-      type: Array,
-      default: () => [
-        { name: 'Vue.js', url: '/img/vuejs.png' },
-        { name: 'Nuxt.js', url: '/img/nuxt.png' },
-        { name: 'Laravel', url: '/img/laravel.png' },
-        { name: 'Tailwind', url: '/img/tailwind.png' },
-        { name: 'Git', url: '/img/git.png' },
-        { name: 'Travis CI', url: '/img/travisci.png' },
-        { name: 'Node.js', url: '/img/node.png' },
-        { name: 'Webpack', url: '/img/webpack.png' }
-      ]
-    },
     interval: {
       type: Number,
       default: 5
@@ -45,7 +32,8 @@ export default {
   },
   computed: {
     currentImage() {
-      return this.urls[this.currentUrlIndex]
+      const { imgName, name } = this.$options.urls[this.currentUrlIndex]
+      return { img: require(`~/assets/img/${imgName}.png`), name }
     }
   },
   mounted() {
@@ -56,9 +44,19 @@ export default {
   },
   methods: {
     incrementUrlIndex() {
-      this.currentUrlIndex = (this.currentUrlIndex + 1) % this.urls.length
+      this.currentUrlIndex = (this.currentUrlIndex + 1) % this.$options.urls.length
     }
-  }
+  },
+  urls: [
+    { name: 'Vue.js', imgName: 'vuejs' },
+    { name: 'Nuxt.js', imgName: 'nuxt' },
+    { name: 'Laravel', imgName: 'laravel' },
+    { name: 'Tailwind', imgName: 'tailwind' },
+    { name: 'Git', imgName: 'git' },
+    { name: 'Travis CI', imgName: 'travisci' },
+    { name: 'Node.js', imgName: 'node' },
+    { name: 'Webpack', imgName: 'webpack' }
+  ]
 }
 </script>
 
