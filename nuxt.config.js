@@ -1,5 +1,5 @@
 import { colors } from './tailwind.js'
-import { build, head, manifest, meta, render } from './config'
+import { build, head, manifest, meta, render, utils } from './config'
 
 export default {
   modern: true,
@@ -30,7 +30,7 @@ export default {
     id: 'UA-62902757-11',
     disabled: () => document.cookie.indexOf('ga_optout=true') !== -1,
     debug: {
-      sendHitTask: process.env.NODE_ENV === 'production'
+      sendHitTask: !utils.isDev
     },
     set: [
       { field: 'anonymizeIp', value: true }
