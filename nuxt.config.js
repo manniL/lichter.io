@@ -2,7 +2,7 @@ import { colors } from './tailwind.js'
 import { build, head, manifest, meta, render, utils } from './config'
 
 export default {
-  modern: true,
+  modern: !utils.isDev,
   // Watch config subfiles
   watch: ['~/config/*'],
   head,
@@ -22,9 +22,8 @@ export default {
 
   modules: [
     '@nuxtjs/google-analytics',
-    '@nuxtjs/pwa',
-    'nuxt-purgecss'
-  ],
+    '@nuxtjs/pwa'
+  ].concat(utils.isDev ? [] : ['nuxt-purgecss']),
 
   'google-analytics': {
     id: 'UA-62902757-11',
