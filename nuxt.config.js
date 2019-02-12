@@ -44,11 +44,6 @@ export default {
    * Customize the progress bar color
    */
   loading: { color: colors.red },
-  loadingIndicator: {
-    name: 'rectangle-bounce',
-    color: 'white',
-    background: colors.red
-  },
 
   manifest,
   render,
