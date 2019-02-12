@@ -3,7 +3,8 @@
     <IfBot>
       <Consent
         message="I use Cookies for user analysis and on-page improvements!"
-        link-label="Learn about cookies"
+        link-label="Privacy Policy"
+        href="https://lichter.io/privacy/"
       />
     </IfBot>
     <Navbar />
@@ -61,5 +62,4 @@ export default {
       }
     }
   }
-
 </style>
