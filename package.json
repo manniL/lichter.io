@@ -14,10 +14,8 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
-    "@nuxtjs/eslint-config": "0.0.1",
     "@nuxtjs/google-analytics": "^2.0.2",
     "@nuxtjs/pwa": "^2.6.0",
-    "babel-eslint": "^10.0.1",
     "nuxt-edge": "^2.5.0-25819208.cdec133c",
     "nuxt-purgecss": "^0.2.1",
     "postcss-nested": "^4.1.1",
@@ -29,6 +27,8 @@
     "vue-scroll-reveal": "^1.0.11"
   },
   "devDependencies": {
+    "@nuxtjs/eslint-config": "0.0.1",
+    "babel-eslint": "^10.0.1",
     "eslint": "^5.13.0",
     "eslint-config-standard": "^12.0.0",
     "eslint-loader": "^2.1.1",
