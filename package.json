@@ -14,11 +14,11 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
-    "@nuxtjs/google-analytics": "^2.0.2",
-    "@nuxtjs/pwa": "^2.6.0",
-    "nuxt-edge": "^2.5.0-25819208.cdec133c",
+    "@nuxtjs/google-analytics": "^2.1.0",
+    "@nuxtjs/pwa": "^3.0.0-beta.12",
+    "nuxt-edge": "^2.5.0-25865288.26bfa471",
     "nuxt-purgecss": "^0.2.1",
-    "postcss-nested": "^4.1.1",
+    "postcss-nested": "^4.1.2",
     "tailwindcss": "^0.7.4",
     "vue-analytics": "^5.16.2",
     "vue-cookieconsent-component": "^1.2.0",
@@ -29,15 +29,15 @@
   "devDependencies": {
     "@nuxtjs/eslint-config": "0.0.1",
     "babel-eslint": "^10.0.1",
-    "eslint": "^5.13.0",
+    "eslint": "^5.15.1",
     "eslint-config-standard": "^12.0.0",
-    "eslint-loader": "^2.1.1",
+    "eslint-loader": "^2.1.2",
     "eslint-plugin-import": "^2.16.0",
-    "eslint-plugin-jest": "^22.2.2",
+    "eslint-plugin-jest": "^22.3.0",
     "eslint-plugin-node": "^8.0.1",
     "eslint-plugin-promise": "^4.0.1",
     "eslint-plugin-standard": "^4.0.0",
-    "eslint-plugin-vue": "^5.1.0",
+    "eslint-plugin-vue": "^5.2.2",
     "husky": "^1.3.1"
   },
   "husky": {
