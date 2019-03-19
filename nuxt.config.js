@@ -1,3 +1,5 @@
+import fs from 'fs'
+import path from 'path'
 import { colors } from './tailwind.js'
 import { build, head, manifest, meta, render, utils } from './config'
 
@@ -40,6 +42,13 @@ export default {
     mode: 'postcss',
     whitelistPatterns: [/cookie-consent/]
   },
+
+  hooks: {
+    'generate:distCopied'() {
+      fs.copyFileSync(path.resolve(__dirname, './_redirects'), path.resolve(__dirname, './dist/_redirects'))
+    }
+  },
+
   /*
    * Customize the progress bar color
    */
