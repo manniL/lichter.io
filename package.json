@@ -19,7 +19,7 @@
     "nuxt-edge": "^3.0.0-25882567.ca1ecf0e",
     "nuxt-purgecss": "^0.2.1",
     "postcss-nested": "^4.1.2",
-    "tailwindcss": "^0.7.4",
+    "tailwindcss": "^1.0.1",
     "vue-analytics": "^5.16.4",
     "vue-cookieconsent-component": "^1.2.0",
     "vue-if-bot": "^1.2.0",
