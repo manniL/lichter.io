@@ -11,7 +11,7 @@
         height="124"
         width="124"
       >
-      <p class="text-lg text-grey-darker">
+      <p class="text-lg text-gray-700">
         {{ currentImage.name }}
       </p>
     </div>

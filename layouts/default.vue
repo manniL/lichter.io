@@ -30,7 +30,7 @@ export default {
 
 <style lang="postcss">
   .cookie-consent {
-    @apply .w-full .py-2 .z-10 .flex .items-center .justify-center .bg-red-darker .text-red-lightest .text-xs;
+    @apply .w-full .py-2 .z-10 .flex .items-center .justify-center .bg-red-200 .text-red-900 .text-xs;
 
     @screen md {
       @apply .text-sm .text-center;
@@ -39,7 +39,7 @@ export default {
     position: sticky;
 
     &-link {
-      @apply .text-red-lightest;
+      @apply .text-red-900;
       &:hover {
         @apply .no-underline;
       }

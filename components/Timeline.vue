@@ -18,7 +18,7 @@
           and finally write about interesting technical stuff (and maybe other topics as well)!
           After working towards this goal (when I had time) for half a year, I eventually launched the blog. On
           <a
-            class="text-grey-darker hover:text-grey"
+            class="text-gray-700 hover:text-gray"
             href="https://blog.lichter.io/?ref=lichter.io-tl"
             rel="noopener"
             target="_blank"
@@ -32,10 +32,10 @@
         <TimelineItem title="Held my first talk" when="December 2017">
           After talking with a lot of people about my choice of programming languages, I decided to work on a
           talk about PHP, it's flaws and advantages, as well as the upcoming future of the language.<br>
-          I named it "<span class="font-semibold text-indigo-dark" v-text="'PHP is dead - Long live PHP!'" />".
+          I named it "<span class="font-semibold text-indigo-600" v-text="'PHP is dead - Long live PHP!'" />".
           If you want to take a look, here are the
           <a
-            class="text-grey-darker hover:text-grey"
+            class="text-gray-700 hover:text-gray"
             href="https://mannil.github.io/php-is-dead-long-live-php/"
             rel="noreferrer noopener"
             target="_blank"
@@ -56,7 +56,7 @@
         <TimelineItem title="Contribution to Laravel" when="October 2017">
           Yeah, I
           <a
-            class="text-grey-darker hover:text-grey"
+            class="text-gray-700 hover:text-gray"
             href="https://github.com/laravel/framework/pull/21745"
             rel="noreferrer noopener"
             target="_blank"
@@ -90,14 +90,14 @@
             target="_blank"
             v-text="'Developmint'"
           />
-          <small class="text-xs text-grey-darkest" v-text="'(fancy, eh?)'" />
+          <small class="text-xs text-gray-900" v-text="'(fancy, eh?)'" />
           fulfills contract work for mid-sized businesses as well as single persons. Our core competencies are
           web apps, websites and MacOS/iOS apps. We have done a range of work by now, ranging from simple but
           good-looking portfolio pages to complex
           business tools.<br><br>
           <strong>Interested?</strong>
           <a
-            class="text-grey-darkest hover:text-black underline"
+            class="text-gray-900 hover:text-black underline"
             href="mailto:inquiry@lichter.io?subject=Inquiry&body=Hey%20Alex!%0D%0AI've%20seen%20your%20website%20and%20would%20like%20to%20talk%20to%20you%20about%20......."
           >Drop me a line!</a><span v-text="'😉'" />
         </TimelineItem>
@@ -157,7 +157,7 @@ export default {
   }
 
   .timeline {
-    @apply .w-full .text-grey-dark;
+    @apply .w-full .text-gray-600;
 
     line-height: 1.4em;
 
@@ -182,14 +182,14 @@ export default {
     @apply .absolute .inset-y-0 .left-0 .w-8;
 
     &:before {
-      @apply .absolute .left-0 .block .h-4 .w-4 .bg-grey;
+      @apply .absolute .left-0 .block .h-4 .w-4 .bg-gray-400;
       content: "";
       top: 4px;
       transition: background 0.2s ease-in-out;
     }
 
     &:after {
-      @apply .absolute .bottom-0 .block .bg-grey;
+      @apply .absolute .bottom-0 .block .bg-gray-400;
       content: "";
 
       width: 3px;
@@ -204,7 +204,7 @@ export default {
   }
 
   .timeline-item:not(.period):hover .timeline-marker:before {
-    @apply .bg-red-light;
+    @apply .bg-red-600;
   }
 
   .timeline-content {
@@ -217,7 +217,7 @@ export default {
 
   .timeline-item:not(.period):hover .timeline-info,
   .timeline-item:not(.period):hover .timeline-content {
-    @apply .text-grey-darkest;
+    @apply .text-gray-900;
   }
 
   .timeline-split {
