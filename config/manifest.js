@@ -1,4 +1,4 @@
-import { colors } from '../tailwind'
+import { colors } from './tailwind-values'
 
 export default {
   name: 'Lichter.io',
@@ -6,6 +6,6 @@ export default {
   short_name: 'Lichter.io',
   start_url: '/',
   display: 'standalone',
-  background_color: colors['grey-lighter'],
-  theme_color: colors.red
+  background_color: colors['gray-200'],
+  theme_color: colors['red-500']
 }

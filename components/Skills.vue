@@ -1,10 +1,10 @@
 <template>
   <div
     v-scroll-reveal
-    class="flex flex-wrap flex-col items-center bg-grey-lighter py-8"
+    class="flex flex-wrap flex-col items-center bg-gray-300 py-8"
   >
     <div class="flex justify-around w-5/6 md:w-1/2 mx-auto">
-      <h2 class="text-center mb-8 underline">
+      <h2 class="text-2xl font-bold text-center mb-8 underline">
         Skills
       </h2>
     </div>
@@ -29,7 +29,7 @@
       </div>
       <div
         v-else
-        class="hidden md:visible flex w-1/3"
+        class="hidden md:visible md:block xl:hidden xl:invisible flex w-1/3"
       />
       <Skill
         :title="$options.skills[i*2+1].title"

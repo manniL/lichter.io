@@ -1,5 +1,5 @@
 <template>
-  <nav class="flex items-center justify-between flex-wrap bg-red p-4 sticky pin-t z-10">
+  <nav class="flex items-center justify-between flex-wrap bg-red-600 p-4 sticky top-0 z-10">
     <NuxtLink
       v-show="!showNavLinks"
       to="/"
@@ -33,11 +33,10 @@
       class="block lg:hidden"
     >
       <button
-        class="flex items-center px-3 py-2 border rounded text-red-lighter border-red-light hover:text-white hover:border-white"
+        class="flex items-center px-3 py-2 border rounded text-red-300 border-red-400 w-10 h-8 hover:text-white hover:border-white"
         @click="toggleVisibility"
       >
         <Icon
-          icon-class="h-3 w-3 fill-current"
           view-box="0 0 20 20"
           icon-title="Menu"
           path="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"
@@ -58,7 +57,7 @@
         >
           <NuxtLink
             :to="`#${item.anchor}`"
-            class="text-red-lighter hover:text-white no-underline"
+            class="text-red-200 hover:text-white no-underline"
             @click.prevent="toggleVisibility"
           >
             {{ item.name }}
@@ -67,7 +66,7 @@
       </div>
       <div>
         <a
-          class="block mt-4 lg:inline-block lg:mt-0 text-red-lighter hover:text-white mr-4 no-underline cursor-pointer"
+          class="block mt-4 lg:inline-block lg:mt-0 text-red-200 hover:text-white mr-4 no-underline cursor-pointer"
           href="https://blog.lichter.io?ref=lichter.io"
           rel="noopener"
           target="_blank"

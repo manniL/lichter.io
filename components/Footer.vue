@@ -1,25 +1,25 @@
 <template>
-  <nav class="flex items-center justify-between flex-wrap bg-indigo-dark p-2 pin-b z-10">
+  <nav class="flex items-center justify-between flex-wrap bg-indigo-600 p-2 bottom-0 z-10">
     <div class="flex-grow flex items-center w-auto">
       <div class="text-sm flex-grow">
         <NuxtLink
           to="/legal"
           no-prefetch
           rel="nofollow"
-          class="inline-block mt-0 mr-2 text-white hover:text-indigo-lightest no-underline"
+          class="inline-block mt-0 mr-2 text-white hover:text-indigo-100 no-underline"
           v-text="'Legal notice'"
         />
         <NuxtLink
           to="/privacy"
           no-prefetch
           rel="nofollow"
-          class="inline-block mt-0 text-white hover:text-indigo-lightest no-underline"
+          class="inline-block mt-0 text-white hover:text-indigo-100 no-underline"
           v-text="'Privacy Policy'"
         />
       </div>
       <div class="flex items-center flex-no-shrink text-white">
         <a
-          class="font-hairline text-sm mr-2 flex items-center text-grey-lightest no-underline hover:text-white"
+          class="font-hairline text-sm mr-2 flex items-center text-gray-100 no-underline hover:text-white"
           href="https://github.com/manniL/lichter.io"
           target="_blank"
           rel="noopener"
