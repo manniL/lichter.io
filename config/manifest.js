@@ -1,4 +1,4 @@
-import { colors } from '../tailwind'
+import { colors } from './tailwind-values'
 
 export default {
   name: 'Lichter.io',

@@ -15,11 +15,10 @@
       Max Langer
       <br><br>
       <h3>Personally liable partner</h3>
-      <br><br>
       Alexander Lichter
       <br>
       Max Langer
-      <br>
+      <br><br>
       <h2>Contact</h2>
       E-Mail: <a href="mailto:hello@lichter.io">
         hello@lichter.io
@@ -150,3 +149,25 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+  h1 {
+    @apply font-bold text-2xl
+  }
+  h2 {
+    @apply font-bold text-xl
+  }
+  h3 {
+    @apply font-bold text-lg
+  }
+  a {
+    @apply underline text-blue;
+
+    &:hover {
+      @apply text-indigo
+    }
+  }
+  ul {
+    @apply list-disc px-8
+  }
+</style>

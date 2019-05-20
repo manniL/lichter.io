@@ -1,5 +1,5 @@
 <template>
-  <nav class="flex items-center justify-between flex-wrap bg-indigo-dark p-2 pin-b z-10">
+  <nav class="flex items-center justify-between flex-wrap bg-indigo-dark p-2 bottom-0 z-10">
     <div class="flex-grow flex items-center w-auto">
       <div class="text-sm flex-grow">
         <NuxtLink

@@ -1,5 +1,5 @@
 <template>
-  <nav class="flex items-center justify-between flex-wrap bg-red p-4 sticky pin-t z-10">
+  <nav class="flex items-center justify-between flex-wrap bg-red p-4 sticky top-0 z-10">
     <NuxtLink
       v-show="!showNavLinks"
       to="/"

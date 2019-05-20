@@ -1,6 +1,6 @@
 import fs from 'fs'
 import path from 'path'
-import { colors } from './tailwind.js'
+import { colors } from './config/tailwind-values'
 import { build, head, manifest, meta, render, utils } from './config'
 
 export default {

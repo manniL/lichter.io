@@ -1,7 +1,7 @@
 <template>
   <section class="container mx-auto pt-8">
     <div class="w-5/6 sm:w-2/3 mx-auto">
-      <h2 class="text-center mb-8 mt-0 underline">
+      <h2 class="text-2xl font-bold text-center mb-8 mt-0 underline">
         My Timeline
       </h2>
       <ul class="timeline timeline-centered">
@@ -97,9 +97,9 @@
           business tools.<br><br>
           <strong>Interested?</strong>
           <a
-            class="text-grey-darkest hover:text-black"
+            class="text-grey-darkest hover:text-black underline"
             href="mailto:inquiry@lichter.io?subject=Inquiry&body=Hey%20Alex!%0D%0AI've%20seen%20your%20website%20and%20would%20like%20to%20talk%20to%20you%20about%20......."
-          >Drop me a line!</a><span class="no-underline" v-text="'😉'" />
+          >Drop me a line!</a><span v-text="'😉'" />
         </TimelineItem>
 
         <TimelineItem title="Graduated school - Abitur (1,9)" when="July 2015">
@@ -157,7 +157,7 @@ export default {
   }
 
   .timeline {
-    @apply .list-reset .w-full .text-grey-dark;
+    @apply .w-full .text-grey-dark;
 
     line-height: 1.4em;
 
@@ -179,17 +179,17 @@ export default {
   }
 
   .timeline-marker {
-    @apply .absolute .pin-y .pin-l .w-8;
+    @apply .absolute .inset-y-0 .left-0 .w-8;
 
     &:before {
-      @apply .absolute .pin-l .block .h-4 .w-4 .bg-grey;
+      @apply .absolute .left-0 .block .h-4 .w-4 .bg-grey;
       content: "";
       top: 4px;
       transition: background 0.2s ease-in-out;
     }
 
     &:after {
-      @apply .absolute .pin-b .block .bg-grey;
+      @apply .absolute .bottom-0 .block .bg-grey;
       content: "";
 
       width: 3px;
@@ -304,7 +304,7 @@ export default {
       }
 
       .period .timeline-marker:after {
-        @apply .pin-b;
+        @apply .bottom-0;
         height: 30px;
         top: auto;
       }

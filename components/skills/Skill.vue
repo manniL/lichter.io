@@ -7,7 +7,7 @@
       <Rating :rating="rating" />
       <h2
         :class="{'lg:ml-3': !right, 'lg:mr-3': right}"
-        class="text-center mb-2 lg:mb-0"
+        class="text-xl font-semibold text-center mb-2 lg:mb-0"
         v-text="title"
       />
     </div>
