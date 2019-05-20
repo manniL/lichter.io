@@ -6,6 +6,6 @@ export default {
   short_name: 'Lichter.io',
   start_url: '/',
   display: 'standalone',
-  background_color: colors['gray-lighter'],
-  theme_color: colors.red
+  background_color: colors['gray-200'],
+  theme_color: colors['red-500']
 }
