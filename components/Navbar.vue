@@ -86,7 +86,7 @@ export default {
     Icon,
     VueNextLevelScroll
   },
-  data() {
+  data () {
     return {
       isVisible: false,
       navItems: [
@@ -106,12 +106,12 @@ export default {
     }
   },
   computed: {
-    showNavLinks() {
+    showNavLinks () {
       return this.$route.path === '/'
     }
   },
   methods: {
-    toggleVisibility() {
+    toggleVisibility () {
       this.isVisible = !this.isVisible
     }
   }

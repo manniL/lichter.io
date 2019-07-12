@@ -28,7 +28,7 @@ export default {
 
   'google-analytics': {
     id: 'UA-62902757-11',
-    disabled: () => document.cookie.indexOf('ga_optout=true') !== -1,
+    disabled: () => document.cookie.includes('ga_optout=true'),
     debug: {
       sendHitTask: !utils.isDev
     },
@@ -43,7 +43,7 @@ export default {
   },
 
   hooks: {
-    'generate:distCopied'() {
+    'generate:distCopied' () {
       fs.copyFileSync(path.resolve(__dirname, './_redirects'), path.resolve(__dirname, './dist/_redirects'))
     }
   },

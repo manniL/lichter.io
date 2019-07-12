@@ -14,9 +14,9 @@
 </template>
 
 <script>
-import Navbar from '~/components/Navbar'
 import Consent from 'vue-cookieconsent-component/src/components/CookieConsent.vue'
 import IfBot from 'vue-if-bot/dist/vue-if-bot.es'
+import Navbar from '~/components/Navbar'
 
 export default {
   components: {

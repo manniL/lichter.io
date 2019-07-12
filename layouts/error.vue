@@ -22,7 +22,7 @@
 
 <script>
 export default {
-  head() {
+  head () {
     return {
       title: '404 - No Lichter found!'
     }

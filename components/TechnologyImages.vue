@@ -25,25 +25,25 @@ export default {
       default: 5
     }
   },
-  data() {
+  data () {
     return {
       currentUrlIndex: 0
     }
   },
   computed: {
-    currentImage() {
+    currentImage () {
       const { imgName, name } = this.$options.urls[this.currentUrlIndex]
       return { img: require(`~/assets/img/${imgName}.png`), name }
     }
   },
-  mounted() {
+  mounted () {
     const intervalListener = setInterval(this.incrementUrlIndex, this.interval * 1000)
     this.$once('hook:beforeDestroy', () => {
       clearInterval(intervalListener)
     })
   },
   methods: {
-    incrementUrlIndex() {
+    incrementUrlIndex () {
       this.currentUrlIndex = (this.currentUrlIndex + 1) % this.$options.urls.length
     }
   },

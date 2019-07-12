@@ -139,7 +139,7 @@
 
 <script>
 export default {
-  head() {
+  head () {
     return {
       title: 'Legal notice - Lichter.io',
       meta: [

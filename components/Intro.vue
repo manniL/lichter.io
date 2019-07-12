@@ -75,7 +75,7 @@ export default {
     Icon: () => import('~/components/Icon')
   },
   methods: {
-    trackIconClick(iconType) {
+    trackIconClick (iconType) {
       this.$ga.event({
         eventCategory: 'click',
         eventAction: `${iconType}Icon`
