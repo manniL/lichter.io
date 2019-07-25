@@ -16,11 +16,11 @@
   "dependencies": {
     "@nuxtjs/google-analytics": "^2.2.0",
     "@nuxtjs/pwa": "^3.0.0-beta.16",
-    "nuxt-edge": "^2.9.0-26048169.1130c24f",
+    "nuxt-edge": "^2.9.0-26066889.76b1167d",
     "nuxt-purgecss": "^0.2.1",
     "postcss-nested": "^4.1.2",
-    "tailwindcss": "^1.0.1",
-    "vue-analytics": "^5.16.4",
+    "tailwindcss": "^1.0.5",
+    "vue-analytics": "^5.17.0",
     "vue-cookieconsent-component": "^1.2.0",
     "vue-if-bot": "^1.2.0",
     "vue-next-level-scroll": "^1.2.0",
@@ -28,10 +28,10 @@
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "1.0.1",
-    "babel-eslint": "^10.0.1",
+    "babel-eslint": "^10.0.2",
     "eslint": "^5.16.0",
-    "eslint-loader": "^2.1.2",
-    "husky": "^2.3.0"
+    "eslint-loader": "^2.2.1",
+    "husky": "^2.7.0"
   },
   "husky": {
     "hooks": {
