@@ -1,5 +1,3 @@
-import fs from 'fs'
-import path from 'path'
 import { build, head, manifest, meta, render, utils } from './config'
 
 export default {
@@ -23,7 +21,8 @@ export default {
 
   modules: [
     '@nuxtjs/google-analytics',
-    '@nuxtjs/pwa'
+    '@nuxtjs/pwa',
+    '@nuxtjs/netlify-files'
   ].concat(utils.isDev ? [] : ['nuxt-purgecss']),
 
   'google-analytics': {
@@ -37,15 +36,13 @@ export default {
     ]
   },
 
+  netlifyFiles: {
+    existingFilesDirectory: './netlify'
+  },
+
   purgeCSS: {
     mode: 'postcss',
     whitelistPatterns: [/cookie-consent/]
-  },
-
-  hooks: {
-    'generate:distCopied' () {
-      fs.copyFileSync(path.resolve(__dirname, './_redirects'), path.resolve(__dirname, './dist/_redirects'))
-    }
   },
 
   manifest,
