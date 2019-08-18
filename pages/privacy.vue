@@ -190,3 +190,25 @@ export default {
   }
 }
 </script>
+
+<style scoped lang="postcss">
+  h1 {
+    @apply font-bold text-2xl
+  }
+  h2 {
+    @apply font-bold text-xl
+  }
+  h3 {
+    @apply font-bold text-lg
+  }
+  a {
+    @apply underline text-blue-400;
+
+    &:hover {
+      @apply text-indigo-400
+    }
+  }
+  ul {
+    @apply list-disc px-8
+  }
+</style>
