@@ -167,7 +167,7 @@
       check this page for any changes to this Privacy Statement. Your continued use of the Website after any change in
       this Privacy Statement will constitute your acceptance of such change.
 
-      last edited: 24.12.2018
+      last edited: 18.08.2019
     </p>
   </div>
 </template>
