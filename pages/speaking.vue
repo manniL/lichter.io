@@ -4,17 +4,21 @@
       <h1 class="text-2xl font-bold text-center">
         Speaking - The talks I've given
       </h1>
-      <p class="mt-16">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam facilis non numquam tempore voluptatum? Alias
-        ducimus ipsa ipsum, odit placeat quidem ratione suscipit voluptatibus! Exercitationem iste itaque officia
-        quaerat
-        similique.
+      <p class="mt-16 max-w-4xl mx-auto">
+        Speaking was always fun and exciting for me. Already during my school time I was on stage multiple times.
+        Nowadays I have the pleasure to speak at international conferences, medium-to-large sized companies but also at
+        local meetups.
+        If you think I'd be a good fit for your event, feel free to
+        <a
+          class="text-gray-900 font-bold hover:text-black underline"
+          href="mailto:inquiry@lichter.io?subject=Inquiry&body=Hey%20Alex!%0D%0AI%20think%20you'd%20be%20a%20great%20fit%20for%20our%20......."
+        >contact me</a>! No matter if it is a conference, a user group meeting, an event inside your company or similar.
       </p>
       <section class="flex flex-col my-16">
         <article
           v-for="talk in $options.talks"
           :key="talk.title + talk.date"
-          class="p-4 my-4 border-b border-gray-400 last:border-b-0 flex flex-row justify-center pb-16"
+          class="py-4 pb-16 my-4 border-b border-gray-400 last:border-b-0 flex flex-col md:flex-row justify-center"
         >
           <div class="flex flex-col flex-1">
             <h2 class="text-2xl py-1">
@@ -33,13 +37,13 @@
                 <time>{{ talk.date }}</time>
               </template>
             </div>
-            <div class="flex flex-col mt-8">
+            <div class="flex md:flex-col mt-8">
               <a
                 v-if="talk.videoUrl"
                 :href="talk.videoUrl"
                 target="_blank"
                 rel="noopener nofollow"
-                class="group flex items-end"
+                class="group flex items-end mr-8 md:mr-0"
                 :title="`Open video for ${talk.title}`"
               >
                 <svg class="w-8 h-8 mr-2 group" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" role="presentation">
@@ -87,7 +91,7 @@
               </a>
             </div>
           </div>
-          <p class="flex-1">
+          <p class="flex-1 mt-8 md:mt-0">
             {{ talk.description || 'No description' }}
           </p>
         </article>
