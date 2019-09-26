@@ -43,10 +43,10 @@
                 :href="talk.videoUrl"
                 target="_blank"
                 rel="noopener nofollow"
-                class="group flex items-end mr-8 md:mr-0"
+                class="group flex items-center mr-8 md:mr-0"
                 :title="`Open video for ${talk.title}`"
               >
-                <svg class="w-8 h-8 mr-2 group" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" role="presentation">
+                <svg class="w-6 h-6 mr-2 group" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" role="presentation">
                   <description>
                     Video camera icon which will open the page of the talk's video recording on click
                   </description>
@@ -70,11 +70,11 @@
                 :href="talk.slidesUrl"
                 target="_blank"
                 rel="noopener nofollow"
-                class="group flex items-end"
+                class="group flex items-center"
                 :class="talk.videoUrl && 'mt-6'"
                 :title="`Open slides for ${talk.title}`"
               >
-                <svg class="w-8 h-8 mr-2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" role="presentation">
+                <svg class="w-6 h-6 mr-2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" role="presentation">
                   <description>
                     Presentation stand icon which will open the page of the talk's slides on click
                   </description>
