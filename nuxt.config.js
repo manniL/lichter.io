@@ -60,6 +60,10 @@ export default {
 
   sitemap: {
     hostname: baseUrl,
+    exclude: [
+      '/privacy/',
+      '/legal/'
+    ],
     defaults: {
       changefreq: 'daily',
       priority: 1,
