@@ -3,14 +3,14 @@
     <div class="flex-grow flex items-center w-auto">
       <div class="text-sm flex-grow">
         <NuxtLink
-          to="/legal"
+          to="/legal/"
           no-prefetch
           rel="nofollow"
           class="inline-block mt-0 mr-2 text-white hover:text-indigo-100 no-underline"
           v-text="'Legal notice'"
         />
         <NuxtLink
-          to="/privacy"
+          to="/privacy/"
           no-prefetch
           rel="nofollow"
           class="inline-block mt-0 text-white hover:text-indigo-100 no-underline"

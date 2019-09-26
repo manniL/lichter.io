@@ -71,11 +71,11 @@ export default {
       navItems: [
         {
           name: 'Timeline',
-          link: '/timeline'
+          link: '/timeline/'
         },
         {
           name: 'Speaking',
-          link: '/speaking'
+          link: '/speaking/'
         }
       ]
     }

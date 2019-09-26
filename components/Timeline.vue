@@ -31,7 +31,7 @@
       That was the start to more
       <NuxtLink
         class="text-gray-800 underline hover:text-gray-500"
-        to="/speaking"
+        to="/speaking/"
         rel="noreferrer noopener"
         v-text="'speaking opportunities'"
       />!<br><br>

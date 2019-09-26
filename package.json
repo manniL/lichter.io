@@ -23,7 +23,6 @@
     "nuxt-purgecss": "^0.2.1",
     "postcss-nested": "^4.1.2",
     "tailwindcss": "^1.1.1",
-    "vue-analytics": "^5.17.0",
     "vue-cookieconsent-component": "^1.2.0",
     "vue-if-bot": "^1.2.0",
     "vue-next-level-scroll": "^1.2.0",

@@ -7,6 +7,14 @@ export default {
   head,
   meta,
 
+  router: {
+    trailingSlash: true
+  },
+
+  env: {
+    baseUrl: utils.baseUrl
+  },
+
   css: [
     'assets/styles/app'
   ],
