@@ -8,7 +8,7 @@
       />
     </IfBot>
     <Navbar />
-    <Nuxt />
+    <Nuxt class="min-h-screen" />
     <AppFooter />
   </div>
 </template>
