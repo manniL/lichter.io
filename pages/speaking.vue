@@ -11,7 +11,7 @@
         If you think I'd be a good fit for your event, feel free to
         <a
           class="text-gray-900 font-bold hover:text-black underline"
-          href="mailto:inquiry@lichter.io?subject=Inquiry&body=Hey%20Alex!%0D%0AI%20think%20you'd%20be%20a%20great%20fit%20for%20our%20......."
+          href="mailto:inquiry@lichter.io?subject=Speaking%20Opportunity&body=Hey%20Alex!%0D%0AI%20think%20you'd%20be%20a%20great%20fit%20for%20our%20......."
         >contact me</a>! No matter if it is a conference, a user group meeting, an event inside your company or similar.
       </p>
       <section class="flex flex-col my-16">
