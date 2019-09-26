@@ -19,7 +19,7 @@
     <p>
       That's me, or better said my company: Developmint GbR. Our contact data can be found in the
       <NuxtLink
-        to="/legal"
+        to="/legal/"
         rel="nofollow"
         v-text="'legal notice'"
       />.

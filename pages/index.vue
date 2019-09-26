@@ -1,12 +1,9 @@
 <template>
   <div>
     <Intro />
-    <a id="about-me" />
     <AboutMe />
     <a id="skills" />
     <Skills />
-    <a id="timeline" />
-    <Timeline />
   </div>
 </template>
 
@@ -18,8 +15,12 @@ export default {
   components: {
     Intro,
     AboutMe,
-    Skills: () => import('~/components/Skills.vue'),
-    Timeline: () => import('~/components/Timeline.vue')
+    Skills: () => import('~/components/Skills.vue')
+  },
+  head () {
+    return {
+      title: ''
+    }
   }
 }
 </script>

@@ -7,6 +7,14 @@ export default {
   head,
   meta,
 
+  router: {
+    trailingSlash: true
+  },
+
+  env: {
+    baseUrl: utils.baseUrl
+  },
+
   css: [
     'assets/styles/app'
   ],
@@ -19,10 +27,14 @@ export default {
     fallback: true
   },
 
+  buildModules: [
+    '@nuxtjs/netlify-files',
+    '@nuxtjs/sitemap'
+  ],
+
   modules: [
     '@nuxtjs/google-analytics',
-    '@nuxtjs/pwa',
-    '@nuxtjs/netlify-files'
+    '@nuxtjs/pwa'
   ].concat(utils.isDev ? [] : ['nuxt-purgecss']),
 
   'google-analytics': {
@@ -43,6 +55,14 @@ export default {
   purgeCSS: {
     mode: 'postcss',
     whitelistPatterns: [/cookie-consent/]
+  },
+
+  sitemap: {
+    defaults: {
+      changefreq: 'daily',
+      priority: 1,
+      lastmodrealtime: true
+    }
   },
 
   manifest,

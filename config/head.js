@@ -1,5 +1,6 @@
 export default {
   __dangerouslyDisableSanitizers: ['script'],
+  titleTemplate: c => c ? `${c} - Lichter.io` : 'Lichter.io - Alexander Lichter',
   script: [
     {
       type: 'application/ld+json',

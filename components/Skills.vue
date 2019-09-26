@@ -1,18 +1,18 @@
 <template>
   <div
     v-scroll-reveal
-    class="flex flex-wrap flex-col items-center bg-gray-300 py-8"
+    class="flex flex-wrap flex-col items-center bg-gray-300 py-16"
   >
     <div class="flex justify-around w-5/6 md:w-1/2 mx-auto">
-      <h2 class="text-2xl font-bold text-center mb-8 underline">
-        Skills
+      <h2 class="text-2xl font-bold text-center">
+        My Skillset
       </h2>
     </div>
     <div
-      v-for="(_,i) in 3"
+      v-for="(_, i) in 3"
       :key="i"
       :class="{'md:my-2 md:h-32':i === 1, 'md:my-4':i !== 1}"
-      class="flex flex-col md:flex-row w-3/4 justify-around items-center"
+      class="flex flex-col md:flex-row w-3/4 justify-around items-center md:mt-8"
     >
       <Skill
         :title="$options.skills[i*2].title"
@@ -35,7 +35,7 @@
         :title="$options.skills[i*2+1].title"
         :rating="$options.skills[i*2+1].rating"
         :items="$options.skills[i*2+1].items"
-        :right="true"
+        :is-right="true"
       />
     </div>
   </div>
@@ -98,7 +98,7 @@ export default {
       title: 'Python',
       rating: 3,
       items: [
-        { text: 'dash', strong: true },
+        { text: 'flask', strong: true },
         { text: 'plotly' },
         { text: 'scikit-learn' },
         { text: 'pandas' }
