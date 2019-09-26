@@ -5,7 +5,7 @@
         Speaking - The talks I've given
       </h1>
       <p class="mt-16 max-w-4xl mx-auto">
-        Speaking was always fun and exciting for me. Already during my school time I was on stage multiple times.
+        Speaking was always fun and exciting for me. Already during my school time I was often on stage.
         Nowadays I have the pleasure to speak at international conferences, medium-to-large sized companies but also at
         local meetups.
         If you think I'd be a good fit for your event, feel free to
