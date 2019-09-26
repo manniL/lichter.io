@@ -61,8 +61,8 @@ export default {
     hostname: utils.baseUrl,
     trailingSlash: true,
     exclude: [
-      '/privacy/',
-      '/legal/'
+      '/privacy',
+      '/legal'
     ],
     defaults: {
       changefreq: 'daily',
