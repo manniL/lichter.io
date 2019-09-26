@@ -1,5 +1,4 @@
 import { build, head, manifest, meta, render, utils } from './config'
-import { baseUrl } from '@/config/utils'
 
 export default {
   modern: !utils.isDev,
@@ -59,7 +58,7 @@ export default {
   },
 
   sitemap: {
-    hostname: baseUrl,
+    hostname: utils.baseUrl,
     trailingSlash: true,
     exclude: [
       '/privacy/',
