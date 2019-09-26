@@ -1,4 +1,5 @@
 import { build, head, manifest, meta, render, utils } from './config'
+import { baseUrl } from '@/config/utils'
 
 export default {
   modern: !utils.isDev,
@@ -58,6 +59,7 @@ export default {
   },
 
   sitemap: {
+    hostname: baseUrl,
     defaults: {
       changefreq: 'daily',
       priority: 1,
