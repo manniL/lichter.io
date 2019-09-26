@@ -60,6 +60,7 @@ export default {
 
   sitemap: {
     hostname: baseUrl,
+    trailingSlash: true,
     exclude: [
       '/privacy/',
       '/legal/'
