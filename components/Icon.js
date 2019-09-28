@@ -16,7 +16,7 @@ export default {
       default: ''
     }
   },
-  render (h, { children, data, props: { viewBox, path, iconTitle } }) {
+  render (h, { data, props: { viewBox, path, iconTitle } }) {
     return h('svg', {
       class: 'w-8 h-8 fill-current inline-block',
       ...data,
