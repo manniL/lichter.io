@@ -20,7 +20,7 @@ export default {
   ],
 
   plugins: [
-    { src: '~/plugins/vue-scroll-reveal', ssr: false }
+    '~/plugins/vue-scroll-reveal.client'
   ],
 
   generate: {
