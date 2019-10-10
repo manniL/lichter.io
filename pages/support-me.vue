@@ -252,7 +252,28 @@ export default {
     }
   },
   head () {
+    const title = 'Support me!'
+    const metaDescription = `Your support is powerful. Please consider supporting me to allow me spending more time on the Nuxt ecosystem.`
+
     return {
+      title,
+      meta: [
+        {
+          hid: 'og:title',
+          name: 'og:title',
+          content: title
+        },
+        {
+          hid: 'description',
+          name: 'description',
+          content: metaDescription
+        },
+        {
+          hid: 'og:description',
+          name: 'og:description',
+          content: metaDescription
+        }
+      ],
       script: [
         { hid: 'stripe', src: 'https://js.stripe.com/v3/', defer: true, callback: () => { this.isStripeLoaded = true } }
       ]
