@@ -76,6 +76,10 @@ export default {
         {
           name: 'Speaking',
           link: '/speaking/'
+        },
+        {
+          name: 'Support me',
+          link: '/support-me/'
         }
       ]
     }
