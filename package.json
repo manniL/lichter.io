@@ -18,11 +18,11 @@
     "@nuxtjs/google-analytics": "^2.2.0",
     "@nuxtjs/netlify-files": "^1.0.0",
     "@nuxtjs/pwa": "^3.0.0-beta.16",
-    "@nuxtjs/sitemap": "^1.3.1",
+    "@nuxtjs/sitemap": "^2.0.0",
     "cross-env": "^6.0.3",
     "date-fns": "^2.3.0",
     "netlify-lambda": "^1.6.3",
-    "nuxt-edge": "^2.10.0-26176331.15fa12fc",
+    "nuxt-edge": "^2.10.1-26177771.a0ef4a37",
     "nuxt-purgecss": "^0.2.1",
     "nuxt-svg-loader": "^1.0.1",
     "postcss-extend-rule": "^3.0.0",
@@ -39,9 +39,9 @@
   "devDependencies": {
     "@nuxtjs/eslint-config": "1.1.2",
     "babel-eslint": "^10.0.2",
-    "eslint": "^5.16.0",
-    "eslint-loader": "^2.2.1",
-    "husky": "^2.7.0"
+    "eslint": "^6.5.1",
+    "eslint-loader": "^3.0.2",
+    "husky": "^3.0.8"
   },
   "husky": {
     "hooks": {
