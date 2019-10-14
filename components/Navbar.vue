@@ -39,7 +39,7 @@
           <NuxtLink
             :to="item.link"
             class="text-red-200 hover:text-white no-underline"
-            @click.prevent="toggleVisibility"
+            @click.native="toggleVisibility"
           >
             {{ item.name }}
           </NuxtLink>
