@@ -171,7 +171,7 @@
             </h3>
             <p class="text-xl mt-16">
               For recurring donations, please use my
-              <a class="font-bold text-2xl github-link" href="https://github.com/users/manniL/sponsorship" rel="noopener">GitHub Sponsorship profile</a>.
+              <a class="font-bold text-2xl github-link" href="https://github.com/users/manniL/sponsorship" target="_blank" rel="noopener">GitHub Sponsorship profile</a>.
             </p>
           </div>
           <div class="mt-16">
