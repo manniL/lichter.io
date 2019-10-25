@@ -105,6 +105,20 @@ import { format } from 'date-fns'
 
 const TALKS = [
   {
+    title: 'Nuxt.js - AMA',
+    description: `
+      I thought a lot about what I was going to present at VueCamp. Finally, I decided on something that fits well with
+      the spirit of a barcamp: Talking with the people, not only to the people. And nothing fits better than an AMA here!
+      So, I'm curious about your exciting questions regarding the Nuxt ecosystem, the core and (almost) everything else
+      you want me to tell you.
+    `,
+    eventName: 'VueCamp',
+    location: 'Berlin, Germany',
+    eventUrl: 'https://vuecamp.de/',
+    slidesUrl: 'https://slides.com/mannil/ama-vuecamp-berlin-2019',
+    date: '2019-10-26'
+  },
+  {
     title: 'JAMstack - A new web app architecture',
     description: `
     JAMStack is interesting, though we will neither talk about the portable guitar amp, nor the stacking of jam.
