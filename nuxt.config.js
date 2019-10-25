@@ -17,7 +17,8 @@ export default {
   },
 
   plugins: [
-    '~/plugins/vue-scroll-reveal.client'
+    '~/plugins/vue-scroll-reveal.client',
+    '~/plugins/polyfills.client'
   ],
 
   generate: {

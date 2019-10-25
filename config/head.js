@@ -30,7 +30,6 @@ export default {
             'https://linkedin.com/in/alexanderlichter'
           ]
         })
-    },
-    { src: 'https://unpkg.com/smoothscroll-polyfill@0.4.3/dist/smoothscroll.min.js', defer: true }
+    }
   ]
 }
