@@ -1,7 +1,7 @@
-const needsScrollBehaviorPolyfill = 'scrollBehavior' in window.document.documentElement.style
+const hasScrollBehaviorImplemented = 'scrollBehavior' in window.document.documentElement.style
 
 export default async function () {
-  if (!needsScrollBehaviorPolyfill) {
+  if (hasScrollBehaviorImplemented) {
     return
   }
   const smoothScroll = await import('smoothscroll-polyfill')
