@@ -24,6 +24,20 @@ export default {
     fallback: true
   },
 
+  fetch: {
+    client: false,
+    server: false
+  },
+  features: {
+    store: false,
+    middleware: false,
+    deprecations: false,
+    validate: false,
+    asyncData: false,
+    fetch: false,
+    componentAliases: false
+  },
+
   modules: [
     'nuxt-svg-loader',
     '@nuxtjs/google-analytics',
