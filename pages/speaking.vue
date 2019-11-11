@@ -65,30 +65,35 @@
                 </svg>
                 <span class="group-hover:underline text-lg">Video</span>
               </a>
-              <a
-                v-if="talk.slidesUrl"
-                :href="talk.slidesUrl"
-                target="_blank"
-                rel="noopener nofollow"
-                class="group flex items-center"
-                :class="talk.videoUrl && 'mt-6'"
-                :title="`Open slides for ${talk.title}`"
-              >
-                <svg class="w-6 h-6 mr-2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" role="presentation">
-                  <description>
-                    Presentation stand icon which will open the page of the talk's slides on click
-                  </description>
-                  <path
-                    class="fill-current text-gray-800 group-hover:text-gray-700"
-                    d="M11 18.62l-6.55 3.27a1 1 0 0 1-.9-1.78L11 16.38V5a1 1 0 0 1 2 0v11.38l7.45 3.73a1 1 0 0 1-.9 1.78L13 18.62V21a1 1 0 0 1-2 0v-2.38z"
-                  />
-                  <path
-                    class="fill-current text-gray-600 group-hover:text-gray-500"
-                    d="M21 14a1 1 0 0 1 0 2H3a1 1 0 0 1 0-2V4a1 1 0 1 1 0-2h18a1 1 0 0 1 0 2v10z"
-                  />
-                </svg>
-                <span class="group-hover:underline text-lg">Slides</span>
-              </a>
+              <template>
+                <a
+                  v-if="talk.slidesUrl"
+                  :href="talk.slidesUrl"
+                  target="_blank"
+                  rel="noopener nofollow"
+                  class="group flex items-center"
+                  :class="talk.videoUrl && 'mt-6'"
+                  :title="`Open slides for ${talk.title}`"
+                >
+                  <svg class="w-6 h-6 mr-2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" role="presentation">
+                    <description>
+                      Presentation stand icon which will open the page of the talk's slides on click
+                    </description>
+                    <path
+                      class="fill-current text-gray-800 group-hover:text-gray-700"
+                      d="M11 18.62l-6.55 3.27a1 1 0 0 1-.9-1.78L11 16.38V5a1 1 0 0 1 2 0v11.38l7.45 3.73a1 1 0 0 1-.9 1.78L13 18.62V21a1 1 0 0 1-2 0v-2.38z"
+                    />
+                    <path
+                      class="fill-current text-gray-600 group-hover:text-gray-500"
+                      d="M21 14a1 1 0 0 1 0 2H3a1 1 0 0 1 0-2V4a1 1 0 1 1 0-2h18a1 1 0 0 1 0 2v10z"
+                    />
+                  </svg>
+                  <span class="group-hover:underline text-lg">Slides</span>
+                </a>
+                <span v-else class="group-hover:underline text-gray-800">
+                  No slides available
+                </span>
+              </template>
             </div>
           </div>
           <p class="flex-1 mt-8 md:mt-0">
@@ -104,6 +109,33 @@
 import { format } from 'date-fns'
 
 const TALKS = [
+  {
+    title: 'SEO - Basics and proven patterns for modern web applications',
+    description: `
+      Another spontaneous session on an interesting topic: Search Engine Optimization. Often seen as rocket science
+      or witchcraft, SEO is an important part of many businesses and invested work will be often rewarded in the medium
+      and long term. With a few basics, you can already improve your search engine visibility and get ahead of
+      competitors that don't care about Search Engine Optimization. During the session, I showed a few achievements
+      regarding organic traffic, basic steps every web dev can perform to improve their site visibility and proven
+      patterns in SEO.
+    `,
+    eventName: 'VueCamp',
+    location: 'Berlin, Germany',
+    eventUrl: 'https://vuecamp.de/',
+    date: '2019-10-27'
+  },
+  {
+    title: 'A live introduction into Tailwind',
+    description: `
+      A spontaneous live-coding session about the rising CSS framework Tailwind. During the session we created a demo
+      project based on Nuxt.js, included Tailwind and took a look at the utility-first approach as well as different
+      features of the framework like component extraction, the style reset for many native elements and easy class composition.
+    `,
+    eventName: 'VueCamp',
+    location: 'Berlin, Germany',
+    eventUrl: 'https://vuecamp.de/',
+    date: '2019-10-27'
+  },
   {
     title: 'Nuxt.js - AMA',
     description: `
