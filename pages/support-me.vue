@@ -1,10 +1,10 @@
 <template>
-  <div class="bg-gray-200">
-    <section class="flex flex-col justify-center items-center flex-wrap pb-16">
-      <h1 class="text-center text-3xl md:text-4xl py-10">
+  <div class="bg-gray-200 px-4 py-16">
+    <section class="flex flex-col justify-center items-center flex-wrap">
+      <h1 class="text-2xl font-bold text-center">
         Your support is powerful!
       </h1>
-      <div class="flex flex-col md:flex-row justify-around items-center w-5/6 md:w-2/3 mx-auto">
+      <div class="flex flex-col md:flex-row justify-around items-center w-5/6 md:w-2/3 mx-auto mt-16">
         <div class="flex-1 text-center">
           <div class="flex flex-col items-center">
             <img
