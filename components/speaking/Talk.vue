@@ -2,13 +2,13 @@
   <article class="py-4 pb-16 my-4 border-b border-gray-400 last:border-b-0 flex flex-col md:flex-row justify-center">
     <div class="flex flex-col flex-1">
       <div>
-        <template v-if="isUpcoming">
-          <div class="block mb-2">
+        <ClientOnly>
+          <div v-if="isUpcoming" class="block mb-2 transition-all-300 animated fade-in">
             <span class="inline bg-gray-700 text-gray-100 rounded px-2 py-1">
               Upcoming
             </span>
           </div>
-        </template>
+        </ClientOnly>
         <h2 class="text-2xl inline-block py-1">
           {{ talk.title }}
         </h2>
