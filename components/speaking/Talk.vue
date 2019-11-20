@@ -54,35 +54,33 @@
           </svg>
           <span class="group-hover:underline text-lg">Video</span>
         </a>
-        <template>
-          <a
-            v-if="talk.slidesUrl"
-            :href="talk.slidesUrl"
-            target="_blank"
-            rel="noopener nofollow"
-            class="group flex items-center"
-            :class="talk.videoUrl && 'mt-6'"
-            :title="`Open slides for ${talk.title}`"
-          >
-            <svg class="w-6 h-6 mr-2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" role="presentation">
-              <description>
-                Presentation stand icon which will open the page of the talk's slides on click
-              </description>
-              <path
-                class="fill-current text-gray-800 group-hover:text-gray-700"
-                d="M11 18.62l-6.55 3.27a1 1 0 0 1-.9-1.78L11 16.38V5a1 1 0 0 1 2 0v11.38l7.45 3.73a1 1 0 0 1-.9 1.78L13 18.62V21a1 1 0 0 1-2 0v-2.38z"
-              />
-              <path
-                class="fill-current text-gray-600 group-hover:text-gray-500"
-                d="M21 14a1 1 0 0 1 0 2H3a1 1 0 0 1 0-2V4a1 1 0 1 1 0-2h18a1 1 0 0 1 0 2v10z"
-              />
-            </svg>
-            <span class="group-hover:underline text-lg">Slides</span>
-          </a>
-          <span v-else class="group-hover:underline text-gray-800">
-            No slides available {{ isUpcoming ? 'yet' : '' }}
-          </span>
-        </template>
+        <a
+          v-if="talk.slidesUrl"
+          :href="talk.slidesUrl"
+          target="_blank"
+          rel="noopener nofollow"
+          class="group flex items-center"
+          :class="talk.videoUrl && 'mt-6'"
+          :title="`Open slides for ${talk.title}`"
+        >
+          <svg class="w-6 h-6 mr-2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" role="presentation">
+            <description>
+              Presentation stand icon which will open the page of the talk's slides on click
+            </description>
+            <path
+              class="fill-current text-gray-800 group-hover:text-gray-700"
+              d="M11 18.62l-6.55 3.27a1 1 0 0 1-.9-1.78L11 16.38V5a1 1 0 0 1 2 0v11.38l7.45 3.73a1 1 0 0 1-.9 1.78L13 18.62V21a1 1 0 0 1-2 0v-2.38z"
+            />
+            <path
+              class="fill-current text-gray-600 group-hover:text-gray-500"
+              d="M21 14a1 1 0 0 1 0 2H3a1 1 0 0 1 0-2V4a1 1 0 1 1 0-2h18a1 1 0 0 1 0 2v10z"
+            />
+          </svg>
+          <span class="group-hover:underline text-lg">Slides</span>
+        </a>
+        <span v-else class="group-hover:underline text-gray-800">
+          No slides available {{ isUpcoming ? 'yet' : '' }}
+        </span>
       </div>
     </div>
     <p class="flex-1 mt-8 md:mt-0">
