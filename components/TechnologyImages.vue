@@ -18,6 +18,21 @@
   </Transition>
 </template>
 <script>
+
+import { computed, ref } from '@vue/composition-api'
+import { useInterval } from '@/compositions/useInterval'
+
+const imageUrls = [
+  { name: 'Vue.js', imgName: 'vuejs' },
+  { name: 'Nuxt.js', imgName: 'nuxt' },
+  { name: 'Laravel', imgName: 'laravel' },
+  { name: 'Tailwind', imgName: 'tailwind' },
+  { name: 'Git', imgName: 'git' },
+  { name: 'Travis CI', imgName: 'travisci' },
+  { name: 'Node.js', imgName: 'node' },
+  { name: 'Webpack', imgName: 'webpack' }
+]
+
 export default {
   props: {
     interval: {
@@ -25,38 +40,23 @@ export default {
       default: 5
     }
   },
-  data () {
-    return {
-      currentUrlIndex: 0
-    }
-  },
-  computed: {
-    currentImage () {
-      const { imgName, name } = this.$options.urls[this.currentUrlIndex]
+  setup ({ interval }) {
+    const currentUrlIndex = ref(0)
+    const currentImage = computed(() => {
+      const { imgName, name } = imageUrls[currentUrlIndex.value]
       return { img: require(`~/assets/img/${imgName}.png`), name }
-    }
-  },
-  mounted () {
-    const intervalListener = setInterval(this.incrementUrlIndex, this.interval * 1000)
-    this.$once('hook:beforeDestroy', () => {
-      clearInterval(intervalListener)
     })
-  },
-  methods: {
-    incrementUrlIndex () {
-      this.currentUrlIndex = (this.currentUrlIndex + 1) % this.$options.urls.length
+
+    const incrementUrlIndex = () => { currentUrlIndex.value = (currentUrlIndex.value + 1) % imageUrls.length }
+
+    useInterval(interval, incrementUrlIndex)
+
+    return {
+      imageUrls,
+      currentImage,
+      currentUrlIndex
     }
-  },
-  urls: [
-    { name: 'Vue.js', imgName: 'vuejs' },
-    { name: 'Nuxt.js', imgName: 'nuxt' },
-    { name: 'Laravel', imgName: 'laravel' },
-    { name: 'Tailwind', imgName: 'tailwind' },
-    { name: 'Git', imgName: 'git' },
-    { name: 'Travis CI', imgName: 'travisci' },
-    { name: 'Node.js', imgName: 'node' },
-    { name: 'Webpack', imgName: 'webpack' }
-  ]
+  }
 }
 </script>
 

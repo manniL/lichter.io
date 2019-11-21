@@ -17,6 +17,7 @@ export default {
   },
 
   plugins: [
+    '~/plugins/composition-api.js',
     '~/plugins/vue-scroll-reveal.client',
     '~/plugins/polyfills.client'
   ],

@@ -22,9 +22,10 @@
 </template>
 
 <script>
+import { computed, createComponent } from '@vue/composition-api'
 import Rating from '~/components/skills/Rating.vue'
 
-export default {
+export default createComponent({
   components: {
     Rating
   },
@@ -46,10 +47,10 @@ export default {
       default: false
     }
   },
-  computed: {
-    itemString () {
-      return this.items.map(i => i.strong ? `<strong>${i.text}</strong>` : i.text).join(', ')
+  setup (props) {
+    return {
+      itemString: computed(() => props.items.map(i => i.strong ? `<strong>${i.text}</strong>` : i.text).join(', '))
     }
   }
-}
+})
 </script>

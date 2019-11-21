@@ -14,7 +14,10 @@
         </h2>
       </div>
       <div class="text-gray-700">
-        <a :class="[talk.eventUrl && 'underline hover:no-underline inline-block hover:text-gray-800']" v-bind="talk.eventUrl ? { href: talk.eventUrl, rel: 'nofollow noopener' } : {}">
+        <a
+          :class="[talk.eventUrl && 'underline hover:no-underline inline-block hover:text-gray-800']"
+          v-bind="talk.eventUrl ? { href: talk.eventUrl, rel: 'nofollow noopener' } : {}"
+        >
           {{ talk.eventName }}
         </a>
         <template v-if="talk.location">
@@ -30,12 +33,12 @@
         <a
           v-if="talk.videoUrl"
           :href="talk.videoUrl"
-          target="_blank"
-          rel="noopener nofollow"
-          class="group flex items-center mr-8 md:mr-0"
           :title="`Open video for ${talk.title}`"
+          class="group flex items-center mr-8 md:mr-0"
+          rel="noopener nofollow"
+          target="_blank"
         >
-          <svg class="w-6 h-6 mr-2 group" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" role="presentation">
+          <svg class="w-6 h-6 mr-2 group" role="presentation" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
             <description>
               Video camera icon which will open the page of the talk's video recording on click
             </description>
@@ -56,14 +59,14 @@
         </a>
         <a
           v-if="talk.slidesUrl"
-          :href="talk.slidesUrl"
-          target="_blank"
-          rel="noopener nofollow"
-          class="group flex items-center"
           :class="talk.videoUrl && 'mt-6'"
+          :href="talk.slidesUrl"
           :title="`Open slides for ${talk.title}`"
+          class="group flex items-center"
+          rel="noopener nofollow"
+          target="_blank"
         >
-          <svg class="w-6 h-6 mr-2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" role="presentation">
+          <svg class="w-6 h-6 mr-2" role="presentation" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
             <description>
               Presentation stand icon which will open the page of the talk's slides on click
             </description>
@@ -91,6 +94,7 @@
 
 <script>
 import { format, isFuture } from 'date-fns'
+import { computed } from '@vue/composition-api'
 
 export default {
   props: {
@@ -99,20 +103,10 @@ export default {
       required: true
     }
   },
-  computed: {
-    formattedDate () {
-      if (!this.talk.date) {
-        return ''
-      }
-
-      return format(new Date(this.talk.date), `do 'of' MMMM yyyy`)
-    },
-    isUpcoming () {
-      if (!this.talk.date) {
-        return ''
-      }
-
-      return isFuture(new Date(this.talk.date))
+  setup ({ talk }) {
+    return {
+      formattedDate: computed(() => talk.date ? format(new Date(talk.date), `do 'of' MMMM yyyy`) : ''),
+      isUpcoming: computed(() => talk.date ? isFuture(new Date(talk.date)) : '')
     }
   }
 }

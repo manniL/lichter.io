@@ -16,9 +16,7 @@ export default {
       .from({ length: 5 }, (_, i) => i + 1)
       .map(i => h(RatingSquare, { props: { hidden: i > props.rating } }))
 
-    return h('div', {
-      class: 'flex group'
-    }, squares)
+    return h('div', { class: 'flex group' }, squares)
   }
 }
 </script>

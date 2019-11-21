@@ -59,15 +59,19 @@
   </nav>
 </template>
 <script>
+import { ref } from '@vue/composition-api'
 import Icon from '~/components/Icon.js'
 
 export default {
   components: {
     Icon
   },
-  data () {
+  setup () {
+    const isVisible = ref(false)
+    const toggleVisibility = () => { isVisible.value = !isVisible.value }
+
     return {
-      isVisible: false,
+      isVisible,
       navItems: [
         {
           name: 'Timeline',
@@ -81,12 +85,8 @@ export default {
           name: 'Support me',
           link: '/support-me/'
         }
-      ]
-    }
-  },
-  methods: {
-    toggleVisibility () {
-      this.isVisible = !this.isVisible
+      ],
+      toggleVisibility
     }
   }
 }
