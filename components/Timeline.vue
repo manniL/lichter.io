@@ -1,6 +1,6 @@
 <template>
-  <ul class="timeline timeline-centered pt-4">
-    <TimelineItem :period="true" title="Joined the Nuxt.js Core Team" when="September 2018">
+  <ul class="w-full text-gray-600 leading-snug pt-4 md:pt-0">
+    <TimelineItem period title="Joined the Nuxt.js Core Team" when="September 2018">
       Since the beginning of 2018, Nuxt.js was my framework of choice to fulfill a variety of tasks. After getting
       in touch with the community, I couldn't let it go! Contributing meaningful parts to such an awesome and large
       project felt great. Over time I dug into the internals of Nuxt and got used to the code base, also thanks to
@@ -75,7 +75,7 @@
       there and started to study.
     </TimelineItem>
 
-    <TimelineItem :period="true" title="Founded Developmint" when="August 2015">
+    <TimelineItem period title="Founded Developmint" when="August 2015">
       Not even a month after finishing my Abitur, I founded my own company together with two friends.
       <a
         class="developmint"
@@ -125,7 +125,7 @@
       Yeah, that's no joke! I played a Mario clone on my grandpa's PC.
     </TimelineItem>
 
-    <TimelineItem :period="true" title="I was born 🤰🏼👶🏼" />
+    <TimelineItem period title="I was born 🤰🏼👶🏼" />
   </ul>
 </template>
 
@@ -147,162 +147,4 @@ export default {
       text-decoration: underline;
     }
   }
-
-  .timeline {
-    @apply .w-full .text-gray-600 .leading-snug;
-
-    h1, h2, h3, h4, h5, h6 {
-      @apply .text-black;
-      line-height: inherit;
-    }
-  }
-
-  .timeline-item {
-    @apply .relative .pl-8 ;
-    &:last-child {
-      @apply pb-0;
-    }
-  }
-
-  .timeline-info {
-    @apply .mb-2 .font-bold .text-xs .tracking-wide .uppercase .whitespace-no-wrap;
-  }
-
-  .timeline-marker {
-    @apply .absolute .inset-y-0 .left-0 .w-8;
-
-    &:before {
-      @apply .absolute .left-0 .block .h-4 .w-4 .bg-gray-400;
-      content: "";
-      top: 4px;
-      transition: background 0.2s ease-in-out;
-    }
-
-    &:after {
-      @apply .absolute .bottom-0 .block .bg-gray-400;
-      content: "";
-
-      width: 3px;
-
-      top: 24px;
-      left: 6px;
-    }
-
-    .timeline-item:last-child &:after {
-      content: none;
-    }
-  }
-
-  .timeline-item:not(.period):hover .timeline-marker:before {
-    @apply .bg-red-600;
-  }
-
-  .timeline-content {
-    padding-bottom: 40px;
-
-    p:last-child {
-      @apply .mb-0;
-    }
-  }
-
-  .timeline-item:not(.period):hover .timeline-info,
-  .timeline-item:not(.period):hover .timeline-content {
-    @apply .text-gray-900;
-  }
-
-  .timeline-split {
-    @screen sm {
-      .timeline {
-        @apply .table;
-      }
-
-      .timeline-item {
-        @apply .table-row .p-0;
-      }
-
-      .timeline-info,
-      .timeline-marker,
-      .period .timeline-info {
-        @apply .table-cell .align-top;
-      }
-
-      .timeline-marker {
-        @apply .relative;
-      }
-
-      .timeline-content {
-        @apply .block .m-0 .p-0 .mt-4 .mb-4;
-        padding-left: 30px;
-      }
-
-      .timeline-info {
-        padding-right: 30px;
-      }
-
-      .period .timeline-title {
-        @apply .relative;
-        left: -45px;
-      }
-    }
-  }
-
-  .timeline-centered {
-    @extend .timeline-split;
-    @screen md {
-      &,
-      .timeline-item,
-      .timeline-info,
-      .timeline-marker,
-      .timeline-content {
-        @apply .block .m-0 .p-0;
-      }
-
-      .timeline-item {
-        @apply .overflow-hidden;
-        padding-bottom: 40px;
-      }
-
-      .timeline-marker {
-        @apply .absolute;
-        left: 50%;
-        margin-left: -7.5px;
-      }
-
-      .timeline-info,
-      .timeline-content {
-        width: 50%;
-      }
-
-      > .timeline-item:nth-child(odd) .timeline-info,
-      > .timeline-item:nth-child(even) .timeline-content {
-        @apply .float-left .text-right;
-        padding-right: 30px;
-      }
-
-      > .timeline-item:nth-child(odd) .timeline-content,
-      > .timeline-item:nth-child(even) .timeline-info {
-        @apply .float-right .text-left;
-        padding-left: 30px;
-      }
-
-      > .timeline-item.period .timeline-content {
-        @apply .float-none .p-0 .w-full .text-center;
-      }
-
-      .timeline-item.period {
-        padding: 50px 0 90px;
-      }
-
-      .period .timeline-marker:after {
-        @apply .bottom-0;
-        height: 30px;
-        top: auto;
-      }
-
-      .period .timeline-title {
-        left: auto;
-      }
-    }
-  }
-
 </style>
