@@ -7,11 +7,11 @@
         <source srcset="/img/me@2x.jpg 2x" type="image/jpeg">
         <source srcset="/img/me.jpg" type="image/jpeg">
         <img
+          alt="Young man (Alexander Lichter) wearing a suite, nature in the background"
           class="rounded-full border-solid border-4 shadow-inset w-64 h-64"
           height="256"
-          width="256"
-          alt="Young man (Alexander Lichter) wearing a suite, nature in the background"
           src="/img/me.jpg"
+          width="256"
         >
       </picture>
       <div class="mt-4">
@@ -74,12 +74,15 @@ export default {
   components: {
     Icon: () => import('~/components/Icon')
   },
-  methods: {
-    trackIconClick (iconType) {
-      this.$ga.event({
+  setup (_, context) {
+    const trackIconClick = (iconType) => {
+      context.root.$ga.event({
         eventCategory: 'click',
         eventAction: `${iconType}Icon`
       })
+    }
+    return {
+      trackIconClick
     }
   }
 }
