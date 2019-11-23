@@ -40,7 +40,7 @@ export default {
       default: 5
     }
   },
-  setup ({ interval }) {
+  setup (props) {
     const currentUrlIndex = ref(0)
     const currentImage = computed(() => {
       const { imgName, name } = imageUrls[currentUrlIndex.value]
@@ -49,7 +49,7 @@ export default {
 
     const incrementUrlIndex = () => { currentUrlIndex.value = (currentUrlIndex.value + 1) % imageUrls.length }
 
-    useInterval(interval, incrementUrlIndex)
+    useInterval(props.interval, incrementUrlIndex)
 
     return {
       imageUrls,

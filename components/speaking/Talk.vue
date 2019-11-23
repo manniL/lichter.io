@@ -103,10 +103,10 @@ export default {
       required: true
     }
   },
-  setup ({ talk }) {
+  setup (props) {
     return {
-      formattedDate: computed(() => talk.date ? format(new Date(talk.date), `do 'of' MMMM yyyy`) : ''),
-      isUpcoming: computed(() => talk.date ? isFuture(new Date(talk.date)) : '')
+      formattedDate: computed(() => props.talk.date ? format(new Date(props.talk.date), `do 'of' MMMM yyyy`) : ''),
+      isUpcoming: computed(() => props.talk.date ? isFuture(new Date(props.talk.date)) : '')
     }
   }
 }
