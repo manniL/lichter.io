@@ -28,12 +28,12 @@
       After talking with a lot of people about my choice of programming languages, I decided to work on a
       talk about PHP, it's flaws and advantages, as well as the upcoming future of the language.<br>
       I named it "<span class="font-semibold text-indigo-600" v-text="'PHP is dead - Long live PHP!'" />".
-      That was the start to more
+      The talk marks the starting point of my
       <NuxtLink
         class="text-gray-800 underline hover:text-gray-500"
         to="/speaking/"
         rel="noreferrer noopener"
-        v-text="'speaking opportunities'"
+        v-text="'speaking journey'"
       />!<br><br>
       <b>Used Technologies</b><br>
       Tailwind, Webpack, Reveal.js
