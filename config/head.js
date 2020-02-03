@@ -25,7 +25,7 @@ export default {
           'sameAs': [
             'https://twitter.com/TheAlexLichter',
             'https://github.com/manniL',
-            'https://developmint.de/',
+            'https://www.developmint.de/',
             'https://stackoverflow.com/users/3975480/mannil',
             'https://linkedin.com/in/alexanderlichter'
           ]

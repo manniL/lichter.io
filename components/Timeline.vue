@@ -79,7 +79,7 @@
       Not even a month after finishing my Abitur, I founded my own company together with two friends.
       <a
         class="developmint"
-        href="https://developmint.de?ref=lichter.io"
+        href="https://www.developmint.de?ref=lichter.io"
         rel="noopener"
         target="_blank"
         v-text="'Developmint'"
