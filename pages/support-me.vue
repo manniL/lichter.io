@@ -253,7 +253,7 @@ export default {
   },
   head () {
     const title = 'Support me!'
-    const metaDescription = `Your support is powerful. Please consider supporting me to allow me spending more time on the Nuxt ecosystem.`
+    const metaDescription = 'Your support is powerful. Please consider supporting me to allow me spending more time on the Nuxt ecosystem.'
 
     return {
       title,

@@ -127,7 +127,7 @@ export default {
           country: 'DE',
           currency: 'eur',
           total: {
-            label: `Donation to Alexander Lichter`,
+            label: 'Donation to Alexander Lichter',
             amount: this.amountInCents
           }
         },

@@ -107,14 +107,14 @@ const TALKS = [
   },
   {
     title: 'Clean Code in Vue.js and Nuxt.js',
-    description: `Clean Code is undoubtfully important. Too much technical debt can slow down projects and, in the end, ruin companies. While the principles themselve are clear thanks to Uncle Bob, this talk lays the focus on Clean Code when working with the frameworks Vue.js and Nuxt.js.`,
+    description: 'Clean Code is undoubtfully important. Too much technical debt can slow down projects and, in the end, ruin companies. While the principles themselve are clear thanks to Uncle Bob, this talk lays the focus on Clean Code when working with the frameworks Vue.js and Nuxt.js.',
     eventName: 'Private talk',
     location: 'Undisclosed location',
     date: '2019-06-11'
   },
   {
     title: 'Nuxt.js in the context of modern web development',
-    description: `An introduction talk to fellow developer colleagues explaining the history of web development and digging deeper into modern approaches including SPAs, SSR-Apps and JAMstack, all realised with the Nuxt.js framework.`,
+    description: 'An introduction talk to fellow developer colleagues explaining the history of web development and digging deeper into modern approaches including SPAs, SSR-Apps and JAMstack, all realised with the Nuxt.js framework.',
     eventName: 'Private talk',
     location: 'Undisclosed location',
     date: '2019-06-11'
@@ -150,7 +150,7 @@ const TALKS = [
   },
   {
     title: 'Nuxt.js - Why? How? Oh yeah!',
-    description: `Nuxt.js - You probably have heard the name of the Vue.js framework at least once. Maybe when a fellow colleague gave it a try, or when you saw it on the GitHub report as 4th fastest growing open source project in 2018. But as a smart developer, you're skeptical: Why would I need another framework that even sits on top of *another* one? What is this SSR everyone is talking about? What problems would Nuxt solve for me and how to get started? During my talk, all these questions (and many more) will be answered. Join an introduction to Nuxt.js and experience it with no previous knowledge needed besides Vue. `,
+    description: 'Nuxt.js - You probably have heard the name of the Vue.js framework at least once. Maybe when a fellow colleague gave it a try, or when you saw it on the GitHub report as 4th fastest growing open source project in 2018. But as a smart developer, you\'re skeptical: Why would I need another framework that even sits on top of *another* one? What is this SSR everyone is talking about? What problems would Nuxt solve for me and how to get started? During my talk, all these questions (and many more) will be answered. Join an introduction to Nuxt.js and experience it with no previous knowledge needed besides Vue. ',
     eventName: 'VueDay Verona',
     location: 'Verona, Italy',
     eventUrl: 'https://2019.vueday.it/talks.html',
@@ -250,7 +250,7 @@ export default {
   talks: TALKS,
   head () {
     const title = 'Speaking - My Talks'
-    const metaDescription = `A list of all talks I've given on conferences, meetups and other events. Slides and video, if available, are linked to each talk.`
+    const metaDescription = 'A list of all talks I\'ve given on conferences, meetups and other events. Slides and video, if available, are linked to each talk.'
     return {
       title,
       meta: [
