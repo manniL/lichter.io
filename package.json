@@ -20,7 +20,7 @@
     "@nuxtjs/pwa": "^3.0.0-beta.16",
     "@nuxtjs/sitemap": "^2.0.0",
     "@vue/composition-api": "^0.3.2",
-    "cross-env": "^6.0.3",
+    "cross-env": "^7.0.1",
     "date-fns": "^2.3.0",
     "netlify-lambda": "^1.6.3",
     "nuxt-edge": "^2.10.1-26177771.a0ef4a37",
