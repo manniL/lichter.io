@@ -93,7 +93,7 @@
 </template>
 
 <script>
-import { format, isFuture } from 'date-fns'
+import { format, isFuture, parse } from 'date-fns'
 import { computed } from '@vue/composition-api'
 
 export default {
@@ -104,9 +104,11 @@ export default {
     }
   },
   setup (props) {
+    const talkDate = props.talk.date && parse(props.talk.date, 'yyyy-MM-dd', new Date())
+
     return {
-      formattedDate: computed(() => props.talk.date ? format(new Date(props.talk.date), 'do \'of\' MMMM yyyy') : ''),
-      isUpcoming: computed(() => props.talk.date ? isFuture(new Date(props.talk.date)) : '')
+      formattedDate: computed(() => talkDate ? format(talkDate, 'do \'of\' MMMM yyyy') : ''),
+      isUpcoming: computed(() => talkDate ? isFuture(talkDate) : '')
     }
   }
 }
