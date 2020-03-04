@@ -38,6 +38,7 @@ const TALKS = [
     eventName: 'VueConf US',
     location: 'Austin, USA',
     eventUrl: 'https://vueconf.us/',
+    slidesUrl: 'https://slides.com/mannil/seo-in-a-vuejs-world-vueconf-us-2020/',
     date: '2020-03-03'
   },
   {
