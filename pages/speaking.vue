@@ -39,7 +39,7 @@ const TALKS = [
     location: 'Austin, USA',
     eventUrl: 'https://vueconf.us/',
     slidesUrl: 'https://slides.com/mannil/seo-in-a-vuejs-world-vueconf-us-2020/',
-    date: '2020-03-03'
+    date: '2020-03-04'
   },
   {
     title: 'SEO - Basics and proven patterns for modern web applications',
