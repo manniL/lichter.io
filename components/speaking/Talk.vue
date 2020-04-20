@@ -16,7 +16,7 @@
       <div class="text-gray-700">
         <a
           :class="[talk.eventUrl && 'underline hover:no-underline inline-block hover:text-gray-800']"
-          v-bind="talk.eventUrl ? { href: talk.eventUrl, rel: 'nofollow noopener' } : {}"
+          v-bind="talk.eventUrl ? { href: talk.eventUrl, rel: 'nofollow noopener', target: '_blank' } : {}"
         >
           {{ talk.eventName }}
         </a>
