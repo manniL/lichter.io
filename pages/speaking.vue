@@ -35,6 +35,18 @@ const TALKS = [
     decisive for the success and also the revenue of your projects. But when it comes to Vue.js and SEO, there are many
     controversial opinions about the impact of Vue on SEO efforts. In my session we will go through the basics of SEO
     and examine best practices and their implementations with the help of vue-meta and Nuxt.js.`,
+    eventName: 'MallorcaJS',
+    location: 'Online',
+    eventUrl: 'https://www.meetup.com/MallorcaJS/events/270156286/?isFirstPublish=true',
+    date: '2020-04-22'
+  },
+  {
+    title: 'SEO in a Vue.js world',
+    description: `What do a SaaS landing page, blog and e-commerce store have in common? They should all be found
+    through a search engine, ideally by as many people as possible. Search engine optimization (SEO) can therefore be
+    decisive for the success and also the revenue of your projects. But when it comes to Vue.js and SEO, there are many
+    controversial opinions about the impact of Vue on SEO efforts. In my session we will go through the basics of SEO
+    and examine best practices and their implementations with the help of vue-meta and Nuxt.js.`,
     eventName: 'VueConf US',
     location: 'Austin, USA',
     eventUrl: 'https://vueconf.us/',
