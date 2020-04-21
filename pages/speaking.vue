@@ -50,6 +50,7 @@ const TALKS = [
     eventName: 'VueConf US',
     location: 'Austin, USA',
     eventUrl: 'https://vueconf.us/',
+    videoUrl: 'https://www.vuemastery.com/conferences/vueconf-us-2020/seo-in-a-vue-js-world',
     slidesUrl: 'https://slides.com/mannil/seo-in-a-vuejs-world-vueconf-us-2020/',
     date: '2020-03-04'
   },
