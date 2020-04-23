@@ -31,14 +31,16 @@
 const TALKS = [
   {
     title: 'SEO in a Vue.js world',
-    description: `What do a SaaS landing page, blog and e-commerce store have in common? They should all be found
-    through a search engine, ideally by as many people as possible. Search engine optimization (SEO) can therefore be
-    decisive for the success and also the revenue of your projects. But when it comes to Vue.js and SEO, there are many
-    controversial opinions about the impact of Vue on SEO efforts. In my session we will go through the basics of SEO
-    and examine best practices and their implementations with the help of vue-meta and Nuxt.js.`,
+    description: `There is an incredible amount of search engine requests every day. And all the people searching want to find
+    the best content for them, not matter if that's an article, a new product or an answer to a question. So no matter if you have
+    an e-commerce platform, a blog or a niche-site - you want to be found through engines like Google or Bing.
+    Search engine optimization (SEO) can therefore be decisive for the success and also the revenue of your projects.
+    When we are reading about Vue.js and SEO though, there are many controversial opinions about the impact of an SPA framework on the SEO efforts.
+    In my talk we will go through the basics of SEO and examine best practices and their implementations with the help of vue-meta and Nuxt.js.`,
     eventName: 'MallorcaJS',
     location: 'Online',
     slidesUrl: 'https://slides.com/mannil/seo-in-a-vue-js-world-mallorcajs-2020/',
+    videoUrl: 'https://youtu.be/jxUHiSSXE18?t=3184',
     eventUrl: 'https://www.meetup.com/MallorcaJS/events/270156286/',
     date: '2020-04-22'
   },
