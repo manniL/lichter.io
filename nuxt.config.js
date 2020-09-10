@@ -49,7 +49,7 @@ export default {
     '@nuxtjs/tailwindcss',
     '@nuxtjs/composition-api',
     '@nuxtjs/sitemap'
-  ].concat(utils.isDev ? [] : ['nuxt-purgecss']),
+  ],
 
   'google-analytics': {
     id: 'UA-62902757-11',
