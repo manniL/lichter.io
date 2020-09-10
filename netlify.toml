@@ -2,3 +2,5 @@
   publish = "dist"
   command = "yarn generate"
   functions = "./functions-dist"
+[build.environment]
+  NODE_VERSION = "12"
