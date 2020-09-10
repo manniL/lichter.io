@@ -30,6 +30,31 @@
 
 const TALKS = [
   {
+    title: 'Nuxt.js - The Beginner Workshop',
+    description: 'Nuxt.js is an app-level framework for building Vue.js applications that will make a developer\'s life easier. The framework offers features like Server Side Rendering, Static Site Generation and automatic code splitting to make sure your front-end is production-ready and has great performance. In this workshop, we will develop a near-real-life app with Nuxt.js together, from creating the project to the final deployment. During this process we will take a look at many features Nuxt.js offers and also show common pitfalls and how to avoid them.',
+    eventName: 'Vueday 2020',
+    location: 'Online',
+    eventUrl: 'https://2020.vueday.it/workshops/nuxtjs-the-beginners-workshop.html',
+    date: '2020-09-21',
+    isWorkshop: true
+  },
+  {
+    title: 'SEO in a Vue.js world',
+    description: 'What do a SaaS landing page, blog and e-commerce store have in common? They should all be found through a search engine, ideally by as many people as possible. Search engine optimization (SEO) can therefore be decisive for the success and also the revenue of your projects. But when it comes to Vue.js and SEO, there are many controversial opinions about the impact of Vue on SEO efforts. In my session we will go through the basics of SEO and examine best practices and their implementations with the help of vue-meta and Nuxt.js.',
+    eventName: 'Vue Global 2020',
+    location: 'Online',
+    eventUrl: 'https://vuejs.amsterdam/',
+    date: '2020-09-17'
+  },
+  {
+    title: 'SEO in a Vue.js world',
+    description: 'What do a SaaS landing page, blog and e-commerce store have in common? They should all be found through a search engine, ideally by as many people as possible. Search engine optimization (SEO) can therefore be decisive for the success and also the revenue of your projects. But when it comes to Vue.js and SEO, there are many controversial opinions about the impact of Vue on SEO efforts. In my session we will go through the basics of SEO and examine best practices and their implementations with the help of vue-meta and Nuxt.js.',
+    eventName: 'vueday 2020',
+    location: 'Online',
+    eventUrl: 'https://2020.vueday.it/',
+    date: '2020-09-15'
+  },
+  {
     title: 'SEO in a Vue.js world',
     description: `There is an incredible amount of search engine requests every day. And all the people searching want to find
     the best content for them, not matter if that's an article, a new product or an answer to a question. So no matter if you have

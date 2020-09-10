@@ -29,6 +29,16 @@
           <time>{{ formattedDate }}</time>
         </template>
       </div>
+      <div>
+        <a
+          v-if="talk.isWorkshop && isUpcoming"
+          :class="[talk.eventUrl && 'underline hover:no-underline inline-block hover:text-gray-800']"
+          v-bind="talk.eventUrl ? { href: talk.eventUrl, rel: 'nofollow noopener', target: '_blank' } : {}"
+          class="mt-4 font-bold"
+        >
+          Tickets still available!
+        </a>
+      </div>
       <div class="flex md:flex-col mt-8">
         <a
           v-if="talk.videoUrl"
