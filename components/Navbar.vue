@@ -59,7 +59,7 @@
   </nav>
 </template>
 <script>
-import { ref } from '@vue/composition-api'
+import { ref } from '@nuxtjs/composition-api'
 import Icon from '~/components/Icon.js'
 
 export default {

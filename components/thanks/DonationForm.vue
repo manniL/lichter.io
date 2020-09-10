@@ -244,7 +244,7 @@ export default {
     createIntent () {
       const { email, message, amountInCents: amount } = this
 
-      return this.$axios.$post('register-intent', {
+      return this.$http.$post('register-intent', {
         amount,
         donationType: this.donationType.slug,
         email,

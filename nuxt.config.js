@@ -1,3 +1,4 @@
+// eslint-disable-next-line import/named
 import { build, head, manifest, meta, render, utils } from './config'
 
 export default {
@@ -17,7 +18,6 @@ export default {
   },
 
   plugins: [
-    '~/plugins/composition-api.js',
     '~/plugins/vue-scroll-reveal.client',
     '~/plugins/polyfills.client'
   ],
@@ -40,21 +40,16 @@ export default {
     componentAliases: false
   },
 
-  modules: [
+  buildModules: [
+    '@nuxtjs/netlify-files',
     'nuxt-svg-loader',
     '@nuxtjs/google-analytics',
     '@nuxtjs/pwa',
-    '@nuxtjs/axios'
-  ],
-
-  buildModules: [
-    '@nuxtjs/netlify-files',
+    '@nuxt/http',
+    '@nuxtjs/tailwindcss',
+    '@nuxtjs/composition-api',
     '@nuxtjs/sitemap'
   ].concat(utils.isDev ? [] : ['nuxt-purgecss']),
-
-  css: [
-    'assets/styles/app'
-  ],
 
   'google-analytics': {
     id: 'UA-62902757-11',
@@ -67,11 +62,16 @@ export default {
     ]
   },
 
+  tailwindcss: {
+    configPath: '~/config/tailwind.config.js',
+    cssPath: '~/assets/styles/app.pcss'
+  },
+
   netlifyFiles: {
     existingFilesDirectory: './netlify'
   },
 
-  axios: {
+  http: {
     https: !utils.isDev,
     prefix: '/.netlify/functions/',
     proxy: utils.isDev
@@ -81,11 +81,6 @@ export default {
     '/.netlify/functions/': {
       target: 'http://localhost:9000'
     }
-  },
-
-  purgeCSS: {
-    mode: 'postcss',
-    whitelistPatterns: [/cookie-consent/]
   },
 
   sitemap: {

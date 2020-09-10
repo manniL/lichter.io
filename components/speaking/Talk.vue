@@ -94,7 +94,7 @@
 
 <script>
 import { format, isFuture, parse } from 'date-fns'
-import { computed } from '@vue/composition-api'
+import { computed } from '@nuxtjs/composition-api'
 
 export default {
   props: {

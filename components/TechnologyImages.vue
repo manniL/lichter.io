@@ -19,7 +19,7 @@
 </template>
 <script>
 
-import { computed, ref } from '@vue/composition-api'
+import { computed, ref } from '@nuxtjs/composition-api'
 import { useInterval } from '@/compositions/useInterval'
 
 const imageUrls = [

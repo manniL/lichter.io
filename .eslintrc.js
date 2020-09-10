@@ -8,13 +8,13 @@ module.exports = {
   ],
   rules: {
     'vue/multiline-html-element-content-newline': ['error', {
-      'ignoreWhenEmpty': true,
-      'ignores': ['pre', 'textarea', 'a']
+      ignoreWhenEmpty: true,
+      ignores: ['pre', 'textarea', 'a']
     }],
     'vue/singleline-html-element-content-newline': ['error', {
-      'ignoreWhenNoAttributes': true,
-      'ignoreWhenEmpty': true,
-      'ignores': ['pre', 'textarea', 'a']
+      ignoreWhenNoAttributes: true,
+      ignoreWhenEmpty: true,
+      ignores: ['pre', 'textarea', 'a']
     }]
   }
 }

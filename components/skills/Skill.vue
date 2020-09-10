@@ -22,10 +22,10 @@
 </template>
 
 <script>
-import { computed, createComponent } from '@vue/composition-api'
+import { computed, defineComponent } from '@nuxtjs/composition-api'
 import Rating from '~/components/skills/Rating.vue'
 
-export default createComponent({
+export default defineComponent({
   components: {
     Rating
   },

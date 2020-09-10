@@ -1,5 +1,5 @@
 <script>
-import { createElement as h } from '@vue/composition-api'
+import { h } from '@nuxtjs/composition-api'
 import RatingSquare from '~/components/skills/RatingSquare.vue'
 
 export default {

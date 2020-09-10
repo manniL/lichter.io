@@ -1,4 +1,4 @@
-import { onMounted, onUnmounted } from '@vue/composition-api'
+import { onMounted, onUnmounted } from '@nuxtjs/composition-api'
 
 export const useInterval = (intervalInSeconds, intervalAction) => {
   let intervalListener = null
