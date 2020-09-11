@@ -2,8 +2,7 @@
   <div>
     <Intro />
     <AboutMe />
-    <a id="skills" />
-    <Skills />
+    <Skills id="skills" />
   </div>
 </template>
 

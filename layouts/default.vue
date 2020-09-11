@@ -40,13 +40,11 @@ export default {
 
 <style lang="postcss">
   .cookie-consent {
-    @apply .w-full .py-2 .z-10 .flex .items-center .justify-center .bg-red-900 .text-red-200 .text-xs;
+    @apply .w-full .py-2 .z-10 .flex .items-center .justify-center .bg-red-900 .text-red-200 .text-xs .sticky;
 
     @screen md {
       @apply .text-sm .text-center;
     }
-
-    position: sticky;
 
     &-link {
       @apply .text-red-100 .underline;
