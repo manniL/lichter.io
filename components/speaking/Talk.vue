@@ -3,7 +3,7 @@
     <div class="flex flex-col flex-1">
       <div>
         <ClientOnly>
-          <div v-if="isUpcoming" class="block mb-2 transition-all-300 animated fade-in">
+          <div v-if="isUpcoming" class="block mb-2 transition duration-200 ease-in-out motion-reduce:transition-none animated fade-in">
             <span class="inline bg-gray-700 text-gray-100 rounded px-2 py-1">
               Upcoming
             </span>
@@ -29,7 +29,7 @@
           <time>{{ formattedDate }}</time>
         </template>
       </div>
-      <div>
+      <ClientOnly>
         <a
           v-if="talk.isWorkshop && isUpcoming"
           :class="[talk.eventUrl && 'underline hover:no-underline inline-block hover:text-gray-800']"
@@ -38,7 +38,7 @@
         >
           Tickets still available!
         </a>
-      </div>
+      </ClientOnly>
       <div class="flex md:flex-col mt-8">
         <a
           v-if="talk.videoUrl"

@@ -54,7 +54,7 @@ export default {
           title: 'Vue.js and Nuxt.js',
           rating: 5,
           items: [
-            { text: 'Nuxt.js team member ♥️️', strong: true },
+            { text: 'Nuxt.js core maintainer ♥️️', strong: true },
             { text: 'Vue.js enthusiast' }
           ]
         },

@@ -21,7 +21,7 @@
     </div>
     <VueNextLevelScroll class="cursor-pointer hidden md:block" target="#skills">
       <Icon
-        class="md:my-4 animated infinite bounce-nice animation-duration-4000 fill-current text-gray-700"
+        class="md:my-4 motion-safe:animate-bounce fill-current text-gray-700"
         view-box="0 0 1024 1024"
         path="M840.4 300H183.6c-19.7 0-30.7 20.8-18.5 35l328.4 380.8c9.4 10.9 27.5 10.9 37 0L858.9 335c12.2-14.2 1.2-35-18.5-35z"
       />

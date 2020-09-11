@@ -1,6 +1,6 @@
 <template>
   <button
-    class="flex flex-col md:flex-row items-center my-8 border border-gray-300 hover:border-gray-500 shadow-lg p-4 w-full hover:shadow-2xl transition-all-300"
+    class="flex flex-col md:flex-row items-center my-8 border border-gray-300 hover:border-gray-500 shadow-lg p-4 w-full hover:shadow-2xl transition-all duration-200 ease-linear"
     :name="name"
   >
     <span class="flex flex-no-shrink flex-col md:mr-8 mb-4 md:mb-0">

@@ -2,10 +2,9 @@
   <section class="flex flex-wrap bg-gray-200 py-6 md:py-10">
     <div class="flex flex-col justify-around items-center w-5/6 md:w-1/2 mx-auto text-center animated zoom-in">
       <picture>
-        <source srcset="/img/me@2x.webp 2x" type="image/webp">
-        <source srcset="/img/me.webp 2x" type="image/webp">
-        <source srcset="/img/me@2x.jpg 2x" type="image/jpeg">
-        <source srcset="/img/me.jpg" type="image/jpeg">
+        <source srcset="/img/me@2x.webp 2x, /img/me.webp 1x" type="image/webp">
+        <source srcset="/img/me@2x.jpg 2x, /img/me.jpg 1x" type="image/jpeg">
+        <!--<source srcset="/img/me@2x.avif 2x, /img/me.avif 1x" type="image/avif">-->
         <img
           alt="Young man (Alexander Lichter) wearing a suite, nature in the background"
           class="rounded-full border-solid border-4 shadow-inset w-64 h-64"
