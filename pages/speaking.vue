@@ -52,6 +52,7 @@ const TALKS = [
     eventName: 'vueday 2020',
     location: 'Online',
     eventUrl: 'https://2020.vueday.it/',
+    slidesUrls: 'https://slides.com/mannil/seo-in-a-nuxt-js-world-vueday-2020/',
     date: '2020-09-15'
   },
   {
