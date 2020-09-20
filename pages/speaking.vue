@@ -44,6 +44,7 @@ const TALKS = [
     eventName: 'Vue Global 2020',
     location: 'Online',
     eventUrl: 'https://vuejs.amsterdam/',
+    slidesUrl: 'https://slides.com/mannil/seo-in-a-vue-js-world-vue-global-2020/',
     date: '2020-09-17'
   },
   {
