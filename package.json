@@ -28,7 +28,7 @@
     "nuxt-edge": "^2.14.5-26661633.d864b2bd",
     "nuxt-svg-loader": "^1.2.0",
     "postcss-extend-rule": "^3.0.0",
-    "postcss-nested": "^4.2.3",
+    "postcss-nested": "^5.0.1",
     "smoothscroll-polyfill": "^0.4.4",
     "stripe": "^8.94.0",
     "tailwindcss": "^1.8.6",
