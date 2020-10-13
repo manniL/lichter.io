@@ -30,6 +30,22 @@
 
 const TALKS = [
   {
+    title: 'TBA',
+    description: 'TBA',
+    eventName: 'Vue.js fwdays\'20',
+    location: 'Online',
+    eventUrl: 'https://fwdays.com/en/event/vuejs-conf-2020',
+    date: '2020-11-28'
+  },
+  {
+    title: 'SEO in a Vue.js world',
+    description: 'What do a SaaS landing page, blog and e-commerce store have in common? They should all be found through a search engine, ideally by as many people as possible. Search engine optimization (SEO) can therefore be decisive for the success and also the revenue of your projects. But when it comes to Vue.js and SEO, there are many controversial opinions about the impact of Vue on SEO efforts. In my session we will go through the basics of SEO and examine best practices and their implementations with the help of vue-meta and Nuxt.js.',
+    eventName: 'vue-leipzig',
+    location: 'Online',
+    eventUrl: 'https://www.meetup.com/Vue-js-Meetup-Leipzig/events/273226548/',
+    date: '2020-10-21'
+  },
+  {
     title: 'Nuxt.js - The Beginner Workshop',
     description: 'Nuxt.js is an app-level framework for building Vue.js applications that will make a developer\'s life easier. The framework offers features like Server Side Rendering, Static Site Generation and automatic code splitting to make sure your front-end is production-ready and has great performance. In this workshop, we will develop a near-real-life app with Nuxt.js together, from creating the project to the final deployment. During this process we will take a look at many features Nuxt.js offers and also show common pitfalls and how to avoid them.',
     eventName: 'Vueday 2020',
