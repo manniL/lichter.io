@@ -1,11 +1,9 @@
 <template>
   <!-- eslint-disable vue/max-attributes-per-line -->
-  <section class="flex flex-col flex-wrap items-center bg-gray-lighter py-8 leading-normal text-gray-darkest">
-    <div class="justify-around items-center w-5/6 md:w-1/2 mx-auto">
+  <section class="flex flex-col flex-wrap items-center bg-gray-lighter py-8 text-gray-darkest">
+    <div class="justify-around items-center w-5/6 md:w-1/2 mx-auto prose">
       <h1>Legal Disclosure</h1>
-      Information in accordance with section 5 TMG
-      <br>
-      <br>
+      Information in accordance with section 5 TMG<br>
       Developmint GbR<br>
       Corotweg 15<br>
       04289 Leipzig<br>
@@ -13,12 +11,10 @@
       Alexander Lichter
       <br>
       Max Langer
-      <br><br>
       <h3>Personally liable partner</h3>
       Alexander Lichter
       <br>
       Max Langer
-      <br><br>
       <h2>Contact</h2>
       E-Mail: <a href="mailto:hello@lichter.io">
         hello@lichter.io
@@ -149,25 +145,3 @@ export default {
   }
 }
 </script>
-
-<style scoped lang="postcss">
-  h1 {
-    @apply font-bold text-2xl
-  }
-  h2 {
-    @apply font-bold text-xl
-  }
-  h3 {
-    @apply font-bold text-lg
-  }
-  a {
-    @apply underline text-blue-400;
-
-    &:hover {
-      @apply text-indigo-400
-    }
-  }
-  ul {
-    @apply list-disc px-8
-  }
-</style>

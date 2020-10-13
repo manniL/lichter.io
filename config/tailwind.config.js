@@ -1,9 +1,26 @@
 module.exports = {
-  theme: {},
+  theme: {
+    typography: {
+      default: {
+        css: {
+          a: {
+            '&:hover': {
+              textDecoration: 'none'
+            }
+          }
+        }
+      }
+    }
+  },
   future: {
     removeDeprecatedGapUtilities: true,
-    purgeLayersByDefault: true
+    purgeLayersByDefault: true,
+    defaultLineHeights: true,
+    standardFontWeights: true
   },
+  plugins: [
+    require('@tailwindcss/typography')
+  ],
   variants: {
     textColor: ['responsive', 'hover', 'focus', 'group-hover'],
     borderWidth: ['responsive', 'last', 'hover', 'focus'],

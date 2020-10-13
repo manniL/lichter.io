@@ -1,6 +1,6 @@
 <template>
-  <div class="container mx-auto px-4 my-8 min-h-screen">
-    <h1 class="font-normal text-3xl py-4">
+  <div class="container mx-auto px-4 my-8 min-h-screen prose">
+    <h1>
       Privacy Policy
     </h1>
     <p>
@@ -9,11 +9,11 @@
       protect those!
     </p>
 
-    <h2 class="font-normal text-2xl py-4">
+    <h2>
       Overview
     </h2>
 
-    <h3 class="font-normal text-xl py-4">
+    <h3>
       Who is responsible for the collection of data on Lichter.io?
     </h3>
     <p>
@@ -25,7 +25,7 @@
       />.
     </p>
 
-    <h3 class="font-normal text-xl py-4">
+    <h3>
       How do we collect your data?
     </h3>
     <p>
@@ -37,7 +37,7 @@
       website experience.
     </p>
 
-    <h3 class="font-normal text-xl py-4">
+    <h3>
       How do we use your data?
     </h3>
     <p>
@@ -45,7 +45,7 @@
       user, like most.
     </p>
 
-    <h3 class="font-normal text-xl py-4">
+    <h3>
       What are your rights?
     </h3>
     <p>
@@ -62,7 +62,7 @@
       If you have any questions please feel free to contact us via privacy@developmint.de.<br>
     </p>
 
-    <h3 class="font-normal text-xl py-4">
+    <h3>
       Legal basis
     </h3>
     <p>
@@ -70,11 +70,11 @@
       (Telemediengesetz, TMG).
     </p>
 
-    <h2 class="font-normal text-2xl py-4">
+    <h2>
       2. Collection and Use of Personal Information
     </h2>
 
-    <h3 class="font-normal text-xl py-4">
+    <h3>
       Cookies
     </h3>
     <p>
@@ -91,7 +91,7 @@
       because of these Cookies.
     </p>
 
-    <h3 class="font-normal text-xl py-4">
+    <h3>
       Contacting us
     </h3>
     <p>
@@ -105,11 +105,11 @@
       website.
     </p>
 
-    <h2 class="font-normal text-2xl py-4">
+    <h2>
       3. Analytics Tools
     </h2>
 
-    <h3 class="font-normal text-xl py-4">
+    <h3>
       Google Analytics
     </h3>
     <p>
@@ -159,7 +159,7 @@
       >this Google Help articles</a>
     </p>
 
-    <h2 class="font-normal text-2xl py-4">
+    <h2>
       Privacy Statement Changes
     </h2>
     <p>
@@ -190,25 +190,3 @@ export default {
   }
 }
 </script>
-
-<style scoped lang="postcss">
-  h1 {
-    @apply font-bold text-2xl
-  }
-  h2 {
-    @apply font-bold text-xl
-  }
-  h3 {
-    @apply font-bold text-lg
-  }
-  a {
-    @apply underline text-blue-400;
-
-    &:hover {
-      @apply text-indigo-400
-    }
-  }
-  ul {
-    @apply list-disc px-8
-  }
-</style>
