@@ -1,6 +1,5 @@
-<script>
 import { h } from '@nuxtjs/composition-api'
-import RatingSquare from '~/components/skills/RatingSquare.vue'
+import RatingSquare from '~/components/skills/RatingSquare.js'
 
 export default {
   components: { RatingSquare },
@@ -19,4 +18,3 @@ export default {
     return () => h('div', { class: 'flex group' }, squares)
   }
 }
-</script>

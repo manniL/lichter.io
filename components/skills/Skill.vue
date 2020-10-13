@@ -23,7 +23,7 @@
 
 <script>
 import { computed, defineComponent } from '@nuxtjs/composition-api'
-import Rating from '~/components/skills/Rating.vue'
+import Rating from '~/components/skills/Rating.js'
 
 export default defineComponent({
   components: {

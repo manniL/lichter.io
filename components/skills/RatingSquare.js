@@ -1,4 +1,3 @@
-<script>
 import { h } from '@nuxtjs/composition-api'
 
 export default {
@@ -17,4 +16,3 @@ export default {
     return () => h('div', { class: outerClasses }, [innerDiv])
   }
 }
-</script>
