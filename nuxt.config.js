@@ -97,6 +97,12 @@ export default {
     }
   },
 
+  pwa: {
+    icon: {
+      source: 'static/img/me@2x.jpg'
+    }
+  },
+
   manifest,
   render,
   build
