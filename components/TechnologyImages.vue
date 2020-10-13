@@ -20,7 +20,7 @@
 <script>
 
 import { computed, ref } from '@nuxtjs/composition-api'
-import { useInterval } from '@/compositions/useInterval'
+import { useInterval } from '@/composables/useInterval'
 
 const imageUrls = [
   { name: 'Vue.js', imgName: 'vuejs' },

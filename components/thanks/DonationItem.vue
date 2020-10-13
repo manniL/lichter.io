@@ -16,6 +16,7 @@
 </template>
 
 <script>
+import { computed } from '@nuxtjs/composition-api'
 
 export default {
   props: {
@@ -36,20 +37,20 @@ export default {
       required: true
     }
   },
-  computed: {
-    textPrice () {
-      if (this.price === -1) {
-        return '???? €'
-      }
+  setup (props) {
+    return {
+      textPrice: computed(() => {
+        if (props.price === -1) {
+          return '???? €'
+        }
 
-      const euro = this.price / 100
-      return `${euro.toFixed(2).toLocaleString()} €`
-    },
-    imageSources () {
-      return {
-        src: require(`~/assets/img/donations/${this.slug}.png`),
-        srcset: `${require(`~/assets/img/donations/${this.slug}@2x.png`)} 2x`
-      }
+        const euro = props.price / 100
+        return `${euro.toFixed(2).toLocaleString()} €`
+      }),
+      imageSources: computed(() => ({
+        src: require(`~/assets/img/donations/${props.slug}.png`),
+        srcset: `${require(`~/assets/img/donations/${props.slug}@2x.png`)} 2x`
+      }))
     }
   }
 }
