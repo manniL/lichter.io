@@ -4,10 +4,6 @@ import { isDev } from './utils'
 export default {
   parallel: isDev,
   cache: isDev,
-  filenames: {
-    img: ({ isDev }) => isDev ? '[path][name].[ext]' : 'img/[name]-[hash:7].[ext]',
-    font: ({ isDev }) => isDev ? '[path][name].[ext]' : 'fonts/[name]-[hash:7].[ext]'
-  },
   publicPath: '/assets/',
   transpile: [/^vue-if-bot($|\/)/, /^vue-cookieconsent-component($|\/)/],
 
