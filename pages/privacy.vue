@@ -1,5 +1,5 @@
 <template>
-  <div class="container mx-auto px-4 my-8 min-h-screen prose">
+  <div class="container mx-auto px-4 my-8 min-h-screen bg-gray-100 prose">
     <h1>
       Privacy Policy
     </h1>
