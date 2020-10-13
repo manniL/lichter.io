@@ -6,7 +6,7 @@
       </p>
       <p class="text-base md:text-lg text-gray-700 leading-normal">
         I'm <span class="text-gray-900" v-text="'Alex'" />, a guy in his twenties living in
-        <span class="text-gray-900" v-text="'Dresden, Germany'" />. Already at young age, computers impressed me
+        <span class="text-gray-900" v-text="'Leipzig, Germany'" />. Already at young age, computers impressed me
         so much that I wanted to know more about them. Now, I'm a self-taught developer who runs his
         <span class="text-gray-900" v-text="'own company'" /> and studies CS in the meantime.
         <br><br>
