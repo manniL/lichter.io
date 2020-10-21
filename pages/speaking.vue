@@ -43,6 +43,8 @@ const TALKS = [
     eventName: 'vue-leipzig',
     location: 'Online',
     eventUrl: 'https://www.meetup.com/Vue-js-Meetup-Leipzig/events/273226548/',
+    slidesUrl: 'https://slides.com/mannil/seo-in-a-vue-js-world-vue-leipzig-2020/',
+    videoUrl: 'https://www.youtube.com/watch?v=5J_N1AgR7tM',
     date: '2020-10-21'
   },
   {
@@ -60,6 +62,8 @@ const TALKS = [
     eventName: 'Vue Global 2020',
     location: 'Online',
     eventUrl: 'https://vuejs.amsterdam/',
+    slidesUrl: 'https://slides.com/mannil/seo-in-a-vue-js-world-vue-global-2020/',
+    videoUrl: 'https://www.youtube.com/watch?v=MGvtkh2asv4',
     date: '2020-09-17'
   },
   {
