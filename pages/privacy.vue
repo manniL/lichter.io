@@ -174,18 +174,18 @@
 
 <script>
 export default {
-  methods: {
-    optOut () {
-      document.cookie = 'ga_optout=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/'
-      this.$ga.disable()
-    }
-  },
   head () {
     return {
       title: 'Privacy - Lichter.io',
       meta: [
         { hid: 'robots', name: 'robots', content: 'noindex' }
       ]
+    }
+  },
+  methods: {
+    optOut () {
+      document.cookie = 'ga_optout=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/'
+      this.$ga.disable()
     }
   }
 }

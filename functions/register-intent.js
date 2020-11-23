@@ -37,9 +37,11 @@ exports.handler = async (event) => {
 
       const isCustomerKnown = data.length
       try {
-        const customer = isCustomerKnown ? data[0] : await stripe.customers.create({
-          email
-        })
+        const customer = isCustomerKnown
+          ? data[0]
+          : await stripe.customers.create({
+            email
+          })
 
         console.log('Custom is ready, id ' + customer.id)
 

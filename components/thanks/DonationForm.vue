@@ -51,7 +51,7 @@
         :stripe="stripeInstance"
         :options="paymentButtonOptions"
         @available="setPaymentButtonAvailability"
-        @receivedPaymentMethod="handlePaymentButtonPayment"
+        @received-payment-method="handlePaymentButtonPayment"
       />
       <span v-if="isPaymentButtonAvailable && canRenderPaymentButton" class="text-gray-700 py-4">
         or enter your credit card info below

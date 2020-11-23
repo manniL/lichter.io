@@ -246,11 +246,6 @@ export default {
       isStripeLoaded: false
     }
   },
-  methods: {
-    changeDonationType (type) {
-      this.donationType = type
-    }
-  },
   head () {
     const title = 'Support me!'
     const metaDescription = 'Your support is powerful. Please consider supporting me to allow me spending more time on the Nuxt ecosystem.'
@@ -277,6 +272,11 @@ export default {
       script: [
         { hid: 'stripe', src: 'https://js.stripe.com/v3/', defer: true, callback: () => { this.isStripeLoaded = true } }
       ]
+    }
+  },
+  methods: {
+    changeDonationType (type) {
+      this.donationType = type
     }
   },
   donationItems: [
@@ -329,9 +329,9 @@ export default {
 
 <style scoped>
   .github-link {
-    @apply .text-indigo-500;
+    @apply text-indigo-500;
     &:hover {
-      @apply .underline;
+      @apply underline;
     }
   }
 </style>

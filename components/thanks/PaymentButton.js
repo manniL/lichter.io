@@ -38,7 +38,7 @@ export default {
         const canMakePayment = await this.paymentRequest.canMakePayment()
         this.init(canMakePayment)
 
-        this.paymentRequest.on('paymentmethod', event => this.$emit('receivedPaymentMethod', event))
+        this.paymentRequest.on('paymentmethod', event => this.$emit('received-payment-method', event))
       } catch (_) {}
     },
     init (canMakePayment) {

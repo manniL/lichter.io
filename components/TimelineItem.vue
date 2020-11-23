@@ -54,14 +54,14 @@ export default {
 
   .timeline-marker {
     &:before {
-      @apply .absolute .left-0 .block .h-4 .w-4 .bg-gray-400;
+      @apply absolute left-0 block h-4 w-4 bg-gray-400;
       content: "";
       top: 4px;
       transition: background 0.2s ease-in-out;
     }
 
     &:after {
-      @apply .absolute .bottom-0 .block .bg-gray-400;
+      @apply absolute bottom-0 block bg-gray-400;
       content: "";
       width: 3px;
       top: 24px;
@@ -71,44 +71,44 @@ export default {
   }
 
   .timeline-item:not(.period):hover .timeline-marker:before {
-    @apply .bg-red-600;
+    @apply bg-red-600;
   }
 
   .timeline-item:not(.period):hover .timeline-info,
   .timeline-item:not(.period):hover .timeline-content {
-    @apply .text-gray-900;
+    @apply text-gray-900;
   }
 
     @screen md {
       .timeline-item {
-        @apply .overflow-hidden;
+        @apply overflow-hidden;
         padding-bottom: 40px;
       }
 
       .timeline-marker {
-        @apply .absolute;
+        @apply absolute;
         left: 50%;
         margin-left: -7.5px;
       }
 
       .timeline-item:nth-child(odd) .timeline-info,
       .timeline-item:nth-child(even) .timeline-content {
-        @apply .float-left .text-right;
+        @apply float-left text-right;
         padding-right: 30px;
       }
 
       .timeline-item:nth-child(odd) .timeline-content,
       .timeline-item:nth-child(even) .timeline-info {
-        @apply .float-right .text-left;
+        @apply float-right text-left;
         padding-left: 30px;
       }
 
       .timeline-item.period .timeline-content {
-        @apply .float-none .p-0 .w-full .text-center;
+        @apply float-none p-0 w-full text-center;
       }
 
       .period .timeline-marker:after {
-        @apply .bottom-0 .h-16;
+        @apply bottom-0 h-16;
         top: auto;
       }
     }

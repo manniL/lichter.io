@@ -30,11 +30,32 @@
 
 const TALKS = [
   {
-    title: 'TBA',
-    description: 'TBA',
+    title: 'Nuxt.js and the Composition API',
+    description: 'Vue 3 and the Composition API are out for a bit now. And while the ecosystem is catching up, more and more libraries provide support for the Composition API through composables. But what is about Server-Side Rendering with the composition API, especially when using Nuxt.js? I got you covered! In this talk, you will learn about the @nuxtjs/composition-api package that provides you a couple of nifty composables as well as SSR support in conjunction with the Composition API itself. Together we look into the new additions of the packages as well as several use cases and examples of how to use the Composition API with Nuxt.js.',
+    eventName: 'Fullstack NL',
+    location: 'Online',
+    eventUrl: 'https://www.meetup.com/full-stack-nl/events/274529321/',
+    date: '2020-12-10'
+  },
+  {
+    title: '[GER] Nuxt.js für Einsteiger',
+    description: `Nuxt.js ist ein Framework zum Erstellen von Vue.js Anwendungen. Dabei wird das Entwicklerleben durch Nuxt erheblich erleichtert!
+Das Framework bietet Funktionen wie Server Side Rendering, Static Site Generation und automatisches Code-Splitting, um sicherzustellen, dass euer zukünftiges Frontend production-ready und leistungsstark ist.
+In diesem Workshop werden wir gemeinsam mit Nuxt.js eine App entwickeln und den Prozess von der Erstellung des Projekts bis zum endgültigen Einsatz begleiten. Währenddessen werden wir einen Blick auf viele Funktionen werfen, die Nuxt.js bietet. Dabei werden auch häufige Fallstricke und Techniken zur vermeidung dieser gezeigt.
+Zur Teilnahme werden lediglich Vue.js-Grundkenntnisse benötigt. Ihr müsst kein Vue-Profi sein um teilnehmen zu können!`,
+    eventName: 'Developer Open Spae 2020',
+    location: 'Online',
+    eventUrl: 'https://devopenspace.de/',
+    date: '2020-12-04',
+    isWorkshop: true
+  },
+
+  {
+    title: 'Nuxt.js and the Composition API',
+    description: 'Vue 3 and the Composition API are out for a bit now. And while the ecosystem is catching up, more and more libraries provide support for the Composition API through composables. But what is about Server-Side Rendering with the composition API, especially when using Nuxt.js? I got you covered! In this talk, you will learn about the @nuxtjs/composition-api package that provides you a couple of nifty composables as well as SSR support in conjunction with the Composition API itself. Together we look into the new additions of the packages as well as several use cases and examples of how to use the Composition API with Nuxt.js.',
     eventName: 'Vue.js fwdays\'20',
     location: 'Online',
-    eventUrl: 'https://fwdays.com/en/event/vuejs-conf-2020',
+    eventUrl: 'https://fwdays.com/en/event/vuejs-conf-2020/review/nuxt-js-and-the-composition-api',
     date: '2020-11-28'
   },
   {
