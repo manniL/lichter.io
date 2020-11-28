@@ -69,7 +69,7 @@
         </a>
         <a
           v-if="talk.slidesUrl"
-          :class="talk.videoUrl && 'mt-6'"
+          :class="talk.videoUrl && 'md:mt-6'"
           :href="talk.slidesUrl"
           :title="`Open slides for ${talk.title}`"
           class="group flex items-center"
