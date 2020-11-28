@@ -16,7 +16,7 @@
   "dependencies": {
     "@nuxt/http": "^0.6.0",
     "@nuxtjs/axios": "^5.12.2",
-    "@nuxtjs/composition-api": "^0.15.1",
+    "@nuxtjs/composition-api": "^0.16.4",
     "@nuxtjs/google-analytics": "^2.4.0",
     "@nuxtjs/netlify-files": "^1.2.0",
     "@nuxtjs/pwa": "^3.2.2",
@@ -26,7 +26,7 @@
     "cross-env": "^7.0.2",
     "date-fns": "^2.16.1",
     "netlify-lambda": "^2.0.1",
-    "nuxt-edge": "^2.14.8-26768191.9ce75c5d",
+    "nuxt-edge": "^2.14.8-26775392.e02fecdf",
     "nuxt-svg-loader": "^1.2.0",
     "smoothscroll-polyfill": "^0.4.4",
     "stripe": "^8.111.0",
