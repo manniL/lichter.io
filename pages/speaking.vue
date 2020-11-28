@@ -43,7 +43,7 @@ const TALKS = [
 Das Framework bietet Funktionen wie Server Side Rendering, Static Site Generation und automatisches Code-Splitting, um sicherzustellen, dass euer zukünftiges Frontend production-ready und leistungsstark ist.
 In diesem Workshop werden wir gemeinsam mit Nuxt.js eine App entwickeln und den Prozess von der Erstellung des Projekts bis zum endgültigen Einsatz begleiten. Währenddessen werden wir einen Blick auf viele Funktionen werfen, die Nuxt.js bietet. Dabei werden auch häufige Fallstricke und Techniken zur vermeidung dieser gezeigt.
 Zur Teilnahme werden lediglich Vue.js-Grundkenntnisse benötigt. Ihr müsst kein Vue-Profi sein um teilnehmen zu können!`,
-    eventName: 'Developer Open Spae 2020',
+    eventName: 'Developer Open Space 2020',
     location: 'Online',
     eventUrl: 'https://devopenspace.de/',
     date: '2020-12-04',
