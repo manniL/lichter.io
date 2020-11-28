@@ -56,6 +56,7 @@ Zur Teilnahme werden lediglich Vue.js-Grundkenntnisse benötigt. Ihr müsst kein
     eventName: 'Vue.js fwdays\'20',
     location: 'Online',
     eventUrl: 'https://fwdays.com/en/event/vuejs-conf-2020/review/nuxt-js-and-the-composition-api',
+    slidesUrl: 'https://slides.com/mannil/nuxtjs-and-the-composition-api-fwdays-2020/',
     date: '2020-11-28'
   },
   {
