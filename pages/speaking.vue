@@ -58,6 +58,13 @@ Zur Teilnahme werden lediglich Grundkenntnisse in JavaScript benötigt.`,
     date: '2020-12-10'
   },
   {
+    title: 'Vue.js Beginners Workshop',
+    description: 'Vue.js is one of the three most important frontend SPA-frameworks of modern age. With it\'s new major release, Vue 3, many improvements and goodies came onboard. One of the most notable ones is the composition api. In this workshop, you will learn how to leverage Vue 3 together with the composition API and TypeScript to build mighty frontend applications. We will take a look at all kinds of Vue.js features and the ideas behind them, as well as thorough examples and exercises to fully apply these.',
+    eventName: 'Private workshop',
+    location: 'Undisclosed location',
+    date: '2021-07-14'
+  },
+  {
     title: '[GER] Nuxt.js für Einsteiger',
     description: `Nuxt.js ist ein Framework zum Erstellen von Vue.js Anwendungen. Dabei wird das Entwicklerleben durch Nuxt erheblich erleichtert!
 Das Framework bietet Funktionen wie Server Side Rendering, Static Site Generation und automatisches Code-Splitting, um sicherzustellen, dass euer zukünftiges Frontend production-ready und leistungsstark ist.
