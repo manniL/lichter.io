@@ -30,6 +30,18 @@
 
 const TALKS = [
   {
+    title: '[GER] Von ES6 bis ESNext – JavaScript-Features, die ihr kennen müsst!',
+    description: `JavaScript ist eine Sprache, die sich ständig weiter entwickelt. Jedes Jahr wird sie aufs Neue mit weiteren Funktionen und Syntaxupdates versorgt. Doch bei so vielen Neuerungen kann man schnell den Überblick verlieren.
+Wer also noch nie etwas von Optional Chaining oder Array Destructuring gehört hat, ist in diesem Workshop genau richtig!
+Zusammen schauen wir uns an, welche der neuen Features hilfreich für die JavaScript-Entwicklung sind und wie man diese in verschiedenen Situationen anwenden kann. Ebenso erfahrt ihr, was es mit Bezeichnungen wie "ES6", "ES2020" oder "ESNext" auf sich hat und wie neue JavaScript-Versionen entstehen. Dazu kommt noch ein Ausblick auf künftige JavaScript-Features, die noch nicht vollends formalisiert sind, aber trotzdem bereits genutzt werden können.
+Zur Teilnahme werden lediglich Grundkenntnisse in JavaScript benötigt.`,
+    eventName: 'Developer Open Space 2021',
+    location: 'Online',
+    eventUrl: 'https://devopenspace.de/',
+    date: '2020-12-08',
+    isWorkshop: true
+  },
+  {
     title: '[GER] Nuxt 3 - Moderne Webentwicklung mit dem Vue-Metaframework',
     description: 'Die Webentwicklung hat sich in den letzten Jahren deutlich gewandelt. Wo früher noch mit JSF und jQuery gearbeitet wurde, sind heute meistens Single Page Applications mit einem beliebigen Backend im Einsatz. Im heutigen Talk soll es aber vor allem um das Frontend gehen: Wir schauen uns gemeinsam an, welche Möglichkeiten man hat wenn man SPAs mit Vue schreibt und wieso NuxtJS, ein vue-basiertes Framework, so viel Komfort mitbringt. Dazu werden wir uns neben ein bisschen Theorie Nuxt 2 und die neue Nuxt 3 Beta anschauen (natürlich mit Live-Coding)!',
     eventName: 'Tech\'n\'Drinks@myposter',
