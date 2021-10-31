@@ -30,6 +30,14 @@
 
 const TALKS = [
   {
+    title: '[GER] Nuxt 3 - Moderne Webentwicklung mit dem Vue-Metaframework',
+    description: 'Die Webentwicklung hat sich in den letzten Jahren deutlich gewandelt. Wo früher noch mit JSF und jQuery gearbeitet wurde, sind heute meistens Single Page Applications mit einem beliebigen Backend im Einsatz. Im heutigen Talk soll es aber vor allem um das Frontend gehen: Wir schauen uns gemeinsam an, welche Möglichkeiten man hat wenn man SPAs mit Vue schreibt und wieso NuxtJS, ein vue-basiertes Framework, so viel Komfort mitbringt. Dazu werden wir uns neben ein bisschen Theorie Nuxt 2 und die neue Nuxt 3 Beta anschauen (natürlich mit Live-Coding)!',
+    eventName: 'Tech\'n\'Drinks@myposter',
+    location: 'myposter GmbH',
+    eventUrl: 'https://www.meetup.com/Tech-n-Drinks/events/281745223/',
+    date: '2021-12-02'
+  },
+  {
     title: 'Nuxt.js and the Composition API',
     description: 'Vue 3 and the Composition API are out for a bit now. And while the ecosystem is catching up, more and more libraries provide support for the Composition API through composables. But what is about Server-Side Rendering with the composition API, especially when using Nuxt.js? I got you covered! In this talk, you will learn about the @nuxtjs/composition-api package that provides you a couple of nifty composables as well as SSR support in conjunction with the Composition API itself. Together we look into the new additions of the packages as well as several use cases and examples of how to use the Composition API with Nuxt.js.',
     eventName: 'Fullstack NL',
