@@ -62,7 +62,8 @@ Zur Teilnahme werden lediglich Grundkenntnisse in JavaScript benötigt.`,
     description: 'Vue.js is one of the three most important frontend SPA-frameworks of modern age. With it\'s new major release, Vue 3, many improvements and goodies came onboard. One of the most notable ones is the composition api. In this workshop, you will learn how to leverage Vue 3 together with the composition API and TypeScript to build mighty frontend applications. We will take a look at all kinds of Vue.js features and the ideas behind them, as well as thorough examples and exercises to fully apply these.',
     eventName: 'Private workshop',
     location: 'Undisclosed location',
-    date: '2021-07-14'
+    date: '2021-07-14',
+    isWorkshop: true
   },
   {
     title: '[GER] Nuxt.js für Einsteiger',
