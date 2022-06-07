@@ -30,6 +30,31 @@
 
 const TALKS = [
   {
+    title: 'petite-vue - Progressively enhancing every application?',
+    description: `Since Vue existed, people have used it for dozens of different kinds of applications. 
+    While Vue is powering the entire frontend most of the time, there are also situations where (re-)building
+    the frontend with Vue simply doesn't work out. On the one hand, time and budget are scarce, on the other hand,
+    web apps need interactive components and modern solutions to avoid technical dept. 
+    The solution is progressive enhancement: Adding just a few small pieces of JavaScript where absolutely needed. 
+    And that's where petite-vue - another distribution of Vue - shines! Let's take a look together what petite-vue
+    is doing and how it is specialized for progressive enhancement in this talk.`,
+    eventName: 'Vue.js Amsterdam',
+    location: 'Theater Amsterdam',
+    eventUrl: 'https://vuejs.amsterdam/',
+    slidesUrl: 'https://petite-vue.lichter.io/',
+    date: '2022-06-03'
+  },
+  {
+    title: 'Web Fundamentals and Vue.js',
+    description: `The goal of the workshop was to teach people the fundamentals of the web: How the web works, 
+    the basics of the three main languages HTML, CSS and JavaScript and how to use them together. 
+    Eventually, we took a look at Vue.js as a JavaScript framework and the concepts of single file components, props, events and more!
+    We also discussed the benefits of using Vue.js and how it can be used to build a better web application.`,
+    eventName: 'Private workshop',
+    location: 'Online',
+    date: '2022-04-12'
+  },
+  {
     title: '[GER] Von ES6 bis ESNext – JavaScript-Features, die ihr kennen müsst!',
     description: `JavaScript ist eine Sprache, die sich ständig weiter entwickelt. Jedes Jahr wird sie aufs Neue mit weiteren Funktionen und Syntaxupdates versorgt. Doch bei so vielen Neuerungen kann man schnell den Überblick verlieren.
 Wer also noch nie etwas von Optional Chaining oder Array Destructuring gehört hat, ist in diesem Workshop genau richtig!
@@ -38,7 +63,7 @@ Zur Teilnahme werden lediglich Grundkenntnisse in JavaScript benötigt.`,
     eventName: 'Developer Open Space 2021',
     location: 'Online',
     eventUrl: 'https://devopenspace.de/',
-    date: '2020-12-08',
+    date: '2021-12-08',
     isWorkshop: true
   },
   {
