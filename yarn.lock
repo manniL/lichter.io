@@ -5579,7 +5579,7 @@ lodash.zip@^4.2.0:
   resolved "https://registry.yarnpkg.com/lodash.zip/-/lodash.zip-4.2.0.tgz#ec6662e4896408ed4ab6c542a3990b72cc080020"
   integrity sha1-7GZi5IlkCO1KtsVCo5kLcswIACA=
 
-lodash@^4.15.0, lodash@^4.17.11, lodash@^4.17.14, lodash@^4.17.15, lodash@^4.17.19, lodash@^4.17.20, lodash@^4.17.5:
+lodash@^4.15.0, lodash@^4.17.14, lodash@^4.17.15, lodash@^4.17.19, lodash@^4.17.20, lodash@^4.17.5:
   version "4.17.20"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.20.tgz#b44a9b6297bcb698f1c51a3545a2b3b368d59c52"
   integrity sha512-PlhdFcillOINfeV7Ni6oF1TAEayyZBoZ8bcshTHqOYJYlrqzRK5hagpagky5o4HfCzzd1TRkXPMFq6cKk9rGmA==
@@ -9213,12 +9213,10 @@ vue-server-renderer@^2.6.12:
     serialize-javascript "^3.1.0"
     source-map "0.5.6"
 
-vue-stripe-elements-plus@^0.3.2:
-  version "0.3.2"
-  resolved "https://registry.yarnpkg.com/vue-stripe-elements-plus/-/vue-stripe-elements-plus-0.3.2.tgz#9b3835e1c61048a1405798ded66abe09f9d38084"
-  integrity sha512-Cuo+guUye1bHrwgQyU4Yb9mIEH+IKiz/QKNW7I70z1BWSIU0OjCgDHWcdBUDIgzLGip4/8FQqSa8IICKT+Lzmg==
-  dependencies:
-    lodash "^4.17.11"
+vue-stripe-elements-plus@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/vue-stripe-elements-plus/-/vue-stripe-elements-plus-1.0.3.tgz#1a19aa49e8e7569c41972a3a0faf273e01ed9f3f"
+  integrity sha512-Aq61f8KxrAe0l+eL5uZc1LePogfrPpAtjm/HqFDFYydRK2z7jl8Rb/IDTKeQi4Z+Tt+kX76WNtHWpxtt9chYSQ==
 
 vue-style-loader@^4.1.0:
   version "4.1.2"
