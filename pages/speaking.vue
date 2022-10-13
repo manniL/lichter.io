@@ -12,15 +12,12 @@
         <a
           class="text-gray-900 font-bold hover:text-black underline"
           href="mailto:inquiry@lichter.io?subject=Speaking%20Opportunity&body=Hey%20Alex!%0D%0AI%20think%20you'd%20be%20a%20great%20fit%20for%20our%20......."
-        >contact me</a>! No matter if it is a conference, a user group meeting, an internal event of your company or
+        >contact
+          me</a>! No matter if it is a conference, a user group meeting, an internal event of your company or
         similar.
       </p>
       <section class="flex flex-col my-16">
-        <Talk
-          v-for="talk in $options.talks"
-          :key="talk.title + talk.date"
-          :talk="talk"
-        />
+        <Talk v-for="talk in $options.talks" :key="talk.title + talk.date" :talk="talk" />
       </section>
     </div>
   </div>
@@ -29,6 +26,39 @@
 <script>
 
 const TALKS = [
+  {
+    title: 'unjs - Unified JavaScript solutions',
+    description: `JavaScript can run almost anywhere nowadays - in the browser, on the server, in lambdas,
+     and on the edge. And so do our Vue and Nuxt applications! 
+     Talking about Nuxt - Already when developing Nuxt 2, the goal was to keep the core lean and release
+     additional functionalities as Nuxt modules, or as separate packages. 
+     This decouples the functionalities and makes features easier to test. With Nuxt 3, this pattern has been
+     enforced further! At the time of writing, the unjs organisation contains more than 60 repositories,
+     most of them being universally usable packages for the JavaScript and TypeScript ecosystem.
+     Many of them are direct dependencies of Nuxt (2 and 3) but also other popular frameworks like
+     Razzle or Next.js. But they can also come in very handy for building typical 'userland' projects.
+     During the talk, we won't build our own Nuxt, but we will take a look at some of the unjs packages
+     and how they can be beneficial for your own projects, be it a module or a web application!`,
+    eventName: 'vuejs.de Conf',
+    location: 'Bolle Festsäle, Berlin',
+    eventUrl: 'https://conf.vuejs.de/',
+    slidesUrl: 'https://www.lichter.link/vuejs-de-2022-slides/',
+    date: '2022-10-05'
+  },
+  {
+    title: 'From ES6 to ESNext - JavaScript features you have to know',
+    description: `
+    JavaScript is a language that is constantly evolving. Every year it gets new features and syntax updates. But with so many new features, it's easy to lose track.
+    In this talk we'll look at which of the newer JavaScript features are helpful for your actual (daily) development and how to use them in different situations. Besides popular features, like Optional Chaining or Array Destructuring, we will also have a look at underrated additions to JavaScript that will still be beneficial for development.
+    Eventually we will get into the process of how the language evolves, how proposals come up and how they'll be part of the language eventually.
+    `,
+    eventName: 'JavaScript Global Summit',
+    location: 'Online',
+    eventUrl: 'https://events.geekle.us/js/',
+    slidesUrl: 'https://www.lichter.link/js-global-summit-2022-repo/',
+    videoUrl: 'https://youtu.be/x-IjPwEtx-s?t=15412',
+    date: '2022-09-27'
+  },
   {
     title: 'petite-vue - Progressively enhancing every application?',
     description: `Since Vue existed, people have used it for dozens of different kinds of applications. 
@@ -42,6 +72,7 @@ const TALKS = [
     location: 'Theater Amsterdam',
     eventUrl: 'https://vuejs.amsterdam/',
     slidesUrl: 'https://petite-vue.lichter.io/',
+    videoUrl: 'https://www.youtube.com/watch?v=pjGXIXgT0VE',
     date: '2022-06-03'
   },
   {
