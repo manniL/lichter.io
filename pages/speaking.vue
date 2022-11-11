@@ -27,6 +27,45 @@
 
 const TALKS = [
   {
+    title: 'Multi-variant apps with Nuxt 3',
+    description: `    
+Nuxt 3 offers amazing DX, also thanks to its directory structure. FS-based routing, auto importing components and automatic plugin registration - just to name a few features that makes development a breeze.
+
+But when the project grows, having a flat directory structure might become impractical at a point. The problem is even more prevalent when you want to reuse parts of your Nuxt application throughout other projects, e.g., to create different versions of your app depending on the clients.
+
+In this talk, you will see how to extend your Nuxt application based on another project, be it your own "base template" or a totally different GitHub repository. Thanks to Nuxt 3's "extends" key, multi-variant apps can be created just with a bit of configuration.
+Together we will have a look at the built-in solution, why it is way more powerful than "just adding a component library" and how to apply it to your projects!
+`,
+    eventName: 'Nuxt Nation',
+    location: 'Online',
+    eventUrl: 'https://nuxtnation.com/',
+    date: '2022-11-16'
+  },
+  {
+    title: 'Modern JavaScript - from ES6 to ESNext',
+    description: `
+    JavaScript is a language that is constantly evolving. Every year it gets new features and syntax updates. But with so many new features, it's easy to lose track.
+If terms like _Optional Chaining_, _flatMap, or _Array Destructuring_ are foreign to you, this workshop is the ideal choice!
+Together we'll look at which of the new features are helpful for your actual (daily) development and how to use them in different situations. You will also learn about terms like "ES6", "ES2020" or "ESNext" and how new JavaScript versions are created. In addition, there is an outlook on future JavaScript functions that are not yet fully formalized, but can nevertheless already be used.
+Only basic knowledge of JavaScript is required for participation.
+    `,
+    eventName: 'Developer Open Space',
+    location: 'Online',
+    eventUrl: 'https://devopenspace.de/',
+    date: '2022-11-11',
+    isWorkshop: true
+  },
+  {
+    title: 'Nuxt 3 - More Than Vue 3 on Steroids',
+    description: 'Nuxt 3 is coming closer and closer to the final release. In this talk, we will take a look at the Vue-based meta-framework and the benefits it can provide to us developers. Besides building a tiny application, we will also check out Nitro, the new server engine of Nuxt, and eventually deploy our small app within minutes. The best thing? There is no extra knowledge needed besides the basics of Vue and the Composition API.',
+    eventName: 'JetBrains JavaScript Day 2022',
+    location: 'Online',
+    eventUrl: 'https://www.jetbrains.com/lp/javascript-day-2022/',
+    slidesUrl: 'https://www.lichter.link/jetbrains-js-day-2022-slides/',
+    videoUrl: 'https://youtu.be/Th4woxrN6bk?t=20416',
+    date: '2022-11-10'
+  },
+  {
     title: 'unjs - Unified JavaScript solutions',
     description: `JavaScript can run almost anywhere nowadays - in the browser, on the server, in lambdas,
      and on the edge. And so do our Vue and Nuxt applications! 
