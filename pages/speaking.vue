@@ -62,7 +62,7 @@ Only basic knowledge of JavaScript is required for participation.
     location: 'Online',
     eventUrl: 'https://www.jetbrains.com/lp/javascript-day-2022/',
     slidesUrl: 'https://www.lichter.link/jetbrains-js-day-2022-slides/',
-    videoUrl: 'https://youtu.be/Th4woxrN6bk?t=20416',
+    videoUrl: 'https://www.youtube.com/watch?v=cSjlefuZlaI&list=PLQ176FUIyIUaHBVI1u8dEMBQkQcET9hKX&index=8',
     date: '2022-11-10'
   },
   {
