@@ -39,6 +39,7 @@ Together we will have a look at the built-in solution, why it is way more powerf
     eventName: 'Nuxt Nation',
     location: 'Online',
     eventUrl: 'https://nuxtnation.com/',
+    slidesUrl: 'https://www.lichter.link/nuxt-nation-2022-repo/',
     date: '2022-11-16'
   },
   {
