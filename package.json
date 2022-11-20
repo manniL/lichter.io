@@ -30,7 +30,7 @@
     "nuxt-svg-loader": "^1.2.0",
     "smoothscroll-polyfill": "^0.4.4",
     "stripe": "^8.111.0",
-    "tailwindcss": "^2.0.1-compat",
+    "tailwindcss": "^3.2.4",
     "vue-confetti": "^2.2.1",
     "vue-cookieconsent-component": "^1.2.0",
     "vue-if-bot": "^1.2.0",
