@@ -44,6 +44,13 @@ Together we will have a look at the built-in solution, why it is way more powerf
     date: '2022-11-16'
   },
   {
+    title: 'Panel - Nuxt Insiders',
+    description: 'A panel with selected people from the "Nuxt Insiders" community, which is a group of people who are actively contributing to the Nuxt ecosystem. Topics include i.e. contributions, upcoming features and discussions around the Nuxt.js community',
+    eventUrl: 'https://nuxtnation.com/',
+    videoUrl: 'https://www.youtube.com/watch?v=MS6i1VlNpzA',
+    date: '2022-11-16'
+  },
+  {
     title: 'Modern JavaScript - from ES6 to ESNext',
     description: `
     JavaScript is a language that is constantly evolving. Every year it gets new features and syntax updates. But with so many new features, it's easy to lose track.
