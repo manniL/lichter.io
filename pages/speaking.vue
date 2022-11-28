@@ -40,6 +40,7 @@ Together we will have a look at the built-in solution, why it is way more powerf
     location: 'Online',
     eventUrl: 'https://nuxtnation.com/',
     slidesUrl: 'https://www.lichter.link/nuxt-nation-2022-repo/',
+    videoUrl: 'https://youtu.be/ZsPlphW-z5k',
     date: '2022-11-16'
   },
   {
