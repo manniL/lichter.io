@@ -12,11 +12,31 @@ const bankDetails = [
 
 const route = useRoute()
 const showThanks = computed(() => route.fullPath.includes('success=true'))
+
+onMounted(async () => {
+  if (!showThanks.value) {
+    return
+  }
+  // @ts-ignore
+  const { Confetti } = await import('vue-confetti')
+  const confetti = new Confetti()
+  confetti.start({})
+  setTimeout(() => confetti.stop(), 5000)
+})
 </script>
 
 <template>
   <div class="bg-gray-200 px-4 py-16">
     <section class="flex flex-col justify-center items-center flex-wrap">
+      <div v-if="showThanks"
+        class="flex flex-col py-8 justify-around items-center w-5/6 md:w-2/3 mx-auto text-center md:my-8 bg-white shadow-inner">
+        <p class="text-lg">
+          <span class="font-bold text-4xl">
+            Thank you for your Donation!
+          </span><br>
+          People like you help the open-source community to stay alive and grow 😍
+        </p>
+      </div>
       <h1 class="text-2xl font-bold text-center">
         Your support is powerful!
       </h1>
@@ -145,15 +165,6 @@ const showThanks = computed(() => route.fullPath.includes('success=true'))
             <DonationItem v-for="(item, i) in paymentLinks" :key="i" :info="item" />
           </div>
         </div>
-      </div>
-      <div v-if="showThanks"
-        class="flex flex-col py-8 justify-around items-center w-5/6 md:w-2/3 mx-auto text-center md:mt-8 bg-white shadow-inner">
-        <p class="text-lg">
-          <span class="font-bold text-4xl">
-            Thank you for your Donation!
-          </span><br>
-          People like you help the open-source community to stay alive and grow 😍
-        </p>
       </div>
       <div class="flex flex-col py-8 justify-around items-center w-5/6 md:w-2/3 mx-auto text-center md:mt-8">
         <div class="mb-8">
