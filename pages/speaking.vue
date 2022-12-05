@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { TALKS } from '~/data/talks'
 const title = 'Speaking - My Talks'
 const metaDescription = 'A list of all talks I\'ve given on conferences, meetups and other events. Slides and video, if available, are linked to each talk.'
 useHead({
