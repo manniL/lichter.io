@@ -5,11 +5,9 @@ export default defineNuxtConfig({
   runtimeConfig: {
     public: {
       siteUrl: SITE_URL,
-      analyticsId: 'UA-62902757-11',
-      // Dev keys, use env variables to replace them in production
-      stripePublicKey: 'pk_test_9hUFtiNMcseCbvLBySY7D8P6',
-      stripeSecretKey: 'sk_test_dBicKVv5s1znvk1y0GE9dnTr'
-    }
+      analyticsId: 'UA-62902757-11'
+    },
+    stripeSecretKey: 'sk_test_dBicKVv5s1znvk1y0GE9dnTr'
   },
 
   modules: [
@@ -43,9 +41,5 @@ export default defineNuxtConfig({
       twitterCreator: '@TheAlexLichter',
       twitterSite: '@TheAlexLichter'
     }
-  },
-
-  app: {
-    buildAssetsDir: '/assets/'
   }
 })

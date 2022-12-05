@@ -18,7 +18,7 @@
 
 <script setup lang="ts">
 defineProps<{
-  period: boolean,
+  period?: boolean,
   title: string,
   when?: string
 }>()

@@ -61,7 +61,7 @@ const skills = [
 </script>
 
 <template>
-  <div v-scroll-reveal class="flex flex-wrap flex-col items-center bg-gray-300 py-16">
+  <div v-scroll-reveal class="flex flex-wrap flex-col items-center bg-gray-200 py-16">
     <div class="flex justify-around w-5/6 md:w-1/2 mx-auto">
       <h2 class="text-2xl font-bold text-center">
         My Skillset

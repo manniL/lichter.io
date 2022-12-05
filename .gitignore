@@ -5,3 +5,6 @@ npm-debug.log
 dist
 sw.*
 /functions-dist
+.env
+.env.production
+.output

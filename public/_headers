@@ -4,7 +4,7 @@
   X-Frame-Options: DENY
   X-XSS-Protection: 1; mode=block
 
-/assets/*
+/_nuxt/*
   Cache-Control: public, max-age=31536000, immutable
 
 /sw.js

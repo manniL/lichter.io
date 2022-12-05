@@ -9,3 +9,11 @@ export type Talk = {
   videoUrl?: string
   isWorkshop?: true
 }
+
+export type DonationLinkInfo = {
+  url: string,
+  name: string,
+  description: string,
+  slug: string,
+  amountInCent: number,
+}

@@ -18,7 +18,6 @@ specifiers:
   vite-svg-loader: ^3.6.0
   vue-confetti: ^2.3.0
   vue-cookieconsent-component: ^1.2.0
-  vue-stripe-elements-plus: ^1.0.3
 
 devDependencies:
   '@kevinmarrec/nuxt-pwa': 0.13.0
@@ -38,7 +37,6 @@ devDependencies:
   vite-svg-loader: 3.6.0
   vue-confetti: 2.3.0
   vue-cookieconsent-component: 1.2.0
-  vue-stripe-elements-plus: 1.0.3
 
 packages:
 
@@ -5726,10 +5724,6 @@ packages:
     dependencies:
       '@vue/devtools-api': 6.4.5
       vue: 3.2.45
-    dev: true
-
-  /vue-stripe-elements-plus/1.0.3:
-    resolution: {integrity: sha512-Aq61f8KxrAe0l+eL5uZc1LePogfrPpAtjm/HqFDFYydRK2z7jl8Rb/IDTKeQi4Z+Tt+kX76WNtHWpxtt9chYSQ==}
     dev: true
 
   /vue/2.7.14:

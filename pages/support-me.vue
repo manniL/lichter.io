@@ -1,3 +1,19 @@
+
+<script setup lang="ts">
+const { data: paymentLinks } = await useFetch('/api/payment-links')
+
+const bankDetails = [
+  ['Name', 'Alexander Lichter'],
+  ['Subject', 'Lichter.io Donation'],
+  ['Bank', 'Solarisbank AG'],
+  ['IBAN', 'DE53 1101 0101 5492 5516 92'],
+  ['SWIFT / BIC', 'SOBKDEB2XXX']
+]
+
+const route = useRoute()
+const showThanks = computed(() => route.fullPath.includes('success=true'))
+</script>
+
 <template>
   <div class="bg-gray-200 px-4 py-16">
     <section class="flex flex-col justify-center items-center flex-wrap">
@@ -13,17 +29,19 @@
               Alexander Lichter
             </p>
           </div>
-          <NuxtLink
-            class="mt-12 bg-green-500 hover:bg-green-400 px-8 py-4 rounded-full text-white text-2xl shadow-lg border border-green-300"
-            to="#donate">
-            Donate 🙏
-          </NuxtLink>
+          <div class="mt-12">
+            <NuxtLink
+              class="bg-green-500 hover:bg-green-400 px-8 py-4 rounded-full text-white text-2xl shadow-lg border border-green-300"
+              to="#donate">
+              Donate 🙏
+            </NuxtLink>
+          </div>
         </div>
         <div class="flex-1">
           <p class="mt-6 text-lg">
             👋 Hey! I am Alex, a freelance web developer and
-            <a class="text-green-700 hover:underline" href="https://github.com/nuxt/nuxt.js#core-team"
-              rel="noreferrer noopener" target="_blank" v-text="'Nuxt.js'" />
+            <a class="text-green-700 hover:underline" href="https://nuxtjs.org/teams/" rel="noreferrer noopener"
+              target="_blank" v-text="'Nuxt.js'" />
             core team member. But since you're on this page, you probably already know this.
           </p>
           <p class="mt-6 text-lg">
@@ -124,14 +142,9 @@
             <h3 class="text-center text-3xl mt-8 mb-16">
               One Time Donations
             </h3>
-            <NuxtLink v-for="(item, i) in $options.donationItems" :key="i" to="#donationform">
-              <DonationItem v-bind="item" @click.native="changeDonationType(item)" />
-            </NuxtLink>
+            <DonationItem v-for="(item, i) in paymentLinks" :key="i" :info="item" />
           </div>
         </div>
-      </div>
-      <div class="flex py-8 flex-col justify-around items-center w-5/6 md:w-2/3 mx-auto text-center">
-        <DonationForm v-if="isStripeLoaded" :donation-type="donationType" @completed="showThanks = true" />
       </div>
       <div v-if="showThanks"
         class="flex flex-col py-8 justify-around items-center w-5/6 md:w-2/3 mx-auto text-center md:mt-8 bg-white shadow-inner">
@@ -152,7 +165,7 @@
           </p>
         </div>
         <div class="flex flex-col font-mono md:w-1/3 flex-no-shrink pt-8">
-          <div v-for="([k, v]) in $options.bankDetails" :key="k" class="flex my-2 md:my-0">
+          <div v-for="([k, v]) in bankDetails" :key="k" class="flex my-2 md:my-0">
             <div class="w-1/3 text-left" v-text="k" />
             <div class="w-2/3 text-right" v-text="v" />
           </div>
@@ -162,104 +175,7 @@
   </div>
 </template>
 
-<script>
-export default {
-  components: {
-    DonationItem: () => import('~/components/thanks/DonationItem'),
-    DonationForm: () => import('~/components/thanks/DonationForm')
-  },
-  data () {
-    return {
-      donationType: {
-        slug: 'none',
-        price: -1
-      },
-      showThanks: false,
-      isStripeLoaded: false
-    }
-  },
-  head () {
-    const title = 'Support me!'
-    const metaDescription = 'Your support is powerful. Please consider supporting me to allow me spending more time on the Nuxt ecosystem.'
-
-    return {
-      title,
-      meta: [
-        {
-          hid: 'og:title',
-          name: 'og:title',
-          content: title
-        },
-        {
-          hid: 'description',
-          name: 'description',
-          content: metaDescription
-        },
-        {
-          hid: 'og:description',
-          name: 'og:description',
-          content: metaDescription
-        }
-      ],
-      script: [
-        { hid: 'stripe', src: 'https://js.stripe.com/v3/', defer: true, callback: () => { this.isStripeLoaded = true } }
-      ]
-    }
-  },
-  methods: {
-    changeDonationType (type) {
-      this.donationType = type
-    }
-  },
-  donationItems: [
-    {
-      name: 'Public transport ticket',
-      slug: 'ticket',
-      description: 'Public transport isn\'t cheap in Germany, but it is still cheaper than driving by car and additionally paying for the parking lot',
-      price: 261
-    },
-    {
-      name: 'Fund one of my domains for a year',
-      slug: 'domain',
-      description: 'Domain registration is cheap... if you only have one. But who has only one domain and not like.. fifty? (No I am not addicted!)',
-      price: 666
-    },
-    {
-      name: 'Seven bottles of my favorite local soft drink',
-      slug: 'kolle',
-      description: 'That drink is called Kolle Mate and is locally produced in Dresden, Germany. It has caffeine included and is extremely delicious!',
-      price: 1050
-    },
-    {
-      name: 'Two months of Spotify Premium',
-      slug: 'spotify',
-      description: 'Honestly, I could not live without music! Listening to it while programming makes me way more productive, believe it or not!',
-      price: 1998
-    },
-    {
-      name: 'A bottle of 10 year old Talisker Scotch',
-      slug: 'talisker',
-      description: 'After releasing a new version or finishing a large piece of content I like to celebrate the achievement with a fine glass of Scotch',
-      price: 3399
-    },
-    {
-      name: 'Whatever you think is right',
-      slug: 'questionmark',
-      description: 'You are the one who wants to support me, so you are the one that selects the amount in the end!',
-      price: -1
-    }
-  ],
-  bankDetails: [
-    ['Name', 'Alexander Lichter'],
-    ['Subject', 'Lichter.io Donation'],
-    ['Bank', 'Deutsche Kreditbank'],
-    ['IBAN', 'DE80 1203 0000 1036 7634 05'],
-    ['SWIFT / BIC', 'BYLADEM1001']
-  ]
-}
-</script>
-
-<style scoped>
+<style scoped lang="pcss">
 .github-link {
   @apply text-indigo-500;
 
