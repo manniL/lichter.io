@@ -1,5 +1,5 @@
 <template>
-  <section class="flex flex-col flex-wrap items-center bg-gray-400 pt-8 animated fade-in">
+  <section class="flex flex-col flex-wrap items-center bg-gray-300 pt-8 fade-in">
     <div class="justify-around items-center w-5/6 md:w-1/2 mx-auto pb-8 md:pb-0">
       <p class="text-xl md:text-2xl text-black mb-2">
         Hey you!
@@ -19,26 +19,16 @@
         I use the appropriate tech stack that fits the project's specifications and requirements.
       </p>
     </div>
-    <VueNextLevelScroll class="cursor-pointer hidden md:block" target="#skills">
+    <NuxtLink class="cursor-pointer hidden md:block" to="#skills">
       <Icon
-        class="md:my-4 motion-safe:animate-bounce fill-current text-gray-700"
-        view-box="0 0 1024 1024"
-        path="M840.4 300H183.6c-19.7 0-30.7 20.8-18.5 35l328.4 380.8c9.4 10.9 27.5 10.9 37 0L858.9 335c12.2-14.2 1.2-35-18.5-35z"
+        class="w-10 h-10 md:my-4 motion-safe:animate-bounce fill-current text-gray-700"
+        name="heroicons:chevron-double-down-20-solid"
       />
-    </VueNextLevelScroll>
+    </NuxtLink>
   </section>
 </template>
 
-<script>
-export default {
-  components: {
-    Icon: () => import('~/components/Icon'),
-    VueNextLevelScroll: () => import('vue-next-level-scroll')
-  }
-}
-</script>
-
-<style lang="postcss">
+<style lang="pcss">
   .animation-duration-4000 {
     animation-duration: 4000ms;
   }

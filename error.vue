@@ -6,26 +6,16 @@
     <p class="leading-loose mt-4">
       Looks like you took a wrong path!
     </p>
-    <NuxtLink
-      to="/"
-      class="text-gray-900 my-4"
-    >
+    <NuxtLink to="/" class="text-gray-900 my-4">
       Get back
     </NuxtLink>
-    <img
-      class="mb-8"
-      src="https://thecatapi.com/api/images/get?format=src&type=gif"
-    >
+    <img class="mb-8" src="https://thecatapi.com/api/images/get?format=src&type=gif">
     <div class="block h-screen" />
   </section>
 </template>
 
-<script>
-export default {
-  head () {
-    return {
-      title: '404 - No Lichter found!'
-    }
-  }
-}
+<script setup lang="ts">
+useHead({
+  title: '404 - No Lichter found!'
+})
 </script>

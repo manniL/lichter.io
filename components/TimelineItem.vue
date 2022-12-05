@@ -1,56 +1,30 @@
 <template>
-  <li
-    v-scroll-reveal
-    :class="{'period my-2 md:my-12 py-12 md:mt-0': period}"
-    class="timeline-item relative md:block pl-8 md:pl-0"
-  >
-    <div
-      v-if="!period"
-      class="timeline-info md:w-1/2 mb-2 font-bold text-xs tracking-wide uppercase whitespace-no-wrap md:block md:mb-0 md:mt-1 md:p-0"
-    >
-      <span class="mt-1" v-text="when" />
+  <li v-scroll-reveal :class="{ 'period my-2 md:my-12 py-12 md:mt-0': period }"
+    class="timeline-item relative md:block pl-8 md:pl-0">
+    <div v-if="!period"
+      class="timeline-info md:w-1/2 mb-2 font-bold text-xs tracking-wide uppercase whitespace-no-wrap md:block md:mb-0 md:mt-1 md:p-0">
+      <span v-if="when" class="mt-1" v-text="when" />
     </div>
-    <div
-      v-if="!period"
-      class="timeline-marker absolute inset-y-0 left-0 w-8 md:block md:m-0 md:p-0"
-    />
-    <div
-      :class="{'md:w-1/2': !period}"
-      class="timeline-content pb-8 md:block md:m-0 md:p-0"
-    >
-      <component
-        :is="period ? 'h2' : 'h3'"
-        :class="{'text-xl font-bold': period,'text-lg': !period}"
-        class="font-bold text-black"
-        v-text="title"
-      />
-      <p :class="{'mt-2': period}">
+    <div v-if="!period" class="timeline-marker absolute inset-y-0 left-0 w-8 md:block md:m-0 md:p-0" />
+    <div :class="{ 'md:w-1/2': !period }" class="timeline-content pb-8 md:block md:m-0 md:p-0">
+      <component :is="period ? 'h2' : 'h3'" :class="{ 'text-xl font-bold': period, 'text-lg': !period }"
+        class="font-bold text-black" v-text="title" />
+      <p :class="{ 'mt-2': period }">
         <slot />
       </p>
     </div>
   </li>
 </template>
 
-<script>
-export default {
-  props: {
-    period: {
-      type: Boolean,
-      default: false
-    },
-    title: {
-      type: String,
-      required: true
-    },
-    when: {
-      type: String,
-      default: ''
-    }
-  }
-}
+<script setup lang="ts">
+defineProps<{
+  period: boolean,
+  title: string,
+  when?: string
+}>()
 </script>
 
-<style lang="postcss">
+<style lang="pcss">
 
   .timeline-marker {
     &:before {

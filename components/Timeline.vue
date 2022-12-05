@@ -129,16 +129,7 @@
   </ul>
 </template>
 
-<script>
-import TimelineItem from '~/components/TimelineItem.vue'
-
-export default {
-  name: 'Timeline',
-  components: { TimelineItem }
-}
-</script>
-
-<style lang="postcss">
+<style scoped lang="postcss">
   .developmint {
     color: #15831d;
     text-decoration: none;

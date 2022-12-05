@@ -112,18 +112,14 @@
           <a href="https://github.com/manniL/lichter.io" rel="noreferrer noopener nofollow" target="_blank">GitHub</a>)
           -
           <a href="https://raw.githubusercontent.com/manniL/lichter.io/master/LICENSE"
-             rel="noreferrer noopener nofollow"
-             target="_blank"
-          >
+            rel="noreferrer noopener nofollow" target="_blank">
             MIT
           </a>
         </li>
         <li>
           Text, journalistic and other written content: Alexander Lichter -
-          <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"
-             rel="noreferrer noopener nofollow"
-             target="_blank"
-          >
+          <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noreferrer noopener nofollow"
+            target="_blank">
             CC-BY-NC-SA 4.0
           </a>
         </li>
@@ -133,15 +129,11 @@
   </section>
 </template>
 
-<script>
-export default {
-  head () {
-    return {
-      title: 'Legal notice - Lichter.io',
-      meta: [
-        { hid: 'robots', name: 'robots', content: 'noindex' }
-      ]
-    }
-  }
-}
+<script setup lang="ts">
+useHead({
+  title: 'Legal notice - Lichter.io',
+  meta: [
+    { hid: 'robots', name: 'robots', content: 'noindex' }
+  ]
+})
 </script>

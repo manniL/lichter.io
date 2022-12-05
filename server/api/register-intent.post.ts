@@ -1,24 +1,13 @@
-/* eslint-disable no-console */
-import stripeLib from 'stripe'
+import Stripe from 'stripe'
 
-const isDev = process.env.NODE_ENV !== 'production'
+// TODO: Runtime config
+const { stripeSecretKey } = useRuntimeConfig()
 
-function retrieveKey () {
-  return isDev ? 'sk_test_dBicKVv5s1znvk1y0GE9dnTr' : process.env.STRIPE_SECRET_KEY
-}
+const stripe = new Stripe(stripeSecretKey, { apiVersion: '2022-11-15' })
 
-const STRIPE_SECRET_KEY = retrieveKey()
-
-const stripe = stripeLib(STRIPE_SECRET_KEY)
-
-exports.handler = async (event) => {
-  console.log('In the API')
-  if (event.httpMethod !== 'POST') {
-    return errorFn('Method not allowed', 405)
-  }
-
+export default defineEventHandler(async (event) => {
   try {
-    const params = JSON.parse(event.body)
+    const params = await readBody(event)
     const missingAttrs = !params
       ? ['all']
       : ['amount', 'donationType', 'email', 'message'].filter(k => !Object.keys(params).includes(k))
@@ -70,9 +59,9 @@ exports.handler = async (event) => {
   } catch (e) {
     return errorFn('Unknown error', 500, e)
   }
-}
+})
 
-const errorFn = (message, statusCode = 500, error = '') => {
+const errorFn = (message: string, statusCode = 500, error?: unknown) => {
   if (error) {
     console.error(error)
   }
