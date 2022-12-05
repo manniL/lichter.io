@@ -1,0 +1,1 @@
+export const GA_OPTOUT_COOKIE = 'ga_optout'

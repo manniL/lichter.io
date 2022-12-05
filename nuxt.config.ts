@@ -16,10 +16,6 @@ export default defineNuxtConfig({
     '@vueuse/nuxt',
     'nuxt-icon',
   ],
-  // TODO
-  // 'google-analytics': {
-  //   disabled: () => document.cookie.includes('ga_optout=true'),
-  // },
 
   pwa: {
     manifest: {

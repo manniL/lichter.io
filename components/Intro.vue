@@ -17,20 +17,18 @@
         </h2>
       </div>
       <div class="flex mt-4">
-        <NuxtLink :class="linkClass" class="hover:text-black" to="https://github.com/manniL"
-          title="My GitHub account" @click="trackIconClick('github')">
+        <NuxtLink :class="linkClass" class="hover:text-black" to="https://github.com/manniL" title="My GitHub account">
           <Icon class="w-8 h-8" name="carbon:logo-github" />
         </NuxtLink>
         <NuxtLink :class="linkClass" class="hover:text-indigo-600" to="mailto:hello@lichter.io"
-          title="Send me an e-mail!" @click="trackIconClick('mail')">
+          title="Send me an e-mail!">
           <Icon class="w-8 h-8" name="heroicons:envelope-solid" />
         </NuxtLink>
-        <NuxtLink :class="linkClass" class="hover:text-green-600" to="tel:+4917670625208" title="Hotline Bling?"
-          @click="trackIconClick('phone')">
+        <NuxtLink :class="linkClass" class="hover:text-green-600" to="tel:+4917670625208" title="Hotline Bling?">
           <Icon class="w-8 h-8" name="heroicons:phone-solid" />
         </NuxtLink>
         <NuxtLink :class="linkClass" class="hover:text-blue-500" to="https://twitter.com/TheAlexLichter"
-          title="I'm on Twitter as well" @click="trackIconClick('twitter')">
+          title="I'm on Twitter as well">
           <Icon class="w-8 h-8 scale-125" name="carbon:logo-twitter" />
         </NuxtLink>
       </div>
@@ -40,14 +38,6 @@
 
 <script setup lang="ts">
 const linkClass = "text-center text-gray-600 no-underline shadow-lg bg-gray-300 transition-all border border-gray-400 hover:border-gray-500 hover:shadow-xl px-3 py-2 m-2 rounded"
-const trackIconClick = (iconType: string) => {
-  // TODO
-  /*$ga.event({
-    eventCategory: 'click',
-    eventAction: `${iconType}Icon`
-  })
-  */
-}
 </script>
 
 <style>
