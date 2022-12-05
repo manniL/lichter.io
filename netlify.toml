@@ -1,0 +1,5 @@
+[build]
+  publish = "dist"
+  command = "pnpm generate"
+[build.environment]
+  NODE_VERSION = "18"
