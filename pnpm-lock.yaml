@@ -15,9 +15,7 @@ specifiers:
   scrollreveal: ^4.0.9
   stripe: ^11.1.0
   tailwindcss: ^3.2.4
-  vite-svg-loader: ^3.6.0
   vue-confetti: ^2.3.0
-  vue-cookieconsent-component: ^1.2.0
   vue-gtag-next: ^1.14.0
 
 devDependencies:
@@ -35,9 +33,7 @@ devDependencies:
   scrollreveal: 4.0.9
   stripe: 11.1.0
   tailwindcss: 3.2.4
-  vite-svg-loader: 3.6.0
   vue-confetti: 2.3.0
-  vue-cookieconsent-component: 1.2.0
   vue-gtag-next: 1.14.0
 
 packages:
@@ -1018,14 +1014,6 @@ packages:
       '@vue/shared': 3.2.45
     dev: true
 
-  /@vue/compiler-sfc/2.7.14:
-    resolution: {integrity: sha512-aNmNHyLPsw+sVvlQFQ2/8sjNuLtK54TC6cuKnVzAY93ks4ZBrvwQSnkkIh7bsbNhum5hJBS00wSDipQ937f5DA==}
-    dependencies:
-      '@babel/parser': 7.20.5
-      postcss: 8.4.19
-      source-map: 0.6.1
-    dev: true
-
   /@vue/compiler-sfc/3.2.45:
     resolution: {integrity: sha512-1jXDuWah1ggsnSAOGsec8cFjT/K6TMZ0sPL3o3d84Ft2AYZi2jWJgRMjw4iaK0rBfA89L5gw427H4n1RZQBu6Q==}
     dependencies:
@@ -1927,10 +1915,6 @@ packages:
 
   /csstype/2.6.21:
     resolution: {integrity: sha512-Z1PhmomIfypOpoMjRQB70jfvy/wxT50qW08YXO5lMIJkrdq4yOTR+AW7FqutScmB9NkLwxo+jU+kZLbofZZq/w==}
-    dev: true
-
-  /csstype/3.1.1:
-    resolution: {integrity: sha512-DJR/VvkAvSZW9bTouZue2sSxDwdTN92uHjqeKVm+0dAqdfNykRzQ95tay8aXMBAAPpUiq4Qcug2L7neoRh2Egw==}
     dev: true
 
   /cuint/0.2.2:
@@ -5605,13 +5589,6 @@ packages:
       vscode-uri: 3.0.6
     dev: true
 
-  /vite-svg-loader/3.6.0:
-    resolution: {integrity: sha512-bZJffcgCREW57kNkgMhuNqeDznWXyQwJ3wKrRhHLMMzwDnP5jr3vXW3cqsmquRR7VTP5mLdKj1/zzPPooGUuPw==}
-    dependencies:
-      '@vue/compiler-sfc': 3.2.45
-      svgo: 2.8.0
-    dev: true
-
   /vite/3.2.4:
     resolution: {integrity: sha512-Z2X6SRAffOUYTa+sLy3NQ7nlHFU100xwanq1WDwqaiFiCe+25zdxP1TfCS5ojPV2oDDcXudHIoPnI1Z/66B7Yw==}
     engines: {node: ^14.18.0 || >=16.0.0}
@@ -5695,13 +5672,6 @@ packages:
     resolution: {integrity: sha512-zmPniVzBKv0ie/BEXBR6Isi08hYSd6lS18b8VduG5BzZ2tv6bO/rlwISg+IpGY2XsqAFTXFdTC28YR+UPocnAw==}
     dev: true
 
-  /vue-cookieconsent-component/1.2.0:
-    resolution: {integrity: sha512-9vbbLSIIuLjtFuhJ2QJaY0Jt3xTmotWXsz5/rQyICK9kFgpcDd9dnDwwy753tMSoSLG0+gWKDugaHGuHMdUs2Q==}
-    engines: {node: '>= 6.0.0', npm: '>= 3.0.0'}
-    dependencies:
-      vue: 2.7.14
-    dev: true
-
   /vue-demi/0.13.11:
     resolution: {integrity: sha512-IR8HoEEGM65YY3ZJYAjMlKygDQn25D5ajNFNoKh9RSDMQtlzCxtfQjdQgv9jjK+m3377SsJXY8ysq8kLCZL25A==}
     engines: {node: '>=12'}
@@ -5732,13 +5702,6 @@ packages:
     dependencies:
       '@vue/devtools-api': 6.4.5
       vue: 3.2.45
-    dev: true
-
-  /vue/2.7.14:
-    resolution: {integrity: sha512-b2qkFyOM0kwqWFuQmgd4o+uHGU7T+2z3T+WQp8UBjADfEv2n4FEMffzBmCKNP0IGzOEEfYjvtcC62xaSKeQDrQ==}
-    dependencies:
-      '@vue/compiler-sfc': 2.7.14
-      csstype: 3.1.1
     dev: true
 
   /vue/3.2.45:
