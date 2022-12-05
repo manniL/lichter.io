@@ -18,11 +18,7 @@
     </h3>
     <p>
       That's me, or better said my company: Developmint GbR. Our contact data can be found in the
-      <NuxtLink
-        to="/legal/"
-        rel="nofollow"
-        v-text="'legal notice'"
-      />.
+      <NuxtLink to="/legal/" rel="nofollow" v-text="'legal notice'" />.
     </p>
 
     <h3>
@@ -57,7 +53,8 @@
       But as we don't save any personal data through Lichter.io, we will likely tell you that we don't have any data
       about you.<br>
       <br>
-      In case we don’t comply with your request, you have the right to complain at the responsible regulating authority.<br>
+      In case we don’t comply with your request, you have the right to complain at the responsible regulating
+      authority.<br>
       Of course, it’s in our interest to guarantee your personal data privacy.<br>
       If you have any questions please feel free to contact us via privacy@developmint.de.<br>
     </p>
@@ -138,25 +135,19 @@
       Please notice that the usage of our services and the user experience could suffer from preventing our Website to
       set a cookie.<br>
       If you want to prevent Google from setting any cookies on your computer, you can use
-      <a
-        href="http://tools.google.com/dlpage/gaoptout?hl=en"
-        rel="noreferrer noopener nofollow"
-        target="_blank"
-      >this browser-plugin</a>.<br>
+      <a href="http://tools.google.com/dlpage/gaoptout?hl=en" rel="noreferrer noopener nofollow" target="_blank">this
+        browser-plugin</a>.<br>
       <br>
       Alternatively, or if you’re using a mobile browser, click on
-      <a href="#" @click.prevent="optOut">this link</a>
+      <button @click="optOut">this button</button>
       to prevent Google from gathering data on
       our Website.<br>
       With clicking this link, an opt-out cookie will be saved on your device.<br>
       If you delete your cookies, you will need to click on the link again to stay opted-out.<br>
       <br>
       You find further information about privacy protection and Google Analytics in
-      <a
-        href="https://support.google.com/analytics/answer/6004245?hl=de"
-        rel="noreferrer noopener nofollow"
-        target="_blank"
-      >this Google Help articles</a>
+      <a href="https://support.google.com/analytics/answer/6004245?hl=de" rel="noreferrer noopener nofollow"
+        target="_blank">this Google Help articles</a>
     </p>
 
     <h2>
@@ -172,21 +163,14 @@
   </div>
 </template>
 
-<script>
-export default {
-  head () {
-    return {
-      title: 'Privacy - Lichter.io',
-      meta: [
-        { hid: 'robots', name: 'robots', content: 'noindex' }
-      ]
-    }
-  },
-  methods: {
-    optOut () {
-      document.cookie = 'ga_optout=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/'
-      this.$ga.disable()
-    }
-  }
-}
+<script setup lang="ts">
+useHead({
+  title: 'Privacy - Lichter.io',
+  meta: [
+    { hid: 'robots', name: 'robots', content: 'noindex' }
+  ]
+})
+
+const { optOut } = useAnalyticsOptOut()
+
 </script>

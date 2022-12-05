@@ -1,3 +1,19 @@
+
+<script setup lang="ts">
+const { data: paymentLinks } = await useFetch('/api/payment-links')
+
+const bankDetails = [
+  ['Name', 'Alexander Lichter'],
+  ['Subject', 'Lichter.io Donation'],
+  ['Bank', 'Solarisbank AG'],
+  ['IBAN', 'DE53 1101 0101 5492 5516 92'],
+  ['SWIFT / BIC', 'SOBKDEB2XXX']
+]
+
+const route = useRoute()
+const showThanks = computed(() => route.fullPath.includes('success=true'))
+</script>
+
 <template>
   <div class="bg-gray-200 px-4 py-16">
     <section class="flex flex-col justify-center items-center flex-wrap">
@@ -7,50 +23,34 @@
       <div class="flex flex-col md:flex-row justify-around items-center w-5/6 md:w-2/3 mx-auto mt-16">
         <div class="flex-1 text-center">
           <div class="flex flex-col items-center">
-            <img
-              alt="Alexander Lichter"
-              class="rounded-full border border-gray-600 shadow-2xl mb-2 w-64 h-64"
-              src="/img/me.jpg"
-              srcset="/img/me@2x.jpg 2x"
-            >
+            <img alt="Alexander Lichter" class="rounded-full border border-gray-600 shadow-2xl mb-2 w-64 h-64"
+              src="/img/me.jpg" srcset="/img/me@2x.jpg 2x">
             <p class="mt-4 font-light text-lg md:text-2xl">
               Alexander Lichter
             </p>
           </div>
-          <VueNextLevelScroll target="#donate">
-            <button class="mt-12 bg-green-500 hover:bg-green-400 px-8 py-4 rounded-full text-white text-2xl shadow-lg border border-green-300">
+          <div class="mt-12">
+            <NuxtLink
+              class="bg-green-500 hover:bg-green-400 px-8 py-4 rounded-full text-white text-2xl shadow-lg border border-green-300"
+              to="#donate">
               Donate 🙏
-            </button>
-          </VueNextLevelScroll>
+            </NuxtLink>
+          </div>
         </div>
         <div class="flex-1">
           <p class="mt-6 text-lg">
             👋 Hey! I am Alex, a freelance web developer and
-            <a
-              class="text-green-700 hover:underline"
-              href="https://github.com/nuxt/nuxt.js#core-team"
-              rel="noreferrer noopener"
-              target="_blank"
-              v-text="'Nuxt.js'"
-            />
+            <a class="text-green-700 hover:underline" href="https://nuxtjs.org/teams/" rel="noreferrer noopener"
+              target="_blank" v-text="'Nuxt.js'" />
             core team member. But since you're on this page, you probably already know this.
           </p>
           <p class="mt-6 text-lg">
             My goal is to contribute as much as possible to the Nuxt.js ecosystem.
             Currently, I am helping developers on a daily basis in the Discord, on GitHub and on
-            <a
-              class="text-blue-400 hover:underline"
-              href="http://twitter.com/TheAlexLichter"
-              rel="noreferrer noopener"
-              target="_blank"
-              v-text="'Twitter'"
-            />, writing <a
-              class="underline hover:no-underline"
-              href="https://blog.lichter.io/?ref=thanks.lichter.io"
-              rel="noopener"
-              target="_blank"
-              v-text="'blog posts'"
-            /> and guides about programming topics and maintaining several packages.
+            <a class="text-blue-400 hover:underline" href="http://twitter.com/TheAlexLichter" rel="noreferrer noopener"
+              target="_blank" v-text="'Twitter'" />, writing <a class="underline hover:no-underline"
+              href="https://blog.lichter.io/?ref=thanks.lichter.io" rel="noopener" target="_blank"
+              v-text="'blog posts'" /> and guides about programming topics and maintaining several packages.
           </p>
           <p class="mt-6 text-lg">
             Besides working on the Nuxt.js core, I've created a hand full of modules to make the developer's lives
@@ -59,66 +59,32 @@
 
           <ul class="mt-4 text-lg list-disc pl-10">
             <li>
-              <a
-                class="github-link"
-                href="https://github.com/nuxt-community/redirect-module"
-                rel="noreferrer noopener"
-                target="_blank"
-                v-text="'@nuxtjs/redirect-module'"
-              /> - Redirect old URLs to keep SEO up
+              <a class="github-link" href="https://github.com/nuxt-community/redirect-module" rel="noreferrer noopener"
+                target="_blank" v-text="'@nuxtjs/redirect-module'" /> - Redirect old URLs to keep SEO up
             </li>
             <li>
-              <a
-                class="github-link"
-                href="https://github.com/nuxt-community/feed-module"
-                rel="noreferrer noopener"
-                target="_blank"
-                v-text="'@nuxtjs/feed-module'"
-              /> - Blog feeds for everyone!
+              <a class="github-link" href="https://github.com/nuxt-community/feed-module" rel="noreferrer noopener"
+                target="_blank" v-text="'@nuxtjs/feed-module'" /> - Blog feeds for everyone!
             </li>
             <li>
-              <a
-                class="github-link"
-                href="https://github.com/nuxt-community/separate-env-module/"
-                rel="noreferrer noopener"
-                target="_blank"
-                v-text="'@nuxtjs/separate-env-module'"
-              /> - Separate env values into server/client ones
+              <a class="github-link" href="https://github.com/nuxt-community/separate-env-module/"
+                rel="noreferrer noopener" target="_blank" v-text="'@nuxtjs/separate-env-module'" /> - Separate env
+              values into server/client ones
             </li>
             <li>
-              <a
-                class="github-link"
-                href="https://github.com/Developmint/nuxt-svg-loader"
-                rel="noreferrer noopener"
-                target="_blank"
-                v-text="'nuxt-svg-loader'"
-              /> - Load SVGs as you'd load Vue components
+              <a class="github-link" href="https://github.com/Developmint/nuxt-svg-loader" rel="noreferrer noopener"
+                target="_blank" v-text="'nuxt-svg-loader'" /> - Load SVGs as you'd load Vue components
             </li>
             <li>
-              <a
-                class="github-link"
-                href="https://github.com/Developmint/nuxt-purgecss"
-                rel="noreferrer noopener"
-                target="_blank"
-                v-text="'nuxt-purgecss'"
-              /> - Delete superfluous CSS
+              <a class="github-link" href="https://github.com/Developmint/nuxt-purgecss" rel="noreferrer noopener"
+                target="_blank" v-text="'nuxt-purgecss'" /> - Delete superfluous CSS
             </li>
             <li>
               You can find more on my
-              <a
-                class="github-link"
-                href="https://github.com/manniL"
-                rel="noreferrer noopener"
-                target="_blank"
-                v-text="'own GitHub'"
-              /> and
-              <a
-                class="github-link"
-                href="https://github.com/Developmint"
-                rel="noreferrer noopener"
-                target="_blank"
-                v-text="'company GitHub'"
-              /> profile
+              <a class="github-link" href="https://github.com/manniL" rel="noreferrer noopener" target="_blank"
+                v-text="'own GitHub'" /> and
+              <a class="github-link" href="https://github.com/Developmint" rel="noreferrer noopener" target="_blank"
+                v-text="'company GitHub'" /> profile
             </li>
           </ul>
 
@@ -129,10 +95,7 @@
           </p>
         </div>
       </div>
-      <h2
-        id="say-thanks"
-        class="text-center text-3xl md:text-4xl mt-8 py-10"
-      >
+      <h2 id="say-thanks" class="text-center text-3xl md:text-4xl mt-8 py-10">
         Say thanks
       </h2>
       <div class="flex justify-around items-center w-5/6 md:w-2/3 mx-auto text-center">
@@ -171,33 +134,20 @@
             </h3>
             <p class="text-xl mt-16">
               For recurring donations, please use my
-              <a class="font-bold text-2xl github-link" href="https://github.com/users/manniL/sponsorship" target="_blank" rel="noopener">GitHub Sponsorship profile</a>.
+              <a class="font-bold text-2xl github-link" href="https://github.com/users/manniL/sponsorship"
+                target="_blank" rel="noopener">GitHub Sponsorship profile</a>.
             </p>
           </div>
           <div class="mt-16">
             <h3 class="text-center text-3xl mt-8 mb-16">
               One Time Donations
             </h3>
-            <VueNextLevelScroll
-              v-for="(item, i) in $options.donationItems"
-              :key="i"
-              target="#donationform"
-            >
-              <DonationItem
-                v-bind="item"
-                @click.native="changeDonationType(item)"
-              />
-            </VueNextLevelScroll>
+            <DonationItem v-for="(item, i) in paymentLinks" :key="i" :info="item" />
           </div>
         </div>
       </div>
-      <div class="flex py-8 flex-col justify-around items-center w-5/6 md:w-2/3 mx-auto text-center">
-        <DonationForm v-if="isStripeLoaded" :donation-type="donationType" @completed="showThanks = true" />
-      </div>
-      <div
-        v-if="showThanks"
-        class="flex flex-col py-8 justify-around items-center w-5/6 md:w-2/3 mx-auto text-center md:mt-8 bg-white shadow-inner"
-      >
+      <div v-if="showThanks"
+        class="flex flex-col py-8 justify-around items-center w-5/6 md:w-2/3 mx-auto text-center md:mt-8 bg-white shadow-inner">
         <p class="text-lg">
           <span class="font-bold text-4xl">
             Thank you for your Donation!
@@ -215,11 +165,7 @@
           </p>
         </div>
         <div class="flex flex-col font-mono md:w-1/3 flex-no-shrink pt-8">
-          <div
-            v-for="([k,v]) in $options.bankDetails"
-            :key="k"
-            class="flex my-2 md:my-0"
-          >
+          <div v-for="([k, v]) in bankDetails" :key="k" class="flex my-2 md:my-0">
             <div class="w-1/3 text-left" v-text="k" />
             <div class="w-2/3 text-right" v-text="v" />
           </div>
@@ -229,109 +175,12 @@
   </div>
 </template>
 
-<script>
-export default {
-  components: {
-    VueNextLevelScroll: () => import('vue-next-level-scroll'),
-    DonationItem: () => import('~/components/thanks/DonationItem'),
-    DonationForm: () => import('~/components/thanks/DonationForm')
-  },
-  data () {
-    return {
-      donationType: {
-        slug: 'none',
-        price: -1
-      },
-      showThanks: false,
-      isStripeLoaded: false
-    }
-  },
-  head () {
-    const title = 'Support me!'
-    const metaDescription = 'Your support is powerful. Please consider supporting me to allow me spending more time on the Nuxt ecosystem.'
+<style scoped lang="pcss">
+.github-link {
+  @apply text-indigo-500;
 
-    return {
-      title,
-      meta: [
-        {
-          hid: 'og:title',
-          name: 'og:title',
-          content: title
-        },
-        {
-          hid: 'description',
-          name: 'description',
-          content: metaDescription
-        },
-        {
-          hid: 'og:description',
-          name: 'og:description',
-          content: metaDescription
-        }
-      ],
-      script: [
-        { hid: 'stripe', src: 'https://js.stripe.com/v3/', defer: true, callback: () => { this.isStripeLoaded = true } }
-      ]
-    }
-  },
-  methods: {
-    changeDonationType (type) {
-      this.donationType = type
-    }
-  },
-  donationItems: [
-    {
-      name: 'Public transport ticket',
-      slug: 'ticket',
-      description: 'Public transport isn\'t cheap in Germany, but it is still cheaper than driving by car and additionally paying for the parking lot',
-      price: 261
-    },
-    {
-      name: 'Fund one of my domains for a year',
-      slug: 'domain',
-      description: 'Domain registration is cheap... if you only have one. But who has only one domain and not like.. fifty? (No I am not addicted!)',
-      price: 666
-    },
-    {
-      name: 'Seven bottles of my favorite local soft drink',
-      slug: 'kolle',
-      description: 'That drink is called Kolle Mate and is locally produced in Dresden, Germany. It has caffeine included and is extremely delicious!',
-      price: 1050
-    },
-    {
-      name: 'Two months of Spotify Premium',
-      slug: 'spotify',
-      description: 'Honestly, I could not live without music! Listening to it while programming makes me way more productive, believe it or not!',
-      price: 1998
-    },
-    {
-      name: 'A bottle of 10 year old Talisker Scotch',
-      slug: 'talisker',
-      description: 'After releasing a new version or finishing a large piece of content I like to celebrate the achievement with a fine glass of Scotch',
-      price: 3399
-    },
-    {
-      name: 'Whatever you think is right',
-      slug: 'questionmark',
-      description: 'You are the one who wants to support me, so you are the one that selects the amount in the end!',
-      price: -1
-    }
-  ],
-  bankDetails: [
-    ['Name', 'Alexander Lichter'],
-    ['Subject', 'Lichter.io Donation'],
-    ['Bank', 'Deutsche Kreditbank'],
-    ['IBAN', 'DE80 1203 0000 1036 7634 05'],
-    ['SWIFT / BIC', 'BYLADEM1001']
-  ]
-}
-</script>
-
-<style scoped>
-  .github-link {
-    @apply text-indigo-500;
-    &:hover {
-      @apply underline;
-    }
+  &:hover {
+    @apply underline;
   }
+}
 </style>
