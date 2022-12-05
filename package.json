@@ -29,10 +29,5 @@
     "vue-confetti": "^2.3.0",
     "vue-cookieconsent-component": "^1.2.0",
     "vue-stripe-elements-plus": "^1.0.3"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "yarn lint"
-    }
   }
 }
