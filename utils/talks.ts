@@ -68,6 +68,7 @@ Only basic knowledge of JavaScript is required for participation.
     location: 'Bolle Festsäle, Berlin',
     eventUrl: 'https://conf.vuejs.de/',
     slidesUrl: 'https://www.lichter.link/vuejs-de-2022-slides/',
+    videoUrl: 'https://www.youtube.com/watch?v=zrSmzD9VH6A',
     date: '2022-10-05'
   },
   {
