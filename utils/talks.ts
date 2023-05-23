@@ -2,6 +2,41 @@ import type { Talk } from "~/types";
 
 export const TALKS: Talk[] = [
   {
+    title: 'The Vue-niverse of SEO: Uncovering the Secrets',
+    description: `What do a SaaS landing page, a blog, and an e-commerce store have in common? They should all be easily found through search engines by as many people as possible. This makes Search Engine Optimization (SEO) crucial for the success and revenue of your project. 
+
+    In this talk, we'll embark on a journey through the SEO Vue-niverse to uncover what is needed to optimize Vue.js websites for search engines. We'll explore the fundamentals of SEO and share best practices, utilizing powerful tools like @vueuse/head and Nuxt.js to help you navigate the universe of SEO with ease. Along the way, we'll also bust some myths about SEO and Vue. 
+    
+    By the end of this talk, you'll have a better understanding of how to achieve good SEO, especially when it comes to your Vue app.`,
+    eventName: 'Vue.js Live',
+    location: 'East Wintergarden, London',
+    eventUrl: 'https://vuejslive.com/',
+    date: '2023-05-12',
+    slidesUrl: 'https://www.lichter.link/vl-2023/'
+  },
+  {
+    title: 'UnJS - Unified JavaScript solutions',
+    description: `
+    Most of you haven't heard of UnJS yet, right? But probably, many of you have implicitly been on contact. Gladly, it is no new framework but a collection of high-quality, modern and well-tested packages. While the organization was created during the time of working on the next major version of the vue-based metaframework Nuxt, UnJS is way more than that. Because it's packages can be used project-agnostic, the whole ecosystem can benefit from them!
+    
+    In this talk, you will find out more about some of the packages UnJS provides and how they work. In addition, we will have a look at bigger packages, frameworks and parts of the JS ecosystem that use them.
+    Eventually, Alex will present use cases and live demos where the packages can come in handy for your own projects as well, reducing friction and improving DX.`,
+    eventName: 'Frontend DEveloper Meetup',
+    location: 'PAQT, Utrecht',
+    eventUrl: 'https://www.meetup.com/frontend-developer-meetups-netherlands/events/292107780/',
+    slidesUrl: 'https://lichter.link/utrecht-03-2022-repo/',
+    date: '2023-03-23'
+  },
+  {
+    title: 'Vite Panel Discussion',
+    description: 'I had the honor to MC the Vite Panel Discussion with 9 amazing core team members, including Evan You, the creator of Vue.js. We talked about the future of Vite, the ecosystem and the community.',
+    eventName: 'Vue.js Amsterdam 2023',
+    location: 'Theater Amsterdam',
+    eventUrl: 'https://www.vuejs.amsterdam/',
+    videoUrl: 'https://www.youtube.com/watch?v=im9GSGnkFDs',
+    date: '2023-02-09'
+  },
+  {
     title: 'Multi-variant apps with Nuxt 3',
     description: `    
 Nuxt 3 offers amazing DX, also thanks to its directory structure. FS-based routing, auto importing components and automatic plugin registration - just to name a few features that makes development a breeze.
