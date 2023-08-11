@@ -13,7 +13,7 @@ specifiers:
   nuxt: ^3.0.0
   nuxt-icon: ^0.1.8
   scrollreveal: ^4.0.9
-  stripe: ^11.1.0
+  stripe: ^12.18.0
   tailwindcss: ^3.2.4
   vue-confetti: ^2.3.0
   vue-gtag-next: ^1.14.0
@@ -31,7 +31,7 @@ devDependencies:
   nuxt: 3.0.0
   nuxt-icon: 0.1.8
   scrollreveal: 4.0.9
-  stripe: 11.1.0
+  stripe: 12.18.0
   tailwindcss: 3.2.4
   vue-confetti: 2.3.0
   vue-gtag-next: 1.14.0
@@ -5119,8 +5119,8 @@ packages:
       acorn: 8.8.1
     dev: true
 
-  /stripe/11.1.0:
-    resolution: {integrity: sha512-erOslPQZSYKOotQjmKRy4eBon/tdhzLIYzBdPSNVWDdatSQozkkPlh8mVeXNwubYYZYx61/yS23eWiGDF93z2w==}
+  /stripe/12.18.0:
+    resolution: {integrity: sha512-cYjgBM2SY/dTm8Lr6eMyyONaHTZHA/QjHxFUIW5WH8FevSRIGAVtXEmBkUXF1fsqe7QvvRgQSGSJZmjDacegGg==}
     engines: {node: '>=12.*'}
     dependencies:
       '@types/node': 18.11.10
