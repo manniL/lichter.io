@@ -5,7 +5,7 @@
         <source srcset="/img/me@2x.webp 2x, /img/me.webp 1x" type="image/webp">
         <source srcset="/img/me@2x.jpg 2x, /img/me.jpg 1x" type="image/jpeg">
         <source srcset="/img/me@2x.avif 2x, /img/me.avif 1x" type="image/avif">
-        <img alt="Young man (Alexander Lichter) wearing a suite, nature in the background"
+        <img alt="Head shot of Alexander Lichter"
           class="rounded-full border-solid border-4 shadow-inset w-64 h-64" height="256" src="/img/me.jpg" width="256">
       </picture>
       <div class="mt-4">
