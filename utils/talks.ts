@@ -2,6 +2,38 @@ import type { Talk } from "~/types";
 
 export const TALKS: Talk[] = [
   {
+    title: 'From clicks to cribs - How to find your dream home with web scraping',
+    description: `Looking for a new home can be a difficult task, especially when you have specific criteria in mind and there is a housing crisis in the city you want to move to. However, as a web developer, you have a secret weapon at your disposal - web scraping. In this talk, we'll explore how you I used a bit of TypeScript and web scraping techniques to find suitable homes - and how you can do that too! We'll dive into the technical details of how to set up a web scraper using TypeScript and check out popular libraries such as Cheerio and Playwright. So, say goodbye to endless waiting, refreshing, clicking and scrolling, and hello to your future home!`,
+    eventName: 'WeAreDevelopers World Congress',
+    date: '2023-07-28',
+    eventUrl: 'https://www.wearedevelopers.com/world-congress/',
+    location: 'CityCube, Berlin',
+    slidesUrl: 'https://lichter.link/flat-wad-23/'
+  },
+  {
+    title: 'Nuxt.js - Just Vue 3 and a bit of magic?',
+    description: `Meta-frameworks have developed rapidly in recent years - and so did Nuxt with its latest major version Nuxt 3!
+
+    In this talk, we will take a closer look at the vue-based meta-framework and find out what the differences are to using plain Vue and also take a look how what makes Nuxt special compared to other meta-frameworks.
+    
+    At first, we have a little bit of theory and then jump into some live coding!
+    
+    Together we will develop a small application, take a look at Nitro (the server engine of Nuxt), integrate APIs, and eventually deploy the application to a hosting platform 🤯And the best: You can influence what we build 👀`,
+    eventName: 'WeAreDevelopers World Congress',
+    date: '2023-07-28',
+    eventUrl: 'https://www.wearedevelopers.com/world-congress/',
+    location: 'CityCube, Berlin',
+    slidesUrl: 'https://lichter.link/nuxt-wad-23/'
+  },
+  {
+    title: 'Panel: New Work',
+    description: `How does New Work impact the world of software development? The term was coined by the social philosopher Prof. Dr. Frithjof Bergmann in the 1970s and is based on the core values of autonomy, freedom, and participation in the community. Back in those days, though, it didn't include current changes like home office or offshoring. This panel will discuss topics such as new roles in hybrid working environments, transparent and responsive team communication, new tools and workflows.`,
+    eventName: 'WeAreDevelopers World Congress',
+    date: '2023-07-27',
+    eventUrl: 'https://www.wearedevelopers.com/world-congress/',
+    location: 'CityCube, Berlin',
+  },
+  {
     title: 'The Vue-niverse of SEO: Uncovering the Secrets',
     description: `What do a SaaS landing page, a blog, and an e-commerce store have in common? They should all be easily found through search engines by as many people as possible. This makes Search Engine Optimization (SEO) crucial for the success and revenue of your project. 
 
@@ -12,7 +44,8 @@ export const TALKS: Talk[] = [
     location: 'East Wintergarden, London',
     eventUrl: 'https://vuejslive.com/',
     date: '2023-05-12',
-    slidesUrl: 'https://www.lichter.link/vl-2023/'
+    slidesUrl: 'https://www.lichter.link/vl-2023/',
+    videoUrl: 'https://portal.gitnation.org/contents/the-art-of-rendering-modes-go-beyond-a-blank-page'
   },
   {
     title: 'UnJS - Unified JavaScript solutions',
@@ -21,7 +54,7 @@ export const TALKS: Talk[] = [
     
     In this talk, you will find out more about some of the packages UnJS provides and how they work. In addition, we will have a look at bigger packages, frameworks and parts of the JS ecosystem that use them.
     Eventually, Alex will present use cases and live demos where the packages can come in handy for your own projects as well, reducing friction and improving DX.`,
-    eventName: 'Frontend DEveloper Meetup',
+    eventName: 'Frontend Developer Meetup',
     location: 'PAQT, Utrecht',
     eventUrl: 'https://www.meetup.com/frontend-developer-meetups-netherlands/events/292107780/',
     slidesUrl: 'https://lichter.link/utrecht-03-2022-repo/',
