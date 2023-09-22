@@ -24,7 +24,7 @@
     "nuxt": "^3.0.0",
     "nuxt-icon": "^0.1.8",
     "scrollreveal": "^4.0.9",
-    "stripe": "^11.1.0",
+    "stripe": "^13.7.0",
     "tailwindcss": "^3.2.4",
     "vue-confetti": "^2.3.0",
     "vue-gtag-next": "^1.14.0"
