@@ -71,7 +71,8 @@ export default defineNuxtConfig({
             '200%': '200%'
           },
           animation: {
-            'bg-shift': 'bg-shift 2s linear infinite'
+            'bg-shift': 'bg-shift 2s linear infinite',
+            'pulse-slow': 'pulse 3s linear infinite',
           },
           keyframes: {
             'bg-shift': {
