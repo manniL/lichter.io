@@ -1,0 +1,43 @@
+diff --git a/dist/app/components/nuxt-link.js b/dist/app/components/nuxt-link.js
+index 171a10fc19a727a5f30e48334d335b7657724055..9e1ba06fcdf5e6610b2d6dcd347b58c648f18ff8 100644
+--- a/dist/app/components/nuxt-link.js
++++ b/dist/app/components/nuxt-link.js
+@@ -22,14 +22,14 @@ export function defineNuxtLink(options) {
+     }
+     const normalizeTrailingSlash = options.trailingSlash === "append" ? withTrailingSlash : withoutTrailingSlash;
+     if (typeof to === "string") {
+-      return normalizeTrailingSlash(to, true);
++      return applyTrailingSlashBehavior(to, options.trailingSlash);
+     }
+     const path = "path" in to ? to.path : resolve(to).path;
+     return {
+       ...to,
+       name: void 0,
+       // named routes would otherwise always override trailing slash behavior
+-      path: normalizeTrailingSlash(path, true)
++      path: applyTrailingSlashBehavior(path, options.trailingSlash)
+     };
+   };
+   return defineComponent({
+@@ -243,6 +243,21 @@ export function defineNuxtLink(options) {
+   });
+ }
+ export default /* @__PURE__ */ defineNuxtLink({ componentName: "NuxtLink" });
++function applyTrailingSlashBehavior (to, trailingSlash) {
++  const normalizeFn = trailingSlash === 'append' ? withTrailingSlash : withoutTrailingSlash
++  const hasProtocolDifferentFromHttp = hasProtocol(to) && !to.startsWith('http')
++  if (hasProtocolDifferentFromHttp) {
++    return to
++  }
++  const [link, fragment] = to.split('#')
++  if (fragment) {
++    if(!link) {
++      return `#${fragment}`
++    }
++    return `${normalizeFn(link, true)}#${fragment}`
++  }
++  return normalizeFn(to, true)
++}
+ function useObserver() {
+   if (import.meta.server) {
+     return;

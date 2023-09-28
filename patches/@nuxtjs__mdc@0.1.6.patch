@@ -1,0 +1,48 @@
+diff --git a/dist/runtime/parser/shiki.mjs b/dist/runtime/parser/shiki.mjs
+index 7812c0468fa5676a50bf3b716a1e07812a447f80..253537a0294930fc8400f9b14616d4cecaaa269e 100644
+--- a/dist/runtime/parser/shiki.mjs
++++ b/dist/runtime/parser/shiki.mjs
+@@ -6,12 +6,13 @@ const defaults = {
+     default: "github-dark",
+     dark: "github-light"
+   },
+-  highlighter: (code, lang, theme) => {
++  highlighter: (code, lang, theme, highlights) => {
+     return $fetch("/api/_mdc/highlight", {
+       params: {
+         code,
+         lang,
+-        theme: JSON.stringify(theme)
++        theme: JSON.stringify(theme),
++        highlights: JSON.stringify(highlights)
+       }
+     });
+   }
+@@ -26,7 +27,7 @@ export function rehypeShiki(opts = {}) {
+       (node) => node.tagName === "pre" && !!node.properties?.language,
+       (node) => {
+         const _node = node;
+-        const task = options.highlighter(toString(node), _node.properties.language, options.theme).then(({ tree: tree2, className, style }) => {
++        const task = options.highlighter(toString(node), _node.properties.language, options.theme, _node.properties.highlights ?? []).then(({ tree: tree2, className, style }) => {
+           _node.properties.className = ((_node.properties.className || "") + " " + className).trim();
+           if (_node.children[0]?.tagName === "code") {
+             _node.children[0].children = tree2;
+diff --git a/dist/runtime/shiki/event-handler.mjs b/dist/runtime/shiki/event-handler.mjs
+index 249f77d24e355944eda5780bdc91743348e7c874..cc64ff5db5c535e5174a8213110f440dd6cefe8f 100644
+--- a/dist/runtime/shiki/event-handler.mjs
++++ b/dist/runtime/shiki/event-handler.mjs
+@@ -1,11 +1,12 @@
+ import { eventHandler, getQuery } from "h3";
+ import { useShikiHighlighter } from "./highlighter.mjs";
+ export default eventHandler(async (event) => {
+-  const { code, lang, theme: themeString } = getQuery(event);
++  const { code, lang, theme: themeString, highlights: highlightsString } = getQuery(event);
+   const theme = JSON.parse(themeString);
++  const highlights = JSON.parse(highlightsString);
+   const shikiHighlighter = useShikiHighlighter({});
+   const styleMap = {};
+-  const { tree, className } = await shikiHighlighter.getHighlightedAST(code, lang, theme, { styleMap });
++  const { tree, className } = await shikiHighlighter.getHighlightedAST(code, lang, theme, { styleMap, highlights });
+   return {
+     tree,
+     className,

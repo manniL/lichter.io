@@ -1,21 +1,48 @@
-<template>
-  <section class="flex flex-col items-center mt-6">
-    <h1 class="my-2">
-      Nothing to see here!
-    </h1>
-    <p class="leading-loose mt-4">
-      Looks like you took a wrong path!
-    </p>
-    <NuxtLink to="/" class="text-gray-900 my-4">
-      Get back
-    </NuxtLink>
-    <img class="mb-8" src="https://thecatapi.com/api/images/get?format=src&type=gif">
-    <div class="block h-screen" />
-  </section>
-</template>
-
 <script setup lang="ts">
+const props = defineProps<{
+  error: unknown
+}>()
+
 useHead({
-  title: '404 - No Lichter found!'
+  bodyAttrs: {
+    class: 'bg-black antialiased min-h-screen text-white'
+  },
 })
+
+const statusCode = computed(() => {
+  if(typeof props.error !== 'object' || props.error === null) {
+    return 500
+  }
+  if('statusCode' in props.error) {
+    return props.error.statusCode 
+  }
+  return 500
+})
+
+const message = computed(() => {
+  if(typeof props.error !== 'object' || props.error === null) {
+    return 'Unknown error'
+  }
+  if('statusMessage' in props.error) {
+    return props.error.statusMessage
+  }
+  if('message' in props.error) {
+    return props.error.message
+  }
+  return 'Unknown error'
+})
+
 </script>
+
+<template>
+  <div>
+    <AppNavbar />
+    <AppSection class="mt-8 prose md:prose-lg lg:prose-xl">
+      <ParagraphDecoration />
+      <AppParagraph look="heading" class="mt-4" tag="h1">Error {{ statusCode }}</AppParagraph>
+      <AppParagraph look="subParagraph" tag="p"> {{ message }}</AppParagraph>
+      <AppLink to="/" class="mt-16">Go back to the home page</AppLink>
+    </AppSection>
+    <AppFooter />
+  </div>
+</template>

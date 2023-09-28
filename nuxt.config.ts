@@ -1,41 +1,92 @@
-
-const SITE_URL = process.env.SITE_URL || 'https://www.lichter.io'
+import tailwindTypography from '@tailwindcss/typography'
+import tailwindForms from '@tailwindcss/forms'
+import { typographyStyles } from './typography.js'
 
 export default defineNuxtConfig({
   runtimeConfig: {
     public: {
-      siteUrl: SITE_URL,
-      analyticsId: 'UA-62902757-11'
-    },
-    stripeSecretKey: 'sk_test_dBicKVv5s1znvk1y0GE9dnTr'
+      site: {
+        url: 'https://www.lichter.io',
+        name: 'Alexander Lichter',
+        trailingSlash: true,
+      }
+    }
+  },
+  routeRules: {
+    '/support-me/': { redirect: { to: '/sponsors/', statusCode: 301 } },
+    '/timeline/': { redirect: { to: '/about/', statusCode: 301 } },
+    // TODO: After https://github.com/unjs/nitro/issues/1748 is resolved
+    // '/slides/**': { redirect: { to: 'https://slides.com/mannil/**', statusCode: 302 } },
+    // TODO: Remove this ^equivalent from _redirects afterwards
   },
 
   modules: [
-    '@kevinmarrec/nuxt-pwa',
     '@nuxtjs/tailwindcss',
     '@vueuse/nuxt',
     'nuxt-icon',
+    '@nuxt/content',
+    'nuxt-simple-sitemap',
+    'nuxt-schema-org',
+    'nuxt-og-image',
+    '@nuxt/image',
+    '@nuxtjs/plausible',
   ],
 
-  pwa: {
-    manifest: {
-      name: 'Lichter.io',
-      lang: 'en',
-      short_name: 'Lichter.io',
-      start_url: '/?ref=pwa',
-      display: 'standalone',
+  nitro: {
+    prerender: {
+      routes: [
+        '/feed.xml',
+      ]
     },
-    icon: {
-      source: './public/img/me@2x.jpg'
-    },
-    meta: {
-      name: 'Lichter.io - Alexander Lichter',
-      author: 'Alexander Lichter',
-      mobileAppIOS: true,
-      ogHost: SITE_URL,
-      twitterCard: 'summary',
-      twitterCreator: '@TheAlexLichter',
-      twitterSite: '@TheAlexLichter'
+    devProxy: {
+      '/api/newsletter': { target: 'https://lichter-io-newsletter.netlify.app', changeOrigin: true }
     }
-  }
+  },
+
+  plausible: {
+    domain: 'lichter.io',
+    apiHost: 'https://plausible.lichter.io',
+  },
+
+  content: {
+    documentDriven: true,
+    highlight: {
+      theme: 'vitesse-dark'
+    },
+    markdown: {
+      remarkPlugins: ['remark-reading-time'],
+      rehypePlugins: {
+        'rehype-external-links': false
+      }
+    },
+  },
+
+  tailwindcss: {
+    config: {
+      plugins: [tailwindTypography, tailwindForms],
+      theme: {
+        typography: typographyStyles,
+        extend: {
+          backgroundSize: {
+            '200%': '200%'
+          },
+          animation: {
+            'bg-shift': 'bg-shift 2s linear infinite'
+          },
+          keyframes: {
+            'bg-shift': {
+              '0%, 100%': { backgroundPosition: '0% 50%' },
+              '50%': { backgroundPosition: '100% 50%' },
+            }
+          }
+        }
+      }
+    }
+  },
+
+  devtools: {
+    enabled: true
+  },
+
+  watch: ['typography.ts']
 })

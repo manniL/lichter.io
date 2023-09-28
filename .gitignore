@@ -8,3 +8,5 @@ sw.*
 .env
 .env.production
 .output
+# Local Netlify folder
+.netlify

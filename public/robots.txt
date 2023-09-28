@@ -1,3 +1,2 @@
 User-agent: *
-Disallow: /legal
-Disallow: /privacy
+Sitemap: https://www.lichter.io/sitemap.xml

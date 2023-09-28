@@ -1,37 +1,35 @@
-# Lichter.io
+# www.lichter.io - My personal website, blog and more
 
-[![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.md)
-[![thanks](https://img.shields.io/badge/thanks-%E2%99%A5-ff69b4.svg)](https://thanks.lichter.io/)
+It took a while, but my eventually I had the time to rebuild my website!
 
-My personal website and online CV: [Lichter.io](https://lichter.io)
+## Tech stack
 
-## Build Setup
+- [Nuxt.js 3](https://nuxtjs.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- See a list of modules used in the [nuxt.config.ts](nuxt.config.ts) file
 
-``` bash
-# install dependencies
-$ npm install # Or yarn install
+## Patches
 
-# serve with hot reload at localhost:3000
-$ npm run dev
+I've patched some packages to suit them my needs or to fix bugs:
 
-# build for production and launch server
-$ npm run build
-$ npm start
+- `@nuxt/content`
+  - Applied https://github.com/nuxt/content/pull/2321 (not released yet)
+- `@nuxt/mdc`
+  - Applied https://github.com/nuxt-modules/mdc/pull/39 (released but waiting for integration of latest version in Nuxt content)
+- `nuxt`
+  - Applied https://github.com/nuxt/nuxt/pull/23296 (not released yet)
 
-# generate static project
-$ npm run generate
-```
+## Local setup
+
+1. You need to install Node.js, as well as enable corepack to install pnpm.
+1. Clone this repo via `git clone`
+1. Run `pnpm i` to install the dependencies
+1. Run `pnpm dev` to start the local Nuxt dev server
 
 ## Security
 
-If you discover any security related issues, please email hello@lichter.io instead of using the issue tracker.
-
-## Credits
-
-- [Alexander Lichter](https://github.com/manniL)
-- [All Contributors](../../contributors)
-
+If you discover any security related issues, please email hello at lichter dot io instead of using the issue tracker.
 
 ## License
 
-The MIT License (MIT). Please see [License File](LICENSE) for more information.
+As mentioned on my website the code of my website is licensed under The MIT License (MIT). Please see [License File](MIT%20LICENSE) for more information. All written content such as speaking lists, articles or similar are licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/).
