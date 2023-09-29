@@ -218,7 +218,15 @@ async function subscribeToNewsletter() {
             CC-BY-NC-SA 4.0
           </AppLink>
           &bull;
-          Code open source soon
+          <AppLink class="inline-block underline hover:no-underline"
+            to="https://github.com/manniL/lichter.io">
+            Code
+          </AppLink>
+          licensed under 
+          <AppLink class="inline-block underline hover:no-underline"
+            to="https://opensource.org/licenses/MIT">
+            MIT
+          </AppLink>
         </p>
       </div>
     </div>
