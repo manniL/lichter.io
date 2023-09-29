@@ -3,7 +3,7 @@ title: "The Art of Rendering Modes: Go Beyond a Blank Page"
 date: "2023-10-26"
 eventName: "Front-end Focus Meetup"
 eventUrl: "https://www.meetup.com/front-end-focus/events/295825373/"
-location: "Utretch, The Netherlands"
+location: "Utrecht, The Netherlands"
 type: "talk"
 language: "en"
 topics:
