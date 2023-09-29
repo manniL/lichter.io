@@ -13,8 +13,8 @@
   },
   "devDependencies": {
     "@headlessui/vue": "^1.7.16",
-    "@nuxt/content": "^2.8.2",
-    "@nuxt/devtools": "^0.8.4",
+    "@nuxt/content": "^2.8.5",
+    "@nuxt/devtools": "^0.8.5",
     "@nuxt/image": "1.0.0-rc.2",
     "@nuxtjs/plausible": "^0.2.3",
     "@nuxtjs/tailwindcss": "^6.8.0",
@@ -30,15 +30,13 @@
     "nuxt-icon": "^0.5.0",
     "nuxt-og-image": "2.0.28",
     "nuxt-schema-org": "^3.0.0",
-    "nuxt-simple-sitemap": "^3.3.4",
+    "nuxt-simple-sitemap": "^3.3.5",
     "remark-reading-time": "^2.0.1",
     "tailwindcss": "^3.3.3"
   },
   "packageManager": "pnpm@7.18.0",
   "pnpm": {
     "patchedDependencies": {
-      "@nuxtjs/mdc@0.1.6": "patches/@nuxtjs__mdc@0.1.6.patch",
-      "@nuxt/content@2.8.2": "patches/@nuxt__content@2.8.2.patch",
       "nuxt@3.7.4": "patches/nuxt@3.7.4.patch"
     }
   }

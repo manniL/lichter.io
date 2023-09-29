@@ -12,10 +12,6 @@ It took a while, but my eventually I had the time to rebuild my website!
 
 I've patched some packages to suit them my needs or to fix bugs:
 
-- `@nuxt/content`
-  - Applied https://github.com/nuxt/content/pull/2321 (not released yet)
-- `@nuxt/mdc`
-  - Applied https://github.com/nuxt-modules/mdc/pull/39 (released but waiting for integration of latest version in Nuxt content)
 - `nuxt`
   - Applied https://github.com/nuxt/nuxt/pull/23296 (not released yet)
 
