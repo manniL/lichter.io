@@ -51,16 +51,16 @@ const links = computed(() => {
   }
 })
 
-const showCopyingWasSuccessful = ref(false)
+const { addNotification } = useNotifications()
 async function copyLinkToClipboard(): Promise<void> {
-  if (showCopyingWasSuccessful.value) {
-    return
-  }
   await navigator.clipboard.writeText(linkToCurrentPage.value);
-  showCopyingWasSuccessful.value = true
-  setTimeout(() => {
-    showCopyingWasSuccessful.value = false
-  }, 5000)
+  addNotification({
+    heading: 'Link copied to clipboard',
+    body: 'You can now paste the link anywhere you want.',
+    iconName: 'heroicons:check-badge',
+    iconClass: 'text-green-500',
+    durationInMs: 2000,
+  })
 }
 
 // TODO: This should not be necessary. `surround` is buggy?
@@ -112,7 +112,7 @@ defineOgImage({
             <button
               class="text-red-400 underline decoration-red-400/30 font-semibold transition-all duration-150 hover:decoration-red-400 inline-block"
               @click="copyLinkToClipboard">
-              {{ showCopyingWasSuccessful ? 'Copying successful!' : 'Copy link' }}
+              Copy link
             </button>
           </div>
           <p v-if="article.datePublished !== article.dateModified"

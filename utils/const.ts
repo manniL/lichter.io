@@ -6,3 +6,7 @@ export const SOCIALS = {
   twitch: 'https://www.twitch.tv/TheAlexLichter/',
   linkedin: 'https://www.linkedin.com/in/alexanderlichter/',
 } as const
+
+export const LOCALSTORAGE_KEYS = {
+  notificationGerman: 'notification-german',
+} as const
