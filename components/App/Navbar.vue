@@ -12,12 +12,15 @@ const MENU_ITEMS = [
 
 const streamChangesEndpoint = 'https://raw.githubusercontent.com/manniL/lichter.io-twitch-status/main/latest.json'
 
-const { data, refresh } = useLazyFetch<any>(streamChangesEndpoint, { server: false })
+const { data, refresh } = useLazyFetch<any>(streamChangesEndpoint, {
+  server: false,
+  responseType: 'json'
+})
 
 const isLive = computed(() => data.value?.title)
 
-// Refresh data every 10 minutes
-useIntervalFn(refresh, 1000 * 60 * 10)
+// Refresh data every 5 minutes
+useIntervalFn(refresh, 1000 * 60 * 5)
 
 </script>
 <template>
