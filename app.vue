@@ -75,6 +75,51 @@ Cal("ui", ${JSON.stringify(styleConfig)});
     }
   ]
 })
+
+const { addNotification } = useNotifications()
+
+onMounted(async () => {
+  const result = onDicsordRef()
+  if (result) {
+    await new Promise((resolve) => setTimeout(resolve, 1000))
+  }
+  onUserSpeaksGerman()
+})
+
+function onDicsordRef(): Boolean {
+  const isDicsordDomain = route.query?.ref === 'dicsord.com'
+  if (!isDicsordDomain) {
+    return false
+  }
+
+  addNotification({
+    heading: 'You should double check the URL ;)',
+    body: 'Did you want to go to https://discord.com/ instead?'
+  })
+  return true
+}
+
+function onUserSpeaksGerman(): Boolean {
+  const doesSpeakGerman = navigator.languages.some(lang => lang.startsWith('de'))
+  if (!doesSpeakGerman) {
+    return false
+  }
+
+  const didUserSeeGermanNotificationAlready = localStorage.getItem(LOCALSTORAGE_KEYS.notificationGerman)
+  if(didUserSeeGermanNotificationAlready) {
+    return false
+  }
+
+  addNotification({
+    heading: 'Ich spreche auch Deutsch!',
+    body: 'Alle Workshops und Talks können auch auf Deutsch gehalten werden.',
+    onRemove() {
+      localStorage.setItem(LOCALSTORAGE_KEYS.notificationGerman, 'true')
+    }
+  })
+
+  return true
+}
 </script>
 
 <template>
@@ -92,6 +137,7 @@ Cal("ui", ${JSON.stringify(styleConfig)});
       </linearGradient>
     </svg>
     <LazyAppFooter />
+    <LazyAppNotificationArea />
   </div>
 </template>
 

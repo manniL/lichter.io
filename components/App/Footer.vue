@@ -69,11 +69,12 @@ const navigation = {
 
 type NewsletterState = 'initial' | 'loading' | 'error' | 'confirmation-mail-sent'
 const state = ref<NewsletterState>('initial')
-const possibleError = ref()
 const form = ref({
   name: '',
   email: ''
 })
+
+const { addNotification } = useNotifications() 
 
 async function subscribeToNewsletter() {
   if(state.value === 'loading') {
@@ -88,9 +89,25 @@ async function subscribeToNewsletter() {
       body: { name, email }
     })
     state.value = 'confirmation-mail-sent'
+    addNotification({
+      heading: 'Almost done!',
+      body: 'Thanks for subscribing to my newsletter! 🎉 Please confirm your email now!',
+      iconName: 'heroicons:check-badge',
+      iconClass: 'text-green-500',
+      durationInMs: 10000,
+    })
     form.value = { name: '', email: '' }
   } catch (error) {
-    possibleError.value = error
+    // TODO: Better error handling
+    // @ts-expect-error Better type checking needed but too lazy on stream. Sorry
+    const body = error?.data?.message ?? error.message
+    addNotification({
+      heading: 'Something went wrong!',
+      body,
+      iconName: 'heroicons:exclamation-circle',
+      iconClass: 'text-red-500',
+      durationInMs: 10000,
+    })
     console.error(error)
     state.value = 'error'
   }
@@ -171,18 +188,12 @@ async function subscribeToNewsletter() {
               Almost done!
             </template>
           </h3>
-          <p v-if="state === 'initial'" class="mt-2 text-sm leading-6 text-gray-300">
-            Get a recap of the latest news, articles, videos and resources,
-            sent to your inbox every two weeks.</p>
-          <p v-else-if="state === 'loading'" class="mt-2 text-sm leading-6 text-gray-300">
+          <p v-if="state === 'loading'" class="mt-2 text-sm leading-6 text-gray-300">
             Please wait...
           </p>
-          <p v-else-if="state === 'error'" class="mt-2 text-sm leading-6 text-red-300">
-            {{ possibleError?.data?.message ?? possibleError.message }}
-          </p>
-          <p v-else-if="state === 'confirmation-mail-sent'"  class="mt-2 text-sm leading-6 text-green-300">
-            Thanks for subscribing to my newsletter! 🎉 Please confirm your email now!
-          </p>
+          <p v-else class="mt-2 text-sm leading-6 text-gray-300">
+            Get a recap of the latest news, articles, videos and resources,
+            sent to your inbox every two weeks.</p>
         </div>
         <form id="newsletter" @submit.prevent="subscribeToNewsletter" class="mt-6 sm:flex sm:max-w-md lg:mt-0">
           <label for="email-address" class="sr-only">Email address</label>

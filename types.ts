@@ -28,3 +28,14 @@ type ArticleBase = {
 
 export type Article = ArticleBase & ParsedContent
 export type ArticlePreview = ArticleBase & ParsedContentPreview
+
+export type AppNotification = {
+  id: string
+  heading: string
+  body: string,
+  // 0 to always show 
+  durationInMs?: number,
+  iconName?: string
+  iconClass?: string,
+  onRemove?: () => void
+}
