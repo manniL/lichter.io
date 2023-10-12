@@ -4,6 +4,7 @@ date: "2023-10-14"
 eventName: "Frontmania"
 eventUrl: "https://frontmania.com/"
 location: "Utrecht, The Netherlands"
+slidesUrl: "https://lichter.link/nuxt-frontmania-23/"
 type: "talk"
 language: "en"
 topics:
