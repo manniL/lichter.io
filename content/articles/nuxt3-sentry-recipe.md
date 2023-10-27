@@ -162,7 +162,6 @@ After the initial setup is done, we also want to ensure that we can use Sentry i
 There is a type issue in Nitro at the time of writing, but I'm confident it won't stay for long. Until then, we need to use a `@ts-ignore`, or better `@ts-expect-error` with a comment!
 
 ```ts [server/plugins/sentry.ts]
-// @ts-expect-error Until https://github.com/nuxt/nuxt/issues/23437 is resolved
 nitroApp.hooks.hook('request', (event) => {
   event.context.$sentry = Sentry
 })
@@ -192,7 +191,7 @@ export default defineApiHandler(async (event) => {
     // e.g. 
     sentry.setUser({/*...*/})
   }
-}
+})
 ```
 
 #### Closing Sentry on shutdown
