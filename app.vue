@@ -2,11 +2,13 @@
 const siteUrl = useRuntimeConfig().public.site.url
 const route = useRoute()
 
-// TODO: Check if still needed
 const canonical = computed(() => {
   const pathWithSlash = route.path.endsWith('/') ? route.path : `${route.path}/`
   return `${siteUrl}${pathWithSlash}`
 })
+
+const isDark = useDark()
+const favicon = computed(() => `/img/logo/glyph-${isDark.value ? 'white' : 'black'}-colored.svg`)
 
 useHead({
   // TODO: Do that in nuxt.config.ts
@@ -17,7 +19,7 @@ useHead({
   titleTemplate: (c) => c ? `${c} - Alexander Lichter` : 'Alexander Lichter - Web Engineering Consultant',
   link: [
     { rel: 'canonical', href: canonical },
-    { rel: 'icon', href: '/img/logo/glyph-white-colored.svg', type: "image/svg+xml" },
+    { rel: 'icon', href: favicon, type: "image/svg+xml" },
   ],
   bodyAttrs: {
     class: 'bg-black antialiased min-h-screen text-white'
@@ -106,7 +108,7 @@ function onUserSpeaksGerman(): Boolean {
   }
 
   const didUserSeeGermanNotificationAlready = localStorage.getItem(LOCALSTORAGE_KEYS.notificationGerman)
-  if(didUserSeeGermanNotificationAlready) {
+  if (didUserSeeGermanNotificationAlready) {
     return false
   }
 
