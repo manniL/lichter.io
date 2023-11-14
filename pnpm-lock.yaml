@@ -1,5 +1,9 @@
 lockfileVersion: '6.0'
 
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
 patchedDependencies:
   nuxt@3.7.4:
     hash: j4anb2747dk5oxtkda5fyxahli
