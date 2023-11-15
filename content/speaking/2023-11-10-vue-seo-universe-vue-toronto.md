@@ -4,6 +4,7 @@ date: "2023-11-10"
 eventName: "Vue Toronto"
 location: "Toronto, Canada"
 eventUrl: "https://www.vuetoronto.com/"
+slidesUrl: "http://lichter.link/vt-23"
 type: "talk"
 language: "en"
 topics:

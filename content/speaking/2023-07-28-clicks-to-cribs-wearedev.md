@@ -5,6 +5,7 @@ eventName: "WeAreDevelopers World Congress"
 eventUrl: "https://www.wearedevelopers.com/world-congress/"
 location: "CityCube, Berlin"
 slidesUrl: "https://lichter.link/flat-wad-23/"
+videoUrl: "https://www.wearedevelopers.com/en/videos/767/from-clicks-to-cribs-how-to-find-your-dream-home-with-web-scraping"
 type: "talk"
 language: "en"
 topics:
