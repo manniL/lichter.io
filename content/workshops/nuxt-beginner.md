@@ -1,5 +1,5 @@
 ---
-title: "Intro to Nuxt.js: Crafting modern web apps"
+title: "Nuxt.js Workshop: Crafting modern web apps"
 description: "In this workshop, we will develop a real-life-like app using Nuxt.js - from creating the project to the final deployment. During this process we will take a look at various of the core features Nuxt.js offers and also show common pitfalls and how to avoid them."
 time: "2 days"
 topics:

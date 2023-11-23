@@ -1,5 +1,5 @@
 ---
-title: "Vue 3 Essentials: Learn the Framework from Scratch"
+title: "Vue 3 Workshop: Learn the Framework from Scratch"
 description: "Vue.js is a popular, modern JavaScript framework for developing interactive web applications. This workshop is aimed at participants with no previous knowledge of using JavaScript frameworks and offers a comprehensive introduction to the basics of Vue 3."
 time: 3 days
 topics:

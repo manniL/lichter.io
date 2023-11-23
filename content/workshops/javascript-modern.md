@@ -1,5 +1,5 @@
 ---
-title: "Modern JavaScript: From ES6 to ESNext"
+title: "Workshop - Modern JavaScript: From ES6 to ESNext"
 description: "JavaScript is evolving quickly - like web development in general. But often, you don't have time to catch up with the latest features, improvements, planned changes, and best practices. This workshop will help you to get up to speed with the latest JavaScript features and best practices."
 time: 1 day
 topics:

@@ -1,5 +1,5 @@
 ---
-title: "Vue 3: Master the Composition API"
+title: "Vue 3 Workshop: Master the Composition API"
 description: "Ever wondered how to effectively utilize the Composition API in Vue 3 and what actual benefits it brings to your projects? Fear no more - In this workshop, I'll teach you all about Vue's Composition API, as well as how to migrate from the Options API, proven composable patterns, pitfalls, and recommendations for the CAPI."
 time: "1 day"
 topics:
