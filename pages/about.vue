@@ -129,7 +129,7 @@ defineOgImage({
               Eventually, I joined the <AppLink to="https://github.com/nuxt">Nuxt.js</AppLink> team in 2018, been a
               steady
               contributor and maintainer since then.
-              I'm also quite active in <AppLink to="https://discord.com/nuxt">their Discord</AppLink>, so feel free to
+              I'm also quite active in <AppLink to="https://discord.gg/nuxt">their Discord</AppLink>, so feel free to
               write
               me a message there too!
               In 2022, I also joined the <AppLink to="https://github.com/unjs">UnJS</AppLink> organization as a member.
