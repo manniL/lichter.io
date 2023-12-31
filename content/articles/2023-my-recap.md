@@ -1,6 +1,6 @@
 ---
 title: "2023 - My Recap"
-description: "A recap of my year 2023 - from personal insights, open source, content creation, to business and more!"
+description: "It is time to recap the year 2023! I want to share my personal and professional journey through the last 365 days, as well as my goals for 2024. From moving to another country over jumping back into content creation. Hard facts, numbers and insights included - I promise!"
 dateModified: "2023-12-31"
 datePublished: "2023-12-31"
 topics:
