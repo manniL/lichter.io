@@ -17,8 +17,7 @@ useSeoMeta({
   ogDescription: description
 })
 
-defineOgImage({
-  component: 'Speaking',
+defineOgImageComponent('Speaking', {
   title
 })
 

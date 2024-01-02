@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { QueryBuilderParams } from '@nuxt/content/dist/runtime/types/index.js';
+import { type QueryBuilderParams } from '@nuxt/content/dist/runtime/types/index.js';
 
 definePageMeta({
   documentDriven: false
@@ -15,8 +15,7 @@ useSeoMeta({
   ogDescription: description
 })
 
-defineOgImage({
-  component: 'Workshop',
+defineOgImageComponent('Workshop', {
   title
 })
 

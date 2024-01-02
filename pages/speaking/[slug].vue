@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ParsedContent } from '@nuxt/content/dist/runtime/types/index.js';
+import type { ParsedContent } from '@nuxt/content/dist/runtime/types/index.js';
 import { joinURL } from 'ufo'
 import { onContentNotFound } from '~/utils/content.js';
 
@@ -46,8 +46,7 @@ function isTalkOrPodcast(entry?: ParsedContent): Boolean {
   return Boolean(entry?._path?.startsWith('/speaking/'))
 }
 
-defineOgImage({
-  component: 'Speaking',
+defineOgImageComponent('Speaking', {
   title: page.value.title,
   topics: page.value.topics,
   date: formattedDate.value,

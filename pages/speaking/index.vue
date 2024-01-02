@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import type { QueryBuilderParams } from '@nuxt/content/dist/runtime/types'
-import { Talk } from '~/types.js';
+import type { Talk } from '~/types.js';
 
 // TODO: Remove type casting after https://github.com/nuxt/content/pull/2156 landed
 
@@ -18,8 +18,7 @@ useSeoMeta({
   ogDescription: description
 })
 
-defineOgImage({
-  component: 'Speaking',
+defineOgImageComponent('Speaking', {
   title: 'Talks and Podcasts'
 })
 

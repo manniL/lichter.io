@@ -14,9 +14,7 @@ useSeoMeta({
   ogDescription: description
 })
 
-defineOgImage({
-  component: 'Main'
-})
+defineOgImageComponent('Main')
 
 const { data: articles } = useAsyncData('latest-articles', () => queryContent<ArticlePreview>('/articles').sort({
   dateModified: -1,

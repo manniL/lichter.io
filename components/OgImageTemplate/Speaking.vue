@@ -30,8 +30,7 @@ props.title.length > 30 ? 'text-5xl' : 'text-6xl')
         </h1>
         <div class="text-white/75 text-xl flex justify-between" style="display: flex;">
           <div style="display: flex; gap: 1rem;" v-if="topics?.length">
-            <!-- TODO: Workaround for https://github.com/harlan-zw/nuxt-og-image/issues/89 -->
-            <span v-for="(topic, i) in topics?.slice(0, topics.length / 2)" :key="topic">
+            <span v-for="topic in topics" :key="topic">
               #{{ topic }}
             </span>
           </div>

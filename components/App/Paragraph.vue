@@ -1,5 +1,4 @@
 <script setup lang="ts">
-
 const STYLES = {
   superHeading: 'font-extrabold text-transparent text-6xl sm:text-8xl md:text-6xl lg:text-8xl bg-clip-text bg-gradient-to-r from-red-600 to-pink-700',
   heading: 'font-bold text-5xl',

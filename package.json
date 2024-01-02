@@ -13,31 +13,26 @@
   },
   "devDependencies": {
     "@headlessui/vue": "^1.7.16",
-    "@nuxt/content": "^2.8.5",
-    "@nuxt/devtools": "^0.8.5",
-    "@nuxt/image": "1.0.0-rc.2",
-    "@nuxtjs/plausible": "^0.2.3",
-    "@nuxtjs/tailwindcss": "^6.8.0",
-    "@tailwindcss/forms": "^0.5.6",
+    "@nuxt/content": "^2.10.0",
+    "@nuxt/devtools": "^1.0.6",
+    "@nuxt/image": "^1.1.0",
+    "@nuxtjs/plausible": "^0.2.4",
+    "@nuxtjs/tailwindcss": "^6.10.3",
+    "@tailwindcss/forms": "^0.5.7",
     "@tailwindcss/typography": "^0.5.10",
-    "@types/cheerio": "^0.22.32",
-    "@vueuse/core": "^10.4.1",
-    "@vueuse/nuxt": "^10.4.1",
+    "@types/cheerio": "^0.22.35",
+    "@vueuse/core": "^10.7.1",
+    "@vueuse/nuxt": "^10.7.1",
     "cheerio": "1.0.0-rc.12",
-    "date-fns": "^2.30.0",
+    "date-fns": "^3.0.6",
     "feed": "^4.2.2",
-    "nuxt": "3.7.4",
-    "nuxt-icon": "^0.5.0",
-    "nuxt-og-image": "2.0.28",
-    "nuxt-schema-org": "^3.0.0",
-    "nuxt-simple-sitemap": "^3.3.5",
+    "nuxt": "^3.9.0",
+    "nuxt-icon": "^0.6.8",
+    "nuxt-og-image": "3.0.0-rc.14",
+    "nuxt-schema-org": "^3.3.0",
+    "nuxt-simple-sitemap": "^4.2.3",
     "remark-reading-time": "^2.0.1",
-    "tailwindcss": "^3.3.3"
+    "tailwindcss": "^3.4.0"
   },
-  "packageManager": "pnpm@8.10.5",
-  "pnpm": {
-    "patchedDependencies": {
-      "nuxt@3.7.4": "patches/nuxt@3.7.4.patch"
-    }
-  }
+  "packageManager": "pnpm@8.10.5"
 }

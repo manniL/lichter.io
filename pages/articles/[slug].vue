@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ParsedContent } from '@nuxt/content/dist/runtime/types/index.js';
+import type { ParsedContent } from '@nuxt/content/dist/runtime/types/index.js';
 import { joinURL } from 'ufo'
 import { onContentNotFound } from '~/utils/content.js';
 
@@ -68,8 +68,7 @@ function isArticle(entry?: ParsedContent): Boolean {
   return Boolean(entry?._path?.startsWith('/articles/'))
 }
 
-defineOgImage({
-  component: 'Article',
+defineOgImageComponent('Article', {
   title: article.value.title,
   topics: article.value.topics,
   readingTime: article.value.readingTime.text,

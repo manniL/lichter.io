@@ -28,8 +28,7 @@ const requestQuoteLink = computed(() => {
   return prefix + title + suffix
 })
 
-defineOgImage({
-  component: 'Workshop',
+defineOgImageComponent('Workshop', {
   title: workshop.value.title,
   time: workshop.value.time,
   attendees: workshop.value.attendees ?? 20,
