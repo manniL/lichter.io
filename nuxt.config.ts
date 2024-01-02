@@ -89,5 +89,18 @@ export default defineNuxtConfig({
     enabled: true
   },
 
+  experimental: {
+    defaults: {
+      useAsyncData: {
+        deep: false,
+      }
+    },
+    headNext: true,
+  },
+
+  future: {
+    typescriptBundlerResolution: true
+  },
+
   watch: ['typography.ts']
 })

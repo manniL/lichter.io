@@ -1,8 +1,6 @@
 <script setup lang="ts">
 import type { QueryBuilderParams } from '@nuxt/content/dist/runtime/types'
 
-// TODO: Remove type casting after https://github.com/nuxt/content/pull/2156 landed
-
 definePageMeta({
   documentDriven: false
 })
