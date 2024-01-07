@@ -24,15 +24,15 @@
     "@vueuse/core": "^10.7.1",
     "@vueuse/nuxt": "^10.7.1",
     "cheerio": "1.0.0-rc.12",
-    "date-fns": "^3.0.6",
+    "date-fns": "^3.1.0",
     "feed": "^4.2.2",
-    "nuxt": "^3.9.0",
+    "nuxt": "^3.9.1",
     "nuxt-icon": "^0.6.8",
-    "nuxt-og-image": "3.0.0-rc.14",
-    "nuxt-schema-org": "^3.3.0",
-    "nuxt-simple-sitemap": "^4.2.3",
+    "nuxt-og-image": "3.0.0-rc.23",
+    "nuxt-schema-org": "^3.3.2",
+    "nuxt-simple-sitemap": "^4.4.1",
     "remark-reading-time": "^2.0.1",
-    "tailwindcss": "^3.4.0"
+    "tailwindcss": "^3.4.1"
   },
   "packageManager": "pnpm@8.10.5"
 }
