@@ -3,15 +3,7 @@ import tailwindForms from '@tailwindcss/forms'
 import { typographyStyles } from './typography.js'
 
 export default defineNuxtConfig({
-  runtimeConfig: {
-    public: {
-      site: {
-        url: 'https://www.lichter.io',
-        name: 'Alexander Lichter',
-        trailingSlash: true,
-      }
-    }
-  },
+
   routeRules: {
     '/support-me/': { redirect: { to: '/sponsors/', statusCode: 301 } },
     '/timeline/': { redirect: { to: '/about/', statusCode: 301 } },
@@ -41,6 +33,12 @@ export default defineNuxtConfig({
     devProxy: {
       '/api/newsletter': { target: 'https://lichter-io-newsletter.netlify.app', changeOrigin: true }
     }
+  },
+
+  site: {
+    url: 'https://www.lichter.io',
+    name: 'Alexander Lichter',
+    trailingSlash: true,
   },
 
   plausible: {

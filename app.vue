@@ -1,12 +1,4 @@
 <script setup lang="ts">
-const siteUrl = useRuntimeConfig().public.site.url
-const route = useRoute()
-
-const canonical = computed(() => {
-  const pathWithSlash = route.path.endsWith('/') ? route.path : `${route.path}/`
-  return `${siteUrl}${pathWithSlash}`
-})
-
 const isDark = useDark()
 const favicon = computed(() => `/img/logo/glyph-${isDark.value ? 'white' : 'black'}-colored.svg`)
 
@@ -18,7 +10,6 @@ useHead({
   },
   titleTemplate: (c) => c ? `${c} - Alexander Lichter` : 'Alexander Lichter - Web Engineering Consultant',
   link: [
-    { rel: 'canonical', href: canonical },
     { rel: 'icon', href: favicon, type: "image/svg+xml" },
   ],
   bodyAttrs: {
