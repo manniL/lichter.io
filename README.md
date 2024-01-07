@@ -8,13 +8,6 @@ It took a while, but my eventually I had the time to rebuild my website!
 - [Tailwind CSS](https://tailwindcss.com/)
 - See a list of modules used in the [nuxt.config.ts](nuxt.config.ts) file
 
-## Patches
-
-I've patched some packages to suit them my needs or to fix bugs:
-
-- `nuxt`
-  - Applied https://github.com/nuxt/nuxt/pull/23296 (not released yet)
-
 ## Local setup
 
 1. You need to install Node.js, as well as enable corepack to install pnpm.
