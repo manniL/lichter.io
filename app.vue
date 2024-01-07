@@ -1,10 +1,11 @@
 <script setup lang="ts">
+const route = useRoute()
+
 useAppSeo()
 useSiteNotifications()
 
 function useAppSeo() {
   const siteUrl = useSiteConfig().url
-  const route = useRoute()
 
   const canonical = computed(() => {
     const pathWithSlash = route.path.endsWith('/') ? route.path : `${route.path}/`
