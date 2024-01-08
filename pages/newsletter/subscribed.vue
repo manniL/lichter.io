@@ -5,8 +5,9 @@ definePageMeta({
   documentDriven: false
 })
 
-useSeoMeta({
-  robots: 'noindex, nofollow'
+// disables indexing
+defineRouteRules({
+  robots: false,
 })
 
 type State = 'loading' | 'error' | 'subscribed'
@@ -19,7 +20,7 @@ onMounted(async () => {
     state.value = 'error'
     return
   }
-  
+
   try {
     await $fetch('/api/newsletter/confirm/', {
       method: 'POST',

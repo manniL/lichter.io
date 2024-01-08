@@ -34,8 +34,7 @@ const formattedUpdateAt = computed(() => formatDateStringToHumanReadable(article
 const formattedCreatedAt = computed(() => formatDateStringToHumanReadable(article.value.datePublished))
 
 const route = useRoute()
-const siteUrl = useRuntimeConfig().public.site.url
-const linkToCurrentPage = computed(() => joinURL(siteUrl, route.path))
+const linkToCurrentPage = withSiteUrl(route.path)
 
 const links = computed(() => {
   const rawShareOnTwitter = `https://twitter.com/intent/tweet?text=I just read "${article.value.title}". Check it out!&url=${linkToCurrentPage.value}&via=TheAlexLichter`

@@ -5,21 +5,10 @@ useAppSeo()
 useSiteNotifications()
 
 function useAppSeo() {
-  const siteUrl = useSiteConfig().url
-
-  const canonical = computed(() => {
-    const pathWithSlash = route.path.endsWith('/') ? route.path : `${route.path}/`
-    return `${siteUrl}${pathWithSlash}`
-  })
-
   const isDark = useDark()
   const favicon = computed(() => `/img/logo/glyph-${isDark.value ? 'white' : 'black'}-colored.svg`)
 
   useServerHead({
-    htmlAttrs: {
-      // TODO: Change this for German content
-      lang: 'en'
-    },
     bodyAttrs: {
       class: 'bg-black antialiased min-h-screen text-white'
     },
@@ -28,7 +17,6 @@ function useAppSeo() {
   useHead({
     titleTemplate: (c) => c ? `${c} - Alexander Lichter` : 'Alexander Lichter - Web Engineering Consultant',
     link: [
-      { rel: 'canonical', href: canonical },
       { rel: 'icon', href: favicon, type: "image/svg+xml" },
     ],
   })
@@ -62,7 +50,6 @@ function useAppSeo() {
   useServerSeoMeta({
     author: 'Alexander Lichter',
     ogSiteName: 'www.lichter.io',
-    ogType: 'website'
   })
 
   const styleConfig = {

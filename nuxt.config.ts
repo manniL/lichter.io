@@ -17,9 +17,7 @@ export default defineNuxtConfig({
     '@vueuse/nuxt',
     'nuxt-icon',
     '@nuxt/content',
-    'nuxt-simple-sitemap',
-    'nuxt-schema-org',
-    'nuxt-og-image',
+    '@nuxtjs/seo',
     '@nuxt/image',
     '@nuxtjs/plausible',
   ],
@@ -39,6 +37,12 @@ export default defineNuxtConfig({
     url: 'https://www.lichter.io',
     name: 'Alexander Lichter',
     trailingSlash: true,
+  },
+
+  ogImage: {
+    compatibility: {
+      dev: { sharp: false },
+    },
   },
 
   plausible: {
@@ -88,6 +92,7 @@ export default defineNuxtConfig({
   },
 
   experimental: {
+    inlineRouteRules: true,
     defaults: {
       useAsyncData: {
         deep: false,

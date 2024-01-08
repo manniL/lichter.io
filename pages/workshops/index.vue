@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { type QueryBuilderParams } from '@nuxt/content/dist/runtime/types/index.js';
+import { type QueryBuilderParams } from '@nuxt/content/dist/runtime/types';
 
 definePageMeta({
   documentDriven: false

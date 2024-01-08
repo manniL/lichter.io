@@ -9,13 +9,9 @@ const description = 'Find out or about me as a person, my personal history, my b
 useSeoMeta({
   title,
   description,
-  ogTitle: title,
-  ogDescription: description
 })
 
-defineOgImageComponent('General', {
-  title
-})
+defineOgImageComponent('General')
 </script>
 
 <template>

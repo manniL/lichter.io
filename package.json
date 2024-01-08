@@ -28,11 +28,9 @@
     "feed": "^4.2.2",
     "nuxt": "^3.9.1",
     "nuxt-icon": "^0.6.8",
-    "nuxt-og-image": "3.0.0-rc.23",
-    "nuxt-schema-org": "^3.3.2",
-    "nuxt-simple-sitemap": "^4.4.1",
     "remark-reading-time": "^2.0.1",
-    "tailwindcss": "^3.4.1"
+    "tailwindcss": "^3.4.1",
+    "@nuxtjs/seo": "2.0.0-rc.3"
   },
   "packageManager": "pnpm@8.10.5"
 }
