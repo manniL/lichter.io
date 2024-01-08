@@ -157,4 +157,20 @@ function onUserSpeaksGerman(): Boolean {
 .line.highlight {
   @apply bg-white/5;
 }
+article{
+  background:
+    linear-gradient(black, black) padding-box ,
+    linear-gradient(to right, #dc2626, #be185d) border-box;
+  border-style: solid ;
+  border-color:transparent;
+  border-width: 2px 1px;
+}
+article:hover{
+  background:
+    linear-gradient(to right, #dc2626, #be185d) padding-box ,
+    linear-gradient(to right, #dc2626, #be185d) border-box;
+  border-style: solid ;
+  border-color:transparent;
+  border-width: 2px 1px;
+}
 </style>
