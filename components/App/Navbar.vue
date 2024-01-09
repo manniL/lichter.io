@@ -21,8 +21,8 @@ const isLive = computed(() => data.value?.title)
 
 const { addNotification } = useNotifications()
 
-watch(isLive,asycn(newValue,oldValue)=>{
-  if (isLive==='live'){
+watch(isLive,async(newValue,oldValue) => {
+  if(isLive==='live'){
         addNotification({
         heading: 'Heading',
         body: 'Text'
