@@ -19,6 +19,16 @@ const { data, refresh } = useLazyFetch<any>(streamChangesEndpoint, {
 
 const isLive = computed(() => data.value?.title)
 
+const { addNotification } = useNotifications()
+
+watch(isLive,asycn(newValue,oldValue)=>{
+  if (isLive==='live'){
+        addNotification({
+        heading: 'Heading',
+        body: 'Text'
+      })
+  }
+})
 // Refresh data every 5 minutes
 useIntervalFn(refresh, 1000 * 60 * 5)
 
