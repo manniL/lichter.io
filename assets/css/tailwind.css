@@ -1,0 +1,20 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+.newButton{
+    background:
+        linear-gradient(black, black) padding-box ,
+        linear-gradient(to right, #dc2626, #be185d) border-box;
+    border-style: solid ;
+    border-color:transparent;
+    border-width: 2px 1px;  
+}
+.newButton:hover .hoverButton{
+  background:
+    linear-gradient(to right, #dc2626, #be185d) padding-box ,
+    linear-gradient(to right, #dc2626, #be185d) border-box;
+  border-style: solid ;
+  border-color:transparent;
+  border-width: 2px 1px;
+}

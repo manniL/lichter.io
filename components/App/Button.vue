@@ -9,7 +9,7 @@ const STYLES = {
   secondary: {
     needsPseudo: true,
      all:'uppercase font-semibold sm:font-bold',
-     main:'py-2 px-3'
+     main:'py-3 px-3'
   }
 } as const
 
@@ -33,7 +33,7 @@ const componentToRender = computed(() => props.to ? resolveComponent('AppLink') 
   <component :is="componentToRender" :type="to ? undefined : 'button'" :class="selectedLook.all" :to="to"
     class="focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-pink-600 inline-block">
     <template v-if="selectedLook.needsPseudo">
-     <article :class="selectedLook.main">
+     <article :class="[selectedLook.main,'newButton','hover:bg-gradient-to-r hover:from-red-600 hover:to-pink-700']">
         <slot />
       </article>
     </template>
