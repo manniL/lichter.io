@@ -23,7 +23,7 @@ const { addNotification } = useNotifications()
 
 watch(isLive,async(newValue,oldValue) => {
   if(isLive==='live'){
-        addNotification({
+      addNotification({
         heading: 'Heading',
         body: 'Text'
       })
