@@ -19,6 +19,15 @@ const { data, refresh } = useLazyFetch<any>(streamChangesEndpoint, {
 
 const isLive = computed(() => data.value?.title)
 
+watch(isLive,async(isLiveNow) => {
+  if(isLiveNow){
+      addNotification({
+        heading: 'Lichter is live now',
+        body: 'Go to https://www.twitch.tv/TheAlexLichter'
+      })
+  }
+})
+
 // Refresh data every 5 minutes
 useIntervalFn(refresh, 1000 * 60 * 5)
 
