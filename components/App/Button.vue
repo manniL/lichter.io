@@ -8,8 +8,7 @@ const STYLES = {
   },
   secondary: {
     needsPseudo: true,
-     all:'uppercase font-semibold sm:font-bold',
-     main:'py-3 px-3'
+     all:'text-white uppercase font-semibold sm:font-bold bg-gradient-to-r from-red-500 to-red-500',
   }
 } as const
 
@@ -33,7 +32,7 @@ const componentToRender = computed(() => props.to ? resolveComponent('AppLink') 
   <component :is="componentToRender" :type="to ? undefined : 'button'" :class="selectedLook.all" :to="to"
     class="focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-pink-600 inline-block">
     <template v-if="selectedLook.needsPseudo">
-     <article :class="[selectedLook.main,'newButton','hover:bg-gradient-to-r hover:from-red-600 hover:to-pink-700']">
+     <article :class="[selectedLook.main,'newButton']">
         <slot />
       </article>
     </template>
@@ -42,3 +41,12 @@ const componentToRender = computed(() => props.to ? resolveComponent('AppLink') 
     </template>
   </component>
 </template>
+
+<style scoped>
+.newButton{
+    background:
+        linear-gradient(black, black) padding-box ,
+        linear-gradient(to right, #dc2626, #be185d) border-box;
+    @apply border-solid border-transparent border-x-2 border-y-4 px-4 py-2 hover:bg-gradient-to-r hover:from-red-600 hover:to-pink-700;
+}  
+</style>
