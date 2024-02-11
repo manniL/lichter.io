@@ -1,14 +1,8 @@
 <script setup lang="ts">
 import type { AppNotification } from '~/types.js';
 
-// TODO: Use AppNotification type from types.js
-
 const props = defineProps<{
   body: AppNotification['body'],
-}>()
-
-const emit = defineEmits<{
-  close: [id: string]
 }>()
 </script>
 

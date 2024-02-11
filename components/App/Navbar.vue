@@ -1,6 +1,8 @@
 <script setup lang="ts">
 import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/vue'
 
+const route = useRoute()
+
 const MENU_ITEMS = [
   { text: 'Articles', to: '/articles/', activeRoutes: [] },
   { text: 'Speaking', to: '/speaking/', activeRoutes: [] },
@@ -57,7 +59,7 @@ useIntervalFn(refresh, 1000 * 60 * 5)
         <div class="hidden sm:ml-6 sm:block">
           <div class="flex gap-x-4 items-center">
             <AppLink v-for="item in MENU_ITEMS" :to="item.to"
-              :class="{ '!border-red-500 text-red-500': $route.path.startsWith(item.to) || item.activeRoutes.some(route => $route.path.startsWith(route)) }"
+              :class="{ '!border-red-500 text-red-500': route.path.startsWith(item.to) || item.activeRoutes.some(_route => route.path.startsWith(_route)) }"
               class="transition-all duration-200 border-b-2 border-transparent px-1 pt-1 py-1 px-2 md:px-3 md:py-2 text-base font-medium text-gray-300 hover:text-red-500">
               {{ item.text }}</AppLink>
             <AppLink :to="SOCIALS.twitch" title="To my Twitch Channel" active-class="!border-red-500 text-red-500"
