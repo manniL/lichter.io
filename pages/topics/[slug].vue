@@ -42,9 +42,7 @@ useSeoMeta({
   description,
 })
 
-defineOgImageComponent('Speaking', {
-  title
-})
+defineOgImageComponent('Speaking')
 </script>
 <template>
   <div>

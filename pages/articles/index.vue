@@ -18,9 +18,7 @@ useSeoMeta({
   description,
 })
 
-defineOgImageComponent('Article', {
-  title
-})
+defineOgImageComponent('Article')
 </script>
 
 <template>
