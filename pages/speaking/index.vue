@@ -14,8 +14,6 @@ const description = `Take a look at my talks, podcast appearances and panels I h
 useSeoMeta({
   title,
   description,
-  ogTitle: title,
-  ogDescription: description
 })
 
 defineOgImageComponent('Speaking', {

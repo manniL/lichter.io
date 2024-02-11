@@ -9,13 +9,9 @@ const description = 'If you like my content and want to support me, you can do s
 useSeoMeta({
   title,
   description,
-  ogTitle: title,
-  ogDescription: description
 })
 
-defineOgImageComponent('General', {
-  title
-})
+defineOgImageComponent('General')
 </script>
 
 <template>

@@ -9,13 +9,9 @@ const description = 'Subscribe to my newsletter to get notified about new articl
 useSeoMeta({
   title,
   description,
-  ogTitle: title,
-  ogDescription: description
 })
 
-defineOgImageComponent('General', {
-  title
-})
+defineOgImageComponent('General')
 
 </script>
 

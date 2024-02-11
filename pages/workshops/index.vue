@@ -11,13 +11,9 @@ const description = 'Want to upgrade your team\'s skills? I offer various worksh
 useSeoMeta({
   title,
   description,
-  ogTitle: title,
-  ogDescription: description
 })
 
-defineOgImageComponent('Workshop', {
-  title
-})
+defineOgImageComponent('Workshop')
 
 const query: QueryBuilderParams = { path: '/workshops', without: ['body', 'excerpt'] }
 </script>

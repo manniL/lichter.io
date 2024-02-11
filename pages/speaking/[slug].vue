@@ -10,8 +10,7 @@ onContentNotFound(page)
 const formattedDate = computed(() => formatDateStringToHumanReadable(page.value.date))
 
 const route = useRoute()
-const siteUrl = useRuntimeConfig().public.site.url
-const linkToCurrentPage = computed(() => joinURL(siteUrl, route.path))
+const linkToCurrentPage = withSiteUrl(route.path)
 
 const links = computed(() => {
   const action = page.value.type === 'podcast' ? 'listened to' : 'checked out'
