@@ -17,7 +17,7 @@ export default defineNuxtConfig({
     '@vueuse/nuxt',
     'nuxt-icon',
     '@nuxt/content',
-    'nuxt-simple-sitemap',
+    '@nuxtjs/sitemap',
     'nuxt-schema-org',
     'nuxt-og-image',
     '@nuxt/image',
