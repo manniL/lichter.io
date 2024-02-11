@@ -17,15 +17,25 @@ const { data, refresh } = useLazyFetch<any>(streamChangesEndpoint, {
   responseType: 'json'
 })
 
+const { addNotification } = useNotifications()
+
 const isLive = computed(() => data.value?.title)
 
-watch(isLive,async(isLiveNow) => {
-  if(isLiveNow){
-      addNotification({
-        heading: 'Lichter is live now',
-        body: 'Go to https://www.twitch.tv/TheAlexLichter'
-      })
-  }
+onMounted(() => {
+  watch(isLive, (isLiveNow) => {
+    if (!isLiveNow) {
+      return
+    }
+    addNotification({
+      heading: 'Alexander Lichter is live on Twitch at the moment',
+      iconName: 'mdi:twitch',
+      iconClass: 'text-purple-700',
+      body: [
+        { type: 'text', text: 'Go to '},
+        { type: 'link', href: 'https://www.twitch.tv/TheAlexLichter', text: 'the stream now!'},
+      ]
+    })
+  })
 })
 
 // Refresh data every 5 minutes

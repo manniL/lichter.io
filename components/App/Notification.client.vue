@@ -1,14 +1,9 @@
 <script setup lang="ts">
+import type { AppNotification } from '~/types.js';
+
 // TODO: Use AppNotification type from types.js
 
-withDefaults(defineProps<{
-  id: string,
-  heading: string,
-  body?: string,
-  iconName?: string,
-  iconClass?: string,
-  durationInMs?: number,
-}>(), {
+withDefaults(defineProps<AppNotification>(), {
   iconName: 'mdi:lightbulb-on-outline',
   iconClass: 'text-yellow-400',
 })
@@ -28,7 +23,7 @@ const emit = defineEmits<{
         </div>
         <div class="ml-3 w-0 flex-1 pt-0.5">
           <p class="text-sm font-medium text-gray-300">{{heading}}</p>
-          <p class="mt-1 text-sm text-slate-400">{{ body }}</p>
+          <AppNotificationBody class="mt-1 text-sm text-slate-400" :body="body" />
         </div>
         <div class="ml-4 flex flex-shrink-0">
           <button type="button" @click="emit('close', id)"
