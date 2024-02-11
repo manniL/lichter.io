@@ -36,8 +36,6 @@ export default defineNuxtConfig({
       routes: [
         '/feed.xml',
       ],
-      // Re-enable when https://github.com/nuxt/nuxt/issues/25743 is resolved
-      failOnError: false
     },
     devProxy: {
       '/api/newsletter': { target: 'https://lichter-io-newsletter.netlify.app', changeOrigin: true }
@@ -103,6 +101,9 @@ export default defineNuxtConfig({
       }
     },
     headNext: true,
+    sharedPrerenderData: true,
+    // Re-enable when https://github.com/nuxt/nuxt/issues/25743 is resolved
+    appManifest: false,
   },
 
   future: {
