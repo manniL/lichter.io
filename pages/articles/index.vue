@@ -16,13 +16,9 @@ const description = 'I am regularly writing articles about web development, Java
 useSeoMeta({
   title,
   description,
-  ogTitle: title,
-  ogDescription: description
 })
 
-defineOgImageComponent('Article', {
-  title
-})
+defineOgImageComponent('Article')
 </script>
 
 <template>

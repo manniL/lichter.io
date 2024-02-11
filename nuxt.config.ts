@@ -3,15 +3,7 @@ import tailwindForms from '@tailwindcss/forms'
 import { typographyStyles } from './typography.js'
 
 export default defineNuxtConfig({
-  runtimeConfig: {
-    public: {
-      site: {
-        url: 'https://www.lichter.io',
-        name: 'Alexander Lichter',
-        trailingSlash: true,
-      }
-    }
-  },
+
   routeRules: {
     '/support-me/': { redirect: { to: '/sponsors/', statusCode: 301 } },
     '/timeline/': { redirect: { to: '/about/', statusCode: 301 } },
@@ -19,15 +11,20 @@ export default defineNuxtConfig({
     // '/slides/**': { redirect: { to: 'https://slides.com/mannil/**', statusCode: 302 } },
     // TODO: Remove this ^equivalent from _redirects afterwards
   },
+  runtimeConfig: {
+    public: {
+      site: {
+        url: 'https://www.lichter.io',
+      }
+    }
+  },
 
   modules: [
     '@nuxtjs/tailwindcss',
     '@vueuse/nuxt',
     'nuxt-icon',
     '@nuxt/content',
-    'nuxt-simple-sitemap',
-    'nuxt-schema-org',
-    'nuxt-og-image',
+    '@nuxtjs/seo',
     '@nuxt/image',
     '@nuxtjs/plausible',
   ],
@@ -36,11 +33,23 @@ export default defineNuxtConfig({
     prerender: {
       routes: [
         '/feed.xml',
-      ]
+      ],
     },
     devProxy: {
       '/api/newsletter': { target: 'https://lichter-io-newsletter.netlify.app', changeOrigin: true }
     }
+  },
+
+  site: {
+    url: 'https://www.lichter.io',
+    name: 'Alexander Lichter',
+    trailingSlash: true,
+  },
+
+  ogImage: {
+    compatibility: {
+      dev: { sharp: false },
+    },
   },
 
   plausible: {
@@ -90,12 +99,16 @@ export default defineNuxtConfig({
   },
 
   experimental: {
+    inlineRouteRules: true,
     defaults: {
       useAsyncData: {
         deep: false,
       }
     },
     headNext: true,
+    sharedPrerenderData: true,
+    // Re-enable when https://github.com/nuxt/nuxt/issues/25743 is resolved
+    appManifest: false,
   },
 
   future: {

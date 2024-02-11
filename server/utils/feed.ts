@@ -5,15 +5,15 @@ import { serverQueryContent } from '#content/server'
 import type { H3Event } from 'h3'
 
 export async function generateBlogFeed(event: H3Event) {
-  const { url } = useRuntimeConfig().public.site
+  const { url, name, currentLocale } = useSiteConfig(event)
   // Fetch all documents
   const feed = new Feed({
-    title: `Alexander Lichter | Blog`,
+    title: `${name} | Blog`,
     id: url,
     link: url,
-    language: 'en',
-    image: `${url}/articles/__og_image__/og.png`,
-    favicon: `${url}/img/logo/glyph-white-colored.svg`,
+    language: currentLocale,
+    image: withSiteUrl(event, `/__og-image__/image/articles/og.png`),
+    favicon: withSiteUrl(event, `/img/logo/glyph-white-colored.svg`),
     generator: ';)',
     copyright: `Code licensed under MIT, written content licensed under CC-BY-NC-SA 4.0 - Alexander Lichter`,
     feedLinks: {
@@ -38,8 +38,8 @@ export async function generateBlogFeed(event: H3Event) {
     })
     const item = {
       title: post.title,
-      id: `${url}${post._path}/`,
-      link: `${url}${post._path}/`,
+      id: withSiteUrl(event, post._path),
+      link: withSiteUrl(event, post._path),
       description: post.description,
       content: $('body').html(),
       author: [
