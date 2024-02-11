@@ -11,8 +11,6 @@ const description = 'Being it talks, workshops, panels, podcasts or blog posts, 
 useSeoMeta({
   title,
   description,
-  ogTitle: title,
-  ogDescription: description
 })
 
 defineOgImageComponent('Speaking', {

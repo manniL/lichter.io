@@ -9,8 +9,6 @@ const description = 'Reach out for a project or consulting inquiry, to give feed
 useSeoMeta({
   title,
   description,
-  ogTitle: title,
-  ogDescription: description
 })
 
 defineOgImageComponent('General', {

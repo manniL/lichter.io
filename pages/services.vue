@@ -9,8 +9,6 @@ const description = 'Take a look at the services I offer, including web engineer
 useSeoMeta({
   title,
   description,
-  ogTitle: title,
-  ogDescription: description
 })
 
 defineOgImageComponent('General', {

@@ -11,7 +11,6 @@ useSeoMeta({
   title: '',
   ogTitle: 'Alexander Lichter - Web Engineering Consultant',
   description,
-  ogDescription: description
 })
 
 defineOgImageComponent('Main')

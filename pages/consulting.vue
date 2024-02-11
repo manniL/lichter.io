@@ -9,8 +9,6 @@ const description = 'Companies reach out to help them build better TypeScript, V
 useSeoMeta({
   title,
   description,
-  ogTitle: title,
-  ogDescription: description
 })
 
 defineOgImageComponent('General', {
