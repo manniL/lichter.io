@@ -12,6 +12,14 @@ export default defineNuxtConfig({
     // TODO: Remove this ^equivalent from _redirects afterwards
   },
 
+  runtimeConfig: {
+    public: {
+      site: {
+        url: 'https://www.lichter.io',
+      }
+    }
+  },
+
   modules: [
     '@nuxtjs/tailwindcss',
     '@vueuse/nuxt',
