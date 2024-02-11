@@ -1,4 +1,7 @@
 <script setup lang="ts">
+import { provideUseId } from '@headlessui/vue'
+provideUseId(() => useId())
+
 const route = useRoute()
 
 useAppSeo()
