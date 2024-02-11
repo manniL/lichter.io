@@ -71,33 +71,7 @@ function useAppSeo() {
 Cal("init", {origin:"https://cal.com"});
 Cal("ui", ${JSON.stringify(styleConfig)});
 `,
-    }
-  ]
-})
-
-const { addNotification } = useNotifications()
-
-onMounted(async () => {
-  const result = onDicsordRef()
-  if (result) {
-    await new Promise((resolve) => setTimeout(resolve, 1000))
-  }
-  onUserSpeaksGerman()
-})
-
-function onDicsordRef(): Boolean {
-  const isDicsordDomain = route.query?.ref === 'dicsord.com'
-  if (!isDicsordDomain) {
-    return false
-  }
-
-  addNotification({
-    heading: 'You should double check the URL 😛',
-    body: [
-      { type: 'text', text: 'Did you want to go to ' },
-      { type: 'link', href: 'https://discord.com/' },
-      { type: 'text', text: ' instead?' },
-
+      }
     ]
   })
 }
@@ -120,22 +94,15 @@ function useSiteNotifications() {
     }
 
     addNotification({
-      heading: 'You should double check the URL ;)',
-      body: 'Did you want to go to https://discord.com/ instead?'
+      heading: 'You should double check the URL 😛',
+      body: [
+        { type: 'text', text: 'Did you want to go to ' },
+        { type: 'link', href: 'https://discord.com/' },
+        { type: 'text', text: ' instead?' },
+      ]
     })
     return true
   }
-  addNotification({
-    heading: 'You should double check the URL 😛',
-    body: [
-      { type: 'text', text: 'Did you want to go to ' },
-      { type: 'link', href: 'https://discord.com/' },
-      { type: 'text', text: ' instead?' },
-
-    ]
-  })
-  return true
-}
 
   function onUserSpeaksGerman(): Boolean {
     const doesSpeakGerman = navigator.languages.some(lang => lang.startsWith('de'))
