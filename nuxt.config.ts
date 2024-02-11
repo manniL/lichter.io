@@ -11,6 +11,13 @@ export default defineNuxtConfig({
     // '/slides/**': { redirect: { to: 'https://slides.com/mannil/**', statusCode: 302 } },
     // TODO: Remove this ^equivalent from _redirects afterwards
   },
+  runtimeConfig: {
+    public: {
+      site: {
+        url: 'https://www.lichter.io',
+      }
+    }
+  },
 
   modules: [
     '@nuxtjs/tailwindcss',
@@ -26,7 +33,7 @@ export default defineNuxtConfig({
     prerender: {
       routes: [
         '/feed.xml',
-      ]
+      ],
     },
     devProxy: {
       '/api/newsletter': { target: 'https://lichter-io-newsletter.netlify.app', changeOrigin: true }
@@ -99,6 +106,9 @@ export default defineNuxtConfig({
       }
     },
     headNext: true,
+    sharedPrerenderData: true,
+    // Re-enable when https://github.com/nuxt/nuxt/issues/25743 is resolved
+    appManifest: false,
   },
 
   future: {
