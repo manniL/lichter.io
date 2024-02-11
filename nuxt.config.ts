@@ -12,6 +12,11 @@ export default defineNuxtConfig({
     // TODO: Remove this ^equivalent from _redirects afterwards
   },
 
+  experimental: {
+    // Re-enable when https://github.com/nuxt/nuxt/issues/25743 is resolved
+    appManifest: false
+  },
+
   runtimeConfig: {
     public: {
       site: {
