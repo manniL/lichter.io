@@ -27,7 +27,8 @@ const props = withDefaults(defineProps<{
 })
 
 const selectedLook = computed(() => STYLES[props.look])
-const componentToRender = computed(() => props.to ? resolveComponent('AppLink') : 'button')
+const AppLink = resolveComponent('AppLink')
+const componentToRender = computed(() => props.to ? AppLink : 'button')
 
 </script>
 
