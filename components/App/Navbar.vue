@@ -12,6 +12,7 @@ const MENU_ITEMS = [
 
 const streamChangesEndpoint = 'https://raw.githubusercontent.com/manniL/lichter.io-twitch-status/main/latest.json'
 
+// TODO: Maybe fetch in app.vue and pass to the navbar?
 const { data, refresh } = useLazyFetch<any>(streamChangesEndpoint, {
   server: false,
   responseType: 'json'
