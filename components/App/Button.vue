@@ -47,6 +47,12 @@ const componentToRender = computed(() => props.to ? resolveComponent('AppLink') 
     background:
         linear-gradient(black, black) padding-box ,
         linear-gradient(to right, #dc2626, #be185d) border-box;
-    @apply border-solid border-transparent border-x-2 border-y-4 px-4 py-2 hover:bg-gradient-to-r hover:from-red-600 hover:to-pink-700;
-}  
+    @apply border-solid border-transparent border-[2.5px] px-4 py-2  
+}
+.newButton:hover{
+    background:
+        linear-gradient(to right, #dc2626, #be185d) padding-box ,
+        linear-gradient(to right, #dc2626, #be185d) border-box;
+    @apply border-solid border-transparent border-[2.5px] px-4 py-2
+}
 </style>
