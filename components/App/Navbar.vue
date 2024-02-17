@@ -1,6 +1,8 @@
 <script setup lang="ts">
 import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/vue'
 
+const route = useRoute()
+
 const MENU_ITEMS = [
   { text: 'Articles', to: '/articles/', activeRoutes: [] },
   { text: 'Speaking', to: '/speaking/', activeRoutes: [] },
@@ -12,12 +14,32 @@ const MENU_ITEMS = [
 
 const streamChangesEndpoint = 'https://raw.githubusercontent.com/manniL/lichter.io-twitch-status/main/latest.json'
 
+// TODO: Maybe fetch in app.vue and pass to the navbar?
 const { data, refresh } = useLazyFetch<any>(streamChangesEndpoint, {
   server: false,
   responseType: 'json'
 })
 
+const { addNotification } = useNotifications()
+
 const isLive = computed(() => data.value?.title)
+
+onMounted(() => {
+  watch(isLive, (isLiveNow) => {
+    if (!isLiveNow) {
+      return
+    }
+    addNotification({
+      heading: 'Alexander Lichter is live on Twitch at the moment',
+      iconName: 'mdi:twitch',
+      iconClass: 'text-purple-700',
+      body: [
+        { type: 'text', text: 'Go to '},
+        { type: 'link', href: 'https://www.twitch.tv/TheAlexLichter', text: 'the stream now!'},
+      ]
+    })
+  })
+})
 
 // Refresh data every 5 minutes
 useIntervalFn(refresh, 1000 * 60 * 5)
