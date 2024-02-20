@@ -105,6 +105,7 @@ export default defineNuxtConfig({
         deep: false,
       }
     },
+    componentIslands: 'local',
     headNext: true,
     sharedPrerenderData: true,
     // Re-enable when https://github.com/nuxt/nuxt/issues/25743 is resolved
