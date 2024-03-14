@@ -1,4 +1,5 @@
 <script setup lang="ts">
+
 import type { RouteRecordRaw } from 'vue-router';
 
 const STYLES = {
@@ -42,7 +43,7 @@ const componentToRender = computed(() => props.to ? resolveComponent('AppLink') 
   </component>
 </template>
 
-<style scoped>
+<!-- <style scoped>
 .newButton{
     background:
         linear-gradient(black, black) padding-box ,
@@ -55,4 +56,4 @@ const componentToRender = computed(() => props.to ? resolveComponent('AppLink') 
         linear-gradient(to right, #dc2626, #be185d) border-box;
     @apply border-solid border-transparent border-[2.5px] px-4 py-2
 }
-</style>
+</style> -->
