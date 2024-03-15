@@ -34,7 +34,7 @@ const { data: workshops } = useAsyncData('latest-workshops', () => queryContent(
   <div>
     <AppSection>
       <div class="md:flex md:flex-row items-center">
-        <div class="mt-8 md:mt-0 md:w-3/5 md:flex-1">
+        <div class="mt-8 md:mt-0 md:w-3/5">
           <div class="flex gap-8 -mx-4 md:mx-0">
             <div class="flex w-1/2 md:w-full items-center">
               <AppParagraph tag="h1" look="superHeading"
