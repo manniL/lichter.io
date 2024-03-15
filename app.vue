@@ -157,4 +157,9 @@ function onUserSpeaksGerman(): Boolean {
 .line.highlight {
   @apply bg-white/5;
 }
+
+:root {
+  color-scheme: dark;
+}
+
 </style>

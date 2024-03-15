@@ -38,7 +38,7 @@ const { data: workshops } = useAsyncData('latest-workshops', () => queryContent(
           <div class="flex gap-8 -mx-4 md:mx-0">
             <div class="flex w-1/2 md:w-full items-center">
               <AppParagraph tag="h1" look="superHeading"
-                class="flex flex-col sm:justify-start font-mono mt-8 md:mt-0 ml-4 md:ml-0">
+                class="flex flex-col sm:justify-start font-mono mt-8 md:mt-0 ml-1cd md:ml-0">
                 <span>Build <span class="hidden md:inline md:ml-5 pl-8">//</span></span>
                 <span>Lead <span class="hidden md:inline md:ml-8 pl-8">//</span></span>
                 <span>Teach</span>
