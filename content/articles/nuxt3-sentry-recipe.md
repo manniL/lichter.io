@@ -230,7 +230,7 @@ export default defineNuxtPlugin((nuxtApp) => {
     environment: sentry.environment,
     integrations: [
       Sentry.browserTracingIntegration({ router }), 
-       Sentry.replayIntegration({
+      Sentry.replayIntegration({
         maskAllText: false,
         blockAllMedia: false,
       }),
