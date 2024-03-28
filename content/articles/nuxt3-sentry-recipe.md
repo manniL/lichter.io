@@ -96,7 +96,7 @@ After we do this, we will create a new Nitro plugin. In there, we want to initia
 
 ```ts [server/plugins/sentry.ts]
 import * as Sentry from '@sentry/node'
-import { ProfilingIntegration } from '@sentry/profiling-node'
+import { nodeProfilingIntegration } from '@sentry/profiling-node'
 
 export default defineNitroPlugin((nitroApp) => {
   const { public: { sentry } } = useRuntimeConfig()
@@ -111,9 +111,7 @@ export default defineNitroPlugin((nitroApp) => {
   Sentry.init({
     dsn: sentry.dsn,
     environment: sentry.environment,
-    integrations: [
-      new ProfilingIntegration(),
-    ],
+    integrations: [nodeProfilingIntegration()],
     // Performance Monitoring
     tracesSampleRate: 1.0, // Change in production!
     // Set sampling rate for profiling - this is relative to tracesSampleRate
@@ -231,10 +229,11 @@ export default defineNuxtPlugin((nuxtApp) => {
     dsn: sentry.dsn,
     environment: sentry.environment,
     integrations: [
-      new Sentry.BrowserTracing({
-        routingInstrumentation: Sentry.vueRouterInstrumentation(router),
+      Sentry.browserTracingIntegration({ router }), 
+      Sentry.replayIntegration({
+        maskAllText: false,
+        blockAllMedia: false,
       }),
-      new Sentry.Replay(),
     ],
 
     // Configure this whole part as you need it!
