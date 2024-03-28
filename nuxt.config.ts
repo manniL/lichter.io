@@ -91,7 +91,9 @@ export default defineNuxtConfig({
           }
         }
       }
-    }
+    },
+    cssPath: '~/assets/custom.css',
+    exposeConfig: true
   },
 
   devtools: {
