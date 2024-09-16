@@ -22,7 +22,7 @@
     "@tailwindcss/forms": "^0.5.7",
     "@tailwindcss/typography": "^0.5.10",
     "@types/cheerio": "^0.22.35",
-    "@vueuse/core": "^10.7.2",
+    "@vueuse/core": "^11.1.0",
     "@vueuse/nuxt": "^10.7.2",
     "cheerio": "1.0.0-rc.12",
     "date-fns": "^3.3.1",
