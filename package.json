@@ -35,6 +35,6 @@
   },
   "packageManager": "pnpm@8.10.5",
   "dependencies": {
-    "@nuxtjs/sitemap": "^5.1.0"
+    "@nuxtjs/sitemap": "^7.0.0"
   }
 }
