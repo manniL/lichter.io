@@ -1,16 +1,11 @@
-import tailwindTypography from '@tailwindcss/typography'
-import tailwindForms from '@tailwindcss/forms'
-import { typographyStyles } from './typography.js'
-
 export default defineNuxtConfig({
-
   routeRules: {
     '/support-me/': { redirect: { to: '/sponsors/', statusCode: 301 } },
     '/timeline/': { redirect: { to: '/about/', statusCode: 301 } },
-    // TODO: After https://github.com/unjs/nitro/issues/1748 is resolved
-    // '/slides/**': { redirect: { to: 'https://slides.com/mannil/**', statusCode: 302 } },
-    // TODO: Remove this ^equivalent from _redirects afterwards
+    '/slides/**': { redirect: { to: 'https://slides.com/mannil/**', statusCode: 302 } },
+    '/nuxt-dynamic-ssr-spa/': { redirect: { to: '/nuxt3-dynamic-ssr-spa/', statusCode: 301 } }
   },
+
   runtimeConfig: {
     public: {
       site: {
@@ -70,30 +65,6 @@ export default defineNuxtConfig({
     },
   },
 
-  tailwindcss: {
-    config: {
-      plugins: [tailwindTypography, tailwindForms],
-      theme: {
-        typography: typographyStyles,
-        extend: {
-          backgroundSize: {
-            '200%': '200%'
-          },
-          animation: {
-            'bg-shift': 'bg-shift 2s linear infinite',
-            'pulse-slow': 'pulse 3s linear infinite',
-          },
-          keyframes: {
-            'bg-shift': {
-              '0%, 100%': { backgroundPosition: '0% 50%' },
-              '50%': { backgroundPosition: '100% 50%' },
-            }
-          }
-        }
-      }
-    }
-  },
-
   devtools: {
     enabled: true
   },
@@ -107,13 +78,6 @@ export default defineNuxtConfig({
     },
     headNext: true,
     sharedPrerenderData: true,
-    // Re-enable when https://github.com/nuxt/nuxt/issues/25743 is resolved
-    appManifest: false,
   },
-
-  future: {
-    typescriptBundlerResolution: true
-  },
-
-  watch: ['typography.ts']
+  compatibilityDate: '2024-12-14'
 })

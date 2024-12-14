@@ -1,9 +1,5 @@
 https://lichterio.netlify.app/*       https://www.lichter.io/:splat 301!
 https://lichter.io/*                  https://www.lichter.io/:splat 301!
-/slides/*                             https://slides.com/mannil/:splat 302!
 
 # Newsletter API
 /api/newsletter/*                     https://lichter-io-newsletter.netlify.app/:splat 200!
-
-# Old blog posts
-/nuxt-dynamic-ssr-spa/                /nuxt3-dynamic-ssr-spa/ 301
