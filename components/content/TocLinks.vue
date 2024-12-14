@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { TocLink } from '@nuxt/content/dist/runtime/types'
+import type { TocLink } from '@nuxt/content'
 
 defineProps<{
   links: TocLink[]

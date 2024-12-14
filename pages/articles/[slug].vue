@@ -1,17 +1,10 @@
 <script setup lang="ts">
-import type { ParsedContent } from '@nuxt/content/dist/runtime/types/index.js';
-import { joinURL } from 'ufo'
+import type { ParsedContent } from '@nuxt/content';
 import { onContentNotFound } from '~/utils/content.js';
 
 const { page: article, next, prev } = useContent()
 
 onContentNotFound(article)
-
-// TODO: Do we need this here?
-useSeoMeta({
-  title: () => article.value.title,
-  description: () => article.value.description,
-})
 
 useSchemaOrg([
   defineArticle({

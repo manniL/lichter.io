@@ -3,8 +3,8 @@ export function onContentNotFound(page: Ref<any>) {
     return
   }
 
-  if (process.server) {
-    const event = useRequestEvent()
+  if (import.meta.server) {
+    const event = useRequestEvent()!
     setResponseStatus(event, 404)
   }
 
