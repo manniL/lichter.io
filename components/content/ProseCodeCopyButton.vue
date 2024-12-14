@@ -8,7 +8,7 @@ const props = withDefaults(defineProps<{
   iconClass: 'w-4 h-4'
 })
 
-const state = ref('init')
+const state = ref<'init' | 'copied'>('init')
 
 const onClick = async () => {
   await navigator.clipboard.writeText(props.content);

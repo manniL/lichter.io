@@ -3,13 +3,6 @@ import { onContentNotFound } from '~/utils/content.js';
 
 const { page: workshop } = useContent()
 
-useSeoMeta({
-  title: () => workshop.value.title,
-  description: () => workshop.value.description,  
-  ogTitle: () => workshop.value.title,
-  ogDescription: () => workshop.value.description,
-})
-
 onContentNotFound(workshop)
 
 const requestQuoteLink = computed(() => {
