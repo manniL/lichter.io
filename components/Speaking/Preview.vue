@@ -82,7 +82,7 @@ function handleMouseLeave() {
       <AppLink
         class="underline decoration-transparent hover:decoration-white transition-all mt-8 md:mt-0 text-right md:text-left"
         @mouseover="handleMouseOver" @mouseleave="handleMouseLeave" :to="talk._path"
-        :title="`Read more about about${talk.title}`">
+        :title="`Read more about ${talk.title}`">
         Read more
         <Icon name="heroicons:chevron-double-right-20-solid" />
       </AppLink>

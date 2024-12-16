@@ -50,7 +50,7 @@ useIntervalFn(refresh, 1000 * 60 * 5)
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
       <div class="flex h-20 items-center justify-between">
         <div class="flex items-center mr-3">
-          <AppLink to="/" class="flex-shrink-0 flex items-center">
+          <AppLink to="/" class="flex-shrink-0 flex items-center" aria-label="Home">
             <img width="44" height="56" class="mr-4" src="/img/logo/glyph-white-colored.svg"
               alt="Alexander Lichter Lightbulb" />
             <img width="107" height="40" src="/img/logo/word-white-colored.svg" alt="Alexander Lichter Lightbulb" />
