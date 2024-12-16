@@ -34,7 +34,7 @@ One thing that was a bit unusual for me though - flats in the Netherlands often 
 
 ### Traveling to unknown Places ✈️
 
-Besides getting to know Amsterdam better and better, I also had the opportunity to travel to new places and even new countries! From going to Brussels for a long weekend [meeting with a good friend](https://twitter.com/phip1611/){:target="_blank"} and doing some sightseeing, to traveling to Cambridge and Oxford after a conference, I've seen a lot. One of the most amazing trips this year was to Toronto, Canada. Before [speaking at VueConf Toronto](https://www.lichter.io/speaking/2023-11-10-vue-seo-universe-vue-toronto/){:target="_blank"}, I had the chance to explore the city and meet some amazing people. In addition, I also had the chance to visit the Niagara Falls, which was a great experience. Maybe a bit cold (4°C), but still a breathtaking view.
+Besides getting to know Amsterdam better and better, I also had the opportunity to travel to new places and even new countries! From going to Brussels for a long weekend [meeting with a good friend](https://twitter.com/phip1611/){:target="_blank"} and doing some sightseeing, to traveling to Cambridge and Oxford after a conference, I've seen a lot. One of the most amazing trips this year was to Toronto, Canada. Before [speaking at VueConf Toronto](/speaking/2023-11-10-vue-seo-universe-vue-toronto/){:target="_blank"}, I had the chance to explore the city and meet some amazing people. In addition, I also had the chance to visit the Niagara Falls, which was a great experience. Maybe a bit cold (4°C), but still a breathtaking view.
 
 :blog-image{src="/img/blog/2023-my-recap/niagara-falls.jpg" width="500" height="375" alt="Drinking a cold beverage with the Niagara Falls in the background"}
 
