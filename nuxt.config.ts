@@ -22,6 +22,7 @@ export default defineNuxtConfig({
     '@nuxtjs/seo',
     '@nuxt/image',
     '@nuxtjs/plausible',
+    'nuxt-rebundle'
   ],
 
   nitro: {
