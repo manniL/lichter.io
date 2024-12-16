@@ -83,7 +83,7 @@ defineOgImageComponent('General')
       <div class="mt-8">
         <AppParagraph look="heading" class="!text-4xl">Testimonials</AppParagraph>
         <div class="grid md:grid-cols-2 gap-8 mt-16">
-          <LazyTestimonial person="Michael Müller" job="Business Leader of Software Engineering"
+          <Testimonial person="Michael Müller" job="Business Leader of Software Engineering"
             image-link="/img/testimonials/michael-mueller.jpg">
             <p>
               I onboarded Alex to a legacy project that should be transformed into a modern web application.
@@ -102,8 +102,8 @@ defineOgImageComponent('General')
               and teamwork capabilities make him invaluable to any web development project.
               I am looking forward to collaborating with Alex again in the future.
             </p>
-          </LazyTestimonial>
-          <LazyTestimonial person="Christopher H. Stappert" job="Engineering Manager at intrinsify"
+          </Testimonial>
+          <Testimonial person="Christopher H. Stappert" job="Engineering Manager at intrinsify"
             image-link="/img/testimonials/christopher-stappert.jpg">
             <p class="font-bold">
               Alexander Lichter is a problem solver for every programming task.
@@ -127,8 +127,8 @@ defineOgImageComponent('General')
               And a personal note: You'll have a lot of fun to work with Alex. His kindness and endurance are remarkable.
               He's always willing to lend a hand and go the extra mile to ensure things get done right.
             </p>
-          </LazyTestimonial>
-          <LazyTestimonial person="Marcel Golob" job="Managing Director at Vinspire GmbH"
+          </Testimonial>
+          <Testimonial person="Marcel Golob" job="Managing Director at Vinspire GmbH"
             image-link="/img/testimonials/marcel-golob.jpg">
             <p>
               I have been working with Alexander Lichter for the past year and I can honestly say that that he is
@@ -142,8 +142,8 @@ defineOgImageComponent('General')
             <p>Especially when it comes to Nuxt 3!</p>
             <br>
             <p class="font-bold">I can only recommend working with him.</p>
-          </LazyTestimonial>
-          <LazyTestimonial person="Pascal Prellwitz" job="Lead Developer at OnlineLessons.tv GmbH"
+          </Testimonial>
+          <Testimonial person="Pascal Prellwitz" job="Lead Developer at OnlineLessons.tv GmbH"
             image-link="/img/testimonials/pascal-prellwitz.jpg">
             <p class="font-bold">
               Collaborating with Alexander Lichter has been an absolute game-changer for our team.
@@ -159,7 +159,7 @@ defineOgImageComponent('General')
               From discussing architecture for new features over diving into legacy code to fixing bugs and improving
               performance, Alex has been a tremendous help and I can wholeheartedly recommend working with him.
             </p>
-          </LazyTestimonial>
+          </Testimonial>
         </div>
       </div>
     </AppSection>

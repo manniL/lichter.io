@@ -62,7 +62,7 @@ useIntervalFn(refresh, 1000 * 60 * 5)
               :class="{ '!border-red-500 text-red-500': $route.path.startsWith(item.to) || item.activeRoutes.some(route => $route.path.startsWith(route)) }"
               class="transition-all duration-200 border-b-2 border-transparent pt-1 py-1 px-2 md:px-3 md:py-2 text-base font-medium text-gray-300 hover:text-red-500">
               {{ item.text }}</AppLink>
-            <AppLink :to="isLive ? SOCIALS.twitch : undefined" title="To my Twitch Channel" :aria-disabled="!isLive" active-class="!border-red-500 text-red-500"
+            <AppLink :to="SOCIALS.twitch" title="To my Twitch Channel" :aria-disabled="!isLive" active-class="!border-red-500 text-red-500"
               class="transition-all inline-block relative duration-200 border-b-2 border-transparent py-1 md:px-3 md:py-2 text-base font-medium text-gray-300 hover:text-red-500">
               <template v-if="isLive">
                 <span>

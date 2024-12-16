@@ -88,23 +88,23 @@ const { data: workshops } = useAsyncData('latest-workshops', () => queryContent(
     </AppSection>
     <AppSection class="my-32">
       <div class="flex flex-col gap-16 md:gap-8 md:flex-row justify-around">
-        <LazyServicePreview icon="mdi:lightbulb-on-outline" title="Consulting" to="/consulting">
+        <ServicePreview icon="mdi:lightbulb-on-outline" title="Consulting" to="/consulting">
           Companies reach out to help them build better Vue and Nuxt applications
           - from solving problems to discussing the right abstractions and architecture.
-        </LazyServicePreview>
-        <LazyServicePreview icon="ph:chalkboard-teacher-light" title="Workshops" to="/workshops">
+        </ServicePreview>
+        <ServicePreview icon="ph:chalkboard-teacher-light" title="Workshops" to="/workshops">
           Want to level up your team's skills? I offer workshops on Vue, Nuxt, TypeScript, testing and more topics.
           Don't hesitate to reach out and let's discuss your needs.
-        </LazyServicePreview>
-        <LazyServicePreview icon="ph:microphone" title="Public speaking" to="/speaking">
+        </ServicePreview>
+        <ServicePreview icon="ph:microphone" title="Public speaking" to="/speaking">
           I love to share my knowledge and experience with the community.
           I speak at conferences and meetups, and I am always open to new opportunities.
-        </LazyServicePreview>
+        </ServicePreview>
       </div>
       <ContentDivider class="mt-32" anchor="left" />
     </AppSection>
     <AppSection class="mt-48 md:mt-32">
-      <LazyParagraphDecoration />
+      <ParagraphDecoration />
       <AppParagraph class="mr-8 mt-4" tag="h2" look="heading">
         Workshops
       </AppParagraph>
@@ -118,12 +118,12 @@ const { data: workshops } = useAsyncData('latest-workshops', () => queryContent(
         </div>
       </div>
       <div class="flex flex-col md:flex-row gap-16 md:gap-8 justify-around mt-8">
-        <LazyWorkshopPreview class="flex-1" v-for="workshop in workshops" :workshop="workshop" />
+        <WorkshopPreview class="flex-1" v-for="workshop in workshops" :workshop="workshop" />
       </div>
       <ContentDivider class="mt-14" />
     </AppSection>
     <AppSection class="bg-zinc-900">
-      <LazyParagraphDecoration class="mt-16" />
+      <ParagraphDecoration class="mt-16" />
       <AppParagraph class="mr-8 mt-4" tag="h2" look="heading">
         Articles
       </AppParagraph>
@@ -145,7 +145,7 @@ const { data: workshops } = useAsyncData('latest-workshops', () => queryContent(
       <ContentDivider anchor="left" class="mt-14" />
     </AppSection>
     <AppSection>
-      <LazyParagraphDecoration class="mt-16" />
+      <ParagraphDecoration class="mt-16" />
       <AppParagraph class="mr-8 mt-4" tag="h2" look="heading">
         Speaking
       </AppParagraph>
@@ -158,7 +158,7 @@ const { data: workshops } = useAsyncData('latest-workshops', () => queryContent(
         </div>
       </div>
       <div class="flex flex-col space-y-8 mt-8">
-        <LazySpeakingPreview v-for="talk in talks" :key="talk._id" :talk="talk" />
+        <SpeakingPreview v-for="talk in talks" :key="talk._id" :talk="talk" />
       </div>
       <div class="flex md:justify-end mt-16">
         <AppButton to="/speaking/" look="secondary">View all talks</AppButton>

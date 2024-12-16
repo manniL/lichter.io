@@ -142,8 +142,8 @@ function useSiteNotifications() {
         <stop offset="1" style="stop-color:#D90575" />
       </linearGradient>
     </svg>
-    <LazyAppFooter />
-    <LazyAppNotificationArea />
+    <AppFooter />
+    <AppNotificationArea />
   </div>
 </template>
 
