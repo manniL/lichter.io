@@ -40,6 +40,6 @@
   },
   "packageManager": "pnpm@9.15.4",
   "dependencies": {
-    "@nuxtjs/sitemap": "^7.6.0"
+    "@nuxtjs/sitemap": "^9.1.0"
   }
 }
